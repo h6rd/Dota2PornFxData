@@ -267,7 +267,7 @@ function attemptPublishPass(metaById) {
     writeJson(constantsPath, constants);
     run(["git", "-C", MAIN_DIR, "add", "assets/files", "assets/previews", "assets/data/mods.json", "assets/data/constants.json"]);
     if (gitHasStagedChanges(MAIN_DIR)) {
-      const commitMsg = `chore: publish ${publishedIds.length} approved mod(s) from the DATA repo\n\n` +
+      const commitMsg = `chore: publish ${publishedIds.length} approved mod\n\n` +
         publishedIds.map((id) => `- ${id}`).join("\n");
       run([
         "git", "-C", MAIN_DIR,
