@@ -1,0 +1,78 @@
+name: Publish approved mods to main repo
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'pending/**'
+
+concurrency:
+  group: publish-to-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout DATA repo
+        uses: actions/checkout@v6
+        with:
+          path: data-repo
+          fetch-depth: 1
+
+      - name: Mint installation token for the main catalog repo (GitHub App)
+        id: main_repo_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.MAIN_REPO_APP_ID }}
+          private-key: ${{ secrets.MAIN_REPO_APP_PRIVATE_KEY }}
+          owner: ${{ secrets.MAIN_REPO_OWNER }}
+          repositories: ${{ secrets.MAIN_REPO_NAME }}
+
+      - name: Checkout main catalog repo
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ secrets.MAIN_REPO_OWNER }}/${{ secrets.MAIN_REPO_NAME }}
+          token: ${{ steps.main_repo_token.outputs.token }}
+          path: main-repo
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ vars.NODE_VERSION || '24' }}
+
+      - name: Run publish script
+        working-directory: data-repo
+        env:
+          DATA_DIR: .
+          MAIN_REPO_DIR: ../main-repo
+          ALLOWED_CATEGORIES: ${{ vars.ALLOWED_CATEGORIES }}
+          ALLOWED_HEROES: ${{ vars.ALLOWED_HEROES }}
+        run: node scripts/publish.js
+
+      - name: Notify Discord (published)
+        if: success()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -n "$DISCORD_WEBHOOK_URL" ]; then
+            curl -sf -X POST -H "Content-Type: application/json" \
+              -d '{"content":"\ud83d\ude80 Published approved submission(s) to the main catalog repository."}' \
+              "$DISCORD_WEBHOOK_URL" || true
+          fi
+
+      - name: Notify Discord (failure)
+        if: failure()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -n "$DISCORD_WEBHOOK_URL" ]; then
+            curl -sf -X POST -H "Content-Type: application/json" \
+              -d '{"content":"\u26a0\ufe0f Publish workflow failed - check the DATA repo Actions run and inspect pending/ for anything left over."}' \
+              "$DISCORD_WEBHOOK_URL" || true
+          fi

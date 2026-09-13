@@ -1,0 +1,167 @@
+name: VPK Inspector
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: vpk-inspector-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  inspect-vpk:
+    runs-on: ubuntu-latest
+    if: startsWith(github.head_ref, 'submission/')
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.10'
+
+      - name: Install vpk
+        run: pip install vpk
+
+      - name: Find and inspect VPK
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p inspector-work
+          ZIP_FILE=$(find pending -type f -iname '*.zip' | head -n 1)
+          if [ -z "$ZIP_FILE" ]; then
+            echo "No ZIP file found in pending/"
+            exit 1
+          fi
+          echo "Found ZIP: $ZIP_FILE"
+          unzip -q "$ZIP_FILE" -d inspector-work/extracted
+          VPK_FILE=$(find inspector-work/extracted -type f \( -iname '*_dir.vpk' -o -iname '*.vpk' \) | head -n 1)
+          if [ -z "$VPK_FILE" ]; then
+            echo "No VPK file found inside ZIP"
+            exit 1
+          fi
+          echo "Found VPK: $VPK_FILE"
+          export VPK_FILE
+          python <<'PY'
+          import os
+          import vpk
+
+          vpk_file = os.environ["VPK_FILE"]
+          archive = vpk.open(vpk_file)
+          files = sorted(archive)
+          extensions = {}
+
+          for path in files:
+              filename = os.path.basename(path)
+              if "." in filename:
+                  ext = "." + filename.rsplit(".", 1)[1].lower()
+              else:
+                  ext = "[no extension]"
+              extensions[ext] = extensions.get(ext, 0) + 1
+
+          MAX_COMMENT_CHARS = 55000
+
+          def build_tree(paths, include_files):
+              tree = {}
+              for path in paths:
+                  parts = path.replace("\\", "/").split("/")
+                  if not include_files:
+                      parts = parts[:-1]
+                  current = tree
+                  for part in parts:
+                      current = current.setdefault(part, {})
+              return tree
+
+          def render_tree(node, prefix=""):
+              lines = []
+              items = sorted(node.items())
+              for index, (name, children) in enumerate(items):
+                  last = index == len(items) - 1
+                  connector = "└── " if last else "├── "
+                  lines.append(prefix + connector + name)
+                  if children:
+                      next_prefix = prefix + ("    " if last else "│   ")
+                      lines.extend(render_tree(children, next_prefix))
+              return lines
+
+          extension_lines = [
+              f"- `{ext}`: {count}"
+              for ext, count in sorted(
+                  extensions.items(),
+                  key=lambda x: (-x[1], x[0])
+              )
+          ]
+          extensions_text = "\n".join(extension_lines)
+
+          def render_report(tree_text, note=""):
+              return f"""<!-- vpk-inspector-report -->
+          ## VPK Inspector
+
+          ### Directory structure
+
+          ```text
+          {tree_text}
+          ```
+          {note}
+          ### Extensions
+
+          {extensions_text}
+
+          **Total files:** {len(files)}
+          """
+
+          full_tree_text = "\n".join(render_tree(build_tree(files, include_files=True)))
+          full_report = render_report(full_tree_text)
+
+          if len(full_report) <= MAX_COMMENT_CHARS:
+              report = full_report
+              print(f"Full tree (with files) selected: {len(full_report)} characters")
+          else:
+              dirs_tree_text = "\n".join(render_tree(build_tree(files, include_files=False)))
+              note = "\n> Individual files are hidden because the full tree exceeds the GitHub comment size limit — showing directories only.\n\n"
+              report = render_report(dirs_tree_text, note)
+              print(f"Full tree too large ({len(full_report)} characters), falling back to directories-only: {len(report)} characters")
+
+          with open("vpk_report.md", "w", encoding="utf-8") as f:
+              f.write(report)
+
+          print(f"Final report size: {len(report)} characters")
+          print(f"Total VPK files: {len(files)}")
+          PY
+
+      - name: Post or Update PR Comment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          REPO="${{ github.repository }}"
+          COMMENT_ID=$(gh api \
+            "repos/$REPO/issues/$PR_NUMBER/comments" \
+            --paginate \
+            --jq '.[] | select(.body | contains("<!-- vpk-inspector-report -->")) | .id' \
+            | head -n 1 || true)
+
+          if [ -n "$COMMENT_ID" ]; then
+            echo "Updating existing VPK Inspector comment: $COMMENT_ID"
+            jq -Rs '{body: .}' vpk_report.md |
+              gh api \
+                --method PATCH \
+                "repos/$REPO/issues/comments/$COMMENT_ID" \
+                --input -
+          else
+            echo "Creating new VPK Inspector comment"
+            gh pr comment "$PR_NUMBER" \
+              --body-file vpk_report.md
+          fi
