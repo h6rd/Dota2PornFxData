@@ -1,0 +1,28 @@
+{
+  "id": "a926bc28",
+  "name": "manta",
+  "category": "heroes",
+  "heroName": "Anti-Mage",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "manta",
+  "zip": {
+    "path": "pending/a926bc28/manta.zip",
+    "sha": "37ee7be371647a41c212df90e544ad35c284c516",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a926bc28/manta.webp",
+    "sha": "eac911c6ef971dd89cbdd7f0bd0fda800eabf0bb",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1789935053010,
+  "ipFingerprint": "CTSQRXlkgV-314wwgpoE1fZt"
+}
