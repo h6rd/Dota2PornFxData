@@ -154,13 +154,27 @@ function randomSuffix() {
   return crypto.randomBytes(3).toString("hex");
 }
 
+function listTrackedPaths(mainDir, subpath) {
+  const res = spawnSync("git", ["-C", mainDir, "ls-tree", "-r", "--name-only", "HEAD", "--", subpath], {
+    encoding: "utf8",
+  });
+  if (res.error) throw res.error;
+  if (res.status !== 0) {
+    throw new Error(`git ls-tree failed for ${subpath}: ${res.stderr}`);
+  }
+  return new Set(res.stdout.split("\n").filter(Boolean));
+}
+
 function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt) {
   const MAX_ATTEMPTS = 25;
+  const existingZips = listTrackedPaths(mainDir, `assets/files/${category}`);
+  const existingPreviews = previewExt ? listTrackedPaths(mainDir, `assets/previews/${category}`) : new Set();
+
   let candidate = baseFilename;
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
-    const zipTaken = fs.existsSync(path.join(mainDir, `assets/files/${category}/${candidate}.zip`));
+    const zipTaken = existingZips.has(`assets/files/${category}/${candidate}.zip`);
     const previewTaken = previewExt
-      ? fs.existsSync(path.join(mainDir, `assets/previews/${category}/${candidate}.${previewExt}`))
+      ? existingPreviews.has(`assets/previews/${category}/${candidate}.${previewExt}`)
       : false;
     if (!zipTaken && !previewTaken) return candidate;
     candidate = `${baseFilename}-${randomSuffix()}`;
@@ -316,7 +330,7 @@ function attemptPublishPass(metaById) {
     writeJson(modsPath, mods);
     writeJson(constantsPath, constants);
     if (ledger.size !== ledgerSizeBefore || !fs.existsSync(ledgerPath())) writeLedger(ledger);
-    run(["git", "-C", MAIN_DIR, "add", "assets/files", "assets/previews", "assets/data/mods.json", "assets/data/constants.json", LEDGER_REL]);
+    run(["git", "-C", MAIN_DIR, "add", "--sparse", "assets/files", "assets/previews", "assets/data/mods.json", "assets/data/constants.json", LEDGER_REL]);
     if (gitHasStagedChanges(MAIN_DIR)) {
       const commitMsg = `chore: publish approved mod\n\n` +
         publishedIds.map((id) => `- ${id}`).join("\n");

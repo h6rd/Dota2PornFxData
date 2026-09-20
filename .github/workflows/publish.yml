@@ -43,6 +43,9 @@ jobs:
           token: ${{ steps.app_token.outputs.token }}
           path: main-repo
           fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            assets/data
 
       - name: Setup Node.js
         uses: actions/setup-node@v6

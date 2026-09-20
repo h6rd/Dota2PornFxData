@@ -55,6 +55,9 @@ jobs:
           token: ${{ steps.main_repo_token.outputs.token }}
           path: main-repo
           fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            assets/data
           persist-credentials: false
 
       - name: Setup Node.js
