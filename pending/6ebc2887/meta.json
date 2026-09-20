@@ -1,0 +1,32 @@
+{
+  "id": "6ebc2887",
+  "name": "Broodmother Immortal Antiquity",
+  "category": "heroes",
+  "heroName": "Broodmother",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/id/myasu0/"
+    }
+  ],
+  "filenameBase": "Broodmother Immortal Antiquity",
+  "zip": {
+    "path": "pending/6ebc2887/Broodmother Immortal Antiquity.zip",
+    "sha": "213e8cad00c4429427e72b07aa19f1221f0b6962",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6ebc2887/Broodmother Immortal Antiquity.webp",
+    "sha": "7e9bf7acd98dd1cbcf1288a46e2ec1ffc4e89ce6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1789927332146,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
