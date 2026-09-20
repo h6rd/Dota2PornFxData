@@ -44,21 +44,60 @@ jobs:
             exit 1
           fi
           echo "Found ZIP: $ZIP_FILE"
-          unzip -q "$ZIP_FILE" -d inspector-work/extracted
-          VPK_FILE=$(find inspector-work/extracted -type f \( -iname '*_dir.vpk' -o -iname '*.vpk' \) | head -n 1)
-          if [ -z "$VPK_FILE" ]; then
-            echo "No VPK file found inside ZIP"
-            exit 1
-          fi
-          echo "Found VPK: $VPK_FILE"
-          export VPK_FILE
+          export ZIP_FILE
           python <<'PY'
           import os
+          import re
+          import sys
+          import zipfile
           import vpk
 
-          vpk_file = os.environ["VPK_FILE"]
+          MAX_VPK_BYTES = 100 * 1024 * 1024
+          MAX_LIST_LINES = 200
+
+          def clean(value):
+              # Names come from an untrusted archive: keep them printable and unable to break out of a Markdown fence.
+              return "".join(ch for ch in str(value) if ch.isprintable() and ch not in "`~")
+
+          zip_file = os.environ["ZIP_FILE"]
+          with zipfile.ZipFile(zip_file) as zf:
+              file_infos = [i for i in zf.infolist() if not i.is_dir()]
+              unexpected = [i.filename for i in file_infos if not i.filename.lower().endswith(".vpk")]
+              if unexpected or len(file_infos) != 1:
+                  listing = "\n".join(clean(i.filename) for i in file_infos[:MAX_LIST_LINES]) or "(no files)"
+                  with open("vpk_report.md", "w", encoding="utf-8") as f:
+                      f.write(f"""<!-- vpk-inspector-report -->
+          ## VPK Inspector
+
+          ⚠️ **Rejected: the mod archive must contain exactly one `.vpk` file and nothing else.**
+
+          ~~~~~text
+          {listing}
+          ~~~~~
+          """)
+                  print("Archive content policy violated")
+                  sys.exit(1)
+
+              # Extract only the single .vpk, with a size cap (never trust declared sizes of an untrusted archive)
+              info = file_infos[0]
+              base = re.sub(r"[^A-Za-z0-9._-]", "_", os.path.basename(info.filename)) or "mod_dir.vpk"
+              os.makedirs("inspector-work/extracted", exist_ok=True)
+              vpk_file = os.path.join("inspector-work/extracted", base)
+              written = 0
+              with zf.open(info) as src, open(vpk_file, "wb") as dst:
+                  while True:
+                      chunk = src.read(1024 * 1024)
+                      if not chunk:
+                          break
+                      written += len(chunk)
+                      if written > MAX_VPK_BYTES:
+                          print("The .vpk inside the archive is larger than the inspector limit")
+                          sys.exit(1)
+                      dst.write(chunk)
+
+          print(f"Found VPK: {vpk_file}")
           archive = vpk.open(vpk_file)
-          files = sorted(archive)
+          files = sorted(clean(f) for f in archive)
           extensions = {}
 
           for path in files:
@@ -140,6 +179,7 @@ jobs:
           PY
 
       - name: Post or Update PR Comment
+        if: ${{ always() && hashFiles('vpk_report.md') != '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
