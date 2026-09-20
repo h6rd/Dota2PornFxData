@@ -4,7 +4,7 @@
   "category": "heroes",
   "heroName": "Pudge",
   "tags": {
-    "effects": true,
+    "effects": false,
     "icons": true
   },
   "links": [
