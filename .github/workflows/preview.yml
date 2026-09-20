@@ -1,0 +1,102 @@
+name: Publish preview
+
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: publish-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    if: >-
+      startsWith(github.event.pull_request.head.ref, 'submission/') &&
+      github.event.pull_request.head.repo.full_name == github.repository
+
+    steps:
+      - name: Checkout DATA repo (base branch - trusted scripts)
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: data-repo
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Checkout PR branch (pending/ only - untrusted data)
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: pr-data
+          fetch-depth: 1
+          sparse-checkout: pending
+          persist-credentials: false
+
+      - name: Mint read-only installation token for the main catalog repo
+        id: main_repo_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.MAIN_REPO_APP_ID }}
+          private-key: ${{ secrets.MAIN_REPO_APP_PRIVATE_KEY }}
+          owner: ${{ secrets.MAIN_REPO_OWNER }}
+          repositories: ${{ secrets.MAIN_REPO_NAME }}
+          permission-contents: read
+
+      - name: Checkout main catalog repo (read-only - nothing is pushed back)
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ secrets.MAIN_REPO_OWNER }}/${{ secrets.MAIN_REPO_NAME }}
+          token: ${{ steps.main_repo_token.outputs.token }}
+          path: main-repo
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ vars.NODE_VERSION || '24' }}
+
+      - name: Run preview script
+        working-directory: data-repo
+        env:
+          DATA_DIR: ../pr-data
+          MAIN_REPO_DIR: ../main-repo
+          ALLOWED_CATEGORIES: ${{ vars.ALLOWED_CATEGORIES }}
+          ALLOWED_HEROES: ${{ vars.ALLOWED_HEROES }}
+        run: node scripts/preview.js
+
+      - name: Post or update PR comment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          REPO="${{ github.repository }}"
+          REPORT_FILE="data-repo/preview_report.md"
+
+          COMMENT_ID=$(gh api \
+            "repos/$REPO/issues/$PR_NUMBER/comments" \
+            --paginate \
+            --jq '.[] | select(.body | contains("<!-- publish-preview-report -->")) | .id' \
+            | head -n 1 || true)
+
+          if [ -n "$COMMENT_ID" ]; then
+            echo "Updating existing preview comment: $COMMENT_ID"
+            jq -Rs '{body: .}' "$REPORT_FILE" |
+              gh api \
+                --method PATCH \
+                "repos/$REPO/issues/comments/$COMMENT_ID" \
+                --input -
+          else
+            echo "Creating new preview comment"
+            gh pr comment "$PR_NUMBER" \
+              --repo "$REPO" \
+              --body-file "$REPORT_FILE"
+          fi

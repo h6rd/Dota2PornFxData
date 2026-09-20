@@ -13,6 +13,15 @@ const MAX_URL_LEN = 300;
 const ALLOWED_CATEGORIES = splitList(process.env.ALLOWED_CATEGORIES);
 const ALLOWED_HEROES = splitList(process.env.ALLOWED_HEROES);
 
+const LINK_TYPE_TO_CONSTANT = {
+  author: "MOD_AUTHOR",
+  modded: "MOD_AUTHOR",
+  sender: "MOD_SENDER",
+  source: "MOD_SOURCES",
+};
+
+const LEDGER_REL = "assets/data/published-submissions.json";
+
 const MAX_PUBLISH_ATTEMPTS = 5;
 const PUSH_RETRY_BASE_DELAY_SECONDS = 3;
 
@@ -57,6 +66,21 @@ function writeJson(p, obj) {
   fs.writeFileSync(p, JSON.stringify(obj, null, 2) + "\n");
 }
 
+function ledgerPath() {
+  return path.join(MAIN_DIR, LEDGER_REL);
+}
+
+function readLedger() {
+  const p = ledgerPath();
+  if (!fs.existsSync(p)) return new Set();
+  const data = readJson(p);
+  return new Set(Array.isArray(data) ? data.filter((x) => typeof x === "string") : []);
+}
+
+function writeLedger(ledger) {
+  writeJson(ledgerPath(), [...ledger].sort());
+}
+
 function run(args) {
   console.log("$", args.join(" "));
   const res = spawnSync(args[0], args.slice(1), { stdio: "inherit" });
@@ -92,6 +116,28 @@ function sleepSeconds(seconds) {
   spawnSync("sleep", [String(seconds)]);
 }
 
+function pushDataRepoWithRetry(repoDir) {
+  for (let attempt = 1; attempt <= MAX_PUBLISH_ATTEMPTS; attempt++) {
+    console.log("$", `git -C ${repoDir} push`);
+    const res = spawnSync("git", ["-C", repoDir, "push"], { stdio: "inherit" });
+    if (res.error) throw res.error;
+    if (res.status === 0) return;
+
+    if (attempt === MAX_PUBLISH_ATTEMPTS) {
+      throw new Error(`Could not push cleanup commit to the DATA repo after ${MAX_PUBLISH_ATTEMPTS} attempts`);
+    }
+    const delay = PUSH_RETRY_BASE_DELAY_SECONDS * attempt;
+    console.warn(`Push to the DATA repo was rejected - rebasing onto remote and retrying after ${delay}s.`);
+    sleepSeconds(delay);
+    run([
+      "git", "-C", repoDir,
+      "-c", "user.name=github-actions[bot]",
+      "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com",
+      "pull", "--rebase"
+    ]);
+  }
+}
+
 function getCategoryModsArray(catData) {
   if (!catData) return [];
   if (Array.isArray(catData)) return catData;
@@ -122,7 +168,7 @@ function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt) 
   throw new ValidationError(`Could not find a free filename for "${baseFilename}" after ${MAX_ATTEMPTS} attempts`);
 }
 
-function publishOne(id, meta, constants, mods) {
+function publishOne(id, meta, constants, mods, ledger = new Set()) {
   assertField(
     typeof meta.name === "string" && /^[a-zA-Z0-9 \-_'.!,]+$/.test(meta.name) && meta.name.length <= MAX_NAME_LEN,
     "Invalid mod name"
@@ -135,8 +181,8 @@ function publishOne(id, meta, constants, mods) {
   }
   assertField(meta.zip && typeof meta.zip.path === "string", "Invalid submission archive");
 
-  if (isAlreadyPublishedSubmission(mods, meta.category, id)) {
-    throw new AlreadyPublishedError(`submission ${id} already has a published entry (matched by submission-id)`);
+  if (ledger.has(id) || isAlreadyPublishedSubmission(mods, meta.category, id)) {
+    throw new AlreadyPublishedError(`submission ${id} was already published`);
   }
 
   const baseFilename = sanitizeFilename(meta.name);
@@ -175,7 +221,7 @@ function publishOne(id, meta, constants, mods) {
     if (link.isNew) {
       assertField(typeof link.newAuthorUrl === "string" && link.newAuthorUrl.length <= MAX_URL_LEN, "Invalid link URL");
       if (link.newAuthorUrl) assertField(isSafeHttpsUrl(link.newAuthorUrl), "Link URL must be https://");
-      const map = link.type === "author" ? "MOD_AUTHOR" : link.type === "sender" ? "MOD_SENDER" : "MOD_SOURCES";
+      const map = LINK_TYPE_TO_CONSTANT[link.type];
       if (!constants[map]) constants[map] = {};
       if (!(link.url in constants[map])) constants[map][link.url] = link.newAuthorUrl || "";
     }
@@ -187,7 +233,7 @@ function publishOne(id, meta, constants, mods) {
     file: `${publishFilenameBase}.zip`,
     ...(meta.tags && Object.keys(meta.tags).length ? { tags: meta.tags } : {}),
     ...(finalLinks.length ? { links: finalLinks } : {}),
-    meta: { date: Math.floor(Date.now() / 1000), "commit-sha": "", "submission-id": id }
+    meta: { date: Math.floor(Date.now() / 1000), "commit-sha": "" }
   };
 
   if (!mods.modsData[meta.category]) mods.modsData[meta.category] = [];
@@ -216,6 +262,7 @@ function publishOne(id, meta, constants, mods) {
     fs.mkdirSync(path.dirname(finalPreviewAbs), { recursive: true });
     fs.copyFileSync(path.join(DATA_DIR, meta.preview.path), finalPreviewAbs);
   }
+  ledger.add(id);
 }
 
 function loadPendingMetas(ids) {
@@ -242,18 +289,21 @@ function attemptPublishPass(metaById) {
   const modsPath = path.join(MAIN_DIR, "assets/data/mods.json");
   const constants = readJson(constantsPath);
   const mods = readJson(modsPath);
+  const ledger = readLedger();
+  const ledgerSizeBefore = ledger.size;
 
   const publishedIds = [];
   const failedIds = [];
 
   for (const [id, meta] of metaById) {
     try {
-      publishOne(id, meta, constants, mods);
+      publishOne(id, meta, constants, mods, ledger);
       console.log(`published ${id} (${meta.name})`);
       publishedIds.push(id);
     } catch (err) {
       if (err instanceof AlreadyPublishedError) {
         console.log(`${id}: ${err.message} - treating as already published, will clean up pending/`);
+        ledger.add(id);
         publishedIds.push(id);
       } else {
         console.error(`FAILED to publish ${id} (${meta.name || "?"}):`, err.message);
@@ -265,9 +315,10 @@ function attemptPublishPass(metaById) {
   if (publishedIds.length > 0) {
     writeJson(modsPath, mods);
     writeJson(constantsPath, constants);
-    run(["git", "-C", MAIN_DIR, "add", "assets/files", "assets/previews", "assets/data/mods.json", "assets/data/constants.json"]);
+    if (ledger.size !== ledgerSizeBefore || !fs.existsSync(ledgerPath())) writeLedger(ledger);
+    run(["git", "-C", MAIN_DIR, "add", "assets/files", "assets/previews", "assets/data/mods.json", "assets/data/constants.json", LEDGER_REL]);
     if (gitHasStagedChanges(MAIN_DIR)) {
-      const commitMsg = `chore: publish ${publishedIds.length} approved mod\n\n` +
+      const commitMsg = `chore: publish approved mod\n\n` +
         publishedIds.map((id) => `- ${id}`).join("\n");
       run([
         "git", "-C", MAIN_DIR,
@@ -360,7 +411,7 @@ function main() {
         "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com",
         "commit", "-m", cleanupMsg
       ]);
-      run(["git", "-C", DATA_DIR, "push"]);
+      pushDataRepoWithRetry(DATA_DIR);
     }
   } else {
     console.log("Nothing to publish to the main repo.");
@@ -375,4 +426,19 @@ function main() {
   }
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  DATA_DIR,
+  MAIN_DIR,
+  PENDING_DIR,
+  ValidationError,
+  AlreadyPublishedError,
+  readJson,
+  writeJson,
+  readLedger,
+  loadPendingMetas,
+  publishOne,
+};

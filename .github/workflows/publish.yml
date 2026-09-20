@@ -6,38 +6,41 @@ on:
       - main
     paths:
       - 'pending/**'
+  workflow_dispatch:
 
 concurrency:
   group: publish-to-main
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     steps:
-      - name: Checkout DATA repo
-        uses: actions/checkout@v6
-        with:
-          path: data-repo
-          fetch-depth: 1
-
-      - name: Mint installation token for the main catalog repo (GitHub App)
-        id: main_repo_token
+      - name: Mint installation token (GitHub App)
+        id: app_token
         uses: actions/create-github-app-token@v1
         with:
           app-id: ${{ secrets.MAIN_REPO_APP_ID }}
           private-key: ${{ secrets.MAIN_REPO_APP_PRIVATE_KEY }}
           owner: ${{ secrets.MAIN_REPO_OWNER }}
-          repositories: ${{ secrets.MAIN_REPO_NAME }}
+          repositories: ${{ secrets.MAIN_REPO_NAME }},${{ github.event.repository.name }}
+
+      - name: Checkout DATA repo
+        uses: actions/checkout@v6
+        with:
+          path: data-repo
+          fetch-depth: 1
+          token: ${{ steps.app_token.outputs.token }}
 
       - name: Checkout main catalog repo
         uses: actions/checkout@v6
         with:
           repository: ${{ secrets.MAIN_REPO_OWNER }}/${{ secrets.MAIN_REPO_NAME }}
-          token: ${{ steps.main_repo_token.outputs.token }}
+          token: ${{ steps.app_token.outputs.token }}
           path: main-repo
           fetch-depth: 1
 
