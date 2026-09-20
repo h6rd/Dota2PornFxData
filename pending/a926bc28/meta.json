@@ -1,6 +1,6 @@
 {
   "id": "a926bc28",
-  "name": "manta",
+  "name": "Anti-Mage Manta",
   "category": "heroes",
   "heroName": "Anti-Mage",
   "tags": {},
@@ -11,14 +11,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "manta",
+  "filenameBase": "Anti-Mage Manta",
   "zip": {
-    "path": "pending/a926bc28/manta.zip",
+    "path": "pending/a926bc28/Anti-Mage Manta.zip",
     "sha": "37ee7be371647a41c212df90e544ad35c284c516",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/a926bc28/manta.webp",
+    "path": "pending/a926bc28/Anti-Mage Manta.webp",
     "sha": "eac911c6ef971dd89cbdd7f0bd0fda800eabf0bb",
     "ext": "webp"
   },
