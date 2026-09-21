@@ -1,0 +1,30 @@
+{
+  "id": "49d3d7d2",
+  "name": "Chaos Knight Unities Of Discord",
+  "category": "heroes",
+  "heroName": "Chaos Knight",
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Chaos Knight Unities Of Discord",
+  "zip": {
+    "path": "pending/49d3d7d2/Chaos Knight Unities Of Discord.zip",
+    "sha": "b05b307575b8135445e86403c38e781b4b291379",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/49d3d7d2/Chaos Knight Unities Of Discord.webp",
+    "sha": "3da72949b6a69619a7d7e30ff7fd51103db10f75",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1789948707127,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
