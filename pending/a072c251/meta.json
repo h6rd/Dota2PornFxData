@@ -1,0 +1,28 @@
+{
+  "id": "a072c251",
+  "name": "Windranger Papizi",
+  "category": "heroes",
+  "heroName": "Windranger",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Windranger Papizi",
+  "zip": {
+    "path": "pending/a072c251/Windranger Papizi.zip",
+    "sha": "4aa9b422a10d42574c0c2c34a84e85cce992bcd3",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a072c251/Windranger Papizi.webp",
+    "sha": "35bdcf3d26c92b8494f1aa8ba30bdb059c249ef9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790005330786,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
