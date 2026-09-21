@@ -1,6 +1,6 @@
 {
   "id": "c7025c10",
-  "name": "Pangolier Tales Of The Windward Rogue",
+  "name": "Pangolier Windward Rogue",
   "category": "heroes",
   "heroName": "Pangolier",
   "tags": {},
@@ -11,14 +11,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Pangolier Tales Of The Windward Rogue",
+  "filenameBase": "Pangolier Windward Rogue",
   "zip": {
-    "path": "pending/c7025c10/Pangolier Tales Of The Windward Rogue.zip",
+    "path": "pending/c7025c10/Pangolier Windward Rogue.zip",
     "sha": "f7ce698113461ab521e37ef951c8b28622721798",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/c7025c10/Pangolier Tales Of The Windward Rogue.webp",
+    "path": "pending/c7025c10/Pangolier Windward Rogue.webp",
     "sha": "5d8878ff7e0593496b323292945a27e89efe7e0b",
     "ext": "webp"
   },
