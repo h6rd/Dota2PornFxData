@@ -1,6 +1,6 @@
 {
   "id": "49d3d7d2",
-  "name": "Unities Of Discord",
+  "name": "Chaos Knight Unities Of Discord",
   "category": "heroes",
   "heroName": "Chaos Knight",
   "tags": {
@@ -13,14 +13,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Unities Of Discord",
+  "filenameBase": "Chaos Knight Unities Of Discord",
   "zip": {
-    "path": "pending/49d3d7d2/Unities Of Discord.zip",
+    "path": "pending/49d3d7d2/Chaos Knight Unities Of Discord.zip",
     "sha": "b05b307575b8135445e86403c38e781b4b291379",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/49d3d7d2/Unities Of Discord.webp",
+    "path": "pending/49d3d7d2/Chaos Knight Unities Of Discord.webp",
     "sha": "3da72949b6a69619a7d7e30ff7fd51103db10f75",
     "ext": "webp"
   },
