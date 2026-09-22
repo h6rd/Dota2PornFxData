@@ -1,0 +1,28 @@
+{
+  "id": "d7b6d4cd",
+  "name": "Pudge Abberant Observer",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Abberant Observer",
+  "zip": {
+    "path": "pending/d7b6d4cd/Pudge Abberant Observer.zip",
+    "sha": "8d5ace4471afea813bb8864cc31a6dce0a5f12ec",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d7b6d4cd/Pudge Abberant Observer.webp",
+    "sha": "1e9fec0617a7fcf1ecea245e8e101638136b3ad9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790089033914,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
