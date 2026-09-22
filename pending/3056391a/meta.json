@@ -1,6 +1,6 @@
 {
   "id": "3056391a",
-  "name": "Voidstorm Asylum",
+  "name": "Razor Voidstorm Asylum",
   "category": "heroes",
   "heroName": "Razor",
   "tags": {
@@ -19,14 +19,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Voidstorm Asylum",
+  "filenameBase": "Razor Voidstorm Asylum",
   "zip": {
-    "path": "pending/3056391a/Voidstorm Asylum.zip",
+    "path": "pending/3056391a/Razor Voidstorm Asylum.zip",
     "sha": "f61ddd27cd0aa092fb9a0367ea26f71e005c1bf0",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/3056391a/Voidstorm Asylum.webp",
+    "path": "pending/3056391a/Razor Voidstorm Asylum.webp",
     "sha": "013e2341879aca392980e57d882d31ab719843aa",
     "ext": "webp"
   },
