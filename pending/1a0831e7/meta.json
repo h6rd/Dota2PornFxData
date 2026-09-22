@@ -1,0 +1,28 @@
+{
+  "id": "1a0831e7",
+  "name": "Courier Greevil",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Courier Greevil",
+  "zip": {
+    "path": "pending/1a0831e7/Courier Greevil.zip",
+    "sha": "a284ed836957992aefe6409f31c514ddab3db339",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1a0831e7/Courier Greevil.webp",
+    "sha": "fbbd5197faa488529df497319a4ea69f23a0f4d6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790069451411,
+  "ipFingerprint": "naQgyv94Iko7kllY6L7k3Qjn"
+}
