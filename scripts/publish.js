@@ -8,10 +8,34 @@ const MAIN_DIR = process.env.MAIN_REPO_DIR || "../main-repo";
 const PENDING_DIR = path.join(DATA_DIR, "pending");
 
 const MAX_NAME_LEN = 80;
+const MAX_MOD_NAME_LEN = 30;
+
+const NAME_LENGTH_EXCEPTIONS = new Map([
+  ["keeper of the light", 40],
+  ["natures prophet", 40],
+]);
+
+function getMaxModNameLen(heroName) {
+  const override = NAME_LENGTH_EXCEPTIONS.get(String(heroName || "").trim().toLowerCase());
+  return override || MAX_MOD_NAME_LEN;
+}
 const MAX_TEXT_FIELD_LEN = 150;
 const MAX_URL_LEN = 300;
 const ALLOWED_CATEGORIES = splitList(process.env.ALLOWED_CATEGORIES);
 const ALLOWED_HEROES = splitList(process.env.ALLOWED_HEROES);
+
+const PREVIEW_VIDEO_CATEGORIES = new Set(["sounds", "hero-sounds", "huds", "ti-bp-effects"]);
+const YOUTUBE_HOST_RE = /^(m\.|www\.|music\.)?youtube\.com$|^youtu\.be$/i;
+
+function isYouTubeUrl(str) {
+  if (!str || str.length > MAX_URL_LEN) return false;
+  try {
+    const u = new URL(str);
+    return u.protocol === "https:" && YOUTUBE_HOST_RE.test(u.hostname);
+  } catch {
+    return false;
+  }
+}
 
 const LINK_TYPE_TO_CONSTANT = {
   author: "MOD_AUTHOR",
@@ -184,7 +208,8 @@ function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt) 
 
 function publishOne(id, meta, constants, mods, ledger = new Set()) {
   assertField(
-    typeof meta.name === "string" && /^[a-zA-Z0-9 \-_'.!,]+$/.test(meta.name) && meta.name.length <= MAX_NAME_LEN,
+    typeof meta.name === "string" && /^[a-zA-Z0-9 \-_'.!,]+$/.test(meta.name) &&
+      meta.name.length <= getMaxModNameLen(meta.heroName),
     "Invalid mod name"
   );
   assertField(typeof meta.category === "string" && /^[a-z0-9-]+$/.test(meta.category), "Invalid category");
@@ -229,8 +254,14 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
 
   const finalLinks = [];
   for (const link of meta.links || []) {
-    assertField(link && ["author", "sender", "source", "modded"].includes(link.type), "Invalid link type");
+    assertField(link && ["author", "sender", "source", "modded", "preview"].includes(link.type), "Invalid link type");
     assertField(typeof link.url === "string" && link.url.length <= MAX_TEXT_FIELD_LEN, "Invalid link");
+    if (link.type === "preview") {
+      assertField(PREVIEW_VIDEO_CATEGORIES.has(meta.category), "This category does not accept a preview video");
+      assertField(isYouTubeUrl(link.url), "Preview video must be a youtube.com / youtu.be link");
+      finalLinks.push({ type: link.type, url: link.url });
+      continue;
+    }
     finalLinks.push({ type: link.type, url: link.url });
     if (link.isNew) {
       assertField(typeof link.newAuthorUrl === "string" && link.newAuthorUrl.length <= MAX_URL_LEN, "Invalid link URL");
