@@ -1,6 +1,6 @@
 {
   "id": "f34ec8d9",
-  "name": "Immortal",
+  "name": "Clockwerk Immortal",
   "category": "heroes",
   "heroName": "Clockwerk",
   "tags": {
@@ -14,14 +14,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Immortal",
+  "filenameBase": "Clockwerk Immortal",
   "zip": {
-    "path": "pending/f34ec8d9/Immortal.zip",
+    "path": "pending/f34ec8d9/Clockwerk Immortal.zip",
     "sha": "527164cf776961969d594b574a20a7b08dc7a8a0",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/f34ec8d9/Immortal.webp",
+    "path": "pending/f34ec8d9/Clockwerk Immortal.webp",
     "sha": "756846ca1d4d85e309531b976580cfafb59daea2",
     "ext": "webp"
   },
