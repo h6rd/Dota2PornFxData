@@ -1,0 +1,31 @@
+{
+  "id": "f34ec8d9",
+  "name": "Clockwerk Immortal",
+  "category": "heroes",
+  "heroName": "Clockwerk",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "3atvorn1k",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Clockwerk Immortal",
+  "zip": {
+    "path": "pending/f34ec8d9/Clockwerk Immortal.zip",
+    "sha": "527164cf776961969d594b574a20a7b08dc7a8a0",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f34ec8d9/Clockwerk Immortal.webp",
+    "sha": "756846ca1d4d85e309531b976580cfafb59daea2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790191881249,
+  "ipFingerprint": "ECdVX6jZyLaA_LFf7Da6yl_t"
+}
