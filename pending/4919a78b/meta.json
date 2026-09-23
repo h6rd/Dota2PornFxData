@@ -1,0 +1,28 @@
+{
+  "id": "4919a78b",
+  "name": "Princess Naga Siren",
+  "category": "heroes",
+  "heroName": "Naga Siren",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "depex",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Princess Naga Siren",
+  "zip": {
+    "path": "pending/4919a78b/Princess Naga Siren.zip",
+    "sha": "618bf65a39b4726dca4ca0d6a861794a4ac99a5f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4919a78b/Princess Naga Siren.webp",
+    "sha": "08d4d3a06d2495eee6a88a448407b1258880e663",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790201310784,
+  "ipFingerprint": "fL0x5Hd5rWiynM_PQYThyCR9"
+}
