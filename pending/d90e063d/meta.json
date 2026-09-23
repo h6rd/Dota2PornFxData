@@ -1,0 +1,31 @@
+{
+  "id": "d90e063d",
+  "name": "Razor Stormlord Reborn",
+  "category": "heroes",
+  "heroName": "Razor",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Razor Stormlord Reborn",
+  "zip": {
+    "path": "pending/d90e063d/Razor Stormlord Reborn.zip",
+    "sha": "1f44b37fdb2cc67cfa075f963b365e7b12c6cb67",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d90e063d/Razor Stormlord Reborn.webp",
+    "sha": "55306d552c99a014276f6a95adc466db2e080ed0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790160281237,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
