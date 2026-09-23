@@ -1,0 +1,31 @@
+{
+  "id": "74b69eaf",
+  "name": "Drow Ranger Master Of Madness",
+  "category": "heroes",
+  "heroName": "Drow Ranger",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Drow Ranger Master Of Madness",
+  "zip": {
+    "path": "pending/74b69eaf/Drow Ranger Master Of Madness.zip",
+    "sha": "3f8b4d7732ac39acdabcd8359ea21c6395ca1b69",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/74b69eaf/Drow Ranger Master Of Madness.webp",
+    "sha": "96597e8a2c1d6ac61b53394780d17569d1ddbacc",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790190653973,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
