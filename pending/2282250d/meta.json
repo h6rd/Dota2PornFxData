@@ -1,0 +1,32 @@
+{
+  "id": "2282250d",
+  "name": "Phantom Lancer Concord Revers",
+  "category": "hero-items",
+  "heroName": "Phantom Lancer",
+  "tags": {
+    "head": true,
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Phantom Lancer Concord Revers",
+  "zip": {
+    "path": "pending/2282250d/Phantom Lancer Concord Revers.zip",
+    "sha": "936ea2dbdbce4bcae1d371206e7186d3d734fe3b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2282250d/Phantom Lancer Concord Revers.webp",
+    "sha": "30af8fec247e925bdd077675ae4e10bafeda6e27",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790216198906,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
