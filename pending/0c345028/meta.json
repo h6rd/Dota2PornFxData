@@ -1,0 +1,30 @@
+{
+  "id": "0c345028",
+  "name": "Batrider Verna Frostbloom",
+  "category": "hero-items",
+  "heroName": "Batrider",
+  "tags": {
+    "mount": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Batrider Verna Frostbloom",
+  "zip": {
+    "path": "pending/0c345028/Batrider Verna Frostbloom.zip",
+    "sha": "5f07245f8029a912fefb192ecf611f10f52fa54e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0c345028/Batrider Verna Frostbloom.webp",
+    "sha": "2ae5ed87940c3a42dbee84e8de3ccba2f3f7096d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790238475530,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
