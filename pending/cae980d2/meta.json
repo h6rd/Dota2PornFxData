@@ -1,0 +1,28 @@
+{
+  "id": "cae980d2",
+  "name": "Anti-Mage Forgotten Planes",
+  "category": "heroes",
+  "heroName": "Anti-Mage",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Anti-Mage Forgotten Planes",
+  "zip": {
+    "path": "pending/cae980d2/Anti-Mage Forgotten Planes.zip",
+    "sha": "3beb42fba2ffe4a263ab38232e9f6b32921fbf19",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/cae980d2/Anti-Mage Forgotten Planes.webp",
+    "sha": "49321cb664a58d60f82d2e58ef49225da5d19287",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790287558694,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
