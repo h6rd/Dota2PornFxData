@@ -65,9 +65,23 @@ jobs:
         with:
           node-version: ${{ vars.NODE_VERSION || '24' }}
 
+      - name: List submission ids changed in this PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate --jq '.[] | select(.status != "removed") | .filename' \
+            | sed -n 's#^pending/\([A-Za-z0-9._-]*\)/.*#\1#p' \
+            | sort -u > "$RUNNER_TEMP/pr-ids.txt"
+          echo "Submissions in this PR:"
+          cat "$RUNNER_TEMP/pr-ids.txt"
+
       - name: Run preview script
         working-directory: data-repo
         env:
+          PR_IDS_FILE: ${{ runner.temp }}/pr-ids.txt
           DATA_DIR: ../pr-data
           MAIN_REPO_DIR: ../main-repo
           ALLOWED_CATEGORIES: ${{ vars.ALLOWED_CATEGORIES }}

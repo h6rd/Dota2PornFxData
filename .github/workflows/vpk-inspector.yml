@@ -35,12 +35,16 @@ jobs:
 
       - name: Find and inspect VPK
         shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           mkdir -p inspector-work
-          ZIP_FILE=$(find pending -type f -iname '*.zip' | head -n 1)
-          if [ -z "$ZIP_FILE" ]; then
-            echo "No ZIP file found in pending/"
+          ZIP_FILE=$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate --jq '.[] | select(.status != "removed") | .filename' \
+            | grep -iE '^pending/[^/]+/[^/]+\.zip$' | head -n 1 || true)
+          if [ -z "$ZIP_FILE" ] || [ ! -f "$ZIP_FILE" ]; then
+            echo "No ZIP file added by this PR found in pending/"
             exit 1
           fi
           echo "Found ZIP: $ZIP_FILE"

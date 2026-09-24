@@ -1,12 +1,9 @@
 name: Publish approved mods to main repo
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'pending/**'
   workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
 
 concurrency:
   group: publish-to-main
@@ -36,7 +33,21 @@ jobs:
           fetch-depth: 1
           token: ${{ steps.app_token.outputs.token }}
 
+      - name: Skip if nothing pending
+        id: pending
+        working-directory: data-repo
+        run: |
+          if [ -d pending ] && [ -n "$(find pending -mindepth 1 -maxdepth 1 -type d 2>/dev/null)" ]; then
+            count=$(find pending -mindepth 1 -maxdepth 1 -type d | wc -l)
+            echo "Found $count submission(s) waiting in pending/."
+            echo "has_pending=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "pending/ is empty - nothing to do, skipping the rest of this run."
+            echo "has_pending=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Checkout main catalog repo
+        if: steps.pending.outputs.has_pending == 'true'
         uses: actions/checkout@v6
         with:
           repository: ${{ secrets.MAIN_REPO_OWNER }}/${{ secrets.MAIN_REPO_NAME }}
@@ -48,11 +59,14 @@ jobs:
             assets/data
 
       - name: Setup Node.js
+        if: steps.pending.outputs.has_pending == 'true'
         uses: actions/setup-node@v6
         with:
           node-version: ${{ vars.NODE_VERSION || '24' }}
 
       - name: Run publish script
+        if: steps.pending.outputs.has_pending == 'true'
+        id: publish
         working-directory: data-repo
         env:
           DATA_DIR: .
@@ -62,13 +76,14 @@ jobs:
         run: node scripts/publish.js
 
       - name: Notify Discord (published)
-        if: success()
+        if: ${{ !cancelled() && steps.pending.outputs.has_pending == 'true' && steps.publish.outputs.published_count > 0 }}
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          COUNT: ${{ steps.publish.outputs.published_count }}
         run: |
           if [ -n "$DISCORD_WEBHOOK_URL" ]; then
             curl -sf -X POST -H "Content-Type: application/json" \
-              -d '{"content":"\ud83d\ude80 Published approved submission(s) to the main catalog repository."}' \
+              -d "{\"content\":\"\ud83d\ude80 Published $COUNT approved submission(s) to the main catalog repository.\"}" \
               "$DISCORD_WEBHOOK_URL" || true
           fi
 

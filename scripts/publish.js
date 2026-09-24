@@ -196,9 +196,11 @@ function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt) 
 
   let candidate = baseFilename;
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
-    const zipTaken = existingZips.has(`assets/files/${category}/${candidate}.zip`);
-    const previewTaken = previewExt
-      ? existingPreviews.has(`assets/previews/${category}/${candidate}.${previewExt}`)
+    const zipRel = `assets/files/${category}/${candidate}.zip`;
+    const previewRel = previewExt ? `assets/previews/${category}/${candidate}.${previewExt}` : null;
+    const zipTaken = existingZips.has(zipRel) || fs.existsSync(path.join(mainDir, zipRel));
+    const previewTaken = previewRel
+      ? existingPreviews.has(previewRel) || fs.existsSync(path.join(mainDir, previewRel))
       : false;
     if (!zipTaken && !previewTaken) return candidate;
     candidate = `${baseFilename}-${randomSuffix()}`;
@@ -286,7 +288,10 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   if (catData && typeof catData === "object" && Array.isArray(catData.groups)) {
     const groupName = meta.heroName || "Misc";
     const groupId = slugify(groupName);
-    let group = catData.groups.find((g) => g.id === groupId);
+    const groupNameLc = groupName.trim().toLowerCase();
+    let group =
+      catData.groups.find((g) => g.id === groupId) ||
+      catData.groups.find((g) => typeof g.name === "string" && g.name.trim().toLowerCase() === groupNameLc);
     if (!group) {
       group = { id: groupId, name: groupName, mods: [] };
       catData.groups.push(group);
@@ -421,14 +426,25 @@ function publishToMainWithRetry(metaById) {
   return lastResult;
 }
 
+function writeActionsOutput(name, value) {
+  const outFile = process.env.GITHUB_OUTPUT;
+  if (!outFile) return;
+  try {
+    fs.appendFileSync(outFile, `${name}=${value}\n`);
+  } catch {
+  }
+}
+
 function main() {
   if (!fs.existsSync(PENDING_DIR)) {
     console.log("No pending/ directory in the DATA repo checkout - nothing to publish.");
+    writeActionsOutput("published_count", 0);
     return;
   }
   const ids = fs.readdirSync(PENDING_DIR).filter((f) => fs.statSync(path.join(PENDING_DIR, f)).isDirectory());
   if (ids.length === 0) {
     console.log("pending/ is empty - nothing to publish.");
+    writeActionsOutput("published_count", 0);
     return;
   }
 
@@ -441,6 +457,8 @@ function main() {
     publishedIds = result.publishedIds;
     failedIds.push(...result.failedIds);
   }
+
+  writeActionsOutput("published_count", publishedIds.length);
 
   if (publishedIds.length > 0) {
     for (const id of publishedIds) {
