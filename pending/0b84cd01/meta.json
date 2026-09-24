@@ -1,0 +1,31 @@
+{
+  "id": "0b84cd01",
+  "name": "Immortal Crimson Dark Willow",
+  "category": "heroes",
+  "heroName": "Dark Willow",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Immortal Crimson Dark Willow",
+  "zip": {
+    "path": "pending/0b84cd01/Immortal Crimson Dark Willow.zip",
+    "sha": "98fb72db4e72f4dd3edd9bdcdbd4372cb633fcf2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0b84cd01/Immortal Crimson Dark Willow.webp",
+    "sha": "890fc12f681b21898d8e19d78ff4240f5e6800de",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790247277372,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
