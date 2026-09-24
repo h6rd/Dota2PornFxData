@@ -1,0 +1,31 @@
+{
+  "id": "997c5561",
+  "name": "Mars Crimson Set",
+  "category": "heroes",
+  "heroName": "Mars",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Mars Crimson Set",
+  "zip": {
+    "path": "pending/997c5561/Mars Crimson Set.zip",
+    "sha": "b317204e28052513612ddc82341d69e5583a308b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/997c5561/Mars Crimson Set.webp",
+    "sha": "96e5d6475557d9e4c2dfe2433918563a9a980fa2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790212705215,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
