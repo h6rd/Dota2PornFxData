@@ -1,0 +1,31 @@
+{
+  "id": "ce0e46b8",
+  "name": "Vengeful Spirit Queen Imperia",
+  "category": "heroes",
+  "heroName": "Vengeful Spirit",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Vengeful Spirit Queen Imperia",
+  "zip": {
+    "path": "pending/ce0e46b8/Vengeful Spirit Queen Imperia.zip",
+    "sha": "6d78d328d4efaf4732fdbb838dad67e40aa10087",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ce0e46b8/Vengeful Spirit Queen Imperia.webp",
+    "sha": "fffacf0865241f2a86149e5947d05b544f383933",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790269034942,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
