@@ -1,0 +1,31 @@
+{
+  "id": "4c33fe98",
+  "name": "Windranger Compass Rising Gale",
+  "category": "heroes",
+  "heroName": "Windranger",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Windranger Compass Rising Gale",
+  "zip": {
+    "path": "pending/4c33fe98/Windranger Compass Rising Gale.zip",
+    "sha": "e111cfcf9b8a28a7afee80b2a03c88fade5697ea",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4c33fe98/Windranger Compass Rising Gale.webp",
+    "sha": "ad553558c6d95517b187e94059facb09d0037001",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790280896280,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
