@@ -1,0 +1,28 @@
+{
+  "id": "bc16620b",
+  "name": "Battle Icons",
+  "category": "ranks",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Battle Icons",
+  "zip": {
+    "path": "pending/bc16620b/Battle Icons.zip",
+    "sha": "18a9c4ed85dfd9498bb79dd56b8e7e8b7037bc38",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/bc16620b/Battle Icons.webp",
+    "sha": "9e157c470365bf7f5439177e48f17b9235ebe644",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790254031851,
+  "ipFingerprint": "12o8UQVchOSZAq50Ki9LjAOd"
+}
