@@ -1,0 +1,30 @@
+{
+  "id": "a1a7dfc4",
+  "name": "Terrorblade Wings Foulfell",
+  "category": "hero-items",
+  "heroName": "Terrorblade",
+  "tags": {
+    "back": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Wings Foulfell",
+  "zip": {
+    "path": "pending/a1a7dfc4/Terrorblade Wings Foulfell.zip",
+    "sha": "3b501744aab6c72be20032d0bbe05f4b6c3fe16a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a1a7dfc4/Terrorblade Wings Foulfell.webp",
+    "sha": "3e00bc3b61ce3f4878e67e2515953c8cb1f6abbc",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790281410130,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
