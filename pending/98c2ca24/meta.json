@@ -1,0 +1,35 @@
+{
+  "id": "98c2ca24",
+  "name": "Terrorblade Arcana White",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "depex",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Arcana White",
+  "zip": {
+    "path": "pending/98c2ca24/Terrorblade Arcana White.zip",
+    "sha": "2be019c066e5f636e203ccdc256d96f76c40f501",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/98c2ca24/Terrorblade Arcana White.webp",
+    "sha": "e0d79a05f308fc66c0b7727f33b0d483a971821e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790264373018,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
