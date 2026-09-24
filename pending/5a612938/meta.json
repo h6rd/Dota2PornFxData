@@ -1,0 +1,31 @@
+{
+  "id": "5a612938",
+  "name": "Rubick Caloedick Mage",
+  "category": "heroes",
+  "heroName": "Rubick",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Rubick Caloedick Mage",
+  "zip": {
+    "path": "pending/5a612938/Rubick Caloedick Mage.zip",
+    "sha": "5d8b235cd4a9514e03e2371a3085fc9d9a33cbe1",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5a612938/Rubick Caloedick Mage.webp",
+    "sha": "c9b9ce7bdcc552436df8d4ec5844df8cc9917b39",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790264450445,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
