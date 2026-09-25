@@ -1,0 +1,31 @@
+{
+  "id": "b43f4086",
+  "name": "Morphling Blade Of Tears",
+  "category": "heroes",
+  "heroName": "Morphling",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "3atvorn1k",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Morphling Blade Of Tears",
+  "zip": {
+    "path": "pending/b43f4086/Morphling Blade Of Tears.zip",
+    "sha": "d61c45e1d2a56bf9cb76002564a2a27b4f6c7f6f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b43f4086/Morphling Blade Of Tears.webp",
+    "sha": "2eef6691d6b8593eecdccbbcf5c5bb419ea5dc74",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790335472526,
+  "ipFingerprint": "13v_YHNTAcdGmTOnTWxj5E-l"
+}
