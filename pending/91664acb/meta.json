@@ -1,0 +1,31 @@
+{
+  "id": "91664acb",
+  "name": "Pudge Feast Immortal",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Feast Immortal",
+  "zip": {
+    "path": "pending/91664acb/Pudge Feast Immortal.zip",
+    "sha": "07969f6ce17836bdc437d63d2e32fa962b86b802",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/91664acb/Pudge Feast Immortal.webp",
+    "sha": "6f7cd1de7922cf26f6b6d012e9b627d8eb4b8a52",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790378994118,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
