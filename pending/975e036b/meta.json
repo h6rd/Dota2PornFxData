@@ -1,0 +1,31 @@
+{
+  "id": "975e036b",
+  "name": "Visage Straxoebina",
+  "category": "heroes",
+  "heroName": "Visage",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Visage Straxoebina",
+  "zip": {
+    "path": "pending/975e036b/Visage Straxoebina.zip",
+    "sha": "c694f47e59eb28b5e44a239d08d1ab6958bcf972",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/975e036b/Visage Straxoebina.webp",
+    "sha": "73aea41be92d5c3ce612af3d0d49706e70aec6a5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790345876232,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
