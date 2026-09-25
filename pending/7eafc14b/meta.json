@@ -1,0 +1,31 @@
+{
+  "id": "7eafc14b",
+  "name": "Pudge Abscession Immortal",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Abscession Immortal",
+  "zip": {
+    "path": "pending/7eafc14b/Pudge Abscession Immortal.zip",
+    "sha": "fc7d54832318a8a9fa95a773562f5af4a8bfa08b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7eafc14b/Pudge Abscession Immortal.webp",
+    "sha": "f45d79a7925dd704cb76bebf0156a2ee7f532587",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790370598125,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
