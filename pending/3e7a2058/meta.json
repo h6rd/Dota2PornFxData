@@ -1,0 +1,31 @@
+{
+  "id": "3e7a2058",
+  "name": "Pudge Grand Abscession",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Grand Abscession",
+  "zip": {
+    "path": "pending/3e7a2058/Pudge Grand Abscession.zip",
+    "sha": "5ebe7ac005feeffa5fcac124e6437628922e4e2a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3e7a2058/Pudge Grand Abscession.webp",
+    "sha": "fe9067c5af58c31280bc03b3af2399a74fce3d8b",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790370260679,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
