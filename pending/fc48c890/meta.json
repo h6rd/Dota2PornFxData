@@ -1,0 +1,28 @@
+{
+  "id": "fc48c890",
+  "name": "Pedestal Grand Abscession",
+  "category": "pedestal",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pedestal Grand Abscession",
+  "zip": {
+    "path": "pending/fc48c890/Pedestal Grand Abscession.zip",
+    "sha": "ccef892e89c904f1e6f5ae168802d3f437f9189c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fc48c890/Pedestal Grand Abscession.webp",
+    "sha": "ea5d29a93c43ed155557bdb69f838d5c55b98208",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790370719898,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
