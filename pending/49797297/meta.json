@@ -1,0 +1,28 @@
+{
+  "id": "49797297",
+  "name": "Dragon Knight Fire",
+  "category": "heroes",
+  "heroName": "Dragon Knight",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Dragon Knight Fire",
+  "zip": {
+    "path": "pending/49797297/Dragon Knight Fire.zip",
+    "sha": "1d1723a40ec7b24a2af2ad13a8decfcb6c79d816",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/49797297/Dragon Knight Fire.webp",
+    "sha": "973df43567ab094fe7d456ff796dff5c362798a5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790338426425,
+  "ipFingerprint": "i4_TwT3JQvnHEVy_oxaemcDG"
+}
