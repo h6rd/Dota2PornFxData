@@ -1,0 +1,33 @@
+{
+  "id": "30ca0657",
+  "name": "Courier Gonjubasik",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    },
+    {
+      "type": "modded",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Courier Gonjubasik",
+  "zip": {
+    "path": "pending/30ca0657/Courier Gonjubasik.zip",
+    "sha": "36c184b290522688283a58ca56a47bbc6b7a209c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/30ca0657/Courier Gonjubasik.webp",
+    "sha": "58cc50086c7d1da40f2896ebbaec2ce567984c76",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790361570924,
+  "ipFingerprint": "gfN_jd-WbOr3dP6c23TQiTYX"
+}
