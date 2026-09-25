@@ -1,0 +1,22 @@
+{
+  "id": "e779fae8",
+  "name": "Keeper Of The Light Keeper Of The Blunt",
+  "category": "heroes",
+  "heroName": "Keeper of the Light",
+  "tags": {},
+  "links": [],
+  "filenameBase": "Keeper Of The Light Keeper Of The Blunt",
+  "zip": {
+    "path": "pending/e779fae8/Keeper Of The Light Keeper Of The Blunt.zip",
+    "sha": "7242206c3e9900c509cbd620b1b41bf4bdf41547",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e779fae8/Keeper Of The Light Keeper Of The Blunt.webp",
+    "sha": "73e68456f35c9d8c5f630325aa32da25bb0eefc7",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790345846502,
+  "ipFingerprint": "12o8UQVchOSZAq50Ki9LjAOd"
+}
