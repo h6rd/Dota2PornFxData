@@ -1,0 +1,30 @@
+{
+  "id": "88a16af2",
+  "name": "Keeper Of The Light - Snowdrift",
+  "category": "hero-items",
+  "heroName": "Keeper of the Light",
+  "tags": {
+    "weapon": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Keeper Of The Light - Snowdrift",
+  "zip": {
+    "path": "pending/88a16af2/Keeper Of The Light - Snowdrift.zip",
+    "sha": "dac1e9500ae5668201d5fa2dd0951e1e77faa0d6",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/88a16af2/Keeper Of The Light - Snowdrift.webp",
+    "sha": "0b98380b27af414f8661eb1952f64c182370260b",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790293277595,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
