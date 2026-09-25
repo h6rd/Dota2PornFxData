@@ -3,7 +3,9 @@
   "name": "Keeper Of The Light - Snowdrift",
   "category": "hero-items",
   "heroName": "Keeper of the Light",
-  "tags": {},
+  "tags": {
+    "weapon": true
+  },
   "links": [
     {
       "type": "author",
