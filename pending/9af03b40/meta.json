@@ -1,0 +1,31 @@
+{
+  "id": "9af03b40",
+  "name": "Abaddon Endless Night Reborn",
+  "category": "heroes",
+  "heroName": "Abaddon",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Abaddon Endless Night Reborn",
+  "zip": {
+    "path": "pending/9af03b40/Abaddon Endless Night Reborn.zip",
+    "sha": "d7f9ca89997bfbf1f514d433c6c7730174841249",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9af03b40/Abaddon Endless Night Reborn.webp",
+    "sha": "26aa79ae1d75be5dadddad3441c4df2e57dbac03",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790433443265,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
