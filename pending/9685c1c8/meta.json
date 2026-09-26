@@ -1,0 +1,32 @@
+{
+  "id": "9685c1c8",
+  "name": "Techies Arcana Shanachnetsya",
+  "category": "hero-items",
+  "heroName": "Techies",
+  "tags": {
+    "cart": true,
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Techies Arcana Shanachnetsya",
+  "zip": {
+    "path": "pending/9685c1c8/Techies Arcana Shanachnetsya.zip",
+    "sha": "d5ec09f8c42969cf892354bd1434433d0a26da61",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9685c1c8/Techies Arcana Shanachnetsya.webp",
+    "sha": "60825f20cf8d35ff8ebe4e6d0905b05e8f583598",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790386684282,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
