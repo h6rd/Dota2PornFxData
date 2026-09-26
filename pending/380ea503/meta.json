@@ -1,0 +1,32 @@
+{
+  "id": "380ea503",
+  "name": "Phantom Lancer Immortal Frost",
+  "category": "hero-items",
+  "heroName": "Phantom Lancer",
+  "tags": {
+    "weapon": true,
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Phantom Lancer Immortal Frost",
+  "zip": {
+    "path": "pending/380ea503/Phantom Lancer Immortal Frost.zip",
+    "sha": "52144a643a705e661107519df589044949a8d2f7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/380ea503/Phantom Lancer Immortal Frost.webp",
+    "sha": "eba0c60334a4163f27234b09dec51a938ea34f83",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790421691652,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
