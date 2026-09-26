@@ -1,0 +1,33 @@
+{
+  "id": "fc9a5970",
+  "name": "Shadow Fiend Desire Requiem",
+  "category": "hero-sounds",
+  "heroName": "Shadow Fiend",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/1bRzeu657Fw?si=MLpFl1arRdG31ZtL",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Shadow Fiend Desire Requiem",
+  "zip": {
+    "path": "pending/fc9a5970/Shadow Fiend Desire Requiem.zip",
+    "sha": "8979c904d55f866ec5d4892c453e973252dc4578",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fc9a5970/Shadow Fiend Desire Requiem.webp",
+    "sha": "e694b3b6a0545b1956bb271f084d06e61df1adac",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790400605241,
+  "ipFingerprint": "12o8UQVchOSZAq50Ki9LjAOd"
+}
