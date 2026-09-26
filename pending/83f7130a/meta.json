@@ -1,0 +1,28 @@
+{
+  "id": "83f7130a",
+  "name": "Dark Carnaval Pedestal",
+  "category": "pedestal",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Dark Carnaval Pedestal",
+  "zip": {
+    "path": "pending/83f7130a/Dark Carnaval Pedestal.zip",
+    "sha": "fc55b0cb152f63cf630266e94db520b3d5f8c8ec",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/83f7130a/Dark Carnaval Pedestal.webp",
+    "sha": "d66f80b03344a47ec28687fe7790cfcf463d94cd",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790434014269,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
