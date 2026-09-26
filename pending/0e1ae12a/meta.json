@@ -1,0 +1,25 @@
+{
+  "id": "0e1ae12a",
+  "name": "Juggernaut Ancient Arcana",
+  "category": "heroes",
+  "heroName": "Juggernaut",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [],
+  "filenameBase": "Juggernaut Ancient Arcana",
+  "zip": {
+    "path": "pending/0e1ae12a/Juggernaut Ancient Arcana.zip",
+    "sha": "b1e8c522c638e89db86d502a4daac713bf250cdf",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0e1ae12a/Juggernaut Ancient Arcana.webp",
+    "sha": "ba4de97da8c77e4772518254df455a1587f56d7a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790439109109,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
