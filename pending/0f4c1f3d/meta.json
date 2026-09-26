@@ -1,0 +1,31 @@
+{
+  "id": "0f4c1f3d",
+  "name": "Bane Immortal",
+  "category": "heroes",
+  "heroName": "Bane",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Bane Immortal",
+  "zip": {
+    "path": "pending/0f4c1f3d/Bane Immortal.zip",
+    "sha": "a88dd292621cc07bf6f88b68a55a72638c8095d8",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0f4c1f3d/Bane Immortal.webp",
+    "sha": "82e36b05e3fd738302d488baa036645c766ae1ea",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790426242383,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
