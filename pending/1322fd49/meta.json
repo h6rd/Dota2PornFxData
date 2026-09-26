@@ -1,0 +1,31 @@
+{
+  "id": "1322fd49",
+  "name": "Axe Automaton Reborn",
+  "category": "heroes",
+  "heroName": "Axe",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Axe Automaton Reborn",
+  "zip": {
+    "path": "pending/1322fd49/Axe Automaton Reborn.zip",
+    "sha": "68be4edd67ef57cb9eb344d229a61465c5f730c6",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1322fd49/Axe Automaton Reborn.webp",
+    "sha": "3ceed759b0889929a53748ac7c0fa85d8a830a0b",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790382976956,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
