@@ -1,0 +1,30 @@
+{
+  "id": "c6d47bfb",
+  "name": "Phoenix Vermillion Crucible",
+  "category": "heroes",
+  "heroName": "Phoenix",
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Phoenix Vermillion Crucible",
+  "zip": {
+    "path": "pending/c6d47bfb/Phoenix Vermillion Crucible.zip",
+    "sha": "dbfdedb77878e01dc030f08e70365cb23c48a227",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c6d47bfb/Phoenix Vermillion Crucible.webp",
+    "sha": "6b44ce2a3d3cd1e690431f2227755ef1c4c90710",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790523465257,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
