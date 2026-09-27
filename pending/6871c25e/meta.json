@@ -1,0 +1,28 @@
+{
+  "id": "6871c25e",
+  "name": "Stariy Bog Mega-Kill",
+  "category": "mega-kill",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Stariy Bog Mega-Kill",
+  "zip": {
+    "path": "pending/6871c25e/Stariy Bog Mega-Kill.zip",
+    "sha": "1e90b062ae15e0d8f9bd5183c6d9b402df5feb70",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6871c25e/Stariy Bog Mega-Kill.webp",
+    "sha": "ddac955b7150d860f60f9d1f8dff644041d34bb1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790501780279,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
