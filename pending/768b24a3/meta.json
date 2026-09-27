@@ -1,0 +1,31 @@
+{
+  "id": "768b24a3",
+  "name": "Juggernaut Lineage Kantusa",
+  "category": "heroes",
+  "heroName": "Juggernaut",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Juggernaut Lineage Kantusa",
+  "zip": {
+    "path": "pending/768b24a3/Juggernaut Lineage Kantusa.zip",
+    "sha": "ec92b495191df3e22d9927b7f4186990fa8a8649",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/768b24a3/Juggernaut Lineage Kantusa.webp",
+    "sha": "813dee29e3f9bf4ab30757a070abb6ecaa980b87",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790535884476,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
