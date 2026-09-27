@@ -1,0 +1,31 @@
+{
+  "id": "d04fb49e",
+  "name": "Arc Warden Frosty Toy",
+  "category": "heroes",
+  "heroName": "Arc Warden",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Arc Warden Frosty Toy",
+  "zip": {
+    "path": "pending/d04fb49e/Arc Warden Frosty Toy.zip",
+    "sha": "5c56d403c35252775957312c94e14a43b451d1ce",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d04fb49e/Arc Warden Frosty Toy.webp",
+    "sha": "b8250eb2c3440a09f9b75ce4a8725cc9fd5e93b4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790534587741,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
