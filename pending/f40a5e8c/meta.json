@@ -1,0 +1,30 @@
+{
+  "id": "f40a5e8c",
+  "name": "Largo Largling",
+  "category": "heroes",
+  "heroName": "Largo",
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Largo Largling",
+  "zip": {
+    "path": "pending/f40a5e8c/Largo Largling.zip",
+    "sha": "e105febfb6eab0fd5ad510d0d0dc01a164870d28",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f40a5e8c/Largo Largling.webp",
+    "sha": "8996139ea2cc0415a0663d6a812950b9715b7fcb",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790590554342,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
