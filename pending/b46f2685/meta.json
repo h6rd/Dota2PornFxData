@@ -1,0 +1,22 @@
+{
+  "id": "b46f2685",
+  "name": "Enchantress Golubika",
+  "category": "heroes",
+  "heroName": "Enchantress",
+  "tags": {},
+  "links": [],
+  "filenameBase": "Enchantress Golubika",
+  "zip": {
+    "path": "pending/b46f2685/Enchantress Golubika.zip",
+    "sha": "13325222175893f074b814d828824f4e8f42f98b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b46f2685/Enchantress Golubika.webp",
+    "sha": "0e144b3f28762661032dd676348d0a31b036bdff",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790583248773,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
