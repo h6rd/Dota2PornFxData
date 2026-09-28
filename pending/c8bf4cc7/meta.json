@@ -1,0 +1,31 @@
+{
+  "id": "c8bf4cc7",
+  "name": "Morphling Akulenok",
+  "category": "heroes",
+  "heroName": "Morphling",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Morphling Akulenok",
+  "zip": {
+    "path": "pending/c8bf4cc7/Morphling Akulenok.zip",
+    "sha": "493d309d4e5ba188fd036cfcd67e836c9ef9e554",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c8bf4cc7/Morphling Akulenok.webp",
+    "sha": "f50be7b6fa19f884d7c95c0fbdd89ff383c430d3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790582534474,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
