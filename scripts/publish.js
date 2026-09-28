@@ -20,15 +20,23 @@ function getMaxModNameLen(heroName) {
   return override || MAX_MOD_NAME_LEN;
 }
 const MAX_TEXT_FIELD_LEN = 150;
+
+const MOD_NAME_RE = /^[a-zA-Z0-9 \-_'.,!]+$/;
+const MISPLACED_HYPHEN_RE = /(^|[^a-zA-Z0-9])-|-([^a-zA-Z0-9]|$)/;
+const NICK_RE = /^[\p{L}\p{N} _.\-!,()\[\]#@+]+$/u;
+const SAFE_TEXT_RE = /^[^<>"`\\\u0000-\u001f\u007f]+$/;
+const UNSAFE_URL_CHARS_RE = /[\s"'<>`\\]/;
+const HERO_ITEM_SLOT_TAGS = new Set(["base", "totem", "weapon", "tail", "legs", "forge", "bear", "off-hand", "cart", "mount", "head", "arm", "arms", "armor", "shoulders", "back", "shield", "hair", "neck", "rocket"]);
 const MAX_URL_LEN = 300;
 const ALLOWED_CATEGORIES = splitList(process.env.ALLOWED_CATEGORIES);
 const ALLOWED_HEROES = splitList(process.env.ALLOWED_HEROES);
 
-const PREVIEW_VIDEO_CATEGORIES = new Set(["sounds", "hero-sounds", "huds", "ti-bp-effects"]);
+const PREVIEW_VIDEO_CATEGORIES = new Set(["sounds", "hero-sounds", "huds", "ti-bp-effects", "heroes"]);
 const YOUTUBE_HOST_RE = /^(m\.|www\.|music\.)?youtube\.com$|^youtu\.be$/i;
 
 function isYouTubeUrl(str) {
   if (!str || str.length > MAX_URL_LEN) return false;
+  if (UNSAFE_URL_CHARS_RE.test(str)) return false;
   try {
     const u = new URL(str);
     return u.protocol === "https:" && YOUTUBE_HOST_RE.test(u.hostname);
@@ -75,6 +83,7 @@ function sanitizeFilename(name) {
 
 function isSafeHttpsUrl(str) {
   if (!str || str.length > MAX_URL_LEN) return false;
+  if (UNSAFE_URL_CHARS_RE.test(str)) return false;
   try {
     return new URL(str).protocol === "https:";
   } catch {
@@ -210,7 +219,7 @@ function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt) 
 
 function publishOne(id, meta, constants, mods, ledger = new Set()) {
   assertField(
-    typeof meta.name === "string" && /^[a-zA-Z0-9 \-_'.!,]+$/.test(meta.name) &&
+    typeof meta.name === "string" && MOD_NAME_RE.test(meta.name) && !MISPLACED_HYPHEN_RE.test(meta.name) &&
       meta.name.length <= getMaxModNameLen(meta.heroName),
     "Invalid mod name"
   );
@@ -221,6 +230,15 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     if (ALLOWED_HEROES.length) assertField(ALLOWED_HEROES.includes(meta.heroName), "Invalid hero");
   }
   assertField(meta.zip && typeof meta.zip.path === "string", "Invalid submission archive");
+
+  const metaTags = meta.tags && typeof meta.tags === "object" && !Array.isArray(meta.tags) ? meta.tags : {};
+  for (const [k, v] of Object.entries(metaTags)) {
+    assertField(/^[a-zA-Z0-9_-]{1,40}$/.test(k) && typeof v === "boolean", "Invalid tags");
+  }
+  if (meta.category === "hero-items") {
+    const slotCount = Object.keys(metaTags).filter((k) => metaTags[k] === true && HERO_ITEM_SLOT_TAGS.has(k)).length;
+    assertField(slotCount === 1, "Hero items require exactly one slot tag");
+  }
 
   if (ledger.has(id) || isAlreadyPublishedSubmission(mods, meta.category, id)) {
     throw new AlreadyPublishedError(`submission ${id} was already published`);
@@ -264,6 +282,10 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
       finalLinks.push({ type: link.type, url: link.url });
       continue;
     }
+    assertField(
+      link.isNew ? NICK_RE.test(link.url) : SAFE_TEXT_RE.test(link.url),
+      "Link name contains unsupported characters"
+    );
     finalLinks.push({ type: link.type, url: link.url });
     if (link.isNew) {
       assertField(typeof link.newAuthorUrl === "string" && link.newAuthorUrl.length <= MAX_URL_LEN, "Invalid link URL");
