@@ -1,0 +1,25 @@
+{
+  "id": "bf7cfbe6",
+  "name": "Phantom Lancer Ravenblight",
+  "category": "hero-items",
+  "heroName": "Phantom Lancer",
+  "tags": {
+    "weapon": true,
+    "effects": true
+  },
+  "links": [],
+  "filenameBase": "Phantom Lancer Ravenblight",
+  "zip": {
+    "path": "pending/bf7cfbe6/Phantom Lancer Ravenblight.zip",
+    "sha": "021b9538bc0c9e19ad2c6980cd21ea2d0ad13ced",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/bf7cfbe6/Phantom Lancer Ravenblight.webp",
+    "sha": "6840a9a546f1d178594f11185f762598ee93993c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790718002582,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
