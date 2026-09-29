@@ -1,0 +1,28 @@
+{
+  "id": "61449bc2",
+  "name": "Pedestal Shadow Fiend Arcana",
+  "category": "pedestal",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pedestal Shadow Fiend Arcana",
+  "zip": {
+    "path": "pending/61449bc2/Pedestal Shadow Fiend Arcana.zip",
+    "sha": "66de8e316aa089dd8018b2d1cb532e578cbc83aa",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/61449bc2/Pedestal Shadow Fiend Arcana.webp",
+    "sha": "acfaa89296a6f646bc2e53fe1b4ba8c002a4fcb2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790691630799,
+  "ipFingerprint": "V-2fu2nq7SBGIqVzxynGLQnU"
+}
