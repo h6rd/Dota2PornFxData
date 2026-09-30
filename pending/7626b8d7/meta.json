@@ -1,0 +1,30 @@
+{
+  "id": "7626b8d7",
+  "name": "Terrorblade Fire",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Fire",
+  "zip": {
+    "path": "pending/7626b8d7/Terrorblade Fire.zip",
+    "sha": "7868c872cb1556efe2076b591462da1812fb2aac",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7626b8d7/Terrorblade Fire.webp",
+    "sha": "12d39bbb063cf205b83d1088309cac6caf4684e0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790759885534,
+  "ipFingerprint": "V-2fu2nq7SBGIqVzxynGLQnU"
+}
