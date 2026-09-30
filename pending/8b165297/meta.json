@@ -1,0 +1,33 @@
+{
+  "id": "8b165297",
+  "name": "Naga Siren Growth Correction",
+  "category": "hero-sounds",
+  "heroName": "Naga Siren",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/oNn2btt7GHw?si=QnPV5ZjfOfxSe4Q9",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Naga Siren Growth Correction",
+  "zip": {
+    "path": "pending/8b165297/Naga Siren Growth Correction.zip",
+    "sha": "5ed23ae629501baddd964ad47c560912ce332192",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8b165297/Naga Siren Growth Correction.webp",
+    "sha": "45c03dafa16d9607d2ff36282fa2da4cce936e66",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790759731051,
+  "ipFingerprint": "V-2fu2nq7SBGIqVzxynGLQnU"
+}
