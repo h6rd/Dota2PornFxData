@@ -1,0 +1,28 @@
+{
+  "id": "245f5062",
+  "name": "Pedestal Shadow Fiend",
+  "category": "pedestal",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pedestal Shadow Fiend",
+  "zip": {
+    "path": "pending/245f5062/Pedestal Shadow Fiend.zip",
+    "sha": "ad7ade42ffd0015279bbd7cd1e35abc180a35948",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/245f5062/Pedestal Shadow Fiend.webp",
+    "sha": "acfaa89296a6f646bc2e53fe1b4ba8c002a4fcb2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790759545690,
+  "ipFingerprint": "V-2fu2nq7SBGIqVzxynGLQnU"
+}
