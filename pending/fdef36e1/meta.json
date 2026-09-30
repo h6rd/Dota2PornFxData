@@ -1,0 +1,30 @@
+{
+  "id": "fdef36e1",
+  "name": "Huskar Bleeding Edge",
+  "category": "heroes",
+  "heroName": "Huskar",
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Huskar Bleeding Edge",
+  "zip": {
+    "path": "pending/fdef36e1/Huskar Bleeding Edge.zip",
+    "sha": "fc8dda2d1420c6620bbd8d4c66dc90433c1631a1",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fdef36e1/Huskar Bleeding Edge.webp",
+    "sha": "5f14f67e439f792d7d817058531bfcef707f41d5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790734215110,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
