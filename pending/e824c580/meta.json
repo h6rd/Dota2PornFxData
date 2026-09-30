@@ -1,0 +1,31 @@
+{
+  "id": "e824c580",
+  "name": "Brewmaster Snowdrift Pirat",
+  "category": "heroes",
+  "heroName": "Brewmaster",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Brewmaster Snowdrift Pirat",
+  "zip": {
+    "path": "pending/e824c580/Brewmaster Snowdrift Pirat.zip",
+    "sha": "02204561eee0597492ccbcf91ff03bb6cf76ea04",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e824c580/Brewmaster Snowdrift Pirat.webp",
+    "sha": "42239d054e6fca579fc4e5544508a25fef731fb3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790755763353,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
