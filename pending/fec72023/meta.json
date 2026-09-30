@@ -1,0 +1,37 @@
+{
+  "id": "fec72023",
+  "name": "Lina Sharm Lady",
+  "category": "heroes",
+  "heroName": "Lina",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "1995rnx",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/rnx1995rnx#"
+    },
+    {
+      "type": "source",
+      "url": "Dota 2 Skin Changer",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Lina Sharm Lady",
+  "zip": {
+    "path": "pending/fec72023/Lina Sharm Lady.zip",
+    "sha": "6b0eb44e3a7c2026863b765af969f1dc3dbd0c88",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fec72023/Lina Sharm Lady.webp",
+    "sha": "3b59b530a9cbb139d877ceb8a6fd0f74da80a5c5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790792049653,
+  "ipFingerprint": "MlvhtNI3hr57McvhUQiXpPqb"
+}
