@@ -1,0 +1,30 @@
+{
+  "id": "a2457ad4",
+  "name": "Chaos Knight Celestial Sentine",
+  "category": "heroes",
+  "heroName": "Chaos Knight",
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Chaos Knight Celestial Sentine",
+  "zip": {
+    "path": "pending/a2457ad4/Chaos Knight Celestial Sentine.zip",
+    "sha": "41f46d356fd732c3ab7a70c4e23358b02ee0b9f2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a2457ad4/Chaos Knight Celestial Sentine.webp",
+    "sha": "ca5656185eb52c0f60bdf8d2c67eb24d8e5b1e52",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790862128757,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
