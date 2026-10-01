@@ -1,0 +1,31 @@
+{
+  "id": "50ec5702",
+  "name": "Enchantress Diretide Shimmer",
+  "category": "heroes",
+  "heroName": "Enchantress",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Enchantress Diretide Shimmer",
+  "zip": {
+    "path": "pending/50ec5702/Enchantress Diretide Shimmer.zip",
+    "sha": "4af3c31ee5d23ec530312c7e6e8f955cee16a312",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/50ec5702/Enchantress Diretide Shimmer.webp",
+    "sha": "67855ed0acdfba631afe9d59ef64ecf4f302e0ca",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790866578839,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
