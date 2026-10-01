@@ -1,0 +1,28 @@
+{
+  "id": "e95794a3",
+  "name": "Larger Minimap Fix",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Larger Minimap Fix",
+  "zip": {
+    "path": "pending/e95794a3/Larger Minimap Fix.zip",
+    "sha": "e6ed02e07581af8d49c2fdcd8db45a8af08b8083",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e95794a3/Larger Minimap Fix.webp",
+    "sha": "e74bca6d273f173ce6b349fb9878350f5de93008",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790891699431,
+  "ipFingerprint": "166sRZSWZGKGjo236Rr9I-yg"
+}
