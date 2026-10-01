@@ -1,0 +1,31 @@
+{
+  "id": "b1f5c46b",
+  "name": "Oracle Automaton Reborn",
+  "category": "heroes",
+  "heroName": "Oracle",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Oracle Automaton Reborn",
+  "zip": {
+    "path": "pending/b1f5c46b/Oracle Automaton Reborn.zip",
+    "sha": "fb65b18e99be5b1c0e093528910139b773001e99",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b1f5c46b/Oracle Automaton Reborn.webp",
+    "sha": "a33f138865842babfa9874bbfabc906ca451882d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790880342111,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
