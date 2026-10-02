@@ -1,0 +1,33 @@
+{
+  "id": "258e0301",
+  "name": "Cherno Bg",
+  "category": "backgrounds",
+  "heroName": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "templestdouble",
+      "isNew": true,
+      "newAuthorUrl": ""
+    },
+    {
+      "type": "modded",
+      "url": "templestdouble",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Cherno Bg",
+  "zip": {
+    "path": "pending/258e0301/Cherno Bg.zip",
+    "sha": "a374274f80d23dea4d26a109c06001d46781ae4e",
+    "ext": "zip"
+  },
+  "preview": null,
+  "status": "pending",
+  "createdAt": 1790966211506,
+  "ipFingerprint": "6o1a0WcayXQv6asHiqQQ20hz"
+}
