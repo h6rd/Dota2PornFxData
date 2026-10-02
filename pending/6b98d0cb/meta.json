@@ -1,0 +1,30 @@
+{
+  "id": "6b98d0cb",
+  "name": "Lycan Collector 2021",
+  "category": "heroes",
+  "heroName": "Lycan",
+  "tags": {
+    "effects": false
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Lycan Collector 2021",
+  "zip": {
+    "path": "pending/6b98d0cb/Lycan Collector 2021.zip",
+    "sha": "373ccfd9ff78a35203e98dddc2b9056d71961baa",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6b98d0cb/Lycan Collector 2021.webp",
+    "sha": "2bf2feddfecc3dc232f8e1b390b6416bf4d8e443",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790918348865,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
