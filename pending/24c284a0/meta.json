@@ -1,0 +1,31 @@
+{
+  "id": "24c284a0",
+  "name": "Slardar Diretide Shimmer",
+  "category": "heroes",
+  "heroName": "Slardar",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Slardar Diretide Shimmer",
+  "zip": {
+    "path": "pending/24c284a0/Slardar Diretide Shimmer.zip",
+    "sha": "4e8812ceca2e39bc6eff4bb9f4ad38cc49526fc9",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/24c284a0/Slardar Diretide Shimmer.webp",
+    "sha": "9e239b00f325667814d4fd9157cbf0dedf90bcc5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790925924347,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
