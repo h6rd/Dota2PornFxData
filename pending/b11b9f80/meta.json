@@ -1,0 +1,31 @@
+{
+  "id": "b11b9f80",
+  "name": "Legion Commander Diretide",
+  "category": "heroes",
+  "heroName": "Legion Commander",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Legion Commander Diretide",
+  "zip": {
+    "path": "pending/b11b9f80/Legion Commander Diretide.zip",
+    "sha": "f31861953d5d5c49e1a007819bc70cd512f4454a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b11b9f80/Legion Commander Diretide.webp",
+    "sha": "958f6db5c790f36c44e90631c5d63dfe4df18cbb",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790952596458,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
