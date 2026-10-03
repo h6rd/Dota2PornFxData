@@ -1,0 +1,28 @@
+{
+  "id": "4fc3fd00",
+  "name": "Tiny Cherepashka",
+  "category": "heroes",
+  "heroName": "Tiny",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tiny Cherepashka",
+  "zip": {
+    "path": "pending/4fc3fd00/Tiny Cherepashka.zip",
+    "sha": "dbca6a780a1f35c6a46a0f83e853e4cccec6b16a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4fc3fd00/Tiny Cherepashka.webp",
+    "sha": "d1f144da7a289123ad811103739d795ad3c9ac16",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791056393185,
+  "ipFingerprint": "n2uaaulT9S-GINnJaf94j0g8"
+}
