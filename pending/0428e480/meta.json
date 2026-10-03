@@ -1,0 +1,32 @@
+{
+  "id": "0428e480",
+  "name": "Arc Warden The Last Survivor",
+  "category": "heroes",
+  "heroName": "Arc Warden",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Schizo",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/N0t_Nero"
+    }
+  ],
+  "filenameBase": "Arc Warden The Last Survivor",
+  "zip": {
+    "path": "pending/0428e480/Arc Warden The Last Survivor.zip",
+    "sha": "9b47f5a6c3dbed9950e4a4e057ec52e2d656c19b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0428e480/Arc Warden The Last Survivor.webp",
+    "sha": "610d7d2be7e029463249919733936d4f73bc7bc4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790987811081,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
