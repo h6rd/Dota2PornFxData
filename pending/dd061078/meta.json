@@ -1,0 +1,31 @@
+{
+  "id": "dd061078",
+  "name": "Morphling Yatoro Burning",
+  "category": "heroes",
+  "heroName": "Morphling",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "cursedseizures",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Morphling Yatoro Burning",
+  "zip": {
+    "path": "pending/dd061078/Morphling Yatoro Burning.zip",
+    "sha": "1cabab82dead0e2f94ada8e9986fde69f4604f59",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/dd061078/Morphling Yatoro Burning.webp",
+    "sha": "a9f508e63cd6bdac0e94f441b99127df8e35a5f4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790988147285,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
