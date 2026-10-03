@@ -1,0 +1,25 @@
+{
+  "id": "61fc24a5",
+  "name": "Himmler Glimmer Cape",
+  "category": "item-icons",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "saimonter",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Himmler Glimmer Cape",
+  "zip": {
+    "path": "pending/61fc24a5/Himmler Glimmer Cape.zip",
+    "sha": "79a48e15f28b5a12d8093303444edcccca4baaac",
+    "ext": "zip"
+  },
+  "preview": null,
+  "status": "pending",
+  "createdAt": 1791044027950,
+  "ipFingerprint": "2sWFeuVV3MLStnoXK5Erkwpw"
+}
