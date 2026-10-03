@@ -1,0 +1,28 @@
+{
+  "id": "de4a63b7",
+  "name": "Default Lite Hud",
+  "category": "huds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Default Lite Hud",
+  "zip": {
+    "path": "pending/de4a63b7/Default Lite Hud.zip",
+    "sha": "e8a497657d762f3623ed4416a2bedff3ceca0c4f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/de4a63b7/Default Lite Hud.webp",
+    "sha": "1381765599a68836543fa420a1dc0cbd8789d61f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1790995954874,
+  "ipFingerprint": "JuekH9Lx5VQZXOnXdIuzwMiq"
+}
