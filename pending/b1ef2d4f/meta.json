@@ -1,0 +1,22 @@
+{
+  "id": "b1ef2d4f",
+  "name": "Undying Love",
+  "category": "heroes",
+  "heroName": "Undying",
+  "tags": {},
+  "links": [],
+  "filenameBase": "Undying Love",
+  "zip": {
+    "path": "pending/b1ef2d4f/Undying Love.zip",
+    "sha": "f16f236decf62f7c7785a539855f8ebd7517c81f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b1ef2d4f/Undying Love.webp",
+    "sha": "a32b9ced28ecaca2cb0461576ede587c6b072927",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791138081022,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
