@@ -1,0 +1,28 @@
+{
+  "id": "284d722a",
+  "name": "Undying Love",
+  "category": "heroes",
+  "heroName": "Undying",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Undying Love",
+  "zip": {
+    "path": "pending/284d722a/Undying Love.zip",
+    "sha": "f16f236decf62f7c7785a539855f8ebd7517c81f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/284d722a/Undying Love.webp",
+    "sha": "a32b9ced28ecaca2cb0461576ede587c6b072927",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791138176618,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
