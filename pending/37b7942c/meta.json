@@ -1,0 +1,28 @@
+{
+  "id": "37b7942c",
+  "name": "Twisted Maelstrom Enigma",
+  "category": "heroes",
+  "heroName": "Enigma",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Twisted Maelstrom Enigma",
+  "zip": {
+    "path": "pending/37b7942c/Twisted Maelstrom Enigma.zip",
+    "sha": "57ca0bb3d40460a753106b99933ada05e4c68ea2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/37b7942c/Twisted Maelstrom Enigma.webp",
+    "sha": "6d317af576715b6759931506c8c7f40867a5b1c9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791201520307,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
