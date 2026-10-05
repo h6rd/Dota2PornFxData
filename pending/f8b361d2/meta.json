@@ -1,0 +1,31 @@
+{
+  "id": "f8b361d2",
+  "name": "Kunkka Leviathan",
+  "category": "heroes",
+  "heroName": "Kunkka",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "3atvorn1k",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kunkka Leviathan",
+  "zip": {
+    "path": "pending/f8b361d2/Kunkka Leviathan.zip",
+    "sha": "4e777fd5fd6a6322e746008da23dd5eedce0627c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f8b361d2/Kunkka Leviathan.webp",
+    "sha": "d58d779611f72eba7d9c85d2e87c3a6ad4e4ca56",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791139692853,
+  "ipFingerprint": "13v_YHNTAcdGmTOnTWxj5E-l"
+}
