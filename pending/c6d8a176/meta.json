@@ -4,7 +4,13 @@
   "category": "heroes",
   "heroName": "Enigma",
   "tags": {},
-  "links": [],
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
   "filenameBase": "Twisted Maelstrom Enigma",
   "zip": {
     "path": "pending/c6d8a176/Twisted Maelstrom Enigma.zip",
