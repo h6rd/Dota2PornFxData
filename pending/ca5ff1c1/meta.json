@@ -1,0 +1,33 @@
+{
+  "id": "ca5ff1c1",
+  "name": "Shadow Fiend Ult Miura Xm Aura",
+  "category": "hero-sounds",
+  "heroName": "Shadow Fiend",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/PEi8x1BpvKs",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Shadow Fiend Ult Miura Xm Aura",
+  "zip": {
+    "path": "pending/ca5ff1c1/Shadow Fiend Ult Miura Xm Aura.zip",
+    "sha": "505d4fb6056f87737bd0540de140a485e68902d6",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ca5ff1c1/Shadow Fiend Ult Miura Xm Aura.webp",
+    "sha": "d364aebe25270a935c47c230a353e2522d195340",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791108935971,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
