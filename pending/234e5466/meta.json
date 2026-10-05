@@ -1,0 +1,31 @@
+{
+  "id": "234e5466",
+  "name": "Immortal Love Undying",
+  "category": "heroes",
+  "heroName": "Undying",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Immortal Love Undying",
+  "zip": {
+    "path": "pending/234e5466/Immortal Love Undying.zip",
+    "sha": "c2a0fe649ef802fb6805c7d27eed1efb6a1ec62e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/234e5466/Immortal Love Undying.webp",
+    "sha": "075108972a36cb999b3f35e8a60c4503e893620f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791128688734,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
