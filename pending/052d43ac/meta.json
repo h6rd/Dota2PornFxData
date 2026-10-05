@@ -1,0 +1,28 @@
+{
+  "id": "052d43ac",
+  "name": "Earthshaker Tectonic",
+  "category": "heroes",
+  "heroName": "Earthshaker",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Earthshaker Tectonic",
+  "zip": {
+    "path": "pending/052d43ac/Earthshaker Tectonic.zip",
+    "sha": "3ba8dd8558413b29a084d39b3be238f3f43fb3e4",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/052d43ac/Earthshaker Tectonic.webp",
+    "sha": "97ad732cc68e8c96ff569eba57e48c195f63467d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791234282997,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
