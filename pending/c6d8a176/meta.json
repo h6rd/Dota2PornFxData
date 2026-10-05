@@ -1,0 +1,22 @@
+{
+  "id": "c6d8a176",
+  "name": "Twisted Maelstrom Enigma",
+  "category": "heroes",
+  "heroName": "Enigma",
+  "tags": {},
+  "links": [],
+  "filenameBase": "Twisted Maelstrom Enigma",
+  "zip": {
+    "path": "pending/c6d8a176/Twisted Maelstrom Enigma.zip",
+    "sha": "648586be2d05d37d6e1b38b101358373cfada524",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c6d8a176/Twisted Maelstrom Enigma.webp",
+    "sha": "6d317af576715b6759931506c8c7f40867a5b1c9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791203195960,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
