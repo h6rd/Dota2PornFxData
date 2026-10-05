@@ -1,0 +1,31 @@
+{
+  "id": "aa130b12",
+  "name": "Treant Protector Aura",
+  "category": "heroes",
+  "heroName": "Treant Protector",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Treant Protector Aura",
+  "zip": {
+    "path": "pending/aa130b12/Treant Protector Aura.zip",
+    "sha": "85b9c543d8e02acb7a49114b165492138bf747be",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/aa130b12/Treant Protector Aura.webp",
+    "sha": "5ccbad933db0cee8ec60e47a795aec8f43b3d286",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791191062755,
+  "ipFingerprint": "zzjMuXz90bIiNJypZauRhBMs"
+}
