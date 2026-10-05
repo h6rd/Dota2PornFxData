@@ -4,7 +4,13 @@
   "category": "heroes",
   "heroName": "Marci",
   "tags": {},
-  "links": [],
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
   "filenameBase": "Vodolaska Marci",
   "zip": {
     "path": "pending/6edf29ab/Vodolaska Marci.zip",
