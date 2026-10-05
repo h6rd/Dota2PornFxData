@@ -1,0 +1,31 @@
+{
+  "id": "46ce9abb",
+  "name": "Luna Cosmic",
+  "category": "heroes",
+  "heroName": "Luna",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Luna Cosmic",
+  "zip": {
+    "path": "pending/46ce9abb/Luna Cosmic.zip",
+    "sha": "d3103cba1fd2059f3286cc74f4665df3ce283bdc",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/46ce9abb/Luna Cosmic.webp",
+    "sha": "c7062f58bf6d37985ff2b5f188dd496b25f12d7d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791133819677,
+  "ipFingerprint": "MyUYuW_cWlfSC-Kkt5k_KNzh"
+}
