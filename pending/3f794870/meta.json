@@ -1,0 +1,30 @@
+{
+  "id": "3f794870",
+  "name": "Pudge Toy Inc Boss",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Toy Inc Boss",
+  "zip": {
+    "path": "pending/3f794870/Pudge Toy Inc Boss.zip",
+    "sha": "e98d1dd69dde629b0258b6f1f1de6b9dc552e0c7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3f794870/Pudge Toy Inc Boss.webp",
+    "sha": "1be5217ec7891f97578d169b0858ac1883114b1e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791294747964,
+  "ipFingerprint": "7j6RPtR-4Yor2pZFsBYiWMvn"
+}
