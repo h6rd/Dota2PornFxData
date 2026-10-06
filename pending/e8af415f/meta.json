@@ -1,0 +1,31 @@
+{
+  "id": "e8af415f",
+  "name": "Drow Ranger Japan Arcana",
+  "category": "heroes",
+  "heroName": "Drow Ranger",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Drow Ranger Japan Arcana",
+  "zip": {
+    "path": "pending/e8af415f/Drow Ranger Japan Arcana.zip",
+    "sha": "b71ca7e891d4f79ea5bc8a8e73714173860a67a4",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e8af415f/Drow Ranger Japan Arcana.webp",
+    "sha": "5a4eeff94ea48fafb8de03a710a8ab2e29c311e9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791292693303,
+  "ipFingerprint": "MihSeLcTo9dUgOpdp8U66fNM"
+}
