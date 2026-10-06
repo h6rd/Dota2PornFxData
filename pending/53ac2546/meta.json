@@ -1,0 +1,25 @@
+{
+  "id": "53ac2546",
+  "name": "Pangolier Barkfart",
+  "category": "hero-sounds",
+  "heroName": "Pangolier",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "M1su",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/id/A-ds/"
+    }
+  ],
+  "filenameBase": "Pangolier Barkfart",
+  "zip": {
+    "path": "pending/53ac2546/Pangolier Barkfart.zip",
+    "sha": "0734293a9209232e605fd9b4ea21eb14cb2ffd8c",
+    "ext": "zip"
+  },
+  "preview": null,
+  "status": "pending",
+  "createdAt": 1791325416946,
+  "ipFingerprint": "MtLDfaOHbWsfVlZhk-VjwQWR"
+}
