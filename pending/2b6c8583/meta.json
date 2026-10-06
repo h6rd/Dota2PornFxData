@@ -1,0 +1,28 @@
+{
+  "id": "2b6c8583",
+  "name": "One Piece Hud",
+  "category": "huds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "One Piece Hud",
+  "zip": {
+    "path": "pending/2b6c8583/One Piece Hud.zip",
+    "sha": "e53029c62769c8abb7f7d38998807cbbd61309de",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2b6c8583/One Piece Hud.webp",
+    "sha": "8b0ab58c5cb5ab8df707c487f482ef4b73277da5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791214695534,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
