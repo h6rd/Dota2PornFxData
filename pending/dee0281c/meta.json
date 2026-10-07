@@ -1,0 +1,28 @@
+{
+  "id": "dee0281c",
+  "name": "Hoodwink Spring Tide Raider",
+  "category": "heroes",
+  "heroName": "Hoodwink",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Hoodwink Spring Tide Raider",
+  "zip": {
+    "path": "pending/dee0281c/Hoodwink Spring Tide Raider.zip",
+    "sha": "197c9e04e95cad9b02577c8f0b448335012a9fe2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/dee0281c/Hoodwink Spring Tide Raider.webp",
+    "sha": "eaed433654c4572a254b2f9e1242438a5d4d8b58",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791374912399,
+  "ipFingerprint": "dhI8zhAe1rbdbdKLnA4oqIvb"
+}
