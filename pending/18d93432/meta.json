@@ -1,0 +1,31 @@
+{
+  "id": "18d93432",
+  "name": "Hell'S Legion Commander",
+  "category": "heroes",
+  "heroName": "Legion Commander",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Hell'S Legion Commander",
+  "zip": {
+    "path": "pending/18d93432/Hell'S Legion Commander.zip",
+    "sha": "0b50533011d055428e05016dbb1698438a2fc93e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/18d93432/Hell'S Legion Commander.webp",
+    "sha": "0e270fe0e7e0d6e2ba4aa1bb5101d2839d519a57",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791377420710,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
