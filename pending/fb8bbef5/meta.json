@@ -1,0 +1,31 @@
+{
+  "id": "fb8bbef5",
+  "name": "Terrorblade Rictus Ripper",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Rictus Ripper",
+  "zip": {
+    "path": "pending/fb8bbef5/Terrorblade Rictus Ripper.zip",
+    "sha": "bd6a226be72305bd6738d230410256f5a7d5dfc2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fb8bbef5/Terrorblade Rictus Ripper.webp",
+    "sha": "2b81a35e3a059ae4b8b87c7b5c29a24347b9725b",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791367183260,
+  "ipFingerprint": "dhI8zhAe1rbdbdKLnA4oqIvb"
+}
