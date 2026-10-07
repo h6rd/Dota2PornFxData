@@ -1,0 +1,31 @@
+{
+  "id": "7e1746bb",
+  "name": "Legion Commander Hell'S Origin",
+  "category": "heroes",
+  "heroName": "Legion Commander",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Legion Commander Hell'S Origin",
+  "zip": {
+    "path": "pending/7e1746bb/Legion Commander Hell'S Origin.zip",
+    "sha": "60274d8dc1ffb2b8250500d7e946452335a3483a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7e1746bb/Legion Commander Hell'S Origin.webp",
+    "sha": "07d6e352c71575ea3defb6f8349ee2835de69547",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791375139390,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
