@@ -1,0 +1,22 @@
+{
+  "id": "78736395",
+  "name": "Slobbering Strong Boxhound",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Slobbering Strong Boxhound",
+  "zip": {
+    "path": "pending/78736395/Slobbering Strong Boxhound.zip",
+    "sha": "779826bedd3764d6d6d865e498c3d65edbf3e10a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/78736395/Slobbering Strong Boxhound.webp",
+    "sha": "5550afe84377f2a0d8171c1b56b8ccda26da8870",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791389131393,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
