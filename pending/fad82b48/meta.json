@@ -1,0 +1,28 @@
+{
+  "id": "fad82b48",
+  "name": "Marci Silent Comedy",
+  "category": "heroes",
+  "heroName": "Marci",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Marci Silent Comedy",
+  "zip": {
+    "path": "pending/fad82b48/Marci Silent Comedy.zip",
+    "sha": "157606aec65415c0aea9a6fb3bd550d4c2bfe218",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fad82b48/Marci Silent Comedy.webp",
+    "sha": "d2d2b6c55911deb03e88417d020535b63bf6892e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791371235157,
+  "ipFingerprint": "dhI8zhAe1rbdbdKLnA4oqIvb"
+}
