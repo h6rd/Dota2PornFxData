@@ -1,0 +1,31 @@
+{
+  "id": "d54fa5c8",
+  "name": "Primal Beast Strongbox",
+  "category": "heroes",
+  "heroName": "Primal Beast",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Primal Beast Strongbox",
+  "zip": {
+    "path": "pending/d54fa5c8/Primal Beast Strongbox.zip",
+    "sha": "60b199a11489ba893f3e5cbe52a54a3a35d8ab33",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d54fa5c8/Primal Beast Strongbox.webp",
+    "sha": "eec8905201a51860d70d3bca32136fbbf7fbb37b",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791372438788,
+  "ipFingerprint": "7j6RPtR-4Yor2pZFsBYiWMvn"
+}
