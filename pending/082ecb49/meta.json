@@ -1,0 +1,28 @@
+{
+  "id": "082ecb49",
+  "name": "Naga Siren Coral Cultist Frost",
+  "category": "heroes",
+  "heroName": "Naga Siren",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Naga Siren Coral Cultist Frost",
+  "zip": {
+    "path": "pending/082ecb49/Naga Siren Coral Cultist Frost.zip",
+    "sha": "8adfd013b8fda92f60fff23422e0ba6d71d6c0ac",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/082ecb49/Naga Siren Coral Cultist Frost.webp",
+    "sha": "93677a72c5ef6e4db5f914e743455bcf3219e106",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791371548220,
+  "ipFingerprint": "dhI8zhAe1rbdbdKLnA4oqIvb"
+}
