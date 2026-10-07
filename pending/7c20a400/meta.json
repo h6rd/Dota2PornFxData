@@ -1,0 +1,28 @@
+{
+  "id": "7c20a400",
+  "name": "Luna Midnight Stalker",
+  "category": "heroes",
+  "heroName": "Luna",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Luna Midnight Stalker",
+  "zip": {
+    "path": "pending/7c20a400/Luna Midnight Stalker.zip",
+    "sha": "0a7a509ea944e2ee85f81effbe26ec5a2e3fbe2b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7c20a400/Luna Midnight Stalker.webp",
+    "sha": "94fc3acd6d23343a7a3eb55524a4de4e5974fb31",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791368894806,
+  "ipFingerprint": "dhI8zhAe1rbdbdKLnA4oqIvb"
+}
