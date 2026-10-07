@@ -1,0 +1,28 @@
+{
+  "id": "76635903",
+  "name": "Pangolier Barkfart",
+  "category": "hero-sounds",
+  "heroName": "Pangolier",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "M1su",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pangolier Barkfart",
+  "zip": {
+    "path": "pending/76635903/Pangolier Barkfart.zip",
+    "sha": "d6bf64ec3ad32dede6e58fb197263415d682b174",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/76635903/Pangolier Barkfart.webp",
+    "sha": "2f3a8a3fc393e918696521a4e61d51972566130c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791366197475,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
