@@ -1,0 +1,31 @@
+{
+  "id": "fa425910",
+  "name": "Broodmother Anathema",
+  "category": "heroes",
+  "heroName": "Broodmother",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Broodmother Anathema",
+  "zip": {
+    "path": "pending/fa425910/Broodmother Anathema.zip",
+    "sha": "ba1514fc19f820c31e610b18adeb6cf2d18b458e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fa425910/Broodmother Anathema.webp",
+    "sha": "c68dba06a8ade93838db5640ead0b21f48fa3fc3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791376441384,
+  "ipFingerprint": "7j6RPtR-4Yor2pZFsBYiWMvn"
+}
