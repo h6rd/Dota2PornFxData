@@ -1,0 +1,31 @@
+{
+  "id": "347e1e90",
+  "name": "Treant Protector Calabash",
+  "category": "heroes",
+  "heroName": "Treant Protector",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Treant Protector Calabash",
+  "zip": {
+    "path": "pending/347e1e90/Treant Protector Calabash.zip",
+    "sha": "e858494740a63d57fa5546b63211eb70ac4cc36e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/347e1e90/Treant Protector Calabash.webp",
+    "sha": "d5cdaa7d000bdb44f40b80a57f7eb0cdf93dea9e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791374216014,
+  "ipFingerprint": "7j6RPtR-4Yor2pZFsBYiWMvn"
+}
