@@ -1,0 +1,31 @@
+{
+  "id": "e1a4f290",
+  "name": "Crimson Immortal Bristleback",
+  "category": "heroes",
+  "heroName": "Bristleback",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Crimson Immortal Bristleback",
+  "zip": {
+    "path": "pending/e1a4f290/Crimson Immortal Bristleback.zip",
+    "sha": "282c92ad26f63da8bddc932608e9b9e481654977",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e1a4f290/Crimson Immortal Bristleback.webp",
+    "sha": "770e44553168039872744246a1f85e05295841fd",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791379192774,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
