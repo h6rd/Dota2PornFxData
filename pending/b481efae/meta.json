@@ -1,0 +1,28 @@
+{
+  "id": "b481efae",
+  "name": "Lycan Vakir Min Silvath",
+  "category": "heroes",
+  "heroName": "Lycan",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Lycan Vakir Min Silvath",
+  "zip": {
+    "path": "pending/b481efae/Lycan Vakir Min Silvath.zip",
+    "sha": "ccbe5381529d1bcb696470ea5bcaf9a88d350008",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b481efae/Lycan Vakir Min Silvath.webp",
+    "sha": "830fa87fe480de3841509c2bdc09392b85258782",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791373930248,
+  "ipFingerprint": "dhI8zhAe1rbdbdKLnA4oqIvb"
+}
