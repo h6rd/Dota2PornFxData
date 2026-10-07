@@ -1,0 +1,31 @@
+{
+  "id": "be7d30d3",
+  "name": "Drow Ranger Sepulchral Stalker",
+  "category": "heroes",
+  "heroName": "Drow Ranger",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Drow Ranger Sepulchral Stalker",
+  "zip": {
+    "path": "pending/be7d30d3/Drow Ranger Sepulchral Stalker.zip",
+    "sha": "d298bd8bad2dee51fd2e4bebd22d72d18ad1eb99",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/be7d30d3/Drow Ranger Sepulchral Stalker.webp",
+    "sha": "5f119818d3d99e3f27dcddf1b6314b264cb94721",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791367532732,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
