@@ -1,0 +1,31 @@
+{
+  "id": "458364d9",
+  "name": "Greasepaint Gutbuster Pudge",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "rasstegai",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Greasepaint Gutbuster Pudge",
+  "zip": {
+    "path": "pending/458364d9/Greasepaint Gutbuster Pudge.zip",
+    "sha": "b22d9da919c04c5559b03dc08055c727cc4ccd8d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/458364d9/Greasepaint Gutbuster Pudge.webp",
+    "sha": "93f725a1240edc7af75dc533e87481db1343a420",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791374151519,
+  "ipFingerprint": "0Ha7qosXCBwXwucvQwe4B2dY"
+}
