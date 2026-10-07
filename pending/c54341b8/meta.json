@@ -1,0 +1,31 @@
+{
+  "id": "c54341b8",
+  "name": "Drow Ranger Sepulchral Stealth",
+  "category": "heroes",
+  "heroName": "Drow Ranger",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Drow Ranger Sepulchral Stealth",
+  "zip": {
+    "path": "pending/c54341b8/Drow Ranger Sepulchral Stealth.zip",
+    "sha": "ad1e322b9af54e05f683029639e2932a59f6cd15",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c54341b8/Drow Ranger Sepulchral Stealth.webp",
+    "sha": "ee803917a130bfd37eb9569e4c9e9895383c012a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791368321197,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
