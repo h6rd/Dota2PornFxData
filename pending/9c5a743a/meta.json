@@ -1,0 +1,31 @@
+{
+  "id": "9c5a743a",
+  "name": "Zeleniy Techies",
+  "category": "hero-items",
+  "heroName": "Techies",
+  "tags": {
+    "cart": true,
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "shears001",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Zeleniy Techies",
+  "zip": {
+    "path": "pending/9c5a743a/Zeleniy Techies.zip",
+    "sha": "c0d551d36be979772c246846ce801ca863192e62",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9c5a743a/Zeleniy Techies.webp",
+    "sha": "c40f4689d68c7657c8786ae73949016fd001a7c8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791374005299,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
