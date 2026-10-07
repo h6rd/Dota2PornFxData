@@ -1,0 +1,28 @@
+{
+  "id": "8a06a441",
+  "name": "Smaller Hud",
+  "category": "huds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Smaller Hud",
+  "zip": {
+    "path": "pending/8a06a441/Smaller Hud.zip",
+    "sha": "832858b52dc8560d329b627bbd5a6e209945eedf",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8a06a441/Smaller Hud.webp",
+    "sha": "79f9f5d891a21163c1b27a96ec633cc20e59a95f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791343964569,
+  "ipFingerprint": "JuekH9Lx5VQZXOnXdIuzwMiq"
+}
