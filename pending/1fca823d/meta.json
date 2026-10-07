@@ -1,0 +1,22 @@
+{
+  "id": "1fca823d",
+  "name": "Baby Roshan The Eternal",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Baby Roshan The Eternal",
+  "zip": {
+    "path": "pending/1fca823d/Baby Roshan The Eternal.zip",
+    "sha": "99a3d352428e9ff32904573e2797b10539a8aed7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1fca823d/Baby Roshan The Eternal.webp",
+    "sha": "f9b6869388ed7cb039ee2b62040232309acd302a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791389053814,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
