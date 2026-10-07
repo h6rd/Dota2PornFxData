@@ -1,0 +1,22 @@
+{
+  "id": "38df8d59",
+  "name": "Eternal Roshan",
+  "category": "roshan",
+  "heroName": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Eternal Roshan",
+  "zip": {
+    "path": "pending/38df8d59/Eternal Roshan.zip",
+    "sha": "85366e99ff6fcb2e309095100a8b84b7c47aecd7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/38df8d59/Eternal Roshan.webp",
+    "sha": "5dd98761f78856a80cfa707fb71746c228c967c6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791371018224,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
