@@ -1,0 +1,31 @@
+{
+  "id": "624aa542",
+  "name": "Anti-Mage Mod Rotten",
+  "category": "heroes",
+  "heroName": "Anti-Mage",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Mopsyara",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Anti-Mage Mod Rotten",
+  "zip": {
+    "path": "pending/624aa542/Anti-Mage Mod Rotten.zip",
+    "sha": "166c3b64ce706afb9846e03bb0d95eda2a5828dd",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/624aa542/Anti-Mage Mod Rotten.webp",
+    "sha": "85125e2519f9cb86811723ca6148642596eeff45",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791383029638,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
