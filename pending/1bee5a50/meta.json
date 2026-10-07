@@ -1,0 +1,31 @@
+{
+  "id": "1bee5a50",
+  "name": "Undying Desecration Reborn",
+  "category": "heroes",
+  "heroName": "Undying",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Undying Desecration Reborn",
+  "zip": {
+    "path": "pending/1bee5a50/Undying Desecration Reborn.zip",
+    "sha": "26cfaaaa7f61630243ba8180d06458d9686e5b61",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1bee5a50/Undying Desecration Reborn.webp",
+    "sha": "5d34d8280653573bc0b2a9bdc0d19d596a19ce33",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791402154583,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
