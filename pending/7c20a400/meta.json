@@ -3,9 +3,7 @@
   "name": "Luna Midnight Stalker",
   "category": "heroes",
   "heroName": "Luna",
-  "tags": {
-    "effects": true
-  },
+  "tags": {},
   "links": [
     {
       "type": "author",
