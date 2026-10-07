@@ -100,8 +100,43 @@ jobs:
                       dst.write(chunk)
 
           print(f"Found VPK: {vpk_file}")
-          archive = vpk.open(vpk_file)
-          files = sorted(clean(f) for f in archive)
+
+          def reject_corrupt(reason, exc):
+              size = os.path.getsize(vpk_file)
+              lines = [
+                  "<!-- vpk-inspector-report -->",
+                  "## VPK Inspector",
+                  "",
+                  "⚠️ **Rejected: the `.vpk` file is corrupted or is not a valid VPK archive.**",
+                  "",
+                  f"- **File:** `{clean(os.path.basename(info.filename))}`",
+                  f"- **Size:** {size} bytes",
+                  f"- **Problem:** {reason}",
+                  f"- **Parser error:** `{clean(type(exc).__name__)}: {clean(exc)}`",
+                  "",
+                  "The VPK directory index (the `_dir.vpk` header/file table) cannot be read. "
+                  "Please re-pack the mod (e.g. with the Source 2 Workshop Tools / `vpk` tool), "
+                  "check that the file was not damaged or edited in a hex editor, and resubmit.",
+                  "",
+              ]
+              with open("vpk_report.md", "w", encoding="utf-8") as f:
+                  f.write("\n".join(lines))
+              print(f"::error::Invalid VPK ({type(exc).__name__}): {exc}")
+              sys.exit(1)
+
+          try:
+              archive = vpk.open(vpk_file)
+          except Exception as exc:
+              reject_corrupt("the VPK header could not be parsed", exc)
+
+          try:
+              files = sorted(clean(f) for f in archive)
+          except Exception as exc:
+              reject_corrupt("the VPK file index could not be parsed (broken structure)", exc)
+
+          if not files:
+              reject_corrupt("the VPK contains no files", ValueError("empty index"))
+
           extensions = {}
 
           for path in files:
