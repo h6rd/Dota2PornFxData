@@ -1,0 +1,31 @@
+{
+  "id": "401b4c78",
+  "name": "Phantom Assassin Arcana V1",
+  "category": "heroes",
+  "heroName": "Phantom Assassin",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Phantom Assassin Arcana V1",
+  "zip": {
+    "path": "pending/401b4c78/Phantom Assassin Arcana V1.zip",
+    "sha": "917fb2c11f77ce9ffee8bfd138d3cfc6a90f1541",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/401b4c78/Phantom Assassin Arcana V1.webp",
+    "sha": "d58ed72070e7032d3a7daf264e266b7146b78ea3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791497176911,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
