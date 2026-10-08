@@ -1,0 +1,28 @@
+{
+  "id": "0f82dbde",
+  "name": "Default Lite Hud Update",
+  "category": "huds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Default Lite Hud Update",
+  "zip": {
+    "path": "pending/0f82dbde/Default Lite Hud Update.zip",
+    "sha": "0074bce629cc39c5405adcd1e21eb9e0c5452f14",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0f82dbde/Default Lite Hud Update.webp",
+    "sha": "1381765599a68836543fa420a1dc0cbd8789d61f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791471360363,
+  "ipFingerprint": "166sRZSWZGKGjo236Rr9I-yg"
+}
