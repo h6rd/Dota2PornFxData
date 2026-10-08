@@ -1,0 +1,31 @@
+{
+  "id": "a63c1fbf",
+  "name": "Primal Beast Strongbox Reborn",
+  "category": "heroes",
+  "heroName": "Primal Beast",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Primal Beast Strongbox Reborn",
+  "zip": {
+    "path": "pending/a63c1fbf/Primal Beast Strongbox Reborn.zip",
+    "sha": "11216362047ec127f60fbfa0eca5519292041870",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a63c1fbf/Primal Beast Strongbox Reborn.webp",
+    "sha": "26bf1abd48eec610fd80917811171ffc8eca0027",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791463013533,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
