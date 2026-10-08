@@ -1,0 +1,31 @@
+{
+  "id": "52f9d17e",
+  "name": "Pudge Greasepaint Gutbuster",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Greasepaint Gutbuster",
+  "zip": {
+    "path": "pending/52f9d17e/Pudge Greasepaint Gutbuster.zip",
+    "sha": "b5bd59b0a393580917b453801cf4c46a005b61cc",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/52f9d17e/Pudge Greasepaint Gutbuster.webp",
+    "sha": "6d3d7c66533f8b9225933f010230fe6000ee24fc",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791400070588,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
