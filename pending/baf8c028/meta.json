@@ -1,0 +1,31 @@
+{
+  "id": "baf8c028",
+  "name": "Tiny Stoneback Sovereign",
+  "category": "heroes",
+  "heroName": "Tiny",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tiny Stoneback Sovereign",
+  "zip": {
+    "path": "pending/baf8c028/Tiny Stoneback Sovereign.zip",
+    "sha": "a7f582f9af2594ab1ea5854c68d8f0c265477de2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/baf8c028/Tiny Stoneback Sovereign.webp",
+    "sha": "2feba8c63f9cc8ff93fab8923895f9e364c5bf4d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791470263769,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
