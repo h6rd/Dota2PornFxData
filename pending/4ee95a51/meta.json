@@ -1,0 +1,31 @@
+{
+  "id": "4ee95a51",
+  "name": "Juggernaut Bladeform Legacy",
+  "category": "heroes",
+  "heroName": "Juggernaut",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Juggernaut Bladeform Legacy",
+  "zip": {
+    "path": "pending/4ee95a51/Juggernaut Bladeform Legacy.zip",
+    "sha": "847774e88efe096cb81b287883ab79c277bbf845",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4ee95a51/Juggernaut Bladeform Legacy.webp",
+    "sha": "ca2c49101d8de3d3b37f2b1170b0e40f72ac9cf7",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791470514072,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
