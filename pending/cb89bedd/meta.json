@@ -1,0 +1,28 @@
+{
+  "id": "cb89bedd",
+  "name": "Larger Minimap Update",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Larger Minimap Update",
+  "zip": {
+    "path": "pending/cb89bedd/Larger Minimap Update.zip",
+    "sha": "b42f44c5e2ecad566384400b56a349daced4a04b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/cb89bedd/Larger Minimap Update.webp",
+    "sha": "e74bca6d273f173ce6b349fb9878350f5de93008",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791473849111,
+  "ipFingerprint": "166sRZSWZGKGjo236Rr9I-yg"
+}
