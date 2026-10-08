@@ -1,0 +1,31 @@
+{
+  "id": "30f7f34c",
+  "name": "Luna Blood Moon",
+  "category": "heroes",
+  "heroName": "Luna",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "qizlik",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Luna Blood Moon",
+  "zip": {
+    "path": "pending/30f7f34c/Luna Blood Moon.zip",
+    "sha": "2fc95ff76285a287123af3a819f0c1536c5942d3",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/30f7f34c/Luna Blood Moon.webp",
+    "sha": "69d6b53f38e12138619a6a2e3d42dbf0aa8757f0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791448300404,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
