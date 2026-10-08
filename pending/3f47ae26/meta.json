@@ -1,0 +1,31 @@
+{
+  "id": "3f47ae26",
+  "name": "Marci Patchwork Reborn",
+  "category": "heroes",
+  "heroName": "Marci",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Marci Patchwork Reborn",
+  "zip": {
+    "path": "pending/3f47ae26/Marci Patchwork Reborn.zip",
+    "sha": "a074a1d376ee1ef43696c646d0a9fb52c5e7655f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3f47ae26/Marci Patchwork Reborn.webp",
+    "sha": "e84d39961b844bcd164efb5592f66e7bc8d29ffd",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791463975020,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
