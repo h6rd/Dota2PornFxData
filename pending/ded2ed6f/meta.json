@@ -1,0 +1,36 @@
+{
+  "id": "ded2ed6f",
+  "name": "Bloody Templar Assassin",
+  "category": "heroes",
+  "heroName": "Templar Assassin",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "1995rnx",
+      "isNew": false
+    },
+    {
+      "type": "modded",
+      "url": "Darkness",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Bloody Templar Assassin",
+  "zip": {
+    "path": "pending/ded2ed6f/Bloody Templar Assassin.zip",
+    "sha": "e913e2827063b74b2cda8b66b5e5b54bcccc7bbd",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ded2ed6f/Bloody Templar Assassin.webp",
+    "sha": "ac98839c7053f648771f5b1c5b271fd306acdb1f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791476001250,
+  "ipFingerprint": "MlvhtNI3hr57McvhUQiXpPqb"
+}
