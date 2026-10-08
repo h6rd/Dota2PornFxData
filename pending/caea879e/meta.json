@@ -1,0 +1,31 @@
+{
+  "id": "caea879e",
+  "name": "Oracle Clairvoyant",
+  "category": "heroes",
+  "heroName": "Oracle",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Oracle Clairvoyant",
+  "zip": {
+    "path": "pending/caea879e/Oracle Clairvoyant.zip",
+    "sha": "db116c4c94656f54a4d278aa339966b24af434d2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/caea879e/Oracle Clairvoyant.webp",
+    "sha": "1ff579cb6f865103ae7b55f12927a62b779f038b",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791461981764,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
