@@ -1,0 +1,31 @@
+{
+  "id": "c9114529",
+  "name": "Terrorblade Arcana Skadi",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Arcana Skadi",
+  "zip": {
+    "path": "pending/c9114529/Terrorblade Arcana Skadi.zip",
+    "sha": "fcfc6b4a7767295925f8c25d86343d4306b2a1c5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c9114529/Terrorblade Arcana Skadi.webp",
+    "sha": "2e768755ea40b3218935bfcbd8829891ee56e004",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791546307570,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
