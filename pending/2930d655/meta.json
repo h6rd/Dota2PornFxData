@@ -1,0 +1,28 @@
+{
+  "id": "2930d655",
+  "name": "Smaller Hud Update",
+  "category": "huds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Smaller Hud Update",
+  "zip": {
+    "path": "pending/2930d655/Smaller Hud Update.zip",
+    "sha": "8d0db2ff34a713c2e9bc12a28717e3bb38d1dbbb",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2930d655/Smaller Hud Update.webp",
+    "sha": "eeeed7ea61d0bd68545e7ceb4abca2a06e7d72ed",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791513990754,
+  "ipFingerprint": "JuekH9Lx5VQZXOnXdIuzwMiq"
+}
