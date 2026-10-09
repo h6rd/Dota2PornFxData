@@ -1,0 +1,29 @@
+{
+  "id": "fa467414",
+  "name": "Treant Protector",
+  "category": "heroes",
+  "heroName": "Treant Protector",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hizu",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/id/digitalsilenc3/"
+    }
+  ],
+  "filenameBase": "Treant Protector",
+  "zip": {
+    "path": "pending/fa467414/Treant Protector.zip",
+    "sha": "2ab24f873110c6a4475cdd948ab03e755e7fd05e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fa467414/Treant Protector.webp",
+    "sha": "89a01bd89056dd2c9d30983c0ea9f9f480c6433f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791506155981,
+  "ipFingerprint": "tJczamXac1U_ovJCeJomR3Pq"
+}
