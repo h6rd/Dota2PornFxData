@@ -1,0 +1,31 @@
+{
+  "id": "f333adff",
+  "name": "Luna Golden Immortal Stalker",
+  "category": "heroes",
+  "heroName": "Luna",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Luna Golden Immortal Stalker",
+  "zip": {
+    "path": "pending/f333adff/Luna Golden Immortal Stalker.zip",
+    "sha": "70aed6b28c99672df0ba74490ebbaeeb98bfd9ba",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f333adff/Luna Golden Immortal Stalker.webp",
+    "sha": "405d20c2afbee3de73190d94b42bee1779d5e366",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791549256243,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
