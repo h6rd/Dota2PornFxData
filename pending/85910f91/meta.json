@@ -1,0 +1,28 @@
+{
+  "id": "85910f91",
+  "name": "Tidehunter Deny",
+  "category": "creep-deny",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "depex",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tidehunter Deny",
+  "zip": {
+    "path": "pending/85910f91/Tidehunter Deny.zip",
+    "sha": "ade8dcdf064e128f104abd1797a1dc6c19c17b48",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/85910f91/Tidehunter Deny.webp",
+    "sha": "1fd07bbba63040e911d939742ea2109f68573f3f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791565970265,
+  "ipFingerprint": "fL0x5Hd5rWiynM_PQYThyCR9"
+}
