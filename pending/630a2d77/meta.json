@@ -1,0 +1,31 @@
+{
+  "id": "630a2d77",
+  "name": "Terrorblade Arcana Blades",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Arcana Blades",
+  "zip": {
+    "path": "pending/630a2d77/Terrorblade Arcana Blades.zip",
+    "sha": "9d8c713fd9c59b27cd80763887c4dfa7fdeb562e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/630a2d77/Terrorblade Arcana Blades.webp",
+    "sha": "f8f5d6aa43e5312d9734a52b331a1606a80e3775",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791548415721,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
