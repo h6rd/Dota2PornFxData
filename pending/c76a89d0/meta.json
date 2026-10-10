@@ -1,0 +1,28 @@
+{
+  "id": "c76a89d0",
+  "name": "Treant Protector Blossoms",
+  "category": "heroes",
+  "heroName": "Treant Protector",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hizu",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Treant Protector Blossoms",
+  "zip": {
+    "path": "pending/c76a89d0/Treant Protector Blossoms.zip",
+    "sha": "47463912ce1b5c0ad845895bf9acc9ba17767a0d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c76a89d0/Treant Protector Blossoms.webp",
+    "sha": "49eae556a02eb404d1677ac2a371f0f36264eac3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791675706702,
+  "ipFingerprint": "tJczamXac1U_ovJCeJomR3Pq"
+}
