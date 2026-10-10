@@ -1,0 +1,28 @@
+{
+  "id": "76e8d574",
+  "name": "Kaneki Mach V1.2",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kaneki Mach V1.2",
+  "zip": {
+    "path": "pending/76e8d574/Kaneki Mach V1.2.zip",
+    "sha": "65651d10b33ed1392fec2c8deaad0c2e1bee71d7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/76e8d574/Kaneki Mach V1.2.webp",
+    "sha": "d5fd3f990faf3630ba318e06102e281df1c698c5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791626890788,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
