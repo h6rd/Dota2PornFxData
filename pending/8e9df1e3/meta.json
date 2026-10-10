@@ -1,0 +1,30 @@
+{
+  "id": "8e9df1e3",
+  "name": "Terrorblade Blue Spell",
+  "category": "herofx",
+  "heroName": "Terrorblade",
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Blue Spell",
+  "zip": {
+    "path": "pending/8e9df1e3/Terrorblade Blue Spell.zip",
+    "sha": "c68a5645a07f61b49fb6e056e50456e992c54ba5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8e9df1e3/Terrorblade Blue Spell.webp",
+    "sha": "ea8ebe1ceea9e68929f5f97754627af3e5394cc4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791627613004,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
