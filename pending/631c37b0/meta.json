@@ -1,0 +1,30 @@
+{
+  "id": "631c37b0",
+  "name": "Terrorblade Orange Spell",
+  "category": "herofx",
+  "heroName": "Terrorblade",
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Orange Spell",
+  "zip": {
+    "path": "pending/631c37b0/Terrorblade Orange Spell.zip",
+    "sha": "8d1b95855481be70acbce5247a1339cca5c5a3e7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/631c37b0/Terrorblade Orange Spell.webp",
+    "sha": "7ff89a50cdc74eb16a8588941a5b6603aa683a36",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791627475335,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
