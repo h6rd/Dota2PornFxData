@@ -1,0 +1,22 @@
+{
+  "id": "eacf4adf",
+  "name": "Test",
+  "category": "shaders",
+  "heroName": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Test",
+  "zip": {
+    "path": "pending/eacf4adf/Test.zip",
+    "sha": "115149f6b27406e178b181e63f1449e3b536807c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/eacf4adf/Test.webp",
+    "sha": "6b2ea1337f34772ef1632f359f3c4c04d23600ae",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791618732962,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
