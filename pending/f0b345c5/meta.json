@@ -1,0 +1,28 @@
+{
+  "id": "f0b345c5",
+  "name": "Tusk Immortal Fire",
+  "category": "heroes",
+  "heroName": "Tusk",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hizu",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tusk Immortal Fire",
+  "zip": {
+    "path": "pending/f0b345c5/Tusk Immortal Fire.zip",
+    "sha": "0016e6c1f2e2c82e50b6a1e0f6f858daa6bc5ace",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f0b345c5/Tusk Immortal Fire.webp",
+    "sha": "d73ba9a5d178d1ecb33f1a89fa6a53c50ecc8cd5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791675173028,
+  "ipFingerprint": "tJczamXac1U_ovJCeJomR3Pq"
+}
