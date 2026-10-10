@@ -1,0 +1,31 @@
+{
+  "id": "9c3d86b6",
+  "name": "Faceless Void Arcana Reborn",
+  "category": "heroes",
+  "heroName": "Faceless Void",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Faceless Void Arcana Reborn",
+  "zip": {
+    "path": "pending/9c3d86b6/Faceless Void Arcana Reborn.zip",
+    "sha": "d5301f9bdd5414b2e584bdc6ed15d8db261014c4",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9c3d86b6/Faceless Void Arcana Reborn.webp",
+    "sha": "86b2567943b80ff87cf9119780f19b849a5c935e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791635802972,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
