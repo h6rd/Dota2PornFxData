@@ -1,0 +1,33 @@
+{
+  "id": "e8bc8f66",
+  "name": "Winlose Music Suffocation Kit",
+  "category": "sounds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/WI5V3PrOTXY?si=dQU1BR1hNXyZSnCq",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Winlose Music Suffocation Kit",
+  "zip": {
+    "path": "pending/e8bc8f66/Winlose Music Suffocation Kit.zip",
+    "sha": "d26833c384a6d2fe2142a69c4cf469650797466a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e8bc8f66/Winlose Music Suffocation Kit.webp",
+    "sha": "ac9530b92d5725136fd3052860f364b884c492fc",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791642743180,
+  "ipFingerprint": "dhI8zhAe1rbdbdKLnA4oqIvb"
+}
