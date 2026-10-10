@@ -26,10 +26,19 @@ const MISPLACED_HYPHEN_RE = /(^|[^a-zA-Z0-9])-|-([^a-zA-Z0-9]|$)/;
 const NICK_RE = /^[\p{L}\p{N} _.\-!,()\[\]#@+]+$/u;
 const SAFE_TEXT_RE = /^[^<>"`\\\u0000-\u001f\u007f]+$/;
 const UNSAFE_URL_CHARS_RE = /[\s"'<>`\\]/;
-const HERO_ITEM_SLOT_TAGS = new Set(["base", "totem", "weapon", "tail", "legs", "forge", "bear", "off-hand", "cart", "mount", "head", "arm", "arms", "armor", "shoulders", "back", "shield", "hair", "neck", "rocket"]);
+const FALLBACK_HERO_ITEM_SLOT_TAGS = ["base", "totem", "weapon", "spiderling", "tail", "legs", "forge", "bear", "off-hand", "cart", "mount", "head", "arm", "arms", "armor", "shoulders", "back", "shield", "hair", "neck", "rocket"];
+const NON_SLOT_TAGS = new Set(["effects", "icons", "sounds"]);
+function getHeroItemSlotTags(constants) {
+  const list = constants && constants.slotTags && constants.slotTags["hero-items"];
+  if (Array.isArray(list) && list.length) return new Set(list);
+  const cfg = constants && constants.TAG_CONFIGS && constants.TAG_CONFIGS["hero-items"];
+  if (cfg && cfg.map && typeof cfg.map === "object") return new Set(Object.keys(cfg.map).filter((k) => !NON_SLOT_TAGS.has(k)));
+  return new Set(FALLBACK_HERO_ITEM_SLOT_TAGS);
+}
 const MAX_URL_LEN = 300;
 const ALLOWED_CATEGORIES = splitList(process.env.ALLOWED_CATEGORIES);
 const ALLOWED_HEROES = splitList(process.env.ALLOWED_HEROES);
+const HERO_AWARE_CATEGORIES = new Set(["heroes", "hero-items", "herofx", "hero-sounds"]);
 
 const PREVIEW_VIDEO_CATEGORIES = new Set(["sounds", "hero-sounds", "huds", "ti-bp-effects", "heroes"]);
 const YOUTUBE_HOST_RE = /^(m\.|www\.|music\.)?youtube\.com$|^youtu\.be$/i;
@@ -225,6 +234,9 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   );
   assertField(typeof meta.category === "string" && /^[a-z0-9-]+$/.test(meta.category), "Invalid category");
   if (ALLOWED_CATEGORIES.length) assertField(ALLOWED_CATEGORIES.includes(meta.category), "Invalid category");
+  if (HERO_AWARE_CATEGORIES.has(meta.category)) {
+    assertField(typeof meta.heroName === "string" && meta.heroName.trim(), "A hero is required for this category");
+  }
   if (meta.heroName) {
     assertField(typeof meta.heroName === "string" && meta.heroName.length <= MAX_NAME_LEN, "Invalid hero");
     if (ALLOWED_HEROES.length) assertField(ALLOWED_HEROES.includes(meta.heroName), "Invalid hero");
@@ -236,7 +248,8 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     assertField(/^[a-zA-Z0-9_-]{1,40}$/.test(k) && typeof v === "boolean", "Invalid tags");
   }
   if (meta.category === "hero-items") {
-    const slotCount = Object.keys(metaTags).filter((k) => metaTags[k] === true && HERO_ITEM_SLOT_TAGS.has(k)).length;
+    const slotTags = getHeroItemSlotTags(constants);
+    const slotCount = Object.keys(metaTags).filter((k) => metaTags[k] === true && slotTags.has(k)).length;
     assertField(slotCount === 1, "Hero items require exactly one slot tag");
   }
 
@@ -308,8 +321,13 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   if (!mods.modsData[meta.category]) mods.modsData[meta.category] = [];
   const catData = mods.modsData[meta.category];
   if (catData && typeof catData === "object" && Array.isArray(catData.groups)) {
-    const groupName = meta.heroName || "Misc";
-    const groupId = slugify(groupName);
+    let groupName = meta.heroName || "Misc";
+    let groupId = slugify(groupName);
+    if (!meta.heroName && meta.category === "creep-deny") {
+      const isLasthit = /last[\s-]?hit/i.test(meta.name);
+      groupName = isLasthit ? "Lasthit" : "Deny";
+      groupId = isLasthit ? "last-hit" : "deny";
+    }
     const groupNameLc = groupName.trim().toLowerCase();
     let group =
       catData.groups.find((g) => g.id === groupId) ||
