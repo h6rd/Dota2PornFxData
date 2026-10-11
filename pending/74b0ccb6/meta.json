@@ -1,0 +1,29 @@
+{
+  "id": "74b0ccb6",
+  "name": "Shadow Fiend Sf Bismilyah",
+  "category": "hero-sounds",
+  "heroName": "Shadow Fiend",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Tom4il",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/profiles/76561199427406113/"
+    }
+  ],
+  "filenameBase": "Shadow Fiend Sf Bismilyah",
+  "zip": {
+    "path": "pending/74b0ccb6/Shadow Fiend Sf Bismilyah.zip",
+    "sha": "e57d67e412e6f98935a8309e0ed14ebbf08d6e7a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/74b0ccb6/Shadow Fiend Sf Bismilyah.webp",
+    "sha": "6d08f2f6a828f9ba5b9f763cb6647f6c04821b07",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791742166748,
+  "ipFingerprint": "ErdmaU-q5Qr1Hb6RSkcXTxVX"
+}
