@@ -1,0 +1,28 @@
+{
+  "id": "1a0b1d43",
+  "name": "Tidehunter Vetmo",
+  "category": "heroes",
+  "heroName": "Tidehunter",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tidehunter Vetmo",
+  "zip": {
+    "path": "pending/1a0b1d43/Tidehunter Vetmo.zip",
+    "sha": "ab5ee6056ff2658f0e4027dde67d74712ac524c5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1a0b1d43/Tidehunter Vetmo.webp",
+    "sha": "56040c4e97c70779791f078d9f96800e3e510f83",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791747072938,
+  "ipFingerprint": "MCmTXk6XWtfuD07OHBv2I4gj"
+}
