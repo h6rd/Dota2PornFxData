@@ -242,6 +242,7 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     if (ALLOWED_HEROES.length) assertField(ALLOWED_HEROES.includes(meta.heroName), "Invalid hero");
   }
   assertField(meta.zip && typeof meta.zip.path === "string", "Invalid submission archive");
+  assertField(meta.preview && typeof meta.preview.path === "string", "A mod preview is required");
 
   const metaTags = meta.tags && typeof meta.tags === "object" && !Array.isArray(meta.tags) ? meta.tags : {};
   for (const [k, v] of Object.entries(metaTags)) {
