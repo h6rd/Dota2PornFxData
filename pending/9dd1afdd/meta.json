@@ -1,0 +1,33 @@
+{
+  "id": "9dd1afdd",
+  "name": "Wraith King Papich",
+  "category": "hero-sounds",
+  "heroName": "Wraith King",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/W-6HhLX9NsY",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Wraith King Papich",
+  "zip": {
+    "path": "pending/9dd1afdd/Wraith King Papich.zip",
+    "sha": "241af3c1d9ada49b1e4033a35a812ca69c1784be",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9dd1afdd/Wraith King Papich.webp",
+    "sha": "a8499ce5e0cfc2e6c6b47ce870c281503b051e25",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791753580563,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
