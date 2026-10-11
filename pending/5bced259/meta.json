@@ -1,0 +1,30 @@
+{
+  "id": "5bced259",
+  "name": "Terrorblade Purple Spell",
+  "category": "herofx",
+  "heroName": "Terrorblade",
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Purple Spell",
+  "zip": {
+    "path": "pending/5bced259/Terrorblade Purple Spell.zip",
+    "sha": "2d81090ed50442545f87803e10fad2890fafd0eb",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5bced259/Terrorblade Purple Spell.webp",
+    "sha": "7c5948571f78cdecb9918652c5992e1988c5c3c4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791663345838,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
