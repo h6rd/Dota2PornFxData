@@ -1,0 +1,31 @@
+{
+  "id": "7de2ec71",
+  "name": "Tusk Burning",
+  "category": "heroes",
+  "heroName": "Tusk",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tusk Burning",
+  "zip": {
+    "path": "pending/7de2ec71/Tusk Burning.zip",
+    "sha": "4ab4571b6ffe875f5b72e745884b89ac9c480886",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7de2ec71/Tusk Burning.webp",
+    "sha": "f88cdcfa786066c4716694a3f07a614a63ec5926",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791658837235,
+  "ipFingerprint": "4O-n4oYhEhcIbLVeCNKNCdrO"
+}
