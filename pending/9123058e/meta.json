@@ -1,0 +1,30 @@
+{
+  "id": "9123058e",
+  "name": "Terrorblade Yellow Spell",
+  "category": "herofx",
+  "heroName": "Terrorblade",
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Yellow Spell",
+  "zip": {
+    "path": "pending/9123058e/Terrorblade Yellow Spell.zip",
+    "sha": "541dffc9246e67c9d4a95daa36c8f4a2ccd9c31a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9123058e/Terrorblade Yellow Spell.webp",
+    "sha": "4005f14034e9696d1e583c6d1b7daf3fc09c65c1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791663647728,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
