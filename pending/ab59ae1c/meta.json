@@ -1,6 +1,6 @@
 {
   "id": "ab59ae1c",
-  "name": "Dark Seer Oloxicam'S Glass",
+  "name": "Dark Seer Oloxicams Glass",
   "category": "heroes",
   "heroName": "Dark Seer",
   "tags": {
@@ -14,14 +14,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Dark Seer Oloxicam'S Glass",
+  "filenameBase": "Dark Seer Oloxicams Glass",
   "zip": {
-    "path": "pending/ab59ae1c/Dark Seer Oloxicam'S Glass.zip",
+    "path": "pending/ab59ae1c/Dark Seer Oloxicams Glass.zip",
     "sha": "87261724a6ff9e1dc28559af152760924e87ddb9",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/ab59ae1c/Dark Seer Oloxicam'S Glass.webp",
+    "path": "pending/ab59ae1c/Dark Seer Oloxicams Glass.webp",
     "sha": "5b92a8c59a1617f0c2d92da27263536e570ebfa2",
     "ext": "webp"
   },
