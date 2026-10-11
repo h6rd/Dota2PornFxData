@@ -1,0 +1,33 @@
+{
+  "id": "dba7d507",
+  "name": "Enigma Black Hole Kate V2",
+  "category": "hero-sounds",
+  "heroName": "Enigma",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/xlAJ2Rg7GgE",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Enigma Black Hole Kate V2",
+  "zip": {
+    "path": "pending/dba7d507/Enigma Black Hole Kate V2.zip",
+    "sha": "0ceb2ce1fb63bc43375eb3ec50ebf5874e4ea2f6",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/dba7d507/Enigma Black Hole Kate V2.webp",
+    "sha": "66401c1d5f00bc98545ea00a3f1dbe205f6f4533",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791754296488,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
