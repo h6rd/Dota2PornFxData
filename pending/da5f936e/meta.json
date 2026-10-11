@@ -1,0 +1,29 @@
+{
+  "id": "da5f936e",
+  "name": "Tidehunter Vetmo",
+  "category": "heroes",
+  "heroName": "Tidehunter",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/Moggdeli"
+    }
+  ],
+  "filenameBase": "Tidehunter Vetmo",
+  "zip": {
+    "path": "pending/da5f936e/Tidehunter Vetmo.zip",
+    "sha": "ad6dcad482e14192f6be62b282d9dca3d66f3b24",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/da5f936e/Tidehunter Vetmo.webp",
+    "sha": "0cf65169da84609fef7f159c7168b0d932d4e1a1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791720866482,
+  "ipFingerprint": "bb3cZ6Skk6PprFFQg_O1bPBg"
+}
