@@ -1,0 +1,31 @@
+{
+  "id": "6528f492",
+  "name": "Juggernaut Arima",
+  "category": "heroes",
+  "heroName": "Juggernaut",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "qizlik",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Juggernaut Arima",
+  "zip": {
+    "path": "pending/6528f492/Juggernaut Arima.zip",
+    "sha": "1df7d926a421d99c3409bd12562fd9cbc2885344",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6528f492/Juggernaut Arima.webp",
+    "sha": "0cd5d7ad167b24a8863484c71f6f08f42fceff75",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791698187514,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
