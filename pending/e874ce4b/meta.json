@@ -1,0 +1,28 @@
+{
+  "id": "e874ce4b",
+  "name": "Pink Spell Radius",
+  "category": "other",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pink Spell Radius",
+  "zip": {
+    "path": "pending/e874ce4b/Pink Spell Radius.zip",
+    "sha": "3b93ffd5fd872fe54b51c11e686f1d8963285f29",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e874ce4b/Pink Spell Radius.webp",
+    "sha": "7a696d2131a1bfff64c89457b1a860744b83ef73",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791800087596,
+  "ipFingerprint": "LawSYvBc8i-ZijSdifXrv8Bs"
+}
