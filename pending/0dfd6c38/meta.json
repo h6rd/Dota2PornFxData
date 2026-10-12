@@ -1,0 +1,31 @@
+{
+  "id": "0dfd6c38",
+  "name": "Earthshaker Cosmic Arcana V2",
+  "category": "heroes",
+  "heroName": "Earthshaker",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Earthshaker Cosmic Arcana V2",
+  "zip": {
+    "path": "pending/0dfd6c38/Earthshaker Cosmic Arcana V2.zip",
+    "sha": "7f92d8a4dc625f7b288b81d1c4fe730ed43250a5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0dfd6c38/Earthshaker Cosmic Arcana V2.webp",
+    "sha": "746cc21efe8d55793aa9993b350bea6d7147bcf1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791813325619,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
