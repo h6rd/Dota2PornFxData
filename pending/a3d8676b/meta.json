@@ -1,0 +1,31 @@
+{
+  "id": "a3d8676b",
+  "name": "Terrorblade Load Out Rubiline",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "CeoMods",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Load Out Rubiline",
+  "zip": {
+    "path": "pending/a3d8676b/Terrorblade Load Out Rubiline.zip",
+    "sha": "ff41b5f177c8322adae353ac703fd2c3b5fecddb",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a3d8676b/Terrorblade Load Out Rubiline.webp",
+    "sha": "82530655f0f6742dedf8bfbfbcf6b8b6938bbdc1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791795810552,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
