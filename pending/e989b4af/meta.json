@@ -1,0 +1,28 @@
+{
+  "id": "e989b4af",
+  "name": "Night Stalker Dark Oath V2",
+  "category": "heroes",
+  "heroName": "Night Stalker",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Night Stalker Dark Oath V2",
+  "zip": {
+    "path": "pending/e989b4af/Night Stalker Dark Oath V2.zip",
+    "sha": "a058e592365039225959b4ee5c55d3c45ba5f442",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e989b4af/Night Stalker Dark Oath V2.webp",
+    "sha": "80d53625520f0eb50953fdc8230c28e27be306e1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791767663533,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
