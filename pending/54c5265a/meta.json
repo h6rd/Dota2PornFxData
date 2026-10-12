@@ -1,0 +1,31 @@
+{
+  "id": "54c5265a",
+  "name": "Luna Diretide Shimmer",
+  "category": "heroes",
+  "heroName": "Luna",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Luna Diretide Shimmer",
+  "zip": {
+    "path": "pending/54c5265a/Luna Diretide Shimmer.zip",
+    "sha": "de32e5cee16c2a2b6b08b9693526203942ef6309",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/54c5265a/Luna Diretide Shimmer.webp",
+    "sha": "3c1ee452b6d1d2a617c8a9195a0f90d102a7e9d7",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791826893788,
+  "ipFingerprint": "dy7Ju2Yd8K5klqvIiAngEDKh"
+}
