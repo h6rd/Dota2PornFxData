@@ -227,6 +227,7 @@ function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt) 
 }
 
 function publishOne(id, meta, constants, mods, ledger = new Set()) {
+  if (meta && meta.update) return publishUpdate(id, meta, constants, mods, ledger);
   assertField(
     typeof meta.name === "string" && MOD_NAME_RE.test(meta.name) && !MISPLACED_HYPHEN_RE.test(meta.name) &&
       meta.name.length <= getMaxModNameLen(meta.heroName),
@@ -352,6 +353,110 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     const finalPreviewAbs = path.join(MAIN_DIR, finalPreviewRel);
     fs.mkdirSync(path.dirname(finalPreviewAbs), { recursive: true });
     fs.copyFileSync(path.join(DATA_DIR, meta.preview.path), finalPreviewAbs);
+  }
+  ledger.add(id);
+}
+
+function normModKey(name) {
+  return String(name || "").trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function findModEntry(mods, category, name) {
+  const key = normModKey(name);
+  const catData = mods.modsData && mods.modsData[category];
+  return getCategoryModsArray(catData).find((m) => m && normModKey(m.name) === key) || null;
+}
+
+const UPDATE_EDITABLE_LINK_TYPES = new Set(["source", "modded", "preview"]);
+
+function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
+  const upd = meta.update;
+  assertField(upd && typeof upd === "object", "Invalid update metadata");
+  assertField(typeof meta.category === "string" && /^[a-z0-9-]+$/.test(meta.category), "Invalid category");
+  if (ALLOWED_CATEGORIES.length) assertField(ALLOWED_CATEGORIES.includes(meta.category), "Invalid category");
+  assertField(typeof upd.name === "string" && upd.name.length > 0 && upd.name.length <= MAX_NAME_LEN, "Invalid update target");
+  assertField(meta.zip && typeof meta.zip.path === "string", "Invalid submission archive");
+  assertField(meta.preview && typeof meta.preview.path === "string" && meta.preview.ext === "webp", "A WebP mod preview is required");
+
+  const metaTags = meta.tags && typeof meta.tags === "object" && !Array.isArray(meta.tags) ? meta.tags : {};
+  for (const [k, v] of Object.entries(metaTags)) {
+    assertField(/^[a-zA-Z0-9_-]{1,40}$/.test(k) && typeof v === "boolean", "Invalid tags");
+  }
+  if (meta.category === "hero-items") {
+    const slotTags = getHeroItemSlotTags(constants);
+    const slotCount = Object.keys(metaTags).filter((k) => metaTags[k] === true && slotTags.has(k)).length;
+    assertField(slotCount === 1, "Hero items require exactly one slot tag");
+  }
+
+  if (ledger.has(id)) throw new AlreadyPublishedError(`submission ${id} was already published`);
+
+  const entry = findModEntry(mods, meta.category, upd.name);
+  assertField(entry, `The mod "${upd.name}" no longer exists in category "${meta.category}"`);
+  assertField(
+    typeof entry.file === "string" && /^[^\\/]+\.zip$/i.test(entry.file) && !entry.file.includes(".."),
+    "This mod's file is hosted externally and can't be replaced by an update"
+  );
+  if (entry.meta && entry.meta["submission-id"] === id) throw new AlreadyPublishedError(`submission ${id} was already published`);
+
+  const srcZipAbs = path.join(DATA_DIR, meta.zip.path);
+  const srcPreviewAbs = path.join(DATA_DIR, meta.preview.path);
+  assertField(fs.existsSync(srcZipAbs), "Source zip missing in DATA repo checkout");
+  assertField(fs.existsSync(srcPreviewAbs), "Source preview missing in DATA repo checkout");
+
+  const fileBase = entry.file.replace(/\.zip$/i, "");
+  const newPreviewName = typeof entry.preview === "string" && /^[^\\/]+\.webp$/i.test(entry.preview)
+    ? entry.preview
+    : `${fileBase}.webp`;
+
+  const sentLinks = [];
+  for (const link of meta.links || []) {
+    if (link && link.locked) continue;
+    assertField(link && UPDATE_EDITABLE_LINK_TYPES.has(link.type), "Invalid link type for an update");
+    assertField(typeof link.url === "string" && link.url.length > 0 && link.url.length <= MAX_TEXT_FIELD_LEN, "Invalid link");
+    if (link.type === "preview") {
+      assertField(PREVIEW_VIDEO_CATEGORIES.has(meta.category), "This category does not accept a preview video");
+      assertField(isYouTubeUrl(link.url), "Preview video must be a youtube.com / youtu.be link");
+      sentLinks.push({ type: link.type, url: link.url });
+      continue;
+    }
+    assertField(
+      link.isNew ? NICK_RE.test(link.url) : SAFE_TEXT_RE.test(link.url),
+      "Link name contains unsupported characters"
+    );
+    sentLinks.push({ type: link.type, url: link.url });
+    if (link.isNew) {
+      assertField(typeof link.newAuthorUrl === "string" && link.newAuthorUrl.length <= MAX_URL_LEN, "Invalid link URL");
+      if (link.newAuthorUrl) assertField(isSafeHttpsUrl(link.newAuthorUrl), "Link URL must be https://");
+      const map = LINK_TYPE_TO_CONSTANT[link.type];
+      if (!constants[map]) constants[map] = {};
+      if (!(link.url in constants[map])) constants[map][link.url] = link.newAuthorUrl || "";
+    }
+  }
+  const replacedTypes = new Set(sentLinks.map((l) => l.type));
+  const keptLinks = (Array.isArray(entry.links) ? entry.links : []).filter((l) => l && !replacedTypes.has(l.type));
+  const finalLinks = [...keptLinks, ...sentLinks];
+
+  if (Object.keys(metaTags).length) entry.tags = metaTags;
+  else delete entry.tags;
+  const oldPreviewName = typeof entry.preview === "string" ? entry.preview : null;
+  entry.preview = newPreviewName;
+  if (finalLinks.length) entry.links = finalLinks;
+  else delete entry.links;
+  entry.meta = {
+    ...(entry.meta || {}),
+    date: Math.floor(Date.now() / 1000),
+    "commit-sha": "",
+    "submission-id": id
+  };
+
+  const zipAbs = path.join(MAIN_DIR, `assets/files/${meta.category}/${entry.file}`);
+  const previewAbs = path.join(MAIN_DIR, `assets/previews/${meta.category}/${newPreviewName}`);
+  fs.mkdirSync(path.dirname(zipAbs), { recursive: true });
+  fs.mkdirSync(path.dirname(previewAbs), { recursive: true });
+  fs.copyFileSync(srcZipAbs, zipAbs);
+  fs.copyFileSync(srcPreviewAbs, previewAbs);
+  if (oldPreviewName && oldPreviewName !== newPreviewName && /^[^\\/]+$/.test(oldPreviewName) && !oldPreviewName.includes("..")) {
+    fs.rmSync(path.join(MAIN_DIR, `assets/previews/${meta.category}/${oldPreviewName}`), { force: true });
   }
   ledger.add(id);
 }
@@ -545,4 +650,5 @@ module.exports = {
   readLedger,
   loadPendingMetas,
   publishOne,
+  publishUpdate,
 };
