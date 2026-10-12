@@ -1,0 +1,31 @@
+{
+  "id": "4f1ad08c",
+  "name": "Snapfire Blue Icon",
+  "category": "herofx",
+  "heroName": "Snapfire",
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Tom4ik",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/profiles/76561199427406113/"
+    }
+  ],
+  "filenameBase": "Snapfire Blue Icon",
+  "zip": {
+    "path": "pending/4f1ad08c/Snapfire Blue Icon.zip",
+    "sha": "d0fddca8c0344a3a0b80f9ce6e7ac043fd3ae50c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4f1ad08c/Snapfire Blue Icon.webp",
+    "sha": "cbae4eed72ee44a7a85a5b135e0053078c183c42",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791793386785,
+  "ipFingerprint": "ErdmaU-q5Qr1Hb6RSkcXTxVX"
+}
