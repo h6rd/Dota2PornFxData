@@ -1,0 +1,37 @@
+{
+  "id": "79f6af7d",
+  "name": "Razor Voidstorm Asylum",
+  "category": "heroes",
+  "heroName": "Razor",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Razor Voidstorm Asylum",
+  "zip": {
+    "path": "pending/79f6af7d/Razor Voidstorm Asylum.zip",
+    "sha": "6dfef3af6034c09dc95d20f26806140c255affa8",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/79f6af7d/Razor Voidstorm Asylum.webp",
+    "sha": "28f477f038612567cbb4217aae97607efae2e422",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Razor Voidstorm Asylum",
+    "file": "Razor Voidstorm Asylum.zip",
+    "preview": "Razor Voidstorm Asylum.webp"
+  },
+  "status": "pending",
+  "createdAt": 1791789220828,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
