@@ -1,0 +1,28 @@
+{
+  "id": "3674e46e",
+  "name": "Invoker Jack Daniels",
+  "category": "heroes",
+  "heroName": "Invoker",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Invoker Jack Daniels",
+  "zip": {
+    "path": "pending/3674e46e/Invoker Jack Daniels.zip",
+    "sha": "49d9c2248b0879acd32483fb2eecb353237011fb",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3674e46e/Invoker Jack Daniels.webp",
+    "sha": "68160a621f473ff23a5765112fc385ebba7a081a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791755187281,
+  "ipFingerprint": "MCmTXk6XWtfuD07OHBv2I4gj"
+}
