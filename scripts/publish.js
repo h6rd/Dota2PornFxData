@@ -457,6 +457,9 @@ function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
   if (oldPreviewName && oldPreviewName !== newPreviewName && /^[^\\/]+$/.test(oldPreviewName) && !oldPreviewName.includes("..")) {
     fs.rmSync(path.join(MAIN_DIR, `assets/previews/${meta.category}/${oldPreviewName}`), { force: true });
   }
+  if (!Array.isArray(mods.recentlyAddedMods)) mods.recentlyAddedMods = [];
+  mods.recentlyAddedMods = mods.recentlyAddedMods.filter((r) => !(r && r.name === entry.name && r.category === meta.category));
+  mods.recentlyAddedMods.unshift({ name: entry.name, category: meta.category });
   ledger.add(id);
 }
 
