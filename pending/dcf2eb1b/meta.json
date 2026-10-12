@@ -1,0 +1,29 @@
+{
+  "id": "dcf2eb1b",
+  "name": "Dattebayo Puck",
+  "category": "hero-sounds",
+  "heroName": "Puck",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Tom4ik",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/profiles/76561199427406113/"
+    }
+  ],
+  "filenameBase": "Dattebayo Puck",
+  "zip": {
+    "path": "pending/dcf2eb1b/Dattebayo Puck.zip",
+    "sha": "05d322e743d59f40711647979d1524c3b0f0d129",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/dcf2eb1b/Dattebayo Puck.webp",
+    "sha": "527f038897c73cc9dcbe16060accb9a0887d33e4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791741096142,
+  "ipFingerprint": "ayaxim0-gYc94FOLuNIBoS8S"
+}
