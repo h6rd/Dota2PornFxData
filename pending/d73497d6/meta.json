@@ -1,0 +1,31 @@
+{
+  "id": "d73497d6",
+  "name": "Spectre Phantom Ascension V2",
+  "category": "heroes",
+  "heroName": "Spectre",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Spectre Phantom Ascension V2",
+  "zip": {
+    "path": "pending/d73497d6/Spectre Phantom Ascension V2.zip",
+    "sha": "a1304a4fe6239ef7e614361fcf655baee000af7d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d73497d6/Spectre Phantom Ascension V2.webp",
+    "sha": "ba1ad3d3293ab0da4711944c55618688de8516ad",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791765338127,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
