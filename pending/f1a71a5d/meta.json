@@ -1,0 +1,33 @@
+{
+  "id": "f1a71a5d",
+  "name": "Naga Siren I Love D",
+  "category": "hero-sounds",
+  "heroName": "Naga Siren",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/KcN4XB9tFjI",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Naga Siren I Love D",
+  "zip": {
+    "path": "pending/f1a71a5d/Naga Siren I Love D.zip",
+    "sha": "126ecaa51524241d069486e57cbb2de097372c7b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f1a71a5d/Naga Siren I Love D.webp",
+    "sha": "286df49ef3962b6140201f1d9f5cfa285d65c083",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791796984612,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
