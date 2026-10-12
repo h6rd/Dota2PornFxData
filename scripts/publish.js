@@ -396,7 +396,6 @@ function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
     typeof entry.file === "string" && /^[^\\/]+\.zip$/i.test(entry.file) && !entry.file.includes(".."),
     "This mod's file is hosted externally and can't be replaced by an update"
   );
-  if (entry.meta && entry.meta["submission-id"] === id) throw new AlreadyPublishedError(`submission ${id} was already published`);
 
   const srcZipAbs = path.join(DATA_DIR, meta.zip.path);
   const srcPreviewAbs = path.join(DATA_DIR, meta.preview.path);
@@ -445,9 +444,9 @@ function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
   entry.meta = {
     ...(entry.meta || {}),
     date: Math.floor(Date.now() / 1000),
-    "commit-sha": "",
-    "submission-id": id
+    "commit-sha": ""
   };
+  delete entry.meta["submission-id"];
 
   const zipAbs = path.join(MAIN_DIR, `assets/files/${meta.category}/${entry.file}`);
   const previewAbs = path.join(MAIN_DIR, `assets/previews/${meta.category}/${newPreviewName}`);
