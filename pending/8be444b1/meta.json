@@ -1,0 +1,31 @@
+{
+  "id": "8be444b1",
+  "name": "Batrider Napapiri",
+  "category": "heroes",
+  "heroName": "Batrider",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "александр",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Batrider Napapiri",
+  "zip": {
+    "path": "pending/8be444b1/Batrider Napapiri.zip",
+    "sha": "68ed703b2e52bc06783936c79486531220a09b1f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8be444b1/Batrider Napapiri.webp",
+    "sha": "be1849e324225b7554af61c267d2165242a4152c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791794226857,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
