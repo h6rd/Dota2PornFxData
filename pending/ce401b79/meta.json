@@ -1,0 +1,31 @@
+{
+  "id": "ce401b79",
+  "name": "Kunkka Frostbloom Sword",
+  "category": "hero-items",
+  "heroName": "Kunkka",
+  "tags": {
+    "weapon": true,
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kunkka Frostbloom Sword",
+  "zip": {
+    "path": "pending/ce401b79/Kunkka Frostbloom Sword.zip",
+    "sha": "cb585711e387cba3167dded1abbced7b78c81a3e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ce401b79/Kunkka Frostbloom Sword.webp",
+    "sha": "cb347b1c5175c48d44f11a753522c5ca6bc8d822",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791782978043,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
