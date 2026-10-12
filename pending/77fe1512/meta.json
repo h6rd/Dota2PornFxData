@@ -1,0 +1,31 @@
+{
+  "id": "77fe1512",
+  "name": "Morphling Crimson",
+  "category": "heroes",
+  "heroName": "Morphling",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "CeoMods",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Morphling Crimson",
+  "zip": {
+    "path": "pending/77fe1512/Morphling Crimson.zip",
+    "sha": "5d5c62db5bf275da508a48aa97c53a6db997149a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/77fe1512/Morphling Crimson.webp",
+    "sha": "8cd5056cecc182b709325b07eb104459c666e428",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791794529736,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
