@@ -1,0 +1,31 @@
+{
+  "id": "1c381d0e",
+  "name": "Phantom Lancer Black",
+  "category": "heroes",
+  "heroName": "Phantom Lancer",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "CeoMods",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Phantom Lancer Black",
+  "zip": {
+    "path": "pending/1c381d0e/Phantom Lancer Black.zip",
+    "sha": "009a23af9bce2358df862a0dea951ae67c0e6ca2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1c381d0e/Phantom Lancer Black.webp",
+    "sha": "25286da2c9684c2cda53321794ea8522bc64db60",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791794592891,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
