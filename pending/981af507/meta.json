@@ -1,0 +1,31 @@
+{
+  "id": "981af507",
+  "name": "Io Verity",
+  "category": "heroes",
+  "heroName": "Io",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Io Verity",
+  "zip": {
+    "path": "pending/981af507/Io Verity.zip",
+    "sha": "1406eb0e26b5f6dc0a8144a5266a0e5b08597d55",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/981af507/Io Verity.webp",
+    "sha": "460be15c6aa062d83ebd05608d5cb6adc39b57c9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791881540760,
+  "ipFingerprint": "SbUQn0xakhTVpVeAtVRtjTxf"
+}
