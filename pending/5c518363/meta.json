@@ -1,0 +1,37 @@
+{
+  "id": "5c518363",
+  "name": "Terrorblade Arcana Manta",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Terrorblade Arcana Manta",
+  "zip": {
+    "path": "pending/5c518363/Terrorblade Arcana Manta.zip",
+    "sha": "4e2d01c87fd5fafd1384ef72cd27e2434420fa06",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5c518363/Terrorblade Arcana Manta.webp",
+    "sha": "74455858344d479844c36c1a2394c5b8a9bb27ac",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Terrorblade Arcana Manta",
+    "file": "Terrorblade Arcana Manta.zip",
+    "preview": "Terrorblade Arcana Manta.webp"
+  },
+  "status": "pending",
+  "createdAt": 1791916422611,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
