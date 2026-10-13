@@ -1,0 +1,57 @@
+{
+  "id": "55c4df98",
+  "name": "Pandora The Packwyrm",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Pandora The Packwyrm",
+  "zip": {
+    "path": "pending/55c4df98/Pandora The Packwyrm.zip",
+    "sha": "3164da98b8973250b114ff4e8ba69958b0b293bc",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/55c4df98/Pandora The Packwyrm.webp",
+    "sha": "80c25eb5875c7f232fe510fd52c67a7ea1ad2de4",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "Style I",
+      "colors": [
+        "#6461ff",
+        "#ff8080"
+      ],
+      "zip": {
+        "path": "pending/55c4df98/Pandora The Packwyrm.zip",
+        "sha": "3164da98b8973250b114ff4e8ba69958b0b293bc",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/55c4df98/Pandora The Packwyrm.webp",
+        "sha": "80c25eb5875c7f232fe510fd52c67a7ea1ad2de4",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "Golden",
+      "colors": [
+        "#ffd270"
+      ],
+      "zip": {
+        "path": "pending/55c4df98/Pandora The Packwyrm Golden.zip",
+        "sha": "fba653ec9a088ca18b9afc51a5bb55a6b57095af",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/55c4df98/Pandora The Packwyrm Golden.webp",
+        "sha": "e3c247af8e1f6aa80691047ead05321240a4b445",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1791876460539,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
