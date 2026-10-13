@@ -1,0 +1,22 @@
+{
+  "id": "99d8ba27",
+  "name": "Shroomy",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Shroomy",
+  "zip": {
+    "path": "pending/99d8ba27/Shroomy.zip",
+    "sha": "3b3f6608b8f3166c293b40564f7e544945e80014",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/99d8ba27/Shroomy.webp",
+    "sha": "cdf551166b1bf1ee769546041b4526474b18b7ac",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791874201126,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
