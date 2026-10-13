@@ -1,0 +1,31 @@
+{
+  "id": "24bd0f14",
+  "name": "Dazzle Immortal",
+  "category": "heroes",
+  "heroName": "Dazzle",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "hizu",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Dazzle Immortal",
+  "zip": {
+    "path": "pending/24bd0f14/Dazzle Immortal.zip",
+    "sha": "89a3021b70d7d2f7a3880df780cd0c2f6907ec78",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/24bd0f14/Dazzle Immortal.webp",
+    "sha": "8502230716734acd98a7d6df9ffbe8db8076654a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791904630112,
+  "ipFingerprint": "tJczamXac1U_ovJCeJomR3Pq"
+}
