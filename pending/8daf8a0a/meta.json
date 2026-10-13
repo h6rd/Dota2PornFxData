@@ -1,6 +1,6 @@
 {
   "id": "8daf8a0a",
-  "name": "Terrorblade Legacy 0, 254, 61",
+  "name": "Terrorblade Legacy Green",
   "category": "heroes",
   "heroName": "Terrorblade",
   "tags": {
@@ -14,14 +14,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Terrorblade Legacy 0, 254, 61",
+  "filenameBase": "Terrorblade Legacy Green",
   "zip": {
-    "path": "pending/8daf8a0a/Terrorblade Legacy 0, 254, 61.zip",
+    "path": "pending/8daf8a0a/Terrorblade Legacy Green.zip",
     "sha": "86b9a7c1d86ac31e24c99f014ba375f1d568b423",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/8daf8a0a/Terrorblade Legacy 0, 254, 61.webp",
+    "path": "pending/8daf8a0a/Terrorblade Legacy Green.webp",
     "sha": "ce799c75b99da8e7e14b46c588cc16f5ebf2d73f",
     "ext": "webp"
   },
