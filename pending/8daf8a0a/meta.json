@@ -1,0 +1,31 @@
+{
+  "id": "8daf8a0a",
+  "name": "Terrorblade Legacy 0, 254, 61",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Legacy 0, 254, 61",
+  "zip": {
+    "path": "pending/8daf8a0a/Terrorblade Legacy 0, 254, 61.zip",
+    "sha": "86b9a7c1d86ac31e24c99f014ba375f1d568b423",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8daf8a0a/Terrorblade Legacy 0, 254, 61.webp",
+    "sha": "ce799c75b99da8e7e14b46c588cc16f5ebf2d73f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791894474156,
+  "ipFingerprint": "dhI8zhAe1rbdbdKLnA4oqIvb"
+}
