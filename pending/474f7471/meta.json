@@ -1,0 +1,33 @@
+{
+  "id": "474f7471",
+  "name": "Weawer Ult Net Idi Nahui",
+  "category": "sounds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "EmodzI",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/rvkUEC3SKG0",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Weawer Ult Net Idi Nahui",
+  "zip": {
+    "path": "pending/474f7471/Weawer Ult Net Idi Nahui.zip",
+    "sha": "822f5526e365d2c7ad6906e9f4a7bdd5c84f27e5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/474f7471/Weawer Ult Net Idi Nahui.webp",
+    "sha": "302a4499d54d4c08300cbd2924c894b09abd4c47",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791909270691,
+  "ipFingerprint": "pOm1U4bY0od8HH0ACkAyLQjD"
+}
