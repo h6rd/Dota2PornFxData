@@ -1,0 +1,65 @@
+{
+  "id": "ea8cfee1",
+  "name": "Earthshaker Arcana Planetfall",
+  "category": "heroes",
+  "heroName": "Earthshaker",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Earthshaker Arcana Planetfall",
+  "zip": {
+    "path": "pending/ea8cfee1/Earthshaker Arcana Planetfall.zip",
+    "sha": "4b87918223c2e41a3432691f5670547f511dbea8",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ea8cfee1/Earthshaker Arcana Planetfall.webp",
+    "sha": "ceef0615e0c324591791f543c7ad7a5898a8e4ac",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "Celestial",
+      "colors": [
+        "#00fbff"
+      ],
+      "zip": {
+        "path": "pending/ea8cfee1/Earthshaker Arcana Planetfall.zip",
+        "sha": "4b87918223c2e41a3432691f5670547f511dbea8",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/ea8cfee1/Earthshaker Arcana Planetfall.webp",
+        "sha": "ceef0615e0c324591791f543c7ad7a5898a8e4ac",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "Burning",
+      "colors": [
+        "#ea4b1a"
+      ],
+      "zip": {
+        "path": "pending/ea8cfee1/Earthshaker Arcana Planetfall Burning.zip",
+        "sha": "a2074993a311993df66711af3dfab891ae183428",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/ea8cfee1/Earthshaker Arcana Planetfall Burning.webp",
+        "sha": "8ae115b9fd14d6889116e74938bc6be25c12a98f",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1791912240848,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
