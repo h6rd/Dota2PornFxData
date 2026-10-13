@@ -27,7 +27,13 @@ const NICK_RE = /^[\p{L}\p{N} _.\-!,()\[\]#@+]+$/u;
 const SAFE_TEXT_RE = /^[^<>"`\\\u0000-\u001f\u007f]+$/;
 const UNSAFE_URL_CHARS_RE = /[\s"'<>`\\]/;
 const FALLBACK_HERO_ITEM_SLOT_TAGS = ["base", "totem", "weapon", "spiderling", "tail", "legs", "forge", "bear", "off-hand", "cart", "mount", "head", "arm", "arms", "armor", "shoulders", "back", "shield", "hair", "neck", "rocket"];
+const UPLOAD_HIDDEN_TAGS = { herofx: ["sounds"], "hero-items": ["sounds"] };
 const NON_SLOT_TAGS = new Set(["effects", "icons", "sounds"]);
+
+function stripHiddenTags(category, tags) {
+  const hidden = UPLOAD_HIDDEN_TAGS[category] || [];
+  return Object.fromEntries(Object.entries(tags).filter(([k]) => !hidden.includes(k)));
+}
 function getHeroItemSlotTags(constants) {
   const list = constants && constants.slotTags && constants.slotTags["hero-items"];
   if (Array.isArray(list) && list.length) return new Set(list);
@@ -36,6 +42,35 @@ function getHeroItemSlotTags(constants) {
   return new Set(FALLBACK_HERO_ITEM_SLOT_TAGS);
 }
 const MAX_URL_LEN = 300;
+
+const STYLES_PER_MOD = 2;
+const STYLE_LABEL_RE = /^[a-zA-Z0-9 _.\-!]+$/;
+const MAX_STYLE_LABEL_LEN = 24;
+const HEX_COLOR_RE = /^#[0-9a-f]{6}$/;
+const STYLE_FILE_SUFFIXES = ["", " Style 2"];
+
+function colorsToCss(colors) {
+  return colors.length > 1 ? `linear-gradient(135deg, ${colors[0]} 50%, ${colors[1]} 50%)` : colors[0];
+}
+
+function validateStyleDefs(styles, meta) {
+  assertField(Array.isArray(styles) && styles.length === STYLES_PER_MOD, `A mod with styles needs exactly ${STYLES_PER_MOD} styles`);
+  const seen = new Set();
+  return styles.map((st, i) => {
+    assertField(st && typeof st === "object", "Invalid style");
+    const label = typeof st.label === "string" ? st.label.trim() : "";
+    assertField(label && label.length <= MAX_STYLE_LABEL_LEN && STYLE_LABEL_RE.test(label), `Style ${i + 1}: invalid style name`);
+    assertField(!seen.has(label.toLowerCase()), "Style names must be different");
+    seen.add(label.toLowerCase());
+    const colors = Array.isArray(st.colors) ? st.colors.map((c) => String(c).toLowerCase()) : [];
+    assertField(colors.length >= 1 && colors.length <= 2 && colors.every((c) => HEX_COLOR_RE.test(c)), `Style ${i + 1}: invalid color`);
+    assertField(st.zip && typeof st.zip.path === "string", `Style ${i + 1}: invalid submission archive`);
+    assertField(st.preview && typeof st.preview.path === "string" && st.preview.ext === "webp", `Style ${i + 1}: a WebP preview is required`);
+    assertField(fs.existsSync(path.join(DATA_DIR, st.zip.path)), `Style ${i + 1}: source zip missing in DATA repo checkout`);
+    assertField(fs.existsSync(path.join(DATA_DIR, st.preview.path)), `Style ${i + 1}: source preview missing in DATA repo checkout`);
+    return { label, colors, zip: st.zip, preview: st.preview };
+  });
+}
 const ALLOWED_CATEGORIES = splitList(process.env.ALLOWED_CATEGORIES);
 const ALLOWED_HEROES = splitList(process.env.ALLOWED_HEROES);
 const HERO_AWARE_CATEGORIES = new Set(["heroes", "hero-items", "herofx", "hero-sounds"]);
@@ -207,20 +242,23 @@ function listTrackedPaths(mainDir, subpath) {
   return new Set(res.stdout.split("\n").filter(Boolean));
 }
 
-function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt) {
+function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt, suffixes = [""]) {
   const MAX_ATTEMPTS = 25;
   const existingZips = listTrackedPaths(mainDir, `assets/files/${category}`);
   const existingPreviews = previewExt ? listTrackedPaths(mainDir, `assets/previews/${category}`) : new Set();
 
   let candidate = baseFilename;
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
-    const zipRel = `assets/files/${category}/${candidate}.zip`;
-    const previewRel = previewExt ? `assets/previews/${category}/${candidate}.${previewExt}` : null;
-    const zipTaken = existingZips.has(zipRel) || fs.existsSync(path.join(mainDir, zipRel));
-    const previewTaken = previewRel
-      ? existingPreviews.has(previewRel) || fs.existsSync(path.join(mainDir, previewRel))
-      : false;
-    if (!zipTaken && !previewTaken) return candidate;
+    const taken = suffixes.some((suffix) => {
+      const zipRel = `assets/files/${category}/${candidate}${suffix}.zip`;
+      const previewRel = previewExt ? `assets/previews/${category}/${candidate}${suffix}.${previewExt}` : null;
+      const zipTaken = existingZips.has(zipRel) || fs.existsSync(path.join(mainDir, zipRel));
+      const previewTaken = previewRel
+        ? existingPreviews.has(previewRel) || fs.existsSync(path.join(mainDir, previewRel))
+        : false;
+      return zipTaken || previewTaken;
+    });
+    if (!taken) return candidate;
     candidate = `${baseFilename}-${randomSuffix()}`;
   }
   throw new ValidationError(`Could not find a free filename for "${baseFilename}" after ${MAX_ATTEMPTS} attempts`);
@@ -245,7 +283,12 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   assertField(meta.zip && typeof meta.zip.path === "string", "Invalid submission archive");
   assertField(meta.preview && typeof meta.preview.path === "string", "A mod preview is required");
 
-  const metaTags = meta.tags && typeof meta.tags === "object" && !Array.isArray(meta.tags) ? meta.tags : {};
+  const styleDefs = Array.isArray(meta.styles) && meta.styles.length ? validateStyleDefs(meta.styles, meta) : null;
+  if (styleDefs) {
+    assertField(styleDefs[0].zip.path === meta.zip.path && styleDefs[0].preview.path === meta.preview.path, "Style 1 does not match the submission files");
+  }
+
+  const metaTags = stripHiddenTags(meta.category, meta.tags && typeof meta.tags === "object" && !Array.isArray(meta.tags) ? meta.tags : {});
   for (const [k, v] of Object.entries(metaTags)) {
     assertField(/^[a-zA-Z0-9_-]{1,40}$/.test(k) && typeof v === "boolean", "Invalid tags");
   }
@@ -276,7 +319,8 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     MAIN_DIR,
     meta.category,
     baseFilename,
-    meta.preview ? meta.preview.ext : null
+    meta.preview ? meta.preview.ext : null,
+    styleDefs ? STYLE_FILE_SUFFIXES : [""]
   );
 
   const finalZipRel = `assets/files/${meta.category}/${publishFilenameBase}.zip`;
@@ -311,11 +355,29 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     }
   }
 
+  const styleFiles = styleDefs
+    ? styleDefs.map((st, i) => {
+        const base = `${publishFilenameBase}${STYLE_FILE_SUFFIXES[i]}`;
+        return { ...st, fileName: `${base}.zip`, previewName: `${base}.webp` };
+      })
+    : null;
+
   const modEntry = {
     name: meta.name,
-    ...(previewFilename ? { preview: previewFilename } : {}),
-    file: `${publishFilenameBase}.zip`,
-    ...(meta.tags && Object.keys(meta.tags).length ? { tags: meta.tags } : {}),
+    ...(styleFiles
+      ? {
+          styles: styleFiles.map((st) => ({
+            label: st.label,
+            color: colorsToCss(st.colors),
+            preview: st.previewName,
+            file: st.fileName
+          }))
+        }
+      : {
+          ...(previewFilename ? { preview: previewFilename } : {}),
+          file: `${publishFilenameBase}.zip`
+        }),
+    ...(Object.keys(metaTags).length ? { tags: metaTags } : {}),
     ...(finalLinks.length ? { links: finalLinks } : {}),
     meta: { date: Math.floor(Date.now() / 1000), "commit-sha": "" }
   };
@@ -354,6 +416,16 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     fs.mkdirSync(path.dirname(finalPreviewAbs), { recursive: true });
     fs.copyFileSync(path.join(DATA_DIR, meta.preview.path), finalPreviewAbs);
   }
+  if (styleFiles) {
+    for (const st of styleFiles.slice(1)) {
+      const zipAbs = path.join(MAIN_DIR, `assets/files/${meta.category}/${st.fileName}`);
+      const previewAbs = path.join(MAIN_DIR, `assets/previews/${meta.category}/${st.previewName}`);
+      fs.mkdirSync(path.dirname(zipAbs), { recursive: true });
+      fs.mkdirSync(path.dirname(previewAbs), { recursive: true });
+      fs.copyFileSync(path.join(DATA_DIR, st.zip.path), zipAbs);
+      fs.copyFileSync(path.join(DATA_DIR, st.preview.path), previewAbs);
+    }
+  }
   ledger.add(id);
 }
 
@@ -378,7 +450,7 @@ function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
   assertField(meta.zip && typeof meta.zip.path === "string", "Invalid submission archive");
   assertField(meta.preview && typeof meta.preview.path === "string" && meta.preview.ext === "webp", "A WebP mod preview is required");
 
-  const metaTags = meta.tags && typeof meta.tags === "object" && !Array.isArray(meta.tags) ? meta.tags : {};
+  const metaTags = stripHiddenTags(meta.category, meta.tags && typeof meta.tags === "object" && !Array.isArray(meta.tags) ? meta.tags : {});
   for (const [k, v] of Object.entries(metaTags)) {
     assertField(/^[a-zA-Z0-9_-]{1,40}$/.test(k) && typeof v === "boolean", "Invalid tags");
   }
@@ -435,7 +507,12 @@ function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
   const keptLinks = (Array.isArray(entry.links) ? entry.links : []).filter((l) => l && !replacedTypes.has(l.type));
   const finalLinks = [...keptLinks, ...sentLinks];
 
-  if (Object.keys(metaTags).length) entry.tags = metaTags;
+  const keptHidden = {};
+  for (const k of UPLOAD_HIDDEN_TAGS[meta.category] || []) {
+    if (entry.tags && entry.tags[k] === true) keptHidden[k] = true;
+  }
+  const finalTags = { ...metaTags, ...keptHidden };
+  if (Object.keys(finalTags).length) entry.tags = finalTags;
   else delete entry.tags;
   const oldPreviewName = typeof entry.preview === "string" ? entry.preview : null;
   entry.preview = newPreviewName;

@@ -52,7 +52,7 @@ function renderReport({ published, alreadyPublished, failed, modsDiff, constants
 
   if (published.length) {
     lines.push(`Would publish **${published.length}** submission if this PR is merged:`);
-    for (const p of published) lines.push(`- \`${p.id}\` — ${p.name}${p.update ? " _(update: replaces existing files)_" : ""}`);
+    for (const p of published) lines.push(`- \`${p.id}\` — ${p.name}${p.update ? " _(update: replaces existing files)_" : ""}${p.styles ? ` _(${p.styles} styles)_` : ""}`);
     lines.push("");
   }
 
@@ -106,7 +106,7 @@ function main() {
   for (const [id, meta] of metaById) {
     try {
       publishOne(id, meta, constants, mods, ledger);
-      published.push({ id, name: meta.name, update: !!meta.update });
+      published.push({ id, name: meta.name, update: !!meta.update, styles: Array.isArray(meta.styles) ? meta.styles.length : 0 });
     } catch (err) {
       if (err instanceof AlreadyPublishedError) {
         alreadyPublished.push({ id, name: meta.name });
