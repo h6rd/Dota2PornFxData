@@ -1,0 +1,31 @@
+{
+  "id": "322c7f1c",
+  "name": "Lye Batenkaitos",
+  "category": "backgrounds",
+  "heroName": null,
+  "tags": {
+    "image": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "drugponu",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/id/drugponu/"
+    }
+  ],
+  "filenameBase": "Lye Batenkaitos",
+  "zip": {
+    "path": "pending/322c7f1c/Lye Batenkaitos.zip",
+    "sha": "235d9f4eff824cdd168a24cb17cdd52095498eed",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/322c7f1c/Lye Batenkaitos.webp",
+    "sha": "473d2368d84c56d79b2b6eff63213860752961c6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791932088529,
+  "ipFingerprint": "5aLlTmMyG1Tac4SJYOHqIP20"
+}
