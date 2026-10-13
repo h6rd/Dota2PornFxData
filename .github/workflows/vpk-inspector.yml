@@ -40,15 +40,23 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p inspector-work
-          ZIP_FILE=$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+          ZIP_FILES=$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
             --paginate --jq '.[] | select(.status != "removed") | .filename' \
-            | grep -iE '^pending/[^/]+/[^/]+\.zip$' | head -n 1 || true)
-          if [ -z "$ZIP_FILE" ] || [ ! -f "$ZIP_FILE" ]; then
+            | grep -iE '^pending/[^/]+/[^/]+\.zip$' \
+            | awk '{ print length($0) "\t" $0 }' | sort -n | cut -f2- | head -n 4 || true)
+          if [ -z "$ZIP_FILES" ]; then
             echo "No ZIP file added by this PR found in pending/"
             exit 1
           fi
-          echo "Found ZIP: $ZIP_FILE"
-          export ZIP_FILE
+          while IFS= read -r z; do
+            if [ ! -f "$z" ]; then
+              echo "Missing ZIP in checkout: $z"
+              exit 1
+            fi
+          done <<< "$ZIP_FILES"
+          echo "Found ZIP files:"
+          echo "$ZIP_FILES"
+          export ZIP_FILES
           python <<'PY'
           import os
           import re
@@ -58,96 +66,13 @@ jobs:
 
           MAX_VPK_BYTES = 100 * 1024 * 1024
           MAX_LIST_LINES = 200
+          MAX_COMMENT_CHARS = 55000
+
 
           def clean(value):
               # Names come from an untrusted archive: keep them printable and unable to break out of a Markdown fence.
               return "".join(ch for ch in str(value) if ch.isprintable() and ch not in "`~")
 
-          zip_file = os.environ["ZIP_FILE"]
-          with zipfile.ZipFile(zip_file) as zf:
-              file_infos = [i for i in zf.infolist() if not i.is_dir()]
-              unexpected = [i.filename for i in file_infos if not i.filename.lower().endswith(".vpk")]
-              if unexpected or len(file_infos) != 1:
-                  listing = "\n".join(clean(i.filename) for i in file_infos[:MAX_LIST_LINES]) or "(no files)"
-                  with open("vpk_report.md", "w", encoding="utf-8") as f:
-                      f.write(f"""<!-- vpk-inspector-report -->
-          ## VPK Inspector
-
-          ⚠️ **Rejected: the mod archive must contain exactly one `.vpk` file and nothing else.**
-
-          ~~~~~text
-          {listing}
-          ~~~~~
-          """)
-                  print("Archive content policy violated")
-                  sys.exit(1)
-
-              # Extract only the single .vpk, with a size cap (never trust declared sizes of an untrusted archive)
-              info = file_infos[0]
-              base = re.sub(r"[^A-Za-z0-9._-]", "_", os.path.basename(info.filename)) or "mod_dir.vpk"
-              os.makedirs("inspector-work/extracted", exist_ok=True)
-              vpk_file = os.path.join("inspector-work/extracted", base)
-              written = 0
-              with zf.open(info) as src, open(vpk_file, "wb") as dst:
-                  while True:
-                      chunk = src.read(1024 * 1024)
-                      if not chunk:
-                          break
-                      written += len(chunk)
-                      if written > MAX_VPK_BYTES:
-                          print("The .vpk inside the archive is larger than the inspector limit")
-                          sys.exit(1)
-                      dst.write(chunk)
-
-          print(f"Found VPK: {vpk_file}")
-
-          def reject_corrupt(reason, exc):
-              size = os.path.getsize(vpk_file)
-              lines = [
-                  "<!-- vpk-inspector-report -->",
-                  "## VPK Inspector",
-                  "",
-                  "⚠️ **Rejected: the `.vpk` file is corrupted or is not a valid VPK archive.**",
-                  "",
-                  f"- **File:** `{clean(os.path.basename(info.filename))}`",
-                  f"- **Size:** {size} bytes",
-                  f"- **Problem:** {reason}",
-                  f"- **Parser error:** `{clean(type(exc).__name__)}: {clean(exc)}`",
-                  "",
-                  "The VPK directory index (the `_dir.vpk` header/file table) cannot be read. "
-                  "Please re-pack the mod (e.g. with the Source 2 Workshop Tools / `vpk` tool), "
-                  "check that the file was not damaged or edited in a hex editor, and resubmit.",
-                  "",
-              ]
-              with open("vpk_report.md", "w", encoding="utf-8") as f:
-                  f.write("\n".join(lines))
-              print(f"::error::Invalid VPK ({type(exc).__name__}): {exc}")
-              sys.exit(1)
-
-          try:
-              archive = vpk.open(vpk_file)
-          except Exception as exc:
-              reject_corrupt("the VPK header could not be parsed", exc)
-
-          try:
-              files = sorted(clean(f) for f in archive)
-          except Exception as exc:
-              reject_corrupt("the VPK file index could not be parsed (broken structure)", exc)
-
-          if not files:
-              reject_corrupt("the VPK contains no files", ValueError("empty index"))
-
-          extensions = {}
-
-          for path in files:
-              filename = os.path.basename(path)
-              if "." in filename:
-                  ext = "." + filename.rsplit(".", 1)[1].lower()
-              else:
-                  ext = "[no extension]"
-              extensions[ext] = extensions.get(ext, 0) + 1
-
-          MAX_COMMENT_CHARS = 55000
 
           def build_tree(paths, include_files):
               tree = {}
@@ -159,6 +84,7 @@ jobs:
                   for part in parts:
                       current = current.setdefault(part, {})
               return tree
+
 
           def render_tree(node, prefix=""):
               lines = []
@@ -172,49 +98,132 @@ jobs:
                       lines.extend(render_tree(children, next_prefix))
               return lines
 
-          extension_lines = [
-              f"- `{ext}`: {count}"
-              for ext, count in sorted(
-                  extensions.items(),
-                  key=lambda x: (-x[1], x[0])
-              )
-          ]
-          extensions_text = "\n".join(extension_lines)
 
-          def render_report(tree_text, note=""):
-              return f"""<!-- vpk-inspector-report -->
-          ## VPK Inspector
+          def inspect(zip_file, index):
+              with zipfile.ZipFile(zip_file) as zf:
+                  file_infos = [i for i in zf.infolist() if not i.is_dir()]
+                  unexpected = [i.filename for i in file_infos if not i.filename.lower().endswith(".vpk")]
+                  if unexpected or len(file_infos) != 1:
+                      listing = "\n".join(clean(i.filename) for i in file_infos[:MAX_LIST_LINES]) or "(no files)"
+                      return False, [
+                          "⚠️ **Rejected: the mod archive must contain exactly one `.vpk` file and nothing else.**",
+                          "",
+                          "~~~~~text",
+                          listing,
+                          "~~~~~",
+                      ]
 
-          ### Directory structure
+                  # Extract only the single .vpk, with a size cap (never trust declared sizes of an untrusted archive)
+                  info = file_infos[0]
+                  base = re.sub(r"[^A-Za-z0-9._-]", "_", os.path.basename(info.filename)) or "mod_dir.vpk"
+                  out_dir = os.path.join("inspector-work", "extracted", str(index))
+                  os.makedirs(out_dir, exist_ok=True)
+                  vpk_file = os.path.join(out_dir, base)
+                  written = 0
+                  with zf.open(info) as src, open(vpk_file, "wb") as dst:
+                      while True:
+                          chunk = src.read(1024 * 1024)
+                          if not chunk:
+                              break
+                          written += len(chunk)
+                          if written > MAX_VPK_BYTES:
+                              return False, ["⚠️ **Rejected: the `.vpk` inside the archive is larger than the inspector limit.**"]
+                          dst.write(chunk)
 
-          ```text
-          {tree_text}
-          ```
-          {note}
-          ### Extensions
+              print(f"Found VPK: {vpk_file}")
 
-          {extensions_text}
+              def corrupt(reason, exc):
+                  size = os.path.getsize(vpk_file)
+                  print(f"::error::Invalid VPK in {zip_file} ({type(exc).__name__}): {exc}")
+                  return False, [
+                      "⚠️ **Rejected: the `.vpk` file is corrupted or is not a valid VPK archive.**",
+                      "",
+                      f"- **File:** `{clean(os.path.basename(info.filename))}`",
+                      f"- **Size:** {size} bytes",
+                      f"- **Problem:** {reason}",
+                      f"- **Parser error:** `{clean(type(exc).__name__)}: {clean(exc)}`",
+                      "",
+                      "The VPK directory index (the `_dir.vpk` header/file table) cannot be read. "
+                      "Please re-pack the mod (e.g. with the Source 2 Workshop Tools / `vpk` tool), "
+                      "check that the file was not damaged or edited in a hex editor, and resubmit.",
+                  ]
 
-          **Total files:** {len(files)}
-          """
+              try:
+                  archive = vpk.open(vpk_file)
+              except Exception as exc:
+                  return corrupt("the VPK header could not be parsed", exc)
 
-          full_tree_text = "\n".join(render_tree(build_tree(files, include_files=True)))
-          full_report = render_report(full_tree_text)
+              try:
+                  files = sorted(clean(f) for f in archive)
+              except Exception as exc:
+                  return corrupt("the VPK file index could not be parsed (broken structure)", exc)
 
-          if len(full_report) <= MAX_COMMENT_CHARS:
-              report = full_report
-              print(f"Full tree (with files) selected: {len(full_report)} characters")
-          else:
-              dirs_tree_text = "\n".join(render_tree(build_tree(files, include_files=False)))
-              note = "\n> Individual files are hidden because the full tree exceeds the GitHub comment size limit — showing directories only.\n\n"
-              report = render_report(dirs_tree_text, note)
-              print(f"Full tree too large ({len(full_report)} characters), falling back to directories-only: {len(report)} characters")
+              if not files:
+                  return corrupt("the VPK contains no files", ValueError("empty index"))
+
+              return True, files
+
+
+          def render_archive(title, files, include_files):
+              extensions = {}
+              for path in files:
+                  filename = os.path.basename(path)
+                  ext = "." + filename.rsplit(".", 1)[1].lower() if "." in filename else "[no extension]"
+                  extensions[ext] = extensions.get(ext, 0) + 1
+
+              heading = "####" if title else "###"
+              tree_text = "\n".join(render_tree(build_tree(files, include_files)))
+              ext_lines = [
+                  f"- `{ext}`: {count}"
+                  for ext, count in sorted(extensions.items(), key=lambda x: (-x[1], x[0]))
+              ]
+              lines = []
+              if title:
+                  lines += [f"### {title}", ""]
+              lines += [f"{heading} Directory structure", "", "```text", tree_text, "```", ""]
+              lines += [f"{heading} Extensions", ""] + ext_lines + ["", f"**Total files:** {len(files)}", ""]
+              return lines
+
+
+          zip_files = [z.strip() for z in os.environ["ZIP_FILES"].splitlines() if z.strip()]
+          results = []
+          for index, zip_file in enumerate(zip_files, 1):
+              name = clean(os.path.basename(zip_file))
+              try:
+                  ok, payload = inspect(zip_file, index)
+              except zipfile.BadZipFile as exc:
+                  ok, payload = False, [f"⚠️ **Rejected: this is not a valid ZIP archive** (`{clean(exc)}`)."]
+              results.append((name, ok, payload))
+
+
+          def render_report(include_files):
+              multi = len(results) > 1
+              lines = ["<!-- vpk-inspector-report -->", "## VPK Inspector", ""]
+              if multi:
+                  lines += [f"Inspected **{len(results)}** mod archives (a mod with styles).", ""]
+              for index, (name, ok, payload) in enumerate(results, 1):
+                  title = f"{index}. `{name}`" if multi else ""
+                  if ok:
+                      lines += render_archive(title, payload, include_files)
+                  else:
+                      lines += ([f"### {title}", ""] if multi else []) + payload + [""]
+              if not include_files:
+                  lines += ["> Individual files are hidden because the full tree exceeds the GitHub comment size limit — showing directories only.", ""]
+              return "\n".join(lines)
+
+
+          report = render_report(include_files=True)
+          if len(report) > MAX_COMMENT_CHARS:
+              print(f"Full tree too large ({len(report)} characters), falling back to directories-only")
+              report = render_report(include_files=False)
 
           with open("vpk_report.md", "w", encoding="utf-8") as f:
               f.write(report)
 
           print(f"Final report size: {len(report)} characters")
-          print(f"Total VPK files: {len(files)}")
+          print(f"Archives inspected: {len(results)}, rejected: {sum(1 for r in results if not r[1])}")
+          if any(not ok for _, ok, _ in results):
+              sys.exit(1)
           PY
 
       - name: Post or Update PR Comment

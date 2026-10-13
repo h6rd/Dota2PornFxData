@@ -47,7 +47,14 @@ const STYLES_PER_MOD = 2;
 const STYLE_LABEL_RE = /^[a-zA-Z0-9 _.\-!]+$/;
 const MAX_STYLE_LABEL_LEN = 24;
 const HEX_COLOR_RE = /^#[0-9a-f]{6}$/;
-const STYLE_FILE_SUFFIXES = ["", " Style 2"];
+
+function styleFileSuffix(label) {
+  const clean = sanitizeFilename(label).replace(/^[.\s]+|[.\s]+$/g, "");
+  return ` ${clean || "Style 2"}`;
+}
+function styleFileSuffixes(styleDefs) {
+  return styleDefs.map((st, i) => (i === 0 ? "" : styleFileSuffix(st.label)));
+}
 
 function colorsToCss(colors) {
   return colors.length > 1 ? `linear-gradient(135deg, ${colors[0]} 50%, ${colors[1]} 50%)` : colors[0];
@@ -315,12 +322,13 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     assertField(fs.existsSync(path.join(DATA_DIR, meta.preview.path)), "Source preview missing in DATA repo checkout");
   }
 
+  const styleSuffixes = styleDefs ? styleFileSuffixes(styleDefs) : null;
   const publishFilenameBase = resolveUniqueFilenameBase(
     MAIN_DIR,
     meta.category,
     baseFilename,
     meta.preview ? meta.preview.ext : null,
-    styleDefs ? STYLE_FILE_SUFFIXES : [""]
+    styleSuffixes || [""]
   );
 
   const finalZipRel = `assets/files/${meta.category}/${publishFilenameBase}.zip`;
@@ -357,7 +365,7 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
 
   const styleFiles = styleDefs
     ? styleDefs.map((st, i) => {
-        const base = `${publishFilenameBase}${STYLE_FILE_SUFFIXES[i]}`;
+        const base = `${publishFilenameBase}${styleSuffixes[i]}`;
         return { ...st, fileName: `${base}.zip`, previewName: `${base}.webp` };
       })
     : null;
