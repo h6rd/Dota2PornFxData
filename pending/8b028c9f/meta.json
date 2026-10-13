@@ -1,0 +1,29 @@
+{
+  "id": "8b028c9f",
+  "name": "Fluttershy Hud",
+  "category": "huds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "raddan",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/munet_kynu"
+    }
+  ],
+  "filenameBase": "Fluttershy Hud",
+  "zip": {
+    "path": "pending/8b028c9f/Fluttershy Hud.zip",
+    "sha": "112d5031f750713722532622d41b99cdd4ab945d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8b028c9f/Fluttershy Hud.webp",
+    "sha": "0e1b61fa9df072db2fb037f5d3628005e48c4941",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791876828460,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
