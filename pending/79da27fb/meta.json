@@ -1,0 +1,36 @@
+{
+  "id": "79da27fb",
+  "name": "Terrorblade Really Black",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "depex",
+      "isNew": false
+    },
+    {
+      "type": "modded",
+      "url": "CeoMods",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Really Black",
+  "zip": {
+    "path": "pending/79da27fb/Terrorblade Really Black.zip",
+    "sha": "18ae244eb7422b70945662f42d32a20771ed7a45",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/79da27fb/Terrorblade Really Black.webp",
+    "sha": "09984e76917a11d25042580c589231616ac34b51",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791867527456,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
