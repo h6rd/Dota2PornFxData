@@ -1,0 +1,28 @@
+{
+  "id": "21923182",
+  "name": "30 Tier Deny",
+  "category": "creep-deny",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Tom4ik",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "30 Tier Deny",
+  "zip": {
+    "path": "pending/21923182/30 Tier Deny.zip",
+    "sha": "3a356612b835b6c688a1c0f0fe3cc242c0f5a57b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/21923182/30 Tier Deny.webp",
+    "sha": "0f61842c04bed7a71c93d73aff516cb535f4a27c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791905322494,
+  "ipFingerprint": "ErdmaU-q5Qr1Hb6RSkcXTxVX"
+}
