@@ -1,0 +1,30 @@
+{
+  "id": "a3430cc4",
+  "name": "Shadow Fiend Fix V2",
+  "category": "herofx",
+  "heroName": "Shadow Fiend",
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Shadow Fiend Fix V2",
+  "zip": {
+    "path": "pending/a3430cc4/Shadow Fiend Fix V2.zip",
+    "sha": "cfcc7a6379f53353c7a322529b15d1303a310c1b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a3430cc4/Shadow Fiend Fix V2.webp",
+    "sha": "4feb2d7d8e64a62e5babad6acadeaa3625289c30",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792017570215,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
