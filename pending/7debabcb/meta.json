@@ -1,0 +1,28 @@
+{
+  "id": "7debabcb",
+  "name": "Queen Of Pain Arcane Pedestal",
+  "category": "pedestal",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Queen Of Pain Arcane Pedestal",
+  "zip": {
+    "path": "pending/7debabcb/Queen Of Pain Arcane Pedestal.zip",
+    "sha": "2aca5e5d5f5a448d9baaf6b371b8539c801e6ad7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7debabcb/Queen Of Pain Arcane Pedestal.webp",
+    "sha": "cb12b36aa9f80ccc8ed4154629b2666a16ef2c31",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792013652684,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
