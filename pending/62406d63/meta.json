@@ -1,0 +1,28 @@
+{
+  "id": "62406d63",
+  "name": "Slardar Fernando",
+  "category": "heroes",
+  "heroName": "Slardar",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Slardar Fernando",
+  "zip": {
+    "path": "pending/62406d63/Slardar Fernando.zip",
+    "sha": "9939d57af9349de31fc261c18a9898193d1fd286",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/62406d63/Slardar Fernando.webp",
+    "sha": "c2cfbbf1014efc09462d083960f71864bce94e4c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792005224653,
+  "ipFingerprint": "YXKafxlRMyEJi9F-ZRftY2fx"
+}
