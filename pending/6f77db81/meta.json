@@ -1,0 +1,28 @@
+{
+  "id": "6f77db81",
+  "name": "Naga Siren Cute Icon",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Naga Siren Cute Icon",
+  "zip": {
+    "path": "pending/6f77db81/Naga Siren Cute Icon.zip",
+    "sha": "573a782a77cfad1f6dd0e933055af6652cfb9597",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6f77db81/Naga Siren Cute Icon.webp",
+    "sha": "e43e6aaca5d154008788a420e536e1892f68cc22",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791938720779,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
