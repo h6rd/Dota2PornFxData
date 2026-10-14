@@ -1,0 +1,29 @@
+{
+  "id": "da088523",
+  "name": "Noir Rose Top Bar",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "chineseg0d",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Noir Rose Top Bar",
+  "zip": {
+    "path": "pending/da088523/Noir Rose Top Bar.zip",
+    "sha": "dd6b79c558739684e50651e1047c2654c546f2fc",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/da088523/Noir Rose Top Bar.webp",
+    "sha": "4e02fe9b760b9ead67481cb9e8771aeac2ac5943",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791938055660,
+  "ipFingerprint": "xI0mrRGSXj4-tu-Y1uolQ3wR"
+}
