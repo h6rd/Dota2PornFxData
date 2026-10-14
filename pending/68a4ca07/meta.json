@@ -1,0 +1,34 @@
+{
+  "id": "68a4ca07",
+  "name": "Slark Fernando",
+  "category": "heroes",
+  "heroName": "Slark",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Slark Fernando",
+  "zip": {
+    "path": "pending/68a4ca07/Slark Fernando.zip",
+    "sha": "880dfe8af9af40aa15e95ef084965c44b1ebd28b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/68a4ca07/Slark Fernando.webp",
+    "sha": "64f0aceaf1c55a3ded921595b0de289ccce10bf4",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Slark Fernando",
+    "file": "Slark Fernando.zip",
+    "preview": "Slark Fernando.webp"
+  },
+  "status": "pending",
+  "createdAt": 1791980011783,
+  "ipFingerprint": "h8FDqFO-Rxi-IvZ_GvpgyXwh"
+}
