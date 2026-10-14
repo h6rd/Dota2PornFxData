@@ -1,0 +1,28 @@
+{
+  "id": "a9c1fa8e",
+  "name": "Arcana Vengeful Spirit Pedest",
+  "category": "pedestal",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Arcana Vengeful Spirit Pedest",
+  "zip": {
+    "path": "pending/a9c1fa8e/Arcana Vengeful Spirit Pedest.zip",
+    "sha": "9cbc6047d4f6bf0d99159b604b72e7ac7541824f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a9c1fa8e/Arcana Vengeful Spirit Pedest.webp",
+    "sha": "9e12204e771758bc7df475f72d559b15e884fb33",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791938930956,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
