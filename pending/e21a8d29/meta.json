@@ -1,0 +1,28 @@
+{
+  "id": "e21a8d29",
+  "name": "Ogr Magi Mogg",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Ogr Magi Mogg",
+  "zip": {
+    "path": "pending/e21a8d29/Ogr Magi Mogg.zip",
+    "sha": "0efa01470b2a37a499d08264074291c56c95e985",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e21a8d29/Ogr Magi Mogg.webp",
+    "sha": "36e880ef616f68ad2194cf47bcd525135fec38cc",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791938849635,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
