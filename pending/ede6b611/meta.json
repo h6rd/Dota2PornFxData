@@ -1,0 +1,29 @@
+{
+  "id": "ede6b611",
+  "name": "Noir Rose Killstreak",
+  "category": "other",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "chineseg0d",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Noir Rose Killstreak",
+  "zip": {
+    "path": "pending/ede6b611/Noir Rose Killstreak.zip",
+    "sha": "389db3093d8073f703f8735af25e3b4c53c18ffc",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ede6b611/Noir Rose Killstreak.webp",
+    "sha": "f8cdde83d591cc0a3bd6c78f9e5088db5e312312",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791937657937,
+  "ipFingerprint": "xI0mrRGSXj4-tu-Y1uolQ3wR"
+}
