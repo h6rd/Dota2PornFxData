@@ -1,0 +1,28 @@
+{
+  "id": "3ddf8916",
+  "name": "Sound To Battle! From Wot",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Sound To Battle! From Wot",
+  "zip": {
+    "path": "pending/3ddf8916/Sound To Battle! From Wot.zip",
+    "sha": "6caf7eeff12eeb1282edb2c2c012b76a5ebe3dfa",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3ddf8916/Sound To Battle! From Wot.webp",
+    "sha": "fdd53e49f5f2725d4a237a6e28f2240cbdc2553f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792013814173,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
