@@ -1,0 +1,28 @@
+{
+  "id": "39372461",
+  "name": "Ancient Apparition Wight",
+  "category": "heroes",
+  "heroName": "Ancient Apparition",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Ancient Apparition Wight",
+  "zip": {
+    "path": "pending/39372461/Ancient Apparition Wight.zip",
+    "sha": "44cf008784b85521d5718050d2d7349b176901ed",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/39372461/Ancient Apparition Wight.webp",
+    "sha": "19e8494dad34ced7a8b108f7b23d62e2ea1886c4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792007589371,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
