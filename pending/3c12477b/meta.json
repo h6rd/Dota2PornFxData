@@ -1,0 +1,28 @@
+{
+  "id": "3c12477b",
+  "name": "Bluelock Scoreboard And Shop",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "chineseg0d",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Bluelock Scoreboard And Shop",
+  "zip": {
+    "path": "pending/3c12477b/Bluelock Scoreboard And Shop.zip",
+    "sha": "16c9a518956ba71dfd45597b7ca96fc9bf223bbe",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3c12477b/Bluelock Scoreboard And Shop.webp",
+    "sha": "8cb822b87321f533d30dbd200860d522ab62eb7c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791974025680,
+  "ipFingerprint": "xI0mrRGSXj4-tu-Y1uolQ3wR"
+}
