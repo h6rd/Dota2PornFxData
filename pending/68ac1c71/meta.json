@@ -1,0 +1,28 @@
+{
+  "id": "68ac1c71",
+  "name": "Pedestal V1",
+  "category": "pedestal",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pedestal V1",
+  "zip": {
+    "path": "pending/68ac1c71/Pedestal V1.zip",
+    "sha": "1f7ed1458a4edfd9bbfde2b9986112c5976a04ff",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/68ac1c71/Pedestal V1.webp",
+    "sha": "550d48795a5a6c4b0c7b0a47e4e7f8346f1f0201",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791938998791,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
