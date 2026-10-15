@@ -1,7 +1,7 @@
 {
   "id": "e21a8d29",
-  "name": "Ogr Magi Mogg",
-  "category": "parts",
+  "name": "Ogre Magi Mogg",
+  "category": "hero-icons",
   "heroName": null,
   "tags": {},
   "links": [
@@ -11,14 +11,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Ogr Magi Mogg",
+  "filenameBase": "Ogre Magi Mogg",
   "zip": {
-    "path": "pending/e21a8d29/Ogr Magi Mogg.zip",
+    "path": "pending/e21a8d29/Ogre Magi Mogg.zip",
     "sha": "0efa01470b2a37a499d08264074291c56c95e985",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/e21a8d29/Ogr Magi Mogg.webp",
+    "path": "pending/e21a8d29/Ogre Magi Mogg.webp",
     "sha": "36e880ef616f68ad2194cf47bcd525135fec38cc",
     "ext": "webp"
   },
