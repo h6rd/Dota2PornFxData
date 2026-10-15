@@ -1,0 +1,28 @@
+{
+  "id": "2d1c1d52",
+  "name": "Invoker Mogg",
+  "category": "hero-icons",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Invoker Mogg",
+  "zip": {
+    "path": "pending/2d1c1d52/Invoker Mogg.zip",
+    "sha": "17c98f09fe3649517d806e90b62aa686c8d9c2c1",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2d1c1d52/Invoker Mogg.webp",
+    "sha": "0511f50db0f5e1552b6f4a27a2b9d390e0b288a3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1791796476042,
+  "ipFingerprint": "7IeYX7LxotXIMYzeikD3O-S_"
+}
