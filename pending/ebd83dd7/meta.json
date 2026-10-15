@@ -1,0 +1,32 @@
+{
+  "id": "ebd83dd7",
+  "name": "Terrorblade Skadi Blossom Red",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "zkll",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Terrorblade Skadi Blossom Red",
+  "zip": {
+    "path": "pending/ebd83dd7/Terrorblade Skadi Blossom Red.zip",
+    "sha": "0fe40372732d67bad04c78e9114e6664ea7670d5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ebd83dd7/Terrorblade Skadi Blossom Red.webp",
+    "sha": "15e42060010b47c9450f5923062e9f31ed5a2480",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792090550903,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
