@@ -1,0 +1,28 @@
+{
+  "id": "8c33101d",
+  "name": "Phantom Assasssin Mogg",
+  "category": "hero-icons",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Phantom Assasssin Mogg",
+  "zip": {
+    "path": "pending/8c33101d/Phantom Assasssin Mogg.zip",
+    "sha": "6b54aa785625300593969b9fdf90dc0b1843341f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8c33101d/Phantom Assasssin Mogg.webp",
+    "sha": "8ffca2b0e601885eee832b7a42d251848dc14c29",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792184770518,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
