@@ -1,0 +1,31 @@
+{
+  "id": "03577088",
+  "name": "Terrorblade Emerald Arcana",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "cursedseizures",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Emerald Arcana",
+  "zip": {
+    "path": "pending/03577088/Terrorblade Emerald Arcana.zip",
+    "sha": "fe6560a05a8c2270646dc305bade818dc4ee2b65",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/03577088/Terrorblade Emerald Arcana.webp",
+    "sha": "136b2cfbf0371852092f309efce44a900b7df729",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792150443091,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
