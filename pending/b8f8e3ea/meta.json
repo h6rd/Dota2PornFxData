@@ -1,0 +1,33 @@
+{
+  "id": "b8f8e3ea",
+  "name": "Techies Chance Allahu Akbar",
+  "category": "hero-sounds",
+  "heroName": "Techies",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/1PImhnL7cyo",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Techies Chance Allahu Akbar",
+  "zip": {
+    "path": "pending/b8f8e3ea/Techies Chance Allahu Akbar.zip",
+    "sha": "d2e290fbc608ab85437c209f12a524f5ee2c1d2f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b8f8e3ea/Techies Chance Allahu Akbar.webp",
+    "sha": "c30f4c3c29d2e7fbc325a3e373e59ea0e293a6a7",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792110474450,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
