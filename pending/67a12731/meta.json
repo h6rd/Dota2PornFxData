@@ -1,0 +1,31 @@
+{
+  "id": "67a12731",
+  "name": "Terrorblade Corruptor Demon",
+  "category": "heroes",
+  "heroName": "Terrorblade",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "cursedseizures",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Corruptor Demon",
+  "zip": {
+    "path": "pending/67a12731/Terrorblade Corruptor Demon.zip",
+    "sha": "4a4833c986e9cdfdd0d89be0982da37cb2cf28c6",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/67a12731/Terrorblade Corruptor Demon.webp",
+    "sha": "e3e96b71dc1b499fd2316671af2cd4c7ad92bfbd",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792235692895,
+  "ipFingerprint": "VFLHDqgXevmTvCCWrkdYNbuX"
+}
