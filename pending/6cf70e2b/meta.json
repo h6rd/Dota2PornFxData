@@ -1,0 +1,29 @@
+{
+  "id": "6cf70e2b",
+  "name": "Trail Of The Amanitadiretide",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/+BhuRMghhq81hZDhi"
+    }
+  ],
+  "filenameBase": "Trail Of The Amanitadiretide",
+  "zip": {
+    "path": "pending/6cf70e2b/Trail Of The Amanitadiretide.zip",
+    "sha": "b3d78602881650d2ed60ddf00df1ee53b57a6a01",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6cf70e2b/Trail Of The Amanitadiretide.webp",
+    "sha": "fa0e26d8ef54d118684114f2689b505d848fafec",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792235759281,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
