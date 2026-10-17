@@ -43,17 +43,18 @@ function getHeroItemSlotTags(constants) {
 }
 const MAX_URL_LEN = 300;
 
-const STYLES_PER_MOD = 2;
+const MIN_STYLES_PER_MOD = 2;
+const MAX_STYLES_PER_MOD = 3;
 const STYLE_LABEL_RE = /^[a-zA-Z0-9 _.\-!]+$/;
 const MAX_STYLE_LABEL_LEN = 24;
 const HEX_COLOR_RE = /^#[0-9a-f]{6}$/;
 
-function styleFileSuffix(label) {
+function styleFileSuffix(label, n = 2) {
   const clean = sanitizeFilename(label).replace(/^[.\s]+|[.\s]+$/g, "");
-  return ` ${clean || "Style 2"}`;
+  return ` ${clean || `Style ${n}`}`;
 }
 function styleFileSuffixes(styleDefs) {
-  return styleDefs.map((st, i) => (i === 0 ? "" : styleFileSuffix(st.label)));
+  return styleDefs.map((st, i) => (i === 0 ? "" : styleFileSuffix(st.label, i + 1)));
 }
 
 function colorsToCss(colors) {
@@ -61,7 +62,10 @@ function colorsToCss(colors) {
 }
 
 function validateStyleDefs(styles, meta) {
-  assertField(Array.isArray(styles) && styles.length === STYLES_PER_MOD, `A mod with styles needs exactly ${STYLES_PER_MOD} styles`);
+  assertField(
+    Array.isArray(styles) && styles.length >= MIN_STYLES_PER_MOD && styles.length <= MAX_STYLES_PER_MOD,
+    `A mod with styles needs ${MIN_STYLES_PER_MOD} or ${MAX_STYLES_PER_MOD} styles`
+  );
   const seen = new Set();
   return styles.map((st, i) => {
     assertField(st && typeof st === "object", "Invalid style");
@@ -102,6 +106,10 @@ const LINK_TYPE_TO_CONSTANT = {
   sender: "MOD_SENDER",
   source: "MOD_SOURCES",
 };
+
+function hasOwn(obj, key) {
+  return !!obj && Object.prototype.hasOwnProperty.call(obj, key);
+}
 
 const LEDGER_REL = "assets/data/published-submissions.json";
 
@@ -284,7 +292,7 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     assertField(typeof meta.heroName === "string" && meta.heroName.trim(), "A hero is required for this category");
   }
   if (meta.heroName) {
-    assertField(typeof meta.heroName === "string" && meta.heroName.length <= MAX_NAME_LEN, "Invalid hero");
+    assertField(typeof meta.heroName === "string" && meta.heroName.length <= MAX_NAME_LEN && /^[A-Za-z0-9 '.\-]+$/.test(meta.heroName), "Invalid hero");
     if (ALLOWED_HEROES.length) assertField(ALLOWED_HEROES.includes(meta.heroName), "Invalid hero");
   }
   assertField(meta.zip && typeof meta.zip.path === "string", "Invalid submission archive");
@@ -353,13 +361,16 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
       link.isNew ? NICK_RE.test(link.url) : SAFE_TEXT_RE.test(link.url),
       "Link name contains unsupported characters"
     );
+    if (!link.isNew && link.type !== "sender") {
+      assertField(hasOwn(constants[LINK_TYPE_TO_CONSTANT[link.type]], link.url), "Unknown author/source: pick one from the list or add it as new");
+    }
     finalLinks.push({ type: link.type, url: link.url });
     if (link.isNew) {
       assertField(typeof link.newAuthorUrl === "string" && link.newAuthorUrl.length <= MAX_URL_LEN, "Invalid link URL");
       if (link.newAuthorUrl) assertField(isSafeHttpsUrl(link.newAuthorUrl), "Link URL must be https://");
       const map = LINK_TYPE_TO_CONSTANT[link.type];
       if (!constants[map]) constants[map] = {};
-      if (!(link.url in constants[map])) constants[map][link.url] = link.newAuthorUrl || "";
+      if (!hasOwn(constants[map], link.url)) constants[map][link.url] = link.newAuthorUrl || "";
     }
   }
 
@@ -502,13 +513,16 @@ function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
       link.isNew ? NICK_RE.test(link.url) : SAFE_TEXT_RE.test(link.url),
       "Link name contains unsupported characters"
     );
+    if (!link.isNew && link.type !== "sender") {
+      assertField(hasOwn(constants[LINK_TYPE_TO_CONSTANT[link.type]], link.url), "Unknown author/source: pick one from the list or add it as new");
+    }
     sentLinks.push({ type: link.type, url: link.url });
     if (link.isNew) {
       assertField(typeof link.newAuthorUrl === "string" && link.newAuthorUrl.length <= MAX_URL_LEN, "Invalid link URL");
       if (link.newAuthorUrl) assertField(isSafeHttpsUrl(link.newAuthorUrl), "Link URL must be https://");
       const map = LINK_TYPE_TO_CONSTANT[link.type];
       if (!constants[map]) constants[map] = {};
-      if (!(link.url in constants[map])) constants[map][link.url] = link.newAuthorUrl || "";
+      if (!hasOwn(constants[map], link.url)) constants[map][link.url] = link.newAuthorUrl || "";
     }
   }
   const replacedTypes = new Set(sentLinks.map((l) => l.type));
