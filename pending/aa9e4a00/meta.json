@@ -1,0 +1,29 @@
+{
+  "id": "aa9e4a00",
+  "name": "Champions Aura 2014 Nightmare",
+  "category": "wards",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/+BhuRMghhq81hZDhi"
+    }
+  ],
+  "filenameBase": "Champions Aura 2014 Nightmare",
+  "zip": {
+    "path": "pending/aa9e4a00/Champions Aura 2014 Nightmare.zip",
+    "sha": "60d07098b939c5eb91934013f683ba7cbe8ca47e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/aa9e4a00/Champions Aura 2014 Nightmare.webp",
+    "sha": "da55541628cdabcab2a6906583ae76346fa053ee",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792191185559,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
