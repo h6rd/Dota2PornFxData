@@ -1,0 +1,29 @@
+{
+  "id": "0502798e",
+  "name": "Trail Of Burning Doom Frozen",
+  "category": "wards",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/+BhuRMghhq81hZDhi"
+    }
+  ],
+  "filenameBase": "Trail Of Burning Doom Frozen",
+  "zip": {
+    "path": "pending/0502798e/Trail Of Burning Doom Frozen.zip",
+    "sha": "cbe24de2e77e6b767a1a4b4a0c7a5f4bd0d1db0e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0502798e/Trail Of Burning Doom Frozen.webp",
+    "sha": "39fb7df1054952f338abd1a9c51abe9a841d4cc8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792191124710,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
