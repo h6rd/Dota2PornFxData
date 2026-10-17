@@ -1,0 +1,29 @@
+{
+  "id": "6e274322",
+  "name": "Affliction Of Verminbleak",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/+BhuRMghhq81hZDhi"
+    }
+  ],
+  "filenameBase": "Affliction Of Verminbleak",
+  "zip": {
+    "path": "pending/6e274322/Affliction Of Verminbleak.zip",
+    "sha": "2c8624d9c3f1a004601afef9e2b3c858d0f09d32",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6e274322/Affliction Of Verminbleak.webp",
+    "sha": "ca2cb7fc1e008325bba92290afaaf6442909092e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792235821029,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
