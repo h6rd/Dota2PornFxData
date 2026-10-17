@@ -1,0 +1,31 @@
+{
+  "id": "e4255634",
+  "name": "Axe Immortal Rampage",
+  "category": "heroes",
+  "heroName": "Axe",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Axe Immortal Rampage",
+  "zip": {
+    "path": "pending/e4255634/Axe Immortal Rampage.zip",
+    "sha": "2f5d6ded83ae5286118481056f824b72db8be8c2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e4255634/Axe Immortal Rampage.webp",
+    "sha": "5790cc756d09f48341d76f53b7e3c8fc7e87cc97",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792228079397,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
