@@ -1,0 +1,28 @@
+{
+  "id": "ee800f20",
+  "name": "Shadow Fiend Arcana Fixv1",
+  "category": "hero-icons",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Shadow Fiend Arcana Fixv1",
+  "zip": {
+    "path": "pending/ee800f20/Shadow Fiend Arcana Fixv1.zip",
+    "sha": "5e3714738c833372e8b5693ee7b48a7af4519130",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ee800f20/Shadow Fiend Arcana Fixv1.webp",
+    "sha": "4fbfd9bafd0886321db281c9f2005132583d843b",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792184900800,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
