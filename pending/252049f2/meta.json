@@ -1,0 +1,29 @@
+{
+  "id": "252049f2",
+  "name": "Divine Essencefrost Mighty Bo",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/+BhuRMghhq81hZDhi"
+    }
+  ],
+  "filenameBase": "Divine Essencefrost Mighty Bo",
+  "zip": {
+    "path": "pending/252049f2/Divine Essencefrost Mighty Bo.zip",
+    "sha": "4de1b00e10a587a960e11b85a4fb54e082a9ad9f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/252049f2/Divine Essencefrost Mighty Bo.webp",
+    "sha": "c56477b479cab2b4e63b12846a350b77f5066707",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792235957125,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
