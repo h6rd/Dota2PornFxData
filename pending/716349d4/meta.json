@@ -1,0 +1,30 @@
+{
+  "id": "716349d4",
+  "name": "Tcoaal Wallpaper V3",
+  "category": "backgrounds",
+  "heroName": null,
+  "tags": {
+    "image": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tcoaal Wallpaper V3",
+  "zip": {
+    "path": "pending/716349d4/Tcoaal Wallpaper V3.zip",
+    "sha": "0e43d0b12ccde05fcbe81aefdef7d6c06198f56d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/716349d4/Tcoaal Wallpaper V3.webp",
+    "sha": "dc8efb29fa9c1beb46f848a7bdf71664c43f39d5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792279385322,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
