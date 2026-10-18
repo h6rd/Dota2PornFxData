@@ -1,0 +1,28 @@
+{
+  "id": "6d5111fd",
+  "name": "Tcoaal Mach V2",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tcoaal Mach V2",
+  "zip": {
+    "path": "pending/6d5111fd/Tcoaal Mach V2.zip",
+    "sha": "310e765f9e9ee19455e0586a303a36ef7c5d459e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6d5111fd/Tcoaal Mach V2.webp",
+    "sha": "3b51a0804456ce7a2294dc92b3eb9ccb841d1fb1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792358836085,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
