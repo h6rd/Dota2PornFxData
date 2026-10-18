@@ -1,0 +1,28 @@
+{
+  "id": "a16f59e5",
+  "name": "Anti-Mage Taunt Serega Pirat",
+  "category": "hero-sounds",
+  "heroName": "Anti-Mage",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Anti-Mage Taunt Serega Pirat",
+  "zip": {
+    "path": "pending/a16f59e5/Anti-Mage Taunt Serega Pirat.zip",
+    "sha": "965d04c1a84823bbd796d55b599be885f22b5102",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a16f59e5/Anti-Mage Taunt Serega Pirat.webp",
+    "sha": "f4c9f992547021f8f6c0e5b9bbd6fda27700e1ac",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792360221148,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
