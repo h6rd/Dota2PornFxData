@@ -1,0 +1,28 @@
+{
+  "id": "a21990a2",
+  "name": "Aura 2013 Butterfly Bamboo",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Aura 2013 Butterfly Bamboo",
+  "zip": {
+    "path": "pending/a21990a2/Aura 2013 Butterfly Bamboo.zip",
+    "sha": "208655feaa5be8fb12a0abafbfd51dbf50339506",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a21990a2/Aura 2013 Butterfly Bamboo.webp",
+    "sha": "ac980e850e05088fcba42645b7ec5c32b32f31d8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792326245395,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
