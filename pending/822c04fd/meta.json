@@ -1,0 +1,31 @@
+{
+  "id": "822c04fd",
+  "name": "Bloodseeker Made In Heaven",
+  "category": "heroes",
+  "heroName": "Bloodseeker",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Bloodseeker Made In Heaven",
+  "zip": {
+    "path": "pending/822c04fd/Bloodseeker Made In Heaven.zip",
+    "sha": "00c207ddf684588af29835d5adcb7bae4573d8d0",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/822c04fd/Bloodseeker Made In Heaven.webp",
+    "sha": "33ab3b0084f1f5d8d4dd0465c9354fe3dbf2ef1f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792327191721,
+  "ipFingerprint": "LBJSyMu2mkjLGzZ-e4izn0AN"
+}
