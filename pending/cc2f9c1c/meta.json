@@ -1,0 +1,28 @@
+{
+  "id": "cc2f9c1c",
+  "name": "Corruption Knight Statue",
+  "category": "wards",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Corruption Knight Statue",
+  "zip": {
+    "path": "pending/cc2f9c1c/Corruption Knight Statue.zip",
+    "sha": "be800e0f8ada4d4b57addaf50c6aeabe9a6c4445",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/cc2f9c1c/Corruption Knight Statue.webp",
+    "sha": "592ed34cab0fbeaa7f76b13f404e1de5666a5a8a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792327461172,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
