@@ -1,0 +1,30 @@
+{
+  "id": "f92700c8",
+  "name": "Spectaclcore Blue Girl",
+  "category": "backgrounds",
+  "heroName": null,
+  "tags": {
+    "image": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Spectaclcore Blue Girl",
+  "zip": {
+    "path": "pending/f92700c8/Spectaclcore Blue Girl.zip",
+    "sha": "8d739770c5494f1d1ee3e1eb77938e12e053be0b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f92700c8/Spectaclcore Blue Girl.webp",
+    "sha": "0a28e22b215e40a8c04ba77dbf204cb97073fd20",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792281168512,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
