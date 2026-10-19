@@ -1,0 +1,62 @@
+{
+  "id": "7f639d72",
+  "name": "Dean Norris Match",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Dean Norris Match",
+  "zip": {
+    "path": "pending/7f639d72/Dean Norris Match.zip",
+    "sha": "082c8f62304b0697857158a2d2e39122294f2d0f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7f639d72/Dean Norris Match.webp",
+    "sha": "f146a603c83ef84bfea9696e5a73674f1ec54a9b",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "Style I",
+      "colors": [
+        "#ddd4ff"
+      ],
+      "zip": {
+        "path": "pending/7f639d72/Dean Norris Match.zip",
+        "sha": "082c8f62304b0697857158a2d2e39122294f2d0f",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/7f639d72/Dean Norris Match.webp",
+        "sha": "f146a603c83ef84bfea9696e5a73674f1ec54a9b",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "Style II",
+      "colors": [
+        "#ff8f8f"
+      ],
+      "zip": {
+        "path": "pending/7f639d72/Dean Norris Match Style II.zip",
+        "sha": "80d3b98434ee7cf329e3baa1509b9834e713e3dd",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/7f639d72/Dean Norris Match Style II.webp",
+        "sha": "b43ae4e5a24c24c3fb45f6b36a26fa17ef431bbf",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1792359674108,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
