@@ -1,0 +1,28 @@
+{
+  "id": "3462efae",
+  "name": "Arc Warden Gay Taunt",
+  "category": "hero-sounds",
+  "heroName": "Arc Warden",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Arc Warden Gay Taunt",
+  "zip": {
+    "path": "pending/3462efae/Arc Warden Gay Taunt.zip",
+    "sha": "e0e95ce66ab148924329982458e1e82408d20798",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3462efae/Arc Warden Gay Taunt.webp",
+    "sha": "f8d6ba99d51446e4e733b286723c5ea79bca5c89",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792360154821,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
