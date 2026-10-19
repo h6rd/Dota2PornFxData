@@ -1,0 +1,36 @@
+{
+  "id": "6864c592",
+  "name": "Pudge G0Lovach Reborn",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    },
+    {
+      "type": "modded",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge G0Lovach Reborn",
+  "zip": {
+    "path": "pending/6864c592/Pudge G0Lovach Reborn.zip",
+    "sha": "5f163e56e864816cefedc40254c485b0f68ca367",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6864c592/Pudge G0Lovach Reborn.webp",
+    "sha": "5c52b223aaca5cfcc6f0d51f9d5a94ed9ddc9fd3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792342185347,
+  "ipFingerprint": "zsryE0FK_Jsa26swnrbJWr9Z"
+}
