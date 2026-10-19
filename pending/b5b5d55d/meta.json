@@ -1,0 +1,28 @@
+{
+  "id": "b5b5d55d",
+  "name": "Frostbloom Serac",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Frostbloom Serac",
+  "zip": {
+    "path": "pending/b5b5d55d/Frostbloom Serac.zip",
+    "sha": "d99d538ad2ed67016e27b340cd1681e32dc0fb1e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b5b5d55d/Frostbloom Serac.webp",
+    "sha": "016f770a6e2b0851d8c1fef42b39d899bba42ab0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792438080421,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
