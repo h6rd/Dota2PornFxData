@@ -1,0 +1,31 @@
+{
+  "id": "4c6f2e10",
+  "name": "Phantom Lancer Crimson Furry",
+  "category": "heroes",
+  "heroName": "Phantom Lancer",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "zkll",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Phantom Lancer Crimson Furry",
+  "zip": {
+    "path": "pending/4c6f2e10/Phantom Lancer Crimson Furry.zip",
+    "sha": "00cfc5449d0187a2410e0a6bbec9ef36032938f2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4c6f2e10/Phantom Lancer Crimson Furry.webp",
+    "sha": "8b85a032d67f742f027d2e76162765e28b1291d8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792338422106,
+  "ipFingerprint": "ED6YrweqbiBMaParIOz639mv"
+}
