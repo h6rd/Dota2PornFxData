@@ -1,0 +1,29 @@
+{
+  "id": "dd0a2269",
+  "name": "Anime Search Bar",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Defendor",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Anime Search Bar",
+  "zip": {
+    "path": "pending/dd0a2269/Anime Search Bar.zip",
+    "sha": "94da9c011eba2d147fe40628d50635dc915088bb",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/dd0a2269/Anime Search Bar.webp",
+    "sha": "d6c57fe2844b1d2e8b4a53d5c74f5a5d27a622b6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792393194865,
+  "ipFingerprint": "_-Hgm53kgAWQ89fSmrgYGyGg"
+}
