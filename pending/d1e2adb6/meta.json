@@ -1,0 +1,28 @@
+{
+  "id": "d1e2adb6",
+  "name": "Arc Warden Chicken Gun",
+  "category": "heroes",
+  "heroName": "Arc Warden",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Arc Warden Chicken Gun",
+  "zip": {
+    "path": "pending/d1e2adb6/Arc Warden Chicken Gun.zip",
+    "sha": "99ba00848de0f4c2a66a591e4f181a53c5259c55",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d1e2adb6/Arc Warden Chicken Gun.webp",
+    "sha": "cbd51d26a84d95098a6a58907ef9cee423c33ef4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792420722587,
+  "ipFingerprint": "E2XLc0WUMeBYrQ_4vzWcfRDI"
+}
