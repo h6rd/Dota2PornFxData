@@ -1,0 +1,28 @@
+{
+  "id": "bfe49f88",
+  "name": "Magnus Red",
+  "category": "heroes",
+  "heroName": "Magnus",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "xvii",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Magnus Red",
+  "zip": {
+    "path": "pending/bfe49f88/Magnus Red.zip",
+    "sha": "5b74d5e4b0420bf680502148656c127a11669a33",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/bfe49f88/Magnus Red.webp",
+    "sha": "5c7809171540c9ed94d913f0172e9687530956b5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792426726662,
+  "ipFingerprint": "ip2QT6KiPJJgKn8javX1yncE"
+}
