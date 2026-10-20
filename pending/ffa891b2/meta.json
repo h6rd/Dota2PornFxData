@@ -1,0 +1,28 @@
+{
+  "id": "ffa891b2",
+  "name": "Rubiline Sheen War Dog",
+  "category": "couriers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Rubiline Sheen War Dog",
+  "zip": {
+    "path": "pending/ffa891b2/Rubiline Sheen War Dog.zip",
+    "sha": "74a11752def2330a57ec7f9bca05e9eedb5fd481",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ffa891b2/Rubiline Sheen War Dog.webp",
+    "sha": "1deebb876bb07b2a09374646676681bc7ff37eb0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792512271667,
+  "ipFingerprint": "JIiXziRY-O9x198LpiKV-w6A"
+}
