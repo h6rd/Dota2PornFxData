@@ -1,0 +1,34 @@
+{
+  "id": "88023249",
+  "name": "All Grandmasters",
+  "category": "other",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "All Grandmasters",
+  "zip": {
+    "path": "pending/88023249/All Grandmasters.zip",
+    "sha": "41e43135335668e9502a0213e27274cac1bb09bc",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/88023249/All Grandmasters.webp",
+    "sha": "f1251a4640b35bd6e4344d1edf57ebcebdcbdf6b",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "All Grandmasters",
+    "file": "All Grandmasters.zip",
+    "preview": "All Grandmasters.webp"
+  },
+  "status": "pending",
+  "createdAt": 1792457333184,
+  "ipFingerprint": "YTkQ3XqAHvB5KueGjWBonBgp"
+}
