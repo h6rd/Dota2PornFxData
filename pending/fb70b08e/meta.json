@@ -1,0 +1,28 @@
+{
+  "id": "fb70b08e",
+  "name": "Red Topbar",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Red Topbar",
+  "zip": {
+    "path": "pending/fb70b08e/Red Topbar.zip",
+    "sha": "150d77b8dc4e3a98d91b06c5bab4f40a3b1636e7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fb70b08e/Red Topbar.webp",
+    "sha": "7ed0fc11ea3ae28f48c56a1296c91d563c497f89",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792537530831,
+  "ipFingerprint": "RegMka9A3D8QQP6l0s7Q_-dQ"
+}
