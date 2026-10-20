@@ -1,9 +1,11 @@
 {
   "id": "1071eaa6",
   "name": "Necrophos Irkutsk Chuma",
-  "category": "heroes",
+  "category": "hero-items",
   "heroName": "Necrophos",
-  "tags": {},
+  "tags": {
+    "weapon": true
+  },
   "links": [
     {
       "type": "author",
