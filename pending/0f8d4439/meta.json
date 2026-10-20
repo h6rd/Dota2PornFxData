@@ -1,0 +1,28 @@
+{
+  "id": "0f8d4439",
+  "name": "Money Tree",
+  "category": "trees",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "3atvorn1k",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Money Tree",
+  "zip": {
+    "path": "pending/0f8d4439/Money Tree.zip",
+    "sha": "e2565be3715f3cc099db652ee9d2324e2f287e7f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0f8d4439/Money Tree.webp",
+    "sha": "22882fce0ee8f6626a90cdd15c758dce88ce54fb",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792512358608,
+  "ipFingerprint": "68Q377HXvNrU2kyUxVhGHs3t"
+}
