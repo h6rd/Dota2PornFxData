@@ -1,0 +1,28 @@
+{
+  "id": "d6a05f52",
+  "name": "Newbloom Tree",
+  "category": "trees",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "3atvorn1k",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Newbloom Tree",
+  "zip": {
+    "path": "pending/d6a05f52/Newbloom Tree.zip",
+    "sha": "c260b38668045d83f9993ef064cae22b1b9d365b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d6a05f52/Newbloom Tree.webp",
+    "sha": "297d1e670e7b7e66d87640b8ed774c374ae8a067",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792512447782,
+  "ipFingerprint": "68Q377HXvNrU2kyUxVhGHs3t"
+}
