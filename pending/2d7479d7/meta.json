@@ -1,0 +1,30 @@
+{
+  "id": "2d7479d7",
+  "name": "Ptu Suzuya Juzo",
+  "category": "backgrounds",
+  "heroName": null,
+  "tags": {
+    "image": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Ptu Suzuya Juzo",
+  "zip": {
+    "path": "pending/2d7479d7/Ptu Suzuya Juzo.zip",
+    "sha": "df436124cfd8b74c76aaee0e75123485d2135a7e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2d7479d7/Ptu Suzuya Juzo.webp",
+    "sha": "8638938c366ab2dd53c1e4e5398317261a8c6d38",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792530397782,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
