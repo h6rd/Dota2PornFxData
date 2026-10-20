@@ -1,0 +1,62 @@
+{
+  "id": "1172c35e",
+  "name": "Vs Creen,Black-White",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Vs Creen,Black-White",
+  "zip": {
+    "path": "pending/1172c35e/Vs Creen,Black-White.zip",
+    "sha": "72f8ba604dbdd957fa48726ddf411f1183a23781",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1172c35e/Vs Creen,Black-White.webp",
+    "sha": "d2938f60549173153fd43166ee29a7709d627352",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "Style black",
+      "colors": [
+        "#000000"
+      ],
+      "zip": {
+        "path": "pending/1172c35e/Vs Creen,Black-White.zip",
+        "sha": "72f8ba604dbdd957fa48726ddf411f1183a23781",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/1172c35e/Vs Creen,Black-White.webp",
+        "sha": "d2938f60549173153fd43166ee29a7709d627352",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "Style white",
+      "colors": [
+        "#ffffff"
+      ],
+      "zip": {
+        "path": "pending/1172c35e/Vs Creen,Black-White Style white.zip",
+        "sha": "776a6ec3875a5d840105a0a262e6bfdcc90018b2",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/1172c35e/Vs Creen,Black-White Style white.webp",
+        "sha": "f3a919781c8fb02fa4da42afa7679066c0775707",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1792525734000,
+  "ipFingerprint": "RegMka9A3D8QQP6l0s7Q_-dQ"
+}
