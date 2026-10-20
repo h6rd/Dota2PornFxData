@@ -1,0 +1,30 @@
+{
+  "id": "1071eaa6",
+  "name": "Necrophos Irkutsk Chuma",
+  "category": "hero-items",
+  "heroName": "Necrophos",
+  "tags": {
+    "weapon": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Necrophos Irkutsk Chuma",
+  "zip": {
+    "path": "pending/1071eaa6/Necrophos Irkutsk Chuma.zip",
+    "sha": "d1cefd738e4172c6654ee05f1f1886af26d0e6cd",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1071eaa6/Necrophos Irkutsk Chuma.webp",
+    "sha": "1101a83bbbd9bef269dd77832a056ee13a98f8bb",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792491466786,
+  "ipFingerprint": "6tGB7hxuDOMhqTIfEnaW_fn7"
+}
