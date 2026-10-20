@@ -1,0 +1,28 @@
+{
+  "id": "010ddf3a",
+  "name": "Material You Interface 0.1",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Material You Interface 0.1",
+  "zip": {
+    "path": "pending/010ddf3a/Material You Interface 0.1.zip",
+    "sha": "dee5a587f5a3286f42d7dced4b8a56810426e9ad",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/010ddf3a/Material You Interface 0.1.webp",
+    "sha": "c5e721749f0cf1b5b3976e85d1e3eb6c9173d332",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792493896405,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
