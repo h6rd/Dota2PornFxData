@@ -1,0 +1,31 @@
+{
+  "id": "9389f4eb",
+  "name": "Silencer Oscilla Crimson",
+  "category": "heroes",
+  "heroName": "Silencer",
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Silencer Oscilla Crimson",
+  "zip": {
+    "path": "pending/9389f4eb/Silencer Oscilla Crimson.zip",
+    "sha": "ab6bade8a098e87ccfab9d9b43246ea9bce3ea21",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9389f4eb/Silencer Oscilla Crimson.webp",
+    "sha": "7d237dcd05e06dfb2381f7cb3238de3976aec6a1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792607376963,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
