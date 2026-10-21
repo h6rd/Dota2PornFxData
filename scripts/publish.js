@@ -86,7 +86,7 @@ const ALLOWED_CATEGORIES = splitList(process.env.ALLOWED_CATEGORIES);
 const ALLOWED_HEROES = splitList(process.env.ALLOWED_HEROES);
 const HERO_AWARE_CATEGORIES = new Set(["heroes", "hero-items", "herofx", "hero-sounds"]);
 
-const PREVIEW_VIDEO_CATEGORIES = new Set(["sounds", "hero-sounds", "huds", "ti-bp-effects", "heroes"]);
+const PREVIEW_VIDEO_CATEGORIES = new Set(["sounds", "hero-sounds", "huds", "ti-bp-effects", "heroes", "mega-kill", "announcers", "music"]);
 const YOUTUBE_HOST_RE = /^(m\.|www\.|music\.)?youtube\.com$|^youtu\.be$/i;
 
 function isYouTubeUrl(str) {
