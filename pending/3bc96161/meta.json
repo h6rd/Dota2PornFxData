@@ -1,0 +1,30 @@
+{
+  "id": "3bc96161",
+  "name": "Kururu Tsepeshi",
+  "category": "backgrounds",
+  "heroName": null,
+  "tags": {
+    "image": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kururu Tsepeshi",
+  "zip": {
+    "path": "pending/3bc96161/Kururu Tsepeshi.zip",
+    "sha": "74e6d02c40ee4715425dfe84e261302815fb1759",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3bc96161/Kururu Tsepeshi.webp",
+    "sha": "53245284246e3efe5e457f1ea890e05f6ba7bc7f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792616914244,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
