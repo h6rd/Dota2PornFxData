@@ -1,0 +1,22 @@
+{
+  "id": "99822305",
+  "name": "Test",
+  "category": "pings",
+  "heroName": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Test",
+  "zip": {
+    "path": "pending/99822305/Test.zip",
+    "sha": "2f2cf68afb26d8602375881808f661d2cda16c65",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/99822305/Test.webp",
+    "sha": "298f99d3e7ae81eb4d08c29786e057c9d1c95e59",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792580331079,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
