@@ -1,0 +1,28 @@
+{
+  "id": "a9aa86c3",
+  "name": "Dagon Awp From Cs 1.6",
+  "category": "sounds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "keeper",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Dagon Awp From Cs 1.6",
+  "zip": {
+    "path": "pending/a9aa86c3/Dagon Awp From Cs 1.6.zip",
+    "sha": "531ba1ffd2e29d247055a46733a5cabc407fb537",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a9aa86c3/Dagon Awp From Cs 1.6.webp",
+    "sha": "778120b9d29e782acd08ec4b6fe891fa393f5ff7",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792588960911,
+  "ipFingerprint": "kbfFENopK2OzYYWLBwG_kcpN"
+}
