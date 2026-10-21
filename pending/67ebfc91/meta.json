@@ -1,0 +1,33 @@
+{
+  "id": "67ebfc91",
+  "name": "Ringmaster Monokoleso",
+  "category": "sounds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "xvii",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/wwV_ZGanLHw",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Ringmaster Monokoleso",
+  "zip": {
+    "path": "pending/67ebfc91/Ringmaster Monokoleso.zip",
+    "sha": "b1342d628fd89fc20445f352d2cb692ec2d0f35b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/67ebfc91/Ringmaster Monokoleso.webp",
+    "sha": "ce3dd70d94774ae168fa81feb478bf3cc87b3454",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792577556295,
+  "ipFingerprint": "ip2QT6KiPJJgKn8javX1yncE"
+}
