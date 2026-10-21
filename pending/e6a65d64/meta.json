@@ -1,0 +1,29 @@
+{
+  "id": "e6a65d64",
+  "name": "High Five Battle Pass 2022",
+  "category": "high-five",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/vpk4d4mmf"
+    }
+  ],
+  "filenameBase": "High Five Battle Pass 2022",
+  "zip": {
+    "path": "pending/e6a65d64/High Five Battle Pass 2022.zip",
+    "sha": "ff678526f6ed076a548460840bc1c8ad74cca2df",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e6a65d64/High Five Battle Pass 2022.webp",
+    "sha": "3faaed84f065a9e3be690478e1169db4298b74bf",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792585941628,
+  "ipFingerprint": "CSwfmNC-LWf6gtI9S6Lw-107"
+}
