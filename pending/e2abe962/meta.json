@@ -1,0 +1,28 @@
+{
+  "id": "e2abe962",
+  "name": "Netgraph Purple",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Netgraph Purple",
+  "zip": {
+    "path": "pending/e2abe962/Netgraph Purple.zip",
+    "sha": "c0d480953ffe72ac2da2087df6c26a33ce05fbe6",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e2abe962/Netgraph Purple.webp",
+    "sha": "bb9d31396bd1b6c51fd0287c9e550414e9d66b08",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792518689565,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
