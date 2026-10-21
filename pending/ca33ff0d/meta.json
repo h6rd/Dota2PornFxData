@@ -1,0 +1,33 @@
+{
+  "id": "ca33ff0d",
+  "name": "Tcoaal Rampage",
+  "category": "announcers",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/R29J44Urhys",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tcoaal Rampage",
+  "zip": {
+    "path": "pending/ca33ff0d/Tcoaal Rampage.zip",
+    "sha": "5cb7413e6d735156bf7c63fcad555ecc089c022b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ca33ff0d/Tcoaal Rampage.webp",
+    "sha": "fa4a8fff6431015ac0a0674fe676fdd23f12481d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792586179446,
+  "ipFingerprint": "HfFKdG6I05dw3MyZ-RVredyB"
+}
