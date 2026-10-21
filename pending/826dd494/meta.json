@@ -1,0 +1,28 @@
+{
+  "id": "826dd494",
+  "name": "Earthshaker Herald Gar Beast",
+  "category": "heroes",
+  "heroName": "Earthshaker",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Earthshaker Herald Gar Beast",
+  "zip": {
+    "path": "pending/826dd494/Earthshaker Herald Gar Beast.zip",
+    "sha": "2260ca5bc19ee42d1c47f5c0c16474a098716c03",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/826dd494/Earthshaker Herald Gar Beast.webp",
+    "sha": "e86eb2fef949b7bd51bec3677f1cc6b603ec33e2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792606138497,
+  "ipFingerprint": "E8NkdvZUGIQ3Tqs9k4G0b4rT"
+}
