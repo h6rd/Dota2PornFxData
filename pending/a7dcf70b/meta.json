@@ -1,0 +1,29 @@
+{
+  "id": "a7dcf70b",
+  "name": "Lavanda Emblem",
+  "category": "emblems",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "xnnn_3",
+      "isNew": true,
+      "newAuthorUrl": "https://www.youtube.com/@Xinnain"
+    }
+  ],
+  "filenameBase": "Lavanda Emblem",
+  "zip": {
+    "path": "pending/a7dcf70b/Lavanda Emblem.zip",
+    "sha": "513831739b617124f058268841ab6460dfae985a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a7dcf70b/Lavanda Emblem.webp",
+    "sha": "387e7b6a1971ec870b729d0e8c078302ff6ca1f1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792673514613,
+  "ipFingerprint": "YSOFwZSJenGFd4S17wMMhYef"
+}
