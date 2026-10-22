@@ -1,0 +1,28 @@
+{
+  "id": "50dee981",
+  "name": "Acid Electric River",
+  "category": "river",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hrdq",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Acid Electric River",
+  "zip": {
+    "path": "pending/50dee981/Acid Electric River.zip",
+    "sha": "37db8242064751dc10119aa678cdac288f3f3e68",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/50dee981/Acid Electric River.webp",
+    "sha": "dd64a3b91630da08c4a8fe1a0fdf8a5d6ebaee06",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792684855978,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
