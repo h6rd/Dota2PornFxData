@@ -1,0 +1,30 @@
+{
+  "id": "4e37624c",
+  "name": "Keeper Of The Light Ded Na Fernando",
+  "category": "heroes",
+  "heroName": "Keeper of the Light",
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Keeper Of The Light Ded Na Fernando",
+  "zip": {
+    "path": "pending/4e37624c/Keeper Of The Light Ded Na Fernando.zip",
+    "sha": "dc94f0461bf080618018a25ae83da722cd04b97e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4e37624c/Keeper Of The Light Ded Na Fernando.webp",
+    "sha": "29e481365a823aefc2275c79329ab20fe0d41674",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792663639684,
+  "ipFingerprint": "6tGB7hxuDOMhqTIfEnaW_fn7"
+}
