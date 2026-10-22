@@ -1,0 +1,28 @@
+{
+  "id": "97c09ba3",
+  "name": "Pink Meteor Hammer",
+  "category": "other",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pink Meteor Hammer",
+  "zip": {
+    "path": "pending/97c09ba3/Pink Meteor Hammer.zip",
+    "sha": "01a29a219b888321d4c001a0dcd34ce7cb35f9f3",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/97c09ba3/Pink Meteor Hammer.webp",
+    "sha": "d6dafec99b428e5d2a5e648135e6a095486536dd",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792701150464,
+  "ipFingerprint": "_2wTUm_1WjuVNziXnN96aDEc"
+}
