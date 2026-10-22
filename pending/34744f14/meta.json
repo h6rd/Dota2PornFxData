@@ -1,0 +1,28 @@
+{
+  "id": "34744f14",
+  "name": "Kotl Spirit Form Litvin Sound",
+  "category": "sounds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "keeper",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kotl Spirit Form Litvin Sound",
+  "zip": {
+    "path": "pending/34744f14/Kotl Spirit Form Litvin Sound.zip",
+    "sha": "6b93b80747a0341a31b2de5e4a603dcfc0bfac79",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/34744f14/Kotl Spirit Form Litvin Sound.webp",
+    "sha": "899ce34fc0830d09b123c2a52634ca65f3cbed22",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792676211605,
+  "ipFingerprint": "kbfFENopK2OzYYWLBwG_kcpN"
+}
