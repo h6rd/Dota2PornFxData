@@ -1,0 +1,28 @@
+{
+  "id": "9f95d47c",
+  "name": "Kda Black",
+  "category": "parts",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kda Black",
+  "zip": {
+    "path": "pending/9f95d47c/Kda Black.zip",
+    "sha": "923161afdea2095afa61de6fc1f2a49f0ff791fa",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9f95d47c/Kda Black.webp",
+    "sha": "5ade1b2549b06bae55390d60edd4cbe8025628cc",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792644299779,
+  "ipFingerprint": "Nuvbz5ix-Jqd5pdWI-dlcHFp"
+}
