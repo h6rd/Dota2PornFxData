@@ -1,0 +1,33 @@
+{
+  "id": "d1df73c9",
+  "name": "Gotick Full Black Hud",
+  "category": "huds",
+  "heroName": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/r3YB89wMd6c",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Gotick Full Black Hud",
+  "zip": {
+    "path": "pending/d1df73c9/Gotick Full Black Hud.zip",
+    "sha": "e4211f09d1138eaf3220e8235168cd0c2de850f3",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d1df73c9/Gotick Full Black Hud.webp",
+    "sha": "e4c879b4b4586a78cc55e7f32deccb9e3693c791",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792644162726,
+  "ipFingerprint": "Nuvbz5ix-Jqd5pdWI-dlcHFp"
+}
