@@ -1,0 +1,23 @@
+{
+  "id": "59da8558",
+  "name": "Purple Blade Mail",
+  "category": "item-effects",
+  "heroName": null,
+  "subcategory": "blademail",
+  "tags": {},
+  "links": [],
+  "filenameBase": "Purple Blade Mail",
+  "zip": {
+    "path": "pending/59da8558/Purple Blade Mail.zip",
+    "sha": "ebc185279b45e46e8992abb3118cbfcdcbbd30fe",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/59da8558/Purple Blade Mail.webp",
+    "sha": "1e4c8d6822d73e3f6a2cd444b48b3274cbd34c36",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792718883601,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
