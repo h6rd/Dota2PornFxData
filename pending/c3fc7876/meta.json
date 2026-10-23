@@ -1,0 +1,31 @@
+{
+  "id": "c3fc7876",
+  "name": "City Ruins",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "City Ruins",
+  "zip": {
+    "path": "pending/c3fc7876/City Ruins.zip",
+    "sha": "9e9365cd34af265509b333674f67733aff4e3809",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c3fc7876/City Ruins.webp",
+    "sha": "db619f58fcf6b7b14edd41f5eff5c7b755f9766a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792794278812,
+  "ipFingerprint": "GRHXZbkBxD1Hv5SCWM3aBHzt"
+}
