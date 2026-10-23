@@ -1,0 +1,31 @@
+{
+  "id": "b01fee48",
+  "name": "Blue Archive Atsuko",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Blue Archive Atsuko",
+  "zip": {
+    "path": "pending/b01fee48/Blue Archive Atsuko.zip",
+    "sha": "94b0dded889ec8281bd0bc64ac0f9fad74379788",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b01fee48/Blue Archive Atsuko.webp",
+    "sha": "b95caf9d0eefc3766d0d4210c7055d0ce3167390",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792794546679,
+  "ipFingerprint": "GRHXZbkBxD1Hv5SCWM3aBHzt"
+}
