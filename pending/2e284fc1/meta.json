@@ -1,0 +1,31 @@
+{
+  "id": "2e284fc1",
+  "name": "Majo No Tabitabi",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Majo No Tabitabi",
+  "zip": {
+    "path": "pending/2e284fc1/Majo No Tabitabi.zip",
+    "sha": "40978d01b8083007f75ccb3b8dbaa68cf4b646dd",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2e284fc1/Majo No Tabitabi.webp",
+    "sha": "41f81e6754153bfde640e9f57ea97706472b83ce",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792794438793,
+  "ipFingerprint": "GRHXZbkBxD1Hv5SCWM3aBHzt"
+}
