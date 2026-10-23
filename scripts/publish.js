@@ -85,6 +85,8 @@ function validateStyleDefs(styles, meta) {
 const ALLOWED_CATEGORIES = splitList(process.env.ALLOWED_CATEGORIES);
 const ALLOWED_HEROES = splitList(process.env.ALLOWED_HEROES);
 const HERO_AWARE_CATEGORIES = new Set(["heroes", "hero-items", "herofx", "hero-sounds"]);
+const SUBCATEGORY_CATEGORIES = new Set(["item-effects", "creep-deny"]);
+const SUBCATEGORY_RE = /^[a-z0-9-]{1,60}$/;
 
 const PREVIEW_VIDEO_CATEGORIES = new Set(["sounds", "hero-sounds", "huds", "ti-bp-effects", "heroes", "mega-kill", "announcers", "music"]);
 const YOUTUBE_HOST_RE = /^(m\.|www\.|music\.)?youtube\.com$|^youtu\.be$/i;
@@ -295,6 +297,21 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     assertField(typeof meta.heroName === "string" && meta.heroName.length <= MAX_NAME_LEN && /^[A-Za-z0-9 '.\-]+$/.test(meta.heroName), "Invalid hero");
     if (ALLOWED_HEROES.length) assertField(ALLOWED_HEROES.includes(meta.heroName), "Invalid hero");
   }
+  let subcategory = null;
+  if (SUBCATEGORY_CATEGORIES.has(meta.category)) {
+    const raw = typeof meta.subcategory === "string" ? meta.subcategory.trim() : "";
+    if (raw) {
+      assertField(SUBCATEGORY_RE.test(raw), "Invalid subcategory");
+      const catDataForSub = mods.modsData && mods.modsData[meta.category];
+      assertField(
+        catDataForSub && Array.isArray(catDataForSub.groups) && catDataForSub.groups.some((g) => g && g.id === raw),
+        `Unknown subcategory "${raw}" for category "${meta.category}"`
+      );
+      subcategory = raw;
+    } else {
+      assertField(meta.category === "creep-deny", "A subcategory is required for this category");
+    }
+  }
   assertField(meta.zip && typeof meta.zip.path === "string", "Invalid submission archive");
   assertField(meta.preview && typeof meta.preview.path === "string", "A mod preview is required");
 
@@ -406,7 +423,11 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   if (catData && typeof catData === "object" && Array.isArray(catData.groups)) {
     let groupName = meta.heroName || "Misc";
     let groupId = slugify(groupName);
-    if (!meta.heroName && meta.category === "creep-deny") {
+    if (subcategory) {
+      const picked = catData.groups.find((g) => g && g.id === subcategory);
+      groupId = picked.id;
+      groupName = picked.name;
+    } else if (!meta.heroName && meta.category === "creep-deny") {
       const isLasthit = /last[\s-]?hit/i.test(meta.name);
       groupName = isLasthit ? "Lasthit" : "Deny";
       groupId = isLasthit ? "last-hit" : "deny";
