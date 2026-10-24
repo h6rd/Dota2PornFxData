@@ -1,0 +1,31 @@
+{
+  "id": "0dd4988f",
+  "name": "Blue Archive Hina Summer",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Blue Archive Hina Summer",
+  "zip": {
+    "path": "pending/0dd4988f/Blue Archive Hina Summer.zip",
+    "sha": "a019b1565e4337dcf48803fe493279a6136caf58",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0dd4988f/Blue Archive Hina Summer.webp",
+    "sha": "4304c2c8dbc4eeb7e044f390cc022bceb986e98a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792824859823,
+  "ipFingerprint": "ioBvq_gRoFP-te2vZXDVuXwL"
+}
