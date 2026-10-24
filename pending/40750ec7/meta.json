@@ -1,0 +1,29 @@
+{
+  "id": "40750ec7",
+  "name": "Mortal Strike Nyaaa!!! Sound",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "keeper",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Mortal Strike Nyaaa!!! Sound",
+  "zip": {
+    "path": "pending/40750ec7/Mortal Strike Nyaaa!!! Sound.zip",
+    "sha": "60150b04e507e79407426b46933f4cd7e7aef964",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/40750ec7/Mortal Strike Nyaaa!!! Sound.webp",
+    "sha": "b88f7128af1fa9264d9b0b940d04f7d2b24367c8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792879328416,
+  "ipFingerprint": "kbfFENopK2OzYYWLBwG_kcpN"
+}
