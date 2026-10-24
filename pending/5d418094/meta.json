@@ -1,0 +1,23 @@
+{
+  "id": "5d418094",
+  "name": "Invoker Lelouch",
+  "category": "heroes",
+  "heroName": "Invoker",
+  "subcategory": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Invoker Lelouch",
+  "zip": {
+    "path": "pending/5d418094/Invoker Lelouch.zip",
+    "sha": "822df8dc742c064aa7ecc0b0d9158d51b25fd0de",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5d418094/Invoker Lelouch.webp",
+    "sha": "529ca5c3016cee93a7df614c092aaa50fda1f708",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792874123955,
+  "ipFingerprint": "Q3LcacTUXplVhrd8OSTGmhb-"
+}
