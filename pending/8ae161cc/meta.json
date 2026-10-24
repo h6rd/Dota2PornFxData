@@ -1,0 +1,29 @@
+{
+  "id": "8ae161cc",
+  "name": "High Five Cat Paw",
+  "category": "high-five",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "High Five Cat Paw",
+  "zip": {
+    "path": "pending/8ae161cc/High Five Cat Paw.zip",
+    "sha": "85590914a5e17f96ad6109f8a6beb11b0e6ba102",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8ae161cc/High Five Cat Paw.webp",
+    "sha": "97af1bf24eb7eaf9fd46dfd718cc232063213a43",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792838257670,
+  "ipFingerprint": "CSwfmNC-LWf6gtI9S6Lw-107"
+}
