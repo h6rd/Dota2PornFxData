@@ -1,0 +1,32 @@
+{
+  "id": "ff1af5a2",
+  "name": "Centaur Immortal Emerald",
+  "category": "heroes",
+  "heroName": "Centaur",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Centaur Immortal Emerald",
+  "zip": {
+    "path": "pending/ff1af5a2/Centaur Immortal Emerald.zip",
+    "sha": "48b2bd3b4901724a37e3faf4334b5dc24b4038ac",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ff1af5a2/Centaur Immortal Emerald.webp",
+    "sha": "a4b36eddecc8efb43a7ae7e1bb08bd0ce4609449",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792847852867,
+  "ipFingerprint": "55FBzKsaazKJsCl74O-511Vb"
+}
