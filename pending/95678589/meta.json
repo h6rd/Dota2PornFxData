@@ -1,0 +1,29 @@
+{
+  "id": "95678589",
+  "name": "Viper Glist",
+  "category": "heroes",
+  "heroName": "Viper",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "keeper",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Viper Glist",
+  "zip": {
+    "path": "pending/95678589/Viper Glist.zip",
+    "sha": "a62c7344227c6a220f5de085a008adec23b2a155",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/95678589/Viper Glist.webp",
+    "sha": "c4fb66705250f1732c24761ee7d5e8c40c2b9738",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792952414504,
+  "ipFingerprint": "kbfFENopK2OzYYWLBwG_kcpN"
+}
