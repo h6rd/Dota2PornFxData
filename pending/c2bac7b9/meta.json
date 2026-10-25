@@ -1,0 +1,32 @@
+{
+  "id": "c2bac7b9",
+  "name": "Axe Immortal Demon",
+  "category": "heroes",
+  "heroName": "Axe",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "твавт",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Axe Immortal Demon",
+  "zip": {
+    "path": "pending/c2bac7b9/Axe Immortal Demon.zip",
+    "sha": "1119c16448260a946ce3be7c21b466c2ccbb8e2d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c2bac7b9/Axe Immortal Demon.webp",
+    "sha": "dac42909769104e2047d93e5aa667e5411132126",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792956285569,
+  "ipFingerprint": "6fvKrr8HbhC-obecGucHVPiN"
+}
