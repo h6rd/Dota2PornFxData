@@ -1,0 +1,29 @@
+{
+  "id": "b9d1f4a2",
+  "name": "Mecha Boots Of Travel Mk Ill",
+  "category": "item-effects",
+  "heroName": null,
+  "subcategory": "teleport",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Mecha Boots Of Travel Mk Ill",
+  "zip": {
+    "path": "pending/b9d1f4a2/Mecha Boots Of Travel Mk Ill.zip",
+    "sha": "d6c266572e90cc2b6e3af10724ccc9ae021264b5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b9d1f4a2/Mecha Boots Of Travel Mk Ill.webp",
+    "sha": "e987993fd806b96ce7b33d07158138b0c4b87801",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792929148506,
+  "ipFingerprint": "_2wTUm_1WjuVNziXnN96aDEc"
+}
