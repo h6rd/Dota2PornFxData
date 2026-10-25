@@ -5,7 +5,13 @@
   "heroName": "Invoker",
   "subcategory": null,
   "tags": {},
-  "links": [],
+  "links": [
+    {
+      "type": "author",
+      "url": "Anonymous",
+      "isNew": false
+    }
+  ],
   "filenameBase": "Invoker Lelouch",
   "zip": {
     "path": "pending/5d418094/Invoker Lelouch.zip",
