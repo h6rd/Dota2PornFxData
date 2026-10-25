@@ -21,7 +21,7 @@ function getMaxModNameLen(heroName) {
 }
 const MAX_TEXT_FIELD_LEN = 150;
 
-const MOD_NAME_RE = /^[a-zA-Z0-9 \-_'.,!]+$/;
+const MOD_NAME_RE = /^[a-zA-Z0-9]+(?: [a-zA-Z0-9]+)*$/;
 const MISPLACED_HYPHEN_RE = /(^|[^a-zA-Z0-9])-|-([^a-zA-Z0-9]|$)/;
 const NICK_RE = /^[\p{L}\p{N} _.\-!,()\[\]#@+]+$/u;
 const SAFE_TEXT_RE = /^[^<>"`\\\u0000-\u001f\u007f]+$/;
