@@ -1,0 +1,34 @@
+{
+  "id": "e284f93d",
+  "name": "Terrorblade Arcana Music",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://www.youtube.com/watch?v=AvhN6PGDwH4",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Terrorblade Arcana Music",
+  "zip": {
+    "path": "pending/e284f93d/Terrorblade Arcana Music.zip",
+    "sha": "b9530fb418b23c7cba423e7f75a614922a262356",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e284f93d/Terrorblade Arcana Music.webp",
+    "sha": "5755801a1e8e442b34bdfc022e1b741b43b2f98b",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792929452875,
+  "ipFingerprint": "_2wTUm_1WjuVNziXnN96aDEc"
+}
