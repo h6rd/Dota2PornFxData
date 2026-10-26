@@ -1,0 +1,32 @@
+{
+  "id": "5ac06bab",
+  "name": "Slark As If It Were Real",
+  "category": "heroes",
+  "heroName": "Slark",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Slark As If It Were Real",
+  "zip": {
+    "path": "pending/5ac06bab/Slark As If It Were Real.zip",
+    "sha": "6cd3fd9d623d157d5520586b940ba317116817ae",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5ac06bab/Slark As If It Were Real.webp",
+    "sha": "bd7a593195c138d3a34417e02069dfd7abfc4d85",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792990712608,
+  "ipFingerprint": "DQCkUrRyzSEaDBH-6GgmjUic"
+}
