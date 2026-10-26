@@ -1,0 +1,31 @@
+{
+  "id": "bc86c258",
+  "name": "Keeper Of The Light Frostbloom",
+  "category": "heroes",
+  "heroName": "Keeper of the Light",
+  "subcategory": null,
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "xvii",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Keeper Of The Light Frostbloom",
+  "zip": {
+    "path": "pending/bc86c258/Keeper Of The Light Frostbloom.zip",
+    "sha": "8fd98409d4dad829527469dfe44887407663b969",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/bc86c258/Keeper Of The Light Frostbloom.webp",
+    "sha": "bfdde494bb43e45ef7f5ca9ee7aace7771573f1d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793027914758,
+  "ipFingerprint": "ip2QT6KiPJJgKn8javX1yncE"
+}
