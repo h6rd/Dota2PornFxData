@@ -1,0 +1,29 @@
+{
+  "id": "63b7d472",
+  "name": "Ember Spirit Archive",
+  "category": "heroes",
+  "heroName": "Ember Spirit",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Ember Spirit Archive",
+  "zip": {
+    "path": "pending/63b7d472/Ember Spirit Archive.zip",
+    "sha": "4b5071461f445e7b984bb2700f1c151ea0ee6a11",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/63b7d472/Ember Spirit Archive.webp",
+    "sha": "c50a9241a6be093d03a2aa7e11d7df150aa6f5f0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792990835648,
+  "ipFingerprint": "DQCkUrRyzSEaDBH-6GgmjUic"
+}
