@@ -1,0 +1,29 @@
+{
+  "id": "7814ced8",
+  "name": "Troll Warlord Steel Warrior",
+  "category": "heroes",
+  "heroName": "Troll Warlord",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Troll Warlord Steel Warrior",
+  "zip": {
+    "path": "pending/7814ced8/Troll Warlord Steel Warrior.zip",
+    "sha": "c11ba9ecbac53aefb975e77026f0db22760dfb21",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7814ced8/Troll Warlord Steel Warrior.webp",
+    "sha": "be7d4e021d0b4a545ccf7062d8ff1f8b2faf85e8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1792990774358,
+  "ipFingerprint": "DQCkUrRyzSEaDBH-6GgmjUic"
+}
