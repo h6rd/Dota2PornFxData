@@ -1,0 +1,29 @@
+{
+  "id": "386c317e",
+  "name": "Crystal Interface",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Crystal Interface",
+  "zip": {
+    "path": "pending/386c317e/Crystal Interface.zip",
+    "sha": "d942599702414265c83cfa9e5319b8c2292c4349",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/386c317e/Crystal Interface.webp",
+    "sha": "3485b3489ccee2e0afe786dd9e8b2ccf8bad358a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793025262134,
+  "ipFingerprint": "JOhdTJZLohWVuidFea75tR_o"
+}
