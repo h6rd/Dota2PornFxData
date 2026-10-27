@@ -1,0 +1,34 @@
+{
+  "id": "14b18bd7",
+  "name": "Tinker Taunt 92",
+  "category": "hero-sounds",
+  "heroName": "Tinker",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "xvii",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/uqs2VATGBR4",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tinker Taunt 92",
+  "zip": {
+    "path": "pending/14b18bd7/Tinker Taunt 92.zip",
+    "sha": "3de0ec40333bc0d77f12c3ebf7b38cc2fd4a3918",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/14b18bd7/Tinker Taunt 92.webp",
+    "sha": "0bad388af14fc6b681def743eb5c57ea98fec403",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793124201530,
+  "ipFingerprint": "ip2QT6KiPJJgKn8javX1yncE"
+}
