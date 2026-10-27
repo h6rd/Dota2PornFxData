@@ -1,0 +1,31 @@
+{
+  "id": "4f7f52f3",
+  "name": "Kotl Obeisance Of The Keeper",
+  "category": "hero-items",
+  "heroName": "Keeper of the Light",
+  "subcategory": null,
+  "tags": {
+    "base": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "keeper",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kotl Obeisance Of The Keeper",
+  "zip": {
+    "path": "pending/4f7f52f3/Kotl Obeisance Of The Keeper.zip",
+    "sha": "66170004810ba3c28db7d4f2b73cebdd6585dd6f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4f7f52f3/Kotl Obeisance Of The Keeper.webp",
+    "sha": "51374bffd55f9dfbe3e5672e068614d6851eee4e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793023629880,
+  "ipFingerprint": "kbfFENopK2OzYYWLBwG_kcpN"
+}
