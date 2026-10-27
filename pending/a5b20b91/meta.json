@@ -1,0 +1,29 @@
+{
+  "id": "a5b20b91",
+  "name": "Show Net Worth",
+  "category": "other",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Show Net Worth",
+  "zip": {
+    "path": "pending/a5b20b91/Show Net Worth.zip",
+    "sha": "65bdf05ba97ca0fcd9b776be1e02fccdcf5448b2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a5b20b91/Show Net Worth.webp",
+    "sha": "18d0ad1814478f05cc0f59a821afca94964340f2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793069506169,
+  "ipFingerprint": "JOhdTJZLohWVuidFea75tR_o"
+}
