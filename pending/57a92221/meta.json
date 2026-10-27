@@ -1,0 +1,29 @@
+{
+  "id": "57a92221",
+  "name": "Arc Warden Verity Warden",
+  "category": "heroes",
+  "heroName": "Arc Warden",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Mirik522",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Arc Warden Verity Warden",
+  "zip": {
+    "path": "pending/57a92221/Arc Warden Verity Warden.zip",
+    "sha": "a2b9d7a778e602658628f9b3094cf1dc3554535c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/57a92221/Arc Warden Verity Warden.webp",
+    "sha": "ae49dac7f36b31d0c7202630528abd4a03a48233",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793105333347,
+  "ipFingerprint": "6tGB7hxuDOMhqTIfEnaW_fn7"
+}
