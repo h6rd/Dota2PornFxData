@@ -1,0 +1,35 @@
+{
+  "id": "4d0318b9",
+  "name": "Last Match Vidget",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Last Match Vidget",
+  "zip": {
+    "path": "pending/4d0318b9/Last Match Vidget.zip",
+    "sha": "db51294d28ab411ad365247c38036db34bf71504",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4d0318b9/Last Match Vidget.webp",
+    "sha": "cd36fad8e48aaad68748cd37cc3a1854817fcf46",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Last Match Vidget",
+    "file": "Last Match Vidget.zip",
+    "preview": "Last Match Vidget.webp"
+  },
+  "status": "pending",
+  "createdAt": 1793050804046,
+  "ipFingerprint": "rITdRi3tiVbM8mNx6_ybqreE"
+}
