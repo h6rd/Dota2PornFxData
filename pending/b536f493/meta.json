@@ -1,0 +1,29 @@
+{
+  "id": "b536f493",
+  "name": "Shadow Shaman Desert Eagle",
+  "category": "heroes",
+  "heroName": "Shadow Shaman",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hrdq",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Shadow Shaman Desert Eagle",
+  "zip": {
+    "path": "pending/b536f493/Shadow Shaman Desert Eagle.zip",
+    "sha": "9a431f39b59f4cf36d30a031fc6bd3290f0b8d6f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b536f493/Shadow Shaman Desert Eagle.webp",
+    "sha": "030a39065ac67518c7f0722bf5d4dad586fdc6ce",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793075879387,
+  "ipFingerprint": "8vjjGUl47O9sh5OROmQP_sak"
+}
