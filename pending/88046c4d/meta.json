@@ -1,0 +1,29 @@
+{
+  "id": "88046c4d",
+  "name": "Crystal Interface",
+  "category": "other",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Crystal Interface",
+  "zip": {
+    "path": "pending/88046c4d/Crystal Interface.zip",
+    "sha": "61582c2beb96bcbe841a61d93e1dec286a53c859",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/88046c4d/Crystal Interface.webp",
+    "sha": "3485b3489ccee2e0afe786dd9e8b2ccf8bad358a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793099274022,
+  "ipFingerprint": "D9BLDF8MqAIzHdsDTqf3PCSX"
+}
