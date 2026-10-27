@@ -1,0 +1,34 @@
+{
+  "id": "f22c823e",
+  "name": "Keeper Of The Light Kotl Taunt Xvi",
+  "category": "hero-sounds",
+  "heroName": "Keeper of the Light",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "xvii",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/_Wah4RdQMXs",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Keeper Of The Light Kotl Taunt Xvi",
+  "zip": {
+    "path": "pending/f22c823e/Keeper Of The Light Kotl Taunt Xvi.zip",
+    "sha": "b0d09c87acc8b888791ea563ae77c68b75dae498",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f22c823e/Keeper Of The Light Kotl Taunt Xvi.webp",
+    "sha": "c7aba9a8a84624c1656f7ed01f1fcfcecac07c31",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793026777056,
+  "ipFingerprint": "ip2QT6KiPJJgKn8javX1yncE"
+}
