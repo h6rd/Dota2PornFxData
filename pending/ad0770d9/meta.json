@@ -1,0 +1,34 @@
+{
+  "id": "ad0770d9",
+  "name": "Tcoaal Dagon",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/gt7-MA4zcww",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tcoaal Dagon",
+  "zip": {
+    "path": "pending/ad0770d9/Tcoaal Dagon.zip",
+    "sha": "fc1259fe73f2b82046714223f30742e5a2e07f7f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ad0770d9/Tcoaal Dagon.webp",
+    "sha": "25caf77447050e2e15879bbefb9593b212b0798d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793131948542,
+  "ipFingerprint": "Nuvbz5ix-Jqd5pdWI-dlcHFp"
+}
