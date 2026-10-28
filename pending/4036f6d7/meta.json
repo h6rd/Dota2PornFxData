@@ -1,0 +1,29 @@
+{
+  "id": "4036f6d7",
+  "name": "Huskar Darkclaw Berserker",
+  "category": "heroes",
+  "heroName": "Huskar",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Huskar Darkclaw Berserker",
+  "zip": {
+    "path": "pending/4036f6d7/Huskar Darkclaw Berserker.zip",
+    "sha": "7011480bbcc36e8e80676d8bf56fcf4bf7f2a140",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4036f6d7/Huskar Darkclaw Berserker.webp",
+    "sha": "c342c6f650d5ca6d8d18f97c4ac7d9eff3e6d791",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793226580664,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
