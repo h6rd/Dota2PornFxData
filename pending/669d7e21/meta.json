@@ -1,0 +1,31 @@
+{
+  "id": "669d7e21",
+  "name": "Purple Interface",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": "misc",
+  "tags": {
+    "css": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Purple Interface",
+  "zip": {
+    "path": "pending/669d7e21/Purple Interface.zip",
+    "sha": "ef243540c71abd8c415483ec32a2ba82ab6a88cb",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/669d7e21/Purple Interface.webp",
+    "sha": "3af80e3341ec6183fe9af1d22a61f4319a58bcfa",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793161243376,
+  "ipFingerprint": "ndq7RvxyJd7lN1Fkqq43n8ys"
+}
