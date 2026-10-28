@@ -1,7 +1,7 @@
 {
   "id": "147b9b3c",
-  "name": "Hud Main Menu 7 00 Style",
-  "category": "huds",
+  "name": "Main Menu 7 00 Style",
+  "category": "background",
   "heroName": null,
   "subcategory": null,
   "tags": {},
@@ -12,14 +12,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Hud Main Menu 7 00 Style",
+  "filenameBase": "Main Menu 7 00 Style",
   "zip": {
-    "path": "pending/147b9b3c/Hud Main Menu 7 00 Style.zip",
+    "path": "pending/147b9b3c/Main Menu 7 00 Style.zip",
     "sha": "3df45203beeeb2ab3f9370a70dd08f59d56fb013",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/147b9b3c/Hud Main Menu 7 00 Style.webp",
+    "path": "pending/147b9b3c/Main Menu 7 00 Style.webp",
     "sha": "b3981b4e5766c921a1cc550f2a06676f7a3ad7a2",
     "ext": "webp"
   },
