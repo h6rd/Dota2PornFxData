@@ -1,0 +1,32 @@
+{
+  "id": "c522081a",
+  "name": "Keeper Of The Light Invisible Horse",
+  "category": "heroes",
+  "heroName": "Keeper of the Light",
+  "subcategory": null,
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "tapich",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/saigonosenjou"
+    }
+  ],
+  "filenameBase": "Keeper Of The Light Invisible Horse",
+  "zip": {
+    "path": "pending/c522081a/Keeper Of The Light Invisible Horse.zip",
+    "sha": "b4bede848806b6d338b856965f56da6b7cbfac5e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c522081a/Keeper Of The Light Invisible Horse.webp",
+    "sha": "6cbec782e6712fd104cdff5864e06e0a8d43c862",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793155868235,
+  "ipFingerprint": "riffUr2uCmL9DMiQ9LmY8x--"
+}
