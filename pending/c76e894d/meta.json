@@ -1,0 +1,35 @@
+{
+  "id": "c76e894d",
+  "name": "Blindzone",
+  "category": "mega-kill",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    },
+    {
+      "type": "source",
+      "url": "source",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/ataraxxxd/524"
+    }
+  ],
+  "filenameBase": "Blindzone",
+  "zip": {
+    "path": "pending/c76e894d/Blindzone.zip",
+    "sha": "22f6384d8110daf150677f5a8c98268cc64adc8b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c76e894d/Blindzone.webp",
+    "sha": "50bdec74782a404c08d09921123e50b4472d33ed",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793184683413,
+  "ipFingerprint": "-AnkbygeKiVKfVfJ_1ntAweV"
+}
