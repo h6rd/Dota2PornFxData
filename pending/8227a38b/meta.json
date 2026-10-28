@@ -1,0 +1,29 @@
+{
+  "id": "8227a38b",
+  "name": "Clinkz Restless Shikaree",
+  "category": "heroes",
+  "heroName": "Clinkz",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Clinkz Restless Shikaree",
+  "zip": {
+    "path": "pending/8227a38b/Clinkz Restless Shikaree.zip",
+    "sha": "0e80891cb5ff3ad920540ca6bbe5859b7da7c51a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/8227a38b/Clinkz Restless Shikaree.webp",
+    "sha": "11ba3a219f5429c939310bbb46f9ac340feb0b00",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793226642197,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
