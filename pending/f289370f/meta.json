@@ -1,0 +1,29 @@
+{
+  "id": "f289370f",
+  "name": "Baby Roshan Diretide",
+  "category": "couriers",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Baby Roshan Diretide",
+  "zip": {
+    "path": "pending/f289370f/Baby Roshan Diretide.zip",
+    "sha": "671ce97b317b81e755ff13f458317995ef1d9e90",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f289370f/Baby Roshan Diretide.webp",
+    "sha": "70f1cf9847e7b1be4a9f7444d31536f9146f9db0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793211319049,
+  "ipFingerprint": "5CrgpRc7zAaV6KFYWj-2sOw_"
+}
