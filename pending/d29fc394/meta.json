@@ -1,0 +1,31 @@
+{
+  "id": "d29fc394",
+  "name": "White Interface",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": "misc",
+  "tags": {
+    "css": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "White Interface",
+  "zip": {
+    "path": "pending/d29fc394/White Interface.zip",
+    "sha": "30b9b5b9074a0c2982025675e235d02fbf8ac7e0",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d29fc394/White Interface.webp",
+    "sha": "28f5cf58edc82e1aba6d1c9c9f94cf11b33b13a6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793159712999,
+  "ipFingerprint": "ndq7RvxyJd7lN1Fkqq43n8ys"
+}
