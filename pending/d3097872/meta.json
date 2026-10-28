@@ -1,0 +1,29 @@
+{
+  "id": "d3097872",
+  "name": "Broodmother Venomancer",
+  "category": "heroes",
+  "heroName": "Broodmother",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Broodmother Venomancer",
+  "zip": {
+    "path": "pending/d3097872/Broodmother Venomancer.zip",
+    "sha": "cbe628374f4c4eee2aa0e72b7c4267e58dc3fb5d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d3097872/Broodmother Venomancer.webp",
+    "sha": "9530606a1e14906967d5f8c63b6b1482547b9753",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793225860672,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
