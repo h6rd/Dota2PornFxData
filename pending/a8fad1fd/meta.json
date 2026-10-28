@@ -1,0 +1,29 @@
+{
+  "id": "a8fad1fd",
+  "name": "Aura 2012 Neokin Faierie",
+  "category": "wards",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "socialbottommm",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Aura 2012 Neokin Faierie",
+  "zip": {
+    "path": "pending/a8fad1fd/Aura 2012 Neokin Faierie.zip",
+    "sha": "d106904efdb2e9ac8c61b9b0a977c9590e63a6a7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a8fad1fd/Aura 2012 Neokin Faierie.webp",
+    "sha": "7b293be1eb5f55d52847644becf1a85d29acb3dd",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793212319825,
+  "ipFingerprint": "5CrgpRc7zAaV6KFYWj-2sOw_"
+}
