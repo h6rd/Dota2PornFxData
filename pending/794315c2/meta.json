@@ -1,0 +1,37 @@
+{
+  "id": "794315c2",
+  "name": "Grey Play Button",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "css": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Grey Play Button",
+  "zip": {
+    "path": "pending/794315c2/Grey Play Button.zip",
+    "sha": "a87c482aa5d9fa3494ff53a04d6c93aad598f9e2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/794315c2/Grey Play Button.webp",
+    "sha": "ddadd7bee6169c91929f6a01d70a9c1e3ae26a09",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Grey Play Button",
+    "file": "Grey Play Button.zip",
+    "preview": "Grey Play Button.webp"
+  },
+  "status": "pending",
+  "createdAt": 1793156742609,
+  "ipFingerprint": "1NBJMuCKC0Lf6M1hgOWUHJj0"
+}
