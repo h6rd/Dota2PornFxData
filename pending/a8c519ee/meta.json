@@ -1,7 +1,7 @@
 {
   "id": "a8c519ee",
-  "name": "Hud Main Menu Reborn Beta",
-  "category": "huds",
+  "name": "Main Menu Reborn Beta",
+  "category": "backgrounds",
   "heroName": null,
   "subcategory": null,
   "tags": {},
@@ -12,14 +12,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Hud Main Menu Reborn Beta",
+  "filenameBase": "Main Menu Reborn Beta",
   "zip": {
-    "path": "pending/a8c519ee/Hud Main Menu Reborn Beta.zip",
+    "path": "pending/a8c519ee/Main Menu Reborn Beta.zip",
     "sha": "15786d51775eab4ef308fa79cd5d1dc7606bd0c7",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/a8c519ee/Hud Main Menu Reborn Beta.webp",
+    "path": "pending/a8c519ee/Main Menu Reborn Beta.webp",
     "sha": "4df3b342886d43a6e94478d66e9ad1bffb393691",
     "ext": "webp"
   },
