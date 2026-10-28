@@ -1,0 +1,31 @@
+{
+  "id": "91cd5758",
+  "name": "Zero Two",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "image": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Zero Two",
+  "zip": {
+    "path": "pending/91cd5758/Zero Two.zip",
+    "sha": "31086831ad4ddc7ab58e6bf2aeab7959f4d3dd5b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/91cd5758/Zero Two.webp",
+    "sha": "dbfa1d03fdb4fff319f076d7b24a7ef5932f61f5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793225954802,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
