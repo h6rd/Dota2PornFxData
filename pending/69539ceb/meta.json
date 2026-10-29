@@ -1,0 +1,29 @@
+{
+  "id": "69539ceb",
+  "name": "Pudge Rot Ponos Sound",
+  "category": "hero-sounds",
+  "heroName": "Pudge",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Rot Ponos Sound",
+  "zip": {
+    "path": "pending/69539ceb/Pudge Rot Ponos Sound.zip",
+    "sha": "fcdbdd3339ecdb9987699ea23022e67fe39ad456",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/69539ceb/Pudge Rot Ponos Sound.webp",
+    "sha": "93f15d0e1b3f2755dd81ef1679d6580438408732",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793312291010,
+  "ipFingerprint": "GXS9q9mO_W9VWFDXKrcTtYQK"
+}
