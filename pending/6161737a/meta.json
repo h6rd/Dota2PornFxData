@@ -1,0 +1,63 @@
+{
+  "id": "6161737a",
+  "name": "Old Ping",
+  "category": "pings",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Old Ping",
+  "zip": {
+    "path": "pending/6161737a/Old Ping.zip",
+    "sha": "18eaf0348817c40a00efaeb62c521f1e1829e7ce",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6161737a/Old Ping.webp",
+    "sha": "113454cff3ea1ca18947fa9fbae977a1e1b5b993",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "Old Icons",
+      "colors": [
+        "#8d8d8d"
+      ],
+      "zip": {
+        "path": "pending/6161737a/Old Ping.zip",
+        "sha": "18eaf0348817c40a00efaeb62c521f1e1829e7ce",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/6161737a/Old Ping.webp",
+        "sha": "113454cff3ea1ca18947fa9fbae977a1e1b5b993",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "New Icons",
+      "colors": [
+        "#8eff97"
+      ],
+      "zip": {
+        "path": "pending/6161737a/Old Ping New Icons.zip",
+        "sha": "8858f98cb4353b685f11bd7acf5205cf905c352c",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/6161737a/Old Ping New Icons.webp",
+        "sha": "b8664f10a48f8624b55214d9d617013fe5b815ee",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1793258331732,
+  "ipFingerprint": "48c66FIVc1LSZCJEw_7af9nX"
+}
