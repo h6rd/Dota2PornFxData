@@ -1,0 +1,41 @@
+{
+  "id": "e598dd2e",
+  "name": "Last Match Vidget",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false,
+      "locked": true
+    },
+    {
+      "type": "modded",
+      "url": "pepavip",
+      "isNew": true,
+      "newAuthorUrl": "https://discord.com/users/778947522462220299"
+    }
+  ],
+  "filenameBase": "Last Match Vidget",
+  "zip": {
+    "path": "pending/e598dd2e/Last Match Vidget.zip",
+    "sha": "7a98aa7d35ae5c1263a8da7c79b7eab3ab9ebe55",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e598dd2e/Last Match Vidget.webp",
+    "sha": "cd36fad8e48aaad68748cd37cc3a1854817fcf46",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Last Match Vidget",
+    "file": "Last Match Vidget.zip",
+    "preview": "Last Match Vidget.webp"
+  },
+  "status": "pending",
+  "createdAt": 1793261920137,
+  "ipFingerprint": "GXS9q9mO_W9VWFDXKrcTtYQK"
+}
