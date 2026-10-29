@@ -1,0 +1,29 @@
+{
+  "id": "c700148d",
+  "name": "Meepo Jungle Babysitter",
+  "category": "heroes",
+  "heroName": "Meepo",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Meepo Jungle Babysitter",
+  "zip": {
+    "path": "pending/c700148d/Meepo Jungle Babysitter.zip",
+    "sha": "8b71cf870285d616c3523dbcc16ae873f0ca1540",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c700148d/Meepo Jungle Babysitter.webp",
+    "sha": "60347307de65446cf427f2828d9434df767571c0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793239561157,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
