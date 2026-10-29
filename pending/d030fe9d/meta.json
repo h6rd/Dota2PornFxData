@@ -1,0 +1,40 @@
+{
+  "id": "d030fe9d",
+  "name": "Scarry Respawn Bayback",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "tapich",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "waitureally",
+      "isNew": true,
+      "newAuthorUrl": "https://web.telegram.org/a/#-1001684734302"
+    },
+    {
+      "type": "preview",
+      "url": "https://youtube.com/shorts/4NRt5U3aG8A",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Scarry Respawn Bayback",
+  "zip": {
+    "path": "pending/d030fe9d/Scarry Respawn Bayback.zip",
+    "sha": "d5a734508e6c34749f91522d81a57da6a49a28a9",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d030fe9d/Scarry Respawn Bayback.webp",
+    "sha": "59d18e2380a57dbab73c2721f4c53a88cea1d6e6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793237642004,
+  "ipFingerprint": "riffUr2uCmL9DMiQ9LmY8x--"
+}
