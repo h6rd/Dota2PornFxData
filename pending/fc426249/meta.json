@@ -1,0 +1,35 @@
+{
+  "id": "fc426249",
+  "name": "Powerbicats Secretshop Dub",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "PowerBiCats",
+      "isNew": true,
+      "newAuthorUrl": "https://powerbicats.ru/"
+    }
+  ],
+  "filenameBase": "Powerbicats Secretshop Dub",
+  "zip": {
+    "path": "pending/fc426249/Powerbicats Secretshop Dub.zip",
+    "sha": "da1ca0860185ca0c9c7d5a855f6ba21e44877830",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fc426249/Powerbicats Secretshop Dub.webp",
+    "sha": "46e23657caf11e3c0c55c49a5dbf3032abf282c0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793313911311,
+  "ipFingerprint": "GXS9q9mO_W9VWFDXKrcTtYQK"
+}
