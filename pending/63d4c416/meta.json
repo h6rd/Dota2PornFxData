@@ -1,0 +1,29 @@
+{
+  "id": "63d4c416",
+  "name": "Kunkka Viking",
+  "category": "heroes",
+  "heroName": "Kunkka",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kunkka Viking",
+  "zip": {
+    "path": "pending/63d4c416/Kunkka Viking.zip",
+    "sha": "20f9425f76d65997f694f3b987eb6f6345f9eeab",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/63d4c416/Kunkka Viking.webp",
+    "sha": "cb402af80c2241fa1d62f7394c5c0ec0c09e52f9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793239499886,
+  "ipFingerprint": "I3L-PssPl47PwdF7_PMayvok"
+}
