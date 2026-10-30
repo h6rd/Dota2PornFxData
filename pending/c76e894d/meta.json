@@ -7,15 +7,15 @@
   "tags": {},
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "4d4mf",
       "isNew": false
     },
     {
-      "type": "source",
-      "url": "source",
+      "type": "author",
+      "url": "ataraxxxd",
       "isNew": true,
-      "newAuthorUrl": "https://t.me/ataraxxxd/524"
+      "newAuthorUrl": "https://t.me/ataraxxxd"
     }
   ],
   "filenameBase": "Blindzone",
