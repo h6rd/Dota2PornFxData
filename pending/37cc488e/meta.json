@@ -1,0 +1,32 @@
+{
+  "id": "37cc488e",
+  "name": "Pudge Waitureally",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Waitureally",
+  "zip": {
+    "path": "pending/37cc488e/Pudge Waitureally.zip",
+    "sha": "0f595f581ef778eff4984c43c8878f3933c9877f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/37cc488e/Pudge Waitureally.webp",
+    "sha": "1b79dc4290237155f1e5015e908ad0d8100b607d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793360037680,
+  "ipFingerprint": "LCZGPcyOhxd44RnyYGk0u_0U"
+}
