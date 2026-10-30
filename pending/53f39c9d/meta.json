@@ -1,0 +1,32 @@
+{
+  "id": "53f39c9d",
+  "name": "Kaneki Shadow Fiend",
+  "category": "heroes",
+  "heroName": "Shadow Fiend",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "qizlik",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Kaneki Shadow Fiend",
+  "zip": {
+    "path": "pending/53f39c9d/Kaneki Shadow Fiend.zip",
+    "sha": "75a71b4546d7782fbe6821d324df9e3775c68330",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/53f39c9d/Kaneki Shadow Fiend.webp",
+    "sha": "17afd28156ff42335b805c5cdeb274ec4c077080",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793326835140,
+  "ipFingerprint": "f4K2Ljd_JNfyX6MSi1M8sEwE"
+}
