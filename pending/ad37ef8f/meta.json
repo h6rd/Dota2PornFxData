@@ -1,0 +1,32 @@
+{
+  "id": "ad37ef8f",
+  "name": "Visage Bloodking",
+  "category": "heroes",
+  "heroName": "Visage",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "qizlik",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Visage Bloodking",
+  "zip": {
+    "path": "pending/ad37ef8f/Visage Bloodking.zip",
+    "sha": "92c11d82896ac3a1881f9268c11ed838e378d5d8",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ad37ef8f/Visage Bloodking.webp",
+    "sha": "a85ded459d6e2299905b7e475f4d73a8fe3a2385",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793405217532,
+  "ipFingerprint": "f4K2Ljd_JNfyX6MSi1M8sEwE"
+}
