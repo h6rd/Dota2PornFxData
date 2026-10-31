@@ -1,0 +1,34 @@
+{
+  "id": "2f417ded",
+  "name": "Arc Warden Destruction Sounds",
+  "category": "hero-sounds",
+  "heroName": "Arc Warden",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/HDxo2JfNXQo",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Arc Warden Destruction Sounds",
+  "zip": {
+    "path": "pending/2f417ded/Arc Warden Destruction Sounds.zip",
+    "sha": "043059f72cca00e5507216ab3906370fb52b8bc4",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2f417ded/Arc Warden Destruction Sounds.webp",
+    "sha": "b451666b25093a5eae627e2cc8b6b8e0cea2ece5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793446890371,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
