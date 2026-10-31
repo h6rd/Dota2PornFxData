@@ -1,0 +1,30 @@
+{
+  "id": "3a95fa52",
+  "name": "Dark Radius Texture",
+  "category": "other",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "SenkuXVII",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/xanoya"
+    }
+  ],
+  "filenameBase": "Dark Radius Texture",
+  "zip": {
+    "path": "pending/3a95fa52/Dark Radius Texture.zip",
+    "sha": "b4865afdf40cd51307f094201ec6e8834081a3f6",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3a95fa52/Dark Radius Texture.webp",
+    "sha": "9b311612d6009e7ede7922283f5828362ce4c036",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793454067167,
+  "ipFingerprint": "Y_DHNLlo85i6Bo_aYhXXcNh0"
+}
