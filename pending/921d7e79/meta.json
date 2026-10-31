@@ -1,8 +1,8 @@
 {
   "id": "921d7e79",
   "name": "Anti Mage Taunt Tt",
-  "category": "sounds",
-  "heroName": null,
+  "category": "hero-sounds",
+  "heroName": "Anti-Mage",
   "subcategory": null,
   "tags": {},
   "links": [
