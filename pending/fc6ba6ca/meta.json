@@ -1,0 +1,30 @@
+{
+  "id": "fc6ba6ca",
+  "name": "Purple Radius Texture",
+  "category": "other",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "SenkuXVII",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/xanoya"
+    }
+  ],
+  "filenameBase": "Purple Radius Texture",
+  "zip": {
+    "path": "pending/fc6ba6ca/Purple Radius Texture.zip",
+    "sha": "27bbfe174a396e6949a5acbc649b1e8bff7c4b44",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fc6ba6ca/Purple Radius Texture.webp",
+    "sha": "d245321d527fb0eb17f189e80c92166a3bd1ea82",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793454284894,
+  "ipFingerprint": "Y_DHNLlo85i6Bo_aYhXXcNh0"
+}
