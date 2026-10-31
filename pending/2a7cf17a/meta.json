@@ -1,0 +1,29 @@
+{
+  "id": "2a7cf17a",
+  "name": "Winter",
+  "category": "shaders",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hrdq",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Winter",
+  "zip": {
+    "path": "pending/2a7cf17a/Winter.zip",
+    "sha": "d37bf9cb006be0049701a8f55ec2aa0de66c8e11",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2a7cf17a/Winter.webp",
+    "sha": "52faf3d906634a83b716c747281861b09493667e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793425911911,
+  "ipFingerprint": "pBP73fhD5cErxXgS-AXYL0ek"
+}
