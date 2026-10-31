@@ -1,0 +1,30 @@
+{
+  "id": "63326962",
+  "name": "Red Radius Texture",
+  "category": "other",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "SenkuXVII",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/xanoya"
+    }
+  ],
+  "filenameBase": "Red Radius Texture",
+  "zip": {
+    "path": "pending/63326962/Red Radius Texture.zip",
+    "sha": "e276f2ce8c9937d79080f58ac56af1d806a92bfc",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/63326962/Red Radius Texture.webp",
+    "sha": "c0fc753b0ea865da678d9a9da8d597d5522b644e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793454211232,
+  "ipFingerprint": "Y_DHNLlo85i6Bo_aYhXXcNh0"
+}
