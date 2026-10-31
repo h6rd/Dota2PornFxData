@@ -1,0 +1,30 @@
+{
+  "id": "9021a0fc",
+  "name": "White Radius Texture",
+  "category": "other",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "SenkuXVII",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/xanoya"
+    }
+  ],
+  "filenameBase": "White Radius Texture",
+  "zip": {
+    "path": "pending/9021a0fc/White Radius Texture.zip",
+    "sha": "7616a6131068f3903aa5d48be0198aa2ebb1ad25",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9021a0fc/White Radius Texture.webp",
+    "sha": "15a9f61ac59801ae8074c7649ced52b5c2e46780",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793454148248,
+  "ipFingerprint": "Y_DHNLlo85i6Bo_aYhXXcNh0"
+}
