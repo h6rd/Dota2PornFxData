@@ -1,0 +1,34 @@
+{
+  "id": "431f019f",
+  "name": "Shadow Fiend Requiem Of Poop",
+  "category": "hero-sounds",
+  "heroName": "Shadow Fiend",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/tQpfMFYf_NE",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Shadow Fiend Requiem Of Poop",
+  "zip": {
+    "path": "pending/431f019f/Shadow Fiend Requiem Of Poop.zip",
+    "sha": "d7e6cd84057611dfd6d7edc6b96af93131b64d2e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/431f019f/Shadow Fiend Requiem Of Poop.webp",
+    "sha": "63457a3bc4652c0357ac96eede1647cd14177833",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793466581901,
+  "ipFingerprint": "_7lK02nDoBlu-7-99eh-t1XO"
+}
