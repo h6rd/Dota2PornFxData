@@ -1,0 +1,29 @@
+{
+  "id": "c0111f0b",
+  "name": "Alchemist Taur Rider",
+  "category": "heroes",
+  "heroName": "Alchemist",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Alchemist Taur Rider",
+  "zip": {
+    "path": "pending/c0111f0b/Alchemist Taur Rider.zip",
+    "sha": "236ef0f02323d2637f4dfd81d593296eefbf8eda",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c0111f0b/Alchemist Taur Rider.webp",
+    "sha": "f4b953252c84252e711605b5a947535ec076eda0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793475248995,
+  "ipFingerprint": "KFrXDX2AdXxhsB_wXy7QNp6P"
+}
