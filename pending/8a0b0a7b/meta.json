@@ -7,8 +7,13 @@
   "tags": {},
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "cursedseizures",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "Kisilev",
       "isNew": false
     }
   ],
