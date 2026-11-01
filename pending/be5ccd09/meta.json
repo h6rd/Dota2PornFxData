@@ -1,0 +1,34 @@
+{
+  "id": "be5ccd09",
+  "name": "White Diretide Ranged Attack",
+  "category": "ranged-attack",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "modded",
+      "url": "cursedseizures",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "Kisilev",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "White Diretide Ranged Attack",
+  "zip": {
+    "path": "pending/be5ccd09/White Diretide Ranged Attack.zip",
+    "sha": "b8afce64e20caf7a72aa603ecf57221a252e6ec3",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/be5ccd09/White Diretide Ranged Attack.webp",
+    "sha": "64db54c3da2a7595af44921d852450baf1c9aeee",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793529873403,
+  "ipFingerprint": "KOdmQlaAsFEuvumrnzcbcvqb"
+}
