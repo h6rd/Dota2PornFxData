@@ -1,0 +1,29 @@
+{
+  "id": "daeb60df",
+  "name": "Abaddon Anointed Armor",
+  "category": "heroes",
+  "heroName": "Abaddon",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "J0nathan550",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Abaddon Anointed Armor",
+  "zip": {
+    "path": "pending/daeb60df/Abaddon Anointed Armor.zip",
+    "sha": "ee85aaec0e5f30fae0ef78416ed0993d53e41ec8",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/daeb60df/Abaddon Anointed Armor.webp",
+    "sha": "a8a9d173408526ae50142bd0bd7e34d8efbf71b9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793474861806,
+  "ipFingerprint": "KFrXDX2AdXxhsB_wXy7QNp6P"
+}
