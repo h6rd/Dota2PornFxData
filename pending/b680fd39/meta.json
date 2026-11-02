@@ -1,0 +1,66 @@
+{
+  "id": "b680fd39",
+  "name": "Invoker Blood",
+  "category": "heroes",
+  "heroName": "Invoker",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "qizlik",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Invoker Blood",
+  "zip": {
+    "path": "pending/b680fd39/Invoker Blood.zip",
+    "sha": "ad6ec42c66312b883fbbdd45fccd94ee999dbab2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b680fd39/Invoker Blood.webp",
+    "sha": "ded167e4db808a4f28e42f90323587b981b96c45",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "Style I",
+      "colors": [
+        "#fe0101"
+      ],
+      "zip": {
+        "path": "pending/b680fd39/Invoker Blood.zip",
+        "sha": "ad6ec42c66312b883fbbdd45fccd94ee999dbab2",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/b680fd39/Invoker Blood.webp",
+        "sha": "ded167e4db808a4f28e42f90323587b981b96c45",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "Style II",
+      "colors": [
+        "#fffafa"
+      ],
+      "zip": {
+        "path": "pending/b680fd39/Invoker Blood Style II.zip",
+        "sha": "3e07e97a8989522aa1d6c40ae5baddc68aa5afb7",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/b680fd39/Invoker Blood Style II.webp",
+        "sha": "ded167e4db808a4f28e42f90323587b981b96c45",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1793660198497,
+  "ipFingerprint": "f4K2Ljd_JNfyX6MSi1M8sEwE"
+}
