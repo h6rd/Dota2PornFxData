@@ -1,0 +1,29 @@
+{
+  "id": "e6bdac9a",
+  "name": "Broodmother Sharp Rose",
+  "category": "heroes",
+  "heroName": "Broodmother",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Broodmother Sharp Rose",
+  "zip": {
+    "path": "pending/e6bdac9a/Broodmother Sharp Rose.zip",
+    "sha": "bfb66842a1ec6330b3d5d966ce438cf0b4fd5a76",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e6bdac9a/Broodmother Sharp Rose.webp",
+    "sha": "cbcfa071f240fe6097ed61771fc988fdb4d587f1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793616568529,
+  "ipFingerprint": "6T22pPgDFuR6gaY8pbwfDR1W"
+}
