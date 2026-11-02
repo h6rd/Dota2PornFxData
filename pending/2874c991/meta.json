@@ -1,0 +1,29 @@
+{
+  "id": "2874c991",
+  "name": "Black Minimap",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": "minimap",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Black Minimap",
+  "zip": {
+    "path": "pending/2874c991/Black Minimap.zip",
+    "sha": "16bd5774f018626e84da2c1c4fe4ed1f6f64d3e7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2874c991/Black Minimap.webp",
+    "sha": "e38ff464fffebf528e44387651e405a92c579a70",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793562262432,
+  "ipFingerprint": "JOhdTJZLohWVuidFea75tR_o"
+}
