@@ -1,0 +1,35 @@
+{
+  "id": "877deebf",
+  "name": "Cj Anti Mage",
+  "category": "heroes",
+  "heroName": "Anti-Mage",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Cj Anti Mage",
+  "zip": {
+    "path": "pending/877deebf/Cj Anti Mage.zip",
+    "sha": "4dca2c2e16a399be0f104a90474d88a55373bc84",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/877deebf/Cj Anti Mage.webp",
+    "sha": "08e2deb51578236981abd4706754fd5b01d20463",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Cj Anti Mage",
+    "file": "Cj Anti Mage.zip",
+    "preview": "Cj Anti Mage.webp"
+  },
+  "status": "pending",
+  "createdAt": 1793702278613,
+  "ipFingerprint": "rtziBgTC_FsijrkzxO7lRlmy"
+}
