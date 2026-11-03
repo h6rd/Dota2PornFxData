@@ -1,0 +1,39 @@
+{
+  "id": "3f76cffc",
+  "name": "Witchblvde Naga Siren",
+  "category": "heroes",
+  "heroName": "Naga Siren",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "blvdness",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/blvdness"
+    },
+    {
+      "type": "author",
+      "url": "sabzeek",
+      "isNew": true,
+      "newAuthorUrl": "https://discordapp.com/users/1034397657361289297"
+    }
+  ],
+  "filenameBase": "Witchblvde Naga Siren",
+  "zip": {
+    "path": "pending/3f76cffc/Witchblvde Naga Siren.zip",
+    "sha": "97091be787bd8b53f81bcbbfa93e18c8e9d8e8a5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3f76cffc/Witchblvde Naga Siren.webp",
+    "sha": "feacac42328cffd51854f2d618265d8f3ffb132d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793716210573,
+  "ipFingerprint": "KsSckoISw42tUJDQx_kfbATa"
+}
