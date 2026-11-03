@@ -1,0 +1,33 @@
+{
+  "id": "fdb8bb81",
+  "name": "Weaver Immortal",
+  "category": "heroes",
+  "heroName": "Weaver",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Shodowen",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Weaver Immortal",
+  "zip": {
+    "path": "pending/fdb8bb81/Weaver Immortal.zip",
+    "sha": "1eb8e5dbca45a6faad10f218c253d7e73042e82f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fdb8bb81/Weaver Immortal.webp",
+    "sha": "1774ae55b3b12f91791b43a145d18bb26e193cf6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793696584995,
+  "ipFingerprint": "cdzGGCxu5ziuSCZq2U5igT2J"
+}
