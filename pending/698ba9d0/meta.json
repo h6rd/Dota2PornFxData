@@ -1,0 +1,32 @@
+{
+  "id": "698ba9d0",
+  "name": "Gridstudio Hero Meta",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": "misc",
+  "tags": {
+    "css": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "GridStudio",
+      "isNew": true,
+      "newAuthorUrl": "https://gridstudio.me"
+    }
+  ],
+  "filenameBase": "Gridstudio Hero Meta",
+  "zip": {
+    "path": "pending/698ba9d0/Gridstudio Hero Meta.zip",
+    "sha": "2c99a725284830933b5d48c70cc6c93075fb05c7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/698ba9d0/Gridstudio Hero Meta.webp",
+    "sha": "b05e767f55099989633f97d088d5ff4291fc9926",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793668214403,
+  "ipFingerprint": "kCj8joDvtbtFgHONX7MC7Ejz"
+}
