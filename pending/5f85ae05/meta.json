@@ -1,0 +1,29 @@
+{
+  "id": "5f85ae05",
+  "name": "Warcraft 3 Allstars Voices Ru",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Fr0dech",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Warcraft 3 Allstars Voices Ru",
+  "zip": {
+    "path": "pending/5f85ae05/Warcraft 3 Allstars Voices Ru.zip",
+    "sha": "c1c5729b7b68b6b87704e87370ed8ce4cc99a96a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5f85ae05/Warcraft 3 Allstars Voices Ru.webp",
+    "sha": "2f4b0fed08d42dc0c5f390201d8ecc4c2c653afc",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793794180804,
+  "ipFingerprint": "Znc6MkXlZQ8jdRebAS0dTZWW"
+}
