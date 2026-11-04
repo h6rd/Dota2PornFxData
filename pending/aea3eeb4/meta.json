@@ -1,0 +1,23 @@
+{
+  "id": "aea3eeb4",
+  "name": "Test",
+  "category": "shaders",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [],
+  "filenameBase": "Test",
+  "zip": {
+    "path": "pending/aea3eeb4/Test.zip",
+    "sha": "895e5443193f2af698274da724d24e57f492ebd8",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/aea3eeb4/Test.webp",
+    "sha": "66e14588c7c84fd1b7b2a1243012f9d386772445",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793766636739,
+  "ipFingerprint": "aTUIP6SuGfbwuEvPRegpAKgy"
+}
