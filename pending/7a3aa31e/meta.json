@@ -1,0 +1,39 @@
+{
+  "id": "7a3aa31e",
+  "name": "Naga Siren Nedowitchblvde",
+  "category": "heroes",
+  "heroName": "Naga Siren",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "blvdness",
+      "isNew": true,
+      "newAuthorUrl": "https://discordapp.com/users/694835650964226120"
+    },
+    {
+      "type": "author",
+      "url": "sabzek",
+      "isNew": true,
+      "newAuthorUrl": "https://discordapp.com/users/1034397657361289297"
+    }
+  ],
+  "filenameBase": "Naga Siren Nedowitchblvde",
+  "zip": {
+    "path": "pending/7a3aa31e/Naga Siren Nedowitchblvde.zip",
+    "sha": "97091be787bd8b53f81bcbbfa93e18c8e9d8e8a5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7a3aa31e/Naga Siren Nedowitchblvde.webp",
+    "sha": "25e11adf04fcf97fdddc8004946947126856252e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793784275403,
+  "ipFingerprint": "LHHrNWahYGaKPG9899eZ5PiD"
+}
