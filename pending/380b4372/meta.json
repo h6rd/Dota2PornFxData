@@ -1,0 +1,37 @@
+{
+  "id": "380b4372",
+  "name": "Morphling Pink",
+  "category": "heroes",
+  "heroName": "Morphling",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "cursedseizures",
+      "isNew": false
+    },
+    {
+      "type": "modded",
+      "url": "cursedseizures",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Morphling Pink",
+  "zip": {
+    "path": "pending/380b4372/Morphling Pink.zip",
+    "sha": "0e3f80bc2d4fdee2d9af1631b925e71642b87e5c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/380b4372/Morphling Pink.webp",
+    "sha": "ac59d75945d5477b328cc40871d514c78109a8f3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793890450419,
+  "ipFingerprint": "KOdmQlaAsFEuvumrnzcbcvqb"
+}
