@@ -1,0 +1,79 @@
+{
+  "id": "734aa5c0",
+  "name": "Nemestice Teleport",
+  "category": "item-effects",
+  "heroName": null,
+  "subcategory": "teleport",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Nemestice Teleport",
+  "zip": {
+    "path": "pending/734aa5c0/Nemestice Teleport.zip",
+    "sha": "9eeafa513e05a4f2947c4c6ff6ae74b483758148",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/734aa5c0/Nemestice Teleport.webp",
+    "sha": "930a98bb82d521839237906f029e121e9c85ced4",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "lvl I",
+      "colors": [
+        "#ddd4ff"
+      ],
+      "zip": {
+        "path": "pending/734aa5c0/Nemestice Teleport.zip",
+        "sha": "9eeafa513e05a4f2947c4c6ff6ae74b483758148",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/734aa5c0/Nemestice Teleport.webp",
+        "sha": "930a98bb82d521839237906f029e121e9c85ced4",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "lvl Il",
+      "colors": [
+        "#ff8f8f"
+      ],
+      "zip": {
+        "path": "pending/734aa5c0/Nemestice Teleport lvl Il.zip",
+        "sha": "d8f63da81eab8eecabb35eeb6d046ad58b783119",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/734aa5c0/Nemestice Teleport lvl Il.webp",
+        "sha": "9a52d27317eaca2b7b471010308122810333197a",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "lvl Ill",
+      "colors": [
+        "#8fd3ff"
+      ],
+      "zip": {
+        "path": "pending/734aa5c0/Nemestice Teleport lvl Ill.zip",
+        "sha": "1f0019accd363ee253fd65c92110252f470c7257",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/734aa5c0/Nemestice Teleport lvl Ill.webp",
+        "sha": "3de2d39383215dafac3d1e7bd6b00423ebbe3c53",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1793958207853,
+  "ipFingerprint": "-AnkbygeKiVKfVfJ_1ntAweV"
+}
