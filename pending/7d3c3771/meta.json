@@ -1,0 +1,35 @@
+{
+  "id": "7d3c3771",
+  "name": "Emblem Of The Diretide White",
+  "category": "emblems",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "cursedseizures",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Emblem Of The Diretide White",
+  "zip": {
+    "path": "pending/7d3c3771/Emblem Of The Diretide White.zip",
+    "sha": "a43b71c99e7968ff7622bc15026b71560085c636",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7d3c3771/Emblem Of The Diretide White.webp",
+    "sha": "897b51a7ad96192cc743d9f163ae9db1892bab2c",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Emblem Of The Diretide White",
+    "file": "Emblem Of The Diretide White.zip",
+    "preview": "Emblem Of The Diretide White.webp"
+  },
+  "status": "pending",
+  "createdAt": 1793959737203,
+  "ipFingerprint": "KOdmQlaAsFEuvumrnzcbcvqb"
+}
