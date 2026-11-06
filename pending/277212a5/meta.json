@@ -1,0 +1,79 @@
+{
+  "id": "277212a5",
+  "name": "Ti12 Teleport",
+  "category": "item-effects",
+  "heroName": null,
+  "subcategory": "teleport",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Ti12 Teleport",
+  "zip": {
+    "path": "pending/277212a5/Ti12 Teleport.zip",
+    "sha": "5bfbc8af6d93ace9d63db06342523800379954e2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/277212a5/Ti12 Teleport.webp",
+    "sha": "1eb48983cbc80d86d36008c338a9d7b273da1956",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "Style I",
+      "colors": [
+        "#ddd4ff"
+      ],
+      "zip": {
+        "path": "pending/277212a5/Ti12 Teleport.zip",
+        "sha": "5bfbc8af6d93ace9d63db06342523800379954e2",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/277212a5/Ti12 Teleport.webp",
+        "sha": "1eb48983cbc80d86d36008c338a9d7b273da1956",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "Style II",
+      "colors": [
+        "#ff8f8f"
+      ],
+      "zip": {
+        "path": "pending/277212a5/Ti12 Teleport Style II.zip",
+        "sha": "7da3ac3b0c2bf201104fc87ef1b6d86ff9a322ae",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/277212a5/Ti12 Teleport Style II.webp",
+        "sha": "ccaf6751eb452cea204a53a34a854f3eb8ca3f4d",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "Style III",
+      "colors": [
+        "#8fd3ff"
+      ],
+      "zip": {
+        "path": "pending/277212a5/Ti12 Teleport Style III.zip",
+        "sha": "4701bcd1aa5d6de73a723a23cf59b42174d5353e",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/277212a5/Ti12 Teleport Style III.webp",
+        "sha": "57f434d22acf5c3393aed62c11314b44a2f38aef",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1793957690962,
+  "ipFingerprint": "-AnkbygeKiVKfVfJ_1ntAweV"
+}
