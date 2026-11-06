@@ -1,0 +1,34 @@
+{
+  "id": "e669fbec",
+  "name": "Emblem Of The Diretide Pink",
+  "category": "emblems",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "cursedseizures",
+      "isNew": false
+    },
+    {
+      "type": "modded",
+      "url": "cursedseizures",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Emblem Of The Diretide Pink",
+  "zip": {
+    "path": "pending/e669fbec/Emblem Of The Diretide Pink.zip",
+    "sha": "9b6c8015f9f365ce7d13fcc36b270dd1847a92bb",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e669fbec/Emblem Of The Diretide Pink.webp",
+    "sha": "792b982da3b77f1670fd1af04419f5863ac65dec",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793946422274,
+  "ipFingerprint": "KOdmQlaAsFEuvumrnzcbcvqb"
+}
