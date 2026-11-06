@@ -1,0 +1,35 @@
+{
+  "id": "befa9792",
+  "name": "Emblem Of The Diretide Black",
+  "category": "emblems",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "cursedseizures",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Emblem Of The Diretide Black",
+  "zip": {
+    "path": "pending/befa9792/Emblem Of The Diretide Black.zip",
+    "sha": "71e8e41b878054301d078aa90f37152a3523c90d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/befa9792/Emblem Of The Diretide Black.webp",
+    "sha": "1efd5d8171eb4a42bd85ed94c06bc9ef57ea380e",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Emblem Of The Diretide Black",
+    "file": "Emblem Of The Diretide Black.zip",
+    "preview": "Emblem Of The Diretide Black.webp"
+  },
+  "status": "pending",
+  "createdAt": 1793960763239,
+  "ipFingerprint": "KOdmQlaAsFEuvumrnzcbcvqb"
+}
