@@ -1,0 +1,79 @@
+{
+  "id": "1792e710",
+  "name": "Ti13 Teleport",
+  "category": "item-effects",
+  "heroName": null,
+  "subcategory": "teleport",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "4d4mf",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Ti13 Teleport",
+  "zip": {
+    "path": "pending/1792e710/Ti13 Teleport.zip",
+    "sha": "b0388ff1c16c4229e587baeeee7ffc94d83afeb0",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1792e710/Ti13 Teleport.webp",
+    "sha": "3fe3da1685419ae06033294d3428a2cdf7c220c3",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "lvl I",
+      "colors": [
+        "#ddd4ff"
+      ],
+      "zip": {
+        "path": "pending/1792e710/Ti13 Teleport.zip",
+        "sha": "b0388ff1c16c4229e587baeeee7ffc94d83afeb0",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/1792e710/Ti13 Teleport.webp",
+        "sha": "3fe3da1685419ae06033294d3428a2cdf7c220c3",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "lvl Il",
+      "colors": [
+        "#ff8f8f"
+      ],
+      "zip": {
+        "path": "pending/1792e710/Ti13 Teleport lvl Il.zip",
+        "sha": "7fdcb9e69789b72a922f71c9b3a6a6e7ef68cb62",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/1792e710/Ti13 Teleport lvl Il.webp",
+        "sha": "b92ba9d11c2130c464dc1ec4f0b97d67d010f92a",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "lvl Ill",
+      "colors": [
+        "#8fd3ff"
+      ],
+      "zip": {
+        "path": "pending/1792e710/Ti13 Teleport lvl Ill.zip",
+        "sha": "b1615068fe0e4714fc085753c80e7df90162a0c3",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/1792e710/Ti13 Teleport lvl Ill.webp",
+        "sha": "14d9d13f2e33783d2894899d6dfc56152ad461fc",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1793958092888,
+  "ipFingerprint": "-AnkbygeKiVKfVfJ_1ntAweV"
+}
