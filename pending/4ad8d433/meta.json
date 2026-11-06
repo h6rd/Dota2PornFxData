@@ -1,0 +1,34 @@
+{
+  "id": "4ad8d433",
+  "name": "Ghoulsss Full Red Hud",
+  "category": "huds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/io2oJzRFjBo?si=Xqxj4PM0fNWkU4Wk",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Ghoulsss Full Red Hud",
+  "zip": {
+    "path": "pending/4ad8d433/Ghoulsss Full Red Hud.zip",
+    "sha": "1f9976eb7755b7a491a248263411185d45cb0c8c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4ad8d433/Ghoulsss Full Red Hud.webp",
+    "sha": "fc5010f1558fe2685718f1f690dc8b9379edeb34",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794006667076,
+  "ipFingerprint": "ndq7RvxyJd7lN1Fkqq43n8ys"
+}
