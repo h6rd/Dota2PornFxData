@@ -1,0 +1,29 @@
+{
+  "id": "e1ade2f2",
+  "name": "White Ti13 Teleport",
+  "category": "item-effects",
+  "heroName": null,
+  "subcategory": "teleport",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "depex",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "White Ti13 Teleport",
+  "zip": {
+    "path": "pending/e1ade2f2/White Ti13 Teleport.zip",
+    "sha": "510034a4181991b612e8b1002a86f61032cbe57d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e1ade2f2/White Ti13 Teleport.webp",
+    "sha": "e090fd28ae66524e27de3d90cc5390b00f372d96",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1793902662912,
+  "ipFingerprint": "St9cSr6SjZX6XO1WcKyT_47u"
+}
