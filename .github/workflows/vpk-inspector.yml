@@ -13,9 +13,17 @@ concurrency:
   group: vpk-inspector-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
+env:
+  VRF_VERSION: latest
+  VRF_REPO: ValveResourceFormat/ValveResourceFormat
+  DOTNET_NOLOGO: "1"
+  DOTNET_CLI_TELEMETRY_OPTOUT: "1"
+  DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "1"
+
 jobs:
   inspect-vpk:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     if: startsWith(github.head_ref, 'submission/')
 
     steps:
@@ -30,8 +38,40 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install vpk
-        run: pip install vpk
+      - name: Install Source2Viewer-CLI
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG=""
+          if [ "$VRF_VERSION" != "latest" ]; then TAG="$VRF_VERSION"; fi
+
+          # Find the Linux x64 CLI asset (exact name first, then a tolerant match in case it gets renamed).
+          ASSETS=$(gh release view $TAG --repo "$VRF_REPO" --json assets --jq '.assets[].name')
+          ASSET=$(grep -ixE 'cli-linux-x64\.zip' <<< "$ASSETS" | head -n 1 || true)
+          if [ -z "$ASSET" ]; then
+            ASSET=$(grep -iE 'cli.*linux.*(x64|amd64).*\.zip' <<< "$ASSETS" | head -n 1 || true)
+          fi
+          if [ -z "$ASSET" ]; then
+            echo "::error::No Linux x64 CLI asset found in the $VRF_REPO release ($VRF_VERSION). Assets:"
+            echo "$ASSETS"
+            exit 1
+          fi
+          echo "Downloading $ASSET ($VRF_VERSION)"
+          mkdir -p s2v/bin
+          gh release download $TAG --repo "$VRF_REPO" --pattern "$ASSET" --dir s2v
+          unzip -q "s2v/$ASSET" -d s2v/bin
+
+          BIN=$(find s2v/bin -type f -iname 'Source2Viewer-CLI' | head -n 1 || true)
+          if [ -z "$BIN" ]; then
+            echo "::error::Source2Viewer-CLI binary not found in the downloaded archive"
+            find s2v/bin -type f | head -n 50
+            exit 1
+          fi
+          chmod +x "$BIN"
+          echo "S2V_CLI=$PWD/$BIN" >> "$GITHUB_ENV"
+          "$BIN" --version || true
 
       - name: Find and inspect VPK
         shell: bash
@@ -60,18 +100,35 @@ jobs:
           python <<'PY'
           import os
           import re
+          import subprocess
           import sys
           import zipfile
-          import vpk
 
+          CLI = os.environ["S2V_CLI"]
           MAX_VPK_BYTES = 100 * 1024 * 1024
           MAX_LIST_LINES = 200
           MAX_COMMENT_CHARS = 55000
+          CLI_TIMEOUT_SECONDS = 300
+          CLI_OUTPUT_LINES = 30
+          VPK_SIGNATURE = b"\x34\x12\xaa\x55"  # 0x55AA1234, little endian
+
+          # "--vpk_dir" prints one line per file: "<path> crc=0x.. metadatasz=.. fnumber=.. ofs=0x.. sz=<bytes>"
+          DIR_LINE_RE = re.compile(
+              r"^(?P<path>.+?)\s+crc=0x[0-9a-fA-F]+\s+metadatasz=\d+\s+fnumber=\d+\s+ofs=0x[0-9a-fA-F]+\s+sz=(?P<size>\d+)\s*$"
+          )
+          # Fallback for a plain path-per-line listing ("--vpk_list").
+          PLAIN_LINE_RE = re.compile(r"^[\w\-./ ()\[\]+@#,!']+\.[A-Za-z0-9_]+$")
 
 
           def clean(value):
               # Names come from an untrusted archive: keep them printable and unable to break out of a Markdown fence.
               return "".join(ch for ch in str(value) if ch.isprintable() and ch not in "`~")
+
+
+          def human(n):
+              if n >= 1024 * 1024:
+                  return f"{n / 1024 / 1024:.1f} MB"
+              return f"{max(1, round(n / 1024))} KB" if n else "0 KB"
 
 
           def build_tree(paths, include_files):
@@ -97,6 +154,38 @@ jobs:
                       next_prefix = prefix + ("    " if last else "│   ")
                       lines.extend(render_tree(children, next_prefix))
               return lines
+
+
+          def parse_listing(text):
+              """Returns [(path, size_or_None), ...] from Source2Viewer-CLI output."""
+              lines = [l.rstrip("\r") for l in text.splitlines()]
+              entries = []
+              for line in lines:
+                  m = DIR_LINE_RE.match(line)
+                  if m:
+                      entries.append((clean(m.group("path")), int(m.group("size"))))
+              if entries:
+                  return entries
+              for line in lines:
+                  s = line.strip()
+                  if s and not s.startswith(("-", "=", "[", "#")) and ": " not in s and PLAIN_LINE_RE.match(s):
+                      entries.append((clean(s), None))
+              return entries
+
+
+          def excerpt(text, limit=CLI_OUTPUT_LINES):
+              lines = [clean(l) for l in text.splitlines() if l.strip()]
+              if len(lines) > limit:
+                  lines = lines[:limit] + [f"... ({len(lines) - limit} more lines)"]
+              return "\n".join(lines) or "(no output)"
+
+
+          def first_error(text):
+              for line in text.splitlines():
+                  s = line.strip()
+                  if s and re.search(r"exception|error|invalid|fail|corrupt|unexpected|unable|could not", s, re.I):
+                      return clean(s)[:300]
+              return None
 
 
           def inspect(zip_file, index):
@@ -127,61 +216,92 @@ jobs:
                               break
                           written += len(chunk)
                           if written > MAX_VPK_BYTES:
-                              return False, ["⚠️ **Rejected: the `.vpk` inside the archive is larger than the inspector limit.**"]
+                              return False, [f"⚠️ **Rejected: the `.vpk` inside the archive is larger than the inspector limit.**"]
                           dst.write(chunk)
 
-              print(f"Found VPK: {vpk_file}")
+              print(f"Found VPK: {vpk_file} ({written} bytes)")
+              vpk_name = clean(os.path.basename(info.filename))
 
-              def corrupt(reason, exc):
-                  size = os.path.getsize(vpk_file)
-                  print(f"::error::Invalid VPK in {zip_file} ({type(exc).__name__}): {exc}")
-                  return False, [
+              def corrupt(reason, details=None, parser_error=None):
+                  print(f"::error::Invalid VPK in {zip_file}: {reason}")
+                  lines = [
                       "⚠️ **Rejected: the `.vpk` file is corrupted or is not a valid VPK archive.**",
                       "",
-                      f"- **File:** `{clean(os.path.basename(info.filename))}`",
-                      f"- **Size:** {size} bytes",
+                      f"- **File:** `{vpk_name}`",
+                      f"- **Size:** {written} bytes",
                       f"- **Problem:** {reason}",
-                      f"- **Parser error:** `{clean(type(exc).__name__)}: {clean(exc)}`",
+                  ]
+                  if parser_error:
+                      lines.append(f"- **Source2Viewer-CLI:** `{parser_error}`")
+                  if details:
+                      lines += ["", "<details><summary>Source2Viewer-CLI output</summary>", "", "~~~~~text", details, "~~~~~", "", "</details>"]
+                  lines += [
                       "",
-                      "The VPK directory index (the `_dir.vpk` header/file table) cannot be read. "
-                      "Please re-pack the mod (e.g. with the Source 2 Workshop Tools / `vpk` tool), "
-                      "check that the file was not damaged or edited in a hex editor, and resubmit.",
+                      "The VPK could not be read by Source2Viewer-CLI. Please re-pack the mod (e.g. with PreMod), "
+                      "check that the file was not damaged or edited, and resubmit.",
+                  ]
+                  return False, lines
+
+              with open(vpk_file, "rb") as fh:
+                  if fh.read(4) != VPK_SIGNATURE:
+                      return corrupt("the file does not start with a VPK signature (wrong file type)")
+
+              try:
+                  proc = subprocess.run(
+                      [CLI, "-i", vpk_file, "--vpk_dir"],
+                      capture_output=True, timeout=CLI_TIMEOUT_SECONDS,
+                  )
+              except subprocess.TimeoutExpired:
+                  return corrupt(f"reading the VPK took longer than {CLI_TIMEOUT_SECONDS} seconds")
+
+              stdout = proc.stdout.decode("utf-8", errors="replace")
+              stderr = proc.stderr.decode("utf-8", errors="replace")
+              combined = (stdout + "\n" + stderr).strip()
+              entries = parse_listing(stdout)
+              print(f"Source2Viewer-CLI exit code {proc.returncode}, {len(entries)} files parsed")
+
+              if proc.returncode != 0 and not entries:
+                  return corrupt(f"Source2Viewer-CLI exited with code {proc.returncode}", excerpt(combined), first_error(combined))
+              if not entries:
+                  err = first_error(combined)
+                  if err:
+                      return corrupt("the VPK directory index could not be read", excerpt(combined), err)
+                  # No error reported, but nothing recognisable in the output: do not blame the mod author.
+                  print("::error::Could not parse the Source2Viewer-CLI output (inspector problem or empty VPK)")
+                  return False, [
+                      "⚠️ **The inspector could not list the files of this `.vpk`** (empty archive, or the Source2Viewer-CLI output format changed).",
+                      "",
+                      f"- **File:** `{vpk_name}`",
+                      f"- **Size:** {written} bytes",
+                      "",
+                      "<details><summary>Source2Viewer-CLI output</summary>", "", "~~~~~text", excerpt(combined), "~~~~~", "", "</details>",
                   ]
 
-              try:
-                  archive = vpk.open(vpk_file)
-              except Exception as exc:
-                  return corrupt("the VPK header could not be parsed", exc)
-
-              try:
-                  files = sorted(clean(f) for f in archive)
-              except Exception as exc:
-                  return corrupt("the VPK file index could not be parsed (broken structure)", exc)
-
-              if not files:
-                  return corrupt("the VPK contains no files", ValueError("empty index"))
-
-              return True, files
+              return True, sorted(set(entries))
 
 
-          def render_archive(title, files, include_files):
+          def render_archive(title, entries, include_files):
+              paths = [p for p, _ in entries]
               extensions = {}
-              for path in files:
+              for path, size in entries:
                   filename = os.path.basename(path)
                   ext = "." + filename.rsplit(".", 1)[1].lower() if "." in filename else "[no extension]"
-                  extensions[ext] = extensions.get(ext, 0) + 1
+                  count, total = extensions.get(ext, (0, 0))
+                  extensions[ext] = (count + 1, total + (size or 0))
+              have_sizes = all(size is not None for _, size in entries)
 
               heading = "####" if title else "###"
-              tree_text = "\n".join(render_tree(build_tree(files, include_files)))
+              tree_text = "\n".join(render_tree(build_tree(paths, include_files)))
               ext_lines = [
-                  f"- `{ext}`: {count}"
-                  for ext, count in sorted(extensions.items(), key=lambda x: (-x[1], x[0]))
+                  f"- `{ext}`: {count}" + (f" ({human(total)})" if have_sizes else "")
+                  for ext, (count, total) in sorted(extensions.items(), key=lambda x: (-x[1][0], x[0]))
               ]
               lines = []
               if title:
                   lines += [f"### {title}", ""]
               lines += [f"{heading} Directory structure", "", "```text", tree_text, "```", ""]
-              lines += [f"{heading} Extensions", ""] + ext_lines + ["", f"**Total files:** {len(files)}", ""]
+              lines += [f"{heading} Extensions", ""] + ext_lines + ["", f"**Total files:** {len(entries)}"
+                        + (f" · **Content size:** {human(sum(s for _, s in entries))}" if have_sizes else ""), ""]
               return lines
 
 
@@ -209,6 +329,7 @@ jobs:
                       lines += ([f"### {title}", ""] if multi else []) + payload + [""]
               if not include_files:
                   lines += ["> Individual files are hidden because the full tree exceeds the GitHub comment size limit — showing directories only.", ""]
+              lines += ["<sub>Read with [Source2Viewer-CLI](https://github.com/ValveResourceFormat/ValveResourceFormat)</sub>", ""]
               return "\n".join(lines)
 
 
