@@ -1,0 +1,29 @@
+{
+  "id": "6bde7bdb",
+  "name": "7 40 Largo",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "7 40 Largo",
+  "zip": {
+    "path": "pending/6bde7bdb/7 40 Largo.zip",
+    "sha": "7bd315c66a446d9f8c43489cd57abf64219c64cd",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6bde7bdb/7 40 Largo.webp",
+    "sha": "9a7cac4f3bbebfed3d1f237865891b8916a58a66",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794171397737,
+  "ipFingerprint": "oyqle2lhlKjkqcsVb_e0Gq8i"
+}
