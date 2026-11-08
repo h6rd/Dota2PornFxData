@@ -1,0 +1,32 @@
+{
+  "id": "a81715a3",
+  "name": "Frozen Throne",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "samoredoto",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/samoredoto"
+    }
+  ],
+  "filenameBase": "Frozen Throne",
+  "zip": {
+    "path": "pending/a81715a3/Frozen Throne.zip",
+    "sha": "ce821d9937ae15d5adca2e10c7c47da762cff662",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a81715a3/Frozen Throne.webp",
+    "sha": "ca6dafcbbbc70982e433513fc6c5ae749c8c26b8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794143832702,
+  "ipFingerprint": "z8dQR3lpdlAwf_l0jc6BX3L0"
+}
