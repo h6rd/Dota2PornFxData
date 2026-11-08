@@ -1,0 +1,31 @@
+{
+  "id": "3d1c79ec",
+  "name": "Elaina Blade",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "qoofix",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Elaina Blade",
+  "zip": {
+    "path": "pending/3d1c79ec/Elaina Blade.zip",
+    "sha": "bc41bbd841a668225fc9b857be1d62b637ffce60",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3d1c79ec/Elaina Blade.webp",
+    "sha": "edf668a3ea6d314b5b6fec948a9d294e9ea67314",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794164483169,
+  "ipFingerprint": "x_vv1UcBaH8YZTyxKQMtHmQW"
+}
