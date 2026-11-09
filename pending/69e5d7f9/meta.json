@@ -9,10 +9,16 @@
   },
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "AngelNeverSleep",
       "isNew": true,
       "newAuthorUrl": ""
+    },
+    {
+      "type": "author",
+      "url": "AngelNeverSleep",
+      "isNew": false,
+      "newAuthorUrl": "Harlord"
     }
   ],
   "filenameBase": "Templar Assassin Headress",
