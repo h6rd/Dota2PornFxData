@@ -1,0 +1,33 @@
+{
+  "id": "4a6bc350",
+  "name": "Huskar Bloodbath",
+  "category": "heroes",
+  "heroName": "Huskar",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Something Awful",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Huskar Bloodbath",
+  "zip": {
+    "path": "pending/4a6bc350/Huskar Bloodbath.zip",
+    "sha": "c62928fd624d8a64be09b612ea6e1749e543dc65",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4a6bc350/Huskar Bloodbath.webp",
+    "sha": "95799e7d48ab99d87aeddb8193d149f861ee4fc2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794215603732,
+  "ipFingerprint": "8p_V7F9cxDPXJvY2pWYf3G1C"
+}
