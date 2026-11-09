@@ -1,0 +1,37 @@
+{
+  "id": "69e5d7f9",
+  "name": "Templar Assassin Headress",
+  "category": "heroes",
+  "heroName": "Templar Assassin",
+  "subcategory": null,
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "modded",
+      "url": "AngelNeverSleep",
+      "isNew": true,
+      "newAuthorUrl": ""
+    },
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Templar Assassin Headress",
+  "zip": {
+    "path": "pending/69e5d7f9/Templar Assassin Headress.zip",
+    "sha": "61023b312902ca32016777b74263bac34da26a4e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/69e5d7f9/Templar Assassin Headress.webp",
+    "sha": "b0889594ba99e87ebfc4d872feedd4e2590a921f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794152063542,
+  "ipFingerprint": "bXWavqHGyI8rr04GuGMn5kvv"
+}
