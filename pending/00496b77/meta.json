@@ -1,0 +1,32 @@
+{
+  "id": "00496b77",
+  "name": "Shadow Fiend Raven Harvest",
+  "category": "hero-items",
+  "heroName": "Shadow Fiend",
+  "subcategory": null,
+  "tags": {
+    "arms": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "зомби333",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/sativemiasmas"
+    }
+  ],
+  "filenameBase": "Shadow Fiend Raven Harvest",
+  "zip": {
+    "path": "pending/00496b77/Shadow Fiend Raven Harvest.zip",
+    "sha": "3d90ece35dc16bda6e64e5261bb42338eba53a94",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/00496b77/Shadow Fiend Raven Harvest.webp",
+    "sha": "6409fc9dff1aedd1dabaf3cdc24f0f3c71642c86",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794182980545,
+  "ipFingerprint": "7Gv98YriJiCKXSlGuNzOBjdf"
+}
