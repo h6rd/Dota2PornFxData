@@ -1,9 +1,9 @@
 {
   "id": "8a384d1f",
   "name": "Deny Pupue Sound",
-  "category": "creep-deny",
+  "category": "sounds",
   "heroName": null,
-  "subcategory": "deny",
+  "subcategory": null,
   "tags": {},
   "links": [
     {
