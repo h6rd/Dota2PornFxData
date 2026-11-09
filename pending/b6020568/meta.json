@@ -1,0 +1,29 @@
+{
+  "id": "b6020568",
+  "name": "Qwop Arcana",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Qwop Arcana",
+  "zip": {
+    "path": "pending/b6020568/Qwop Arcana.zip",
+    "sha": "bc2596d1f31ebad41865805cafeb5eefb5fa2d40",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b6020568/Qwop Arcana.webp",
+    "sha": "4b379a558d28a6be2ac5101537b1b6db2b66f42f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794259075268,
+  "ipFingerprint": "oyqle2lhlKjkqcsVb_e0Gq8i"
+}
