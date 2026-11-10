@@ -1,0 +1,29 @@
+{
+  "id": "52eac319",
+  "name": "Barboskiny X Naruto",
+  "category": "mega-kill",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "samoredoto",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Barboskiny X Naruto",
+  "zip": {
+    "path": "pending/52eac319/Barboskiny X Naruto.zip",
+    "sha": "996061a516eed315faa21f881915356230bc1e58",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/52eac319/Barboskiny X Naruto.webp",
+    "sha": "87c1b43f190d9d8a50abad8a7e67a31b27f95847",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794336211576,
+  "ipFingerprint": "3ZdfeDtMh5KU5LO0yCHOhrjX"
+}
