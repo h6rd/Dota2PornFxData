@@ -1,0 +1,32 @@
+{
+  "id": "553c4c97",
+  "name": "Puck Avice",
+  "category": "heroes",
+  "heroName": "Puck",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "cursedseizures",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Puck Avice",
+  "zip": {
+    "path": "pending/553c4c97/Puck Avice.zip",
+    "sha": "2a66a91ceb9f4e59e3bb58363f6ca68ccc86b506",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/553c4c97/Puck Avice.webp",
+    "sha": "88259c8199e5fe22aef9a758868284c1d42efa24",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794339232022,
+  "ipFingerprint": "KOdmQlaAsFEuvumrnzcbcvqb"
+}
