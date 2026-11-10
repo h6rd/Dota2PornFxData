@@ -1,0 +1,35 @@
+{
+  "id": "11c8c6b7",
+  "name": "Creeps Kabanchiki Wow",
+  "category": "neutral-creeps",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "NahuiToSay",
+      "isNew": false
+    },
+    {
+      "type": "source",
+      "url": "source",
+      "isNew": true,
+      "newAuthorUrl": "https://wowtools.work/"
+    }
+  ],
+  "filenameBase": "Creeps Kabanchiki Wow",
+  "zip": {
+    "path": "pending/11c8c6b7/Creeps Kabanchiki Wow.zip",
+    "sha": "3f2fc2115dec40da7e1037b186fd6e3f4ecc172c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/11c8c6b7/Creeps Kabanchiki Wow.webp",
+    "sha": "b6b8655960c4b3d393713fa72f5be74e96fa25e3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794347321425,
+  "ipFingerprint": "EBOqyeQMZCnM8Tl05YyM-3zA"
+}
