@@ -13,9 +13,9 @@
     },
     {
       "type": "source",
-      "url": "source",
+      "url": "WoWTools",
       "isNew": true,
-      "newAuthorUrl": "https://wowtools.work/mv/?buildconf%D1%81g=0753384ca2f3e158f9f528c227f90d23&cdnconfig=074122ed9d63bb66f1127547b80a8819&filedataid=926354&type=m2"
+      "newAuthorUrl": "https://wowtools.work/"
     }
   ],
   "filenameBase": "Kaban Roshan Wow",
