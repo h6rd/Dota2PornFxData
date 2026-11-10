@@ -1,0 +1,35 @@
+{
+  "id": "c9719aaf",
+  "name": "Kaban Roshan Wow",
+  "category": "roshan",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "NahuiToSay",
+      "isNew": false
+    },
+    {
+      "type": "source",
+      "url": "source",
+      "isNew": true,
+      "newAuthorUrl": "https://wowtools.work/mv/?buildconf%D1%81g=0753384ca2f3e158f9f528c227f90d23&cdnconfig=074122ed9d63bb66f1127547b80a8819&filedataid=926354&type=m2"
+    }
+  ],
+  "filenameBase": "Kaban Roshan Wow",
+  "zip": {
+    "path": "pending/c9719aaf/Kaban Roshan Wow.zip",
+    "sha": "ccea34bd7a72b1fa0b5f7ce162bb45047c1648bf",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c9719aaf/Kaban Roshan Wow.webp",
+    "sha": "7c18653c2b246b2125ca815c20c3ff8331129ec9",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794346034975,
+  "ipFingerprint": "EBOqyeQMZCnM8Tl05YyM-3zA"
+}
