@@ -1,0 +1,32 @@
+{
+  "id": "492c8544",
+  "name": "Leshrac Do 5300 Ne Podbrosite",
+  "category": "heroes",
+  "heroName": "Leshrac",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "александр",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Leshrac Do 5300 Ne Podbrosite",
+  "zip": {
+    "path": "pending/492c8544/Leshrac Do 5300 Ne Podbrosite.zip",
+    "sha": "29514552093bc20bfb1a5a04dc929db88ef54451",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/492c8544/Leshrac Do 5300 Ne Podbrosite.webp",
+    "sha": "535025eefbd383b70bd06b402e83aa60912648cb",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794419542220,
+  "ipFingerprint": "EjwSi_3j3OYqo4SF_fWC-ujP"
+}
