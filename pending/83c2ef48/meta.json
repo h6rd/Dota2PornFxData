@@ -1,0 +1,29 @@
+{
+  "id": "83c2ef48",
+  "name": "Radiant Creeps Kabanchiki Wow",
+  "category": "creeps",
+  "heroName": null,
+  "subcategory": "radiant-creeps",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "NahuiToSay",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Radiant Creeps Kabanchiki Wow",
+  "zip": {
+    "path": "pending/83c2ef48/Radiant Creeps Kabanchiki Wow.zip",
+    "sha": "95398b9ba1a0cca50aa7c5ccaff3648242b45ad7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/83c2ef48/Radiant Creeps Kabanchiki Wow.webp",
+    "sha": "7dd40316a19ff648af4c3b61499036b245f6a9e8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794433353022,
+  "ipFingerprint": "fAZkJwPsPRMrJfC6qo4JeVYt"
+}
