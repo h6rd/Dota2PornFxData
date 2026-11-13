@@ -1,0 +1,38 @@
+{
+  "id": "920e06ed",
+  "name": "Anti Mage Test",
+  "category": "heroes",
+  "heroName": "Anti-Mage",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "testup",
+      "isNew": true,
+      "newAuthorUrl": "https://github.com/"
+    },
+    {
+      "type": "author",
+      "url": "hrdq",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Anti Mage Test",
+  "zip": {
+    "path": "pending/920e06ed/Anti Mage Test.zip",
+    "sha": "b16f004918d5ae4bcba6537525e874f01e0f234e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/920e06ed/Anti Mage Test.webp",
+    "sha": "e782036c388c4fc1283c44916320d4bfdffe0155",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794546651276,
+  "ipFingerprint": "0aV3SE79A7SbEZVd-_vao-dR"
+}
