@@ -1,0 +1,33 @@
+{
+  "id": "73b95d67",
+  "name": "AXE TEST",
+  "category": "heroes",
+  "heroName": "Axe",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "hrdq",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "AXE TEST",
+  "zip": {
+    "path": "pending/73b95d67/AXE TEST.zip",
+    "sha": "feb15a455f115ad924078f4f8c5d7cabfea24e68",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/73b95d67/AXE TEST.webp",
+    "sha": "e782036c388c4fc1283c44916320d4bfdffe0155",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794532595691,
+  "ipFingerprint": "0aV3SE79A7SbEZVd-_vao-dR"
+}
