@@ -1,6 +1,6 @@
 {
   "id": "1938771a",
-  "name": "Warcraft 3 Anti Mage",
+  "name": "Warcraft 3 Anti-Mage",
   "category": "heroes",
   "heroName": "Anti-Mage",
   "subcategory": null,
@@ -20,12 +20,12 @@
   ],
   "filenameBase": "Warcraft 3 Anti Mage",
   "zip": {
-    "path": "pending/1938771a/Warcraft 3 Anti Mage.zip",
+    "path": "pending/1938771a/Warcraft 3 Anti-Mage.zip",
     "sha": "5bf79df17cbed9c9a44c2bbfd188f7e2116b486c",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/1938771a/Warcraft 3 Anti Mage.webp",
+    "path": "pending/1938771a/Warcraft 3 Anti-Mage.webp",
     "sha": "1f4463f21571a6099a1aed35bd816f4e883e387d",
     "ext": "webp"
   },
