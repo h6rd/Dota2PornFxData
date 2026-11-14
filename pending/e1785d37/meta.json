@@ -1,0 +1,33 @@
+{
+  "id": "e1785d37",
+  "name": "Inbossik Invoker",
+  "category": "heroes",
+  "heroName": "Invoker",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "cvrsxd4425",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Inbossik Invoker",
+  "zip": {
+    "path": "pending/e1785d37/Inbossik Invoker.zip",
+    "sha": "e677a810a39585b2a614d2e8f8734da92d8cb359",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e1785d37/Inbossik Invoker.webp",
+    "sha": "f78cddbc0063e094069dbcca412d43dcc1172969",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794657412757,
+  "ipFingerprint": "-piizvT-PS7_OOwJQJCkI4tJ"
+}
