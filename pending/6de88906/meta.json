@@ -1,0 +1,29 @@
+{
+  "id": "6de88906",
+  "name": "Test Sub2",
+  "category": "creep-deny",
+  "heroName": null,
+  "subcategory": "deny",
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hrdq",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Test Sub2",
+  "zip": {
+    "path": "pending/6de88906/Test Sub2.zip",
+    "sha": "2190244354d16c81986f358afb5f451b798c43af",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6de88906/Test Sub2.webp",
+    "sha": "e782036c388c4fc1283c44916320d4bfdffe0155",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794635589740,
+  "ipFingerprint": "uxFLUKBdKyvTs4fTCOouu2uT"
+}
