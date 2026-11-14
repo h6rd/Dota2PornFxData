@@ -1,0 +1,69 @@
+{
+  "id": "b4437d88",
+  "name": "Hueta",
+  "category": "trees",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hrdq",
+      "isNew": false
+    },
+    {
+      "type": "modded",
+      "url": "3atvorn1k",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Hueta",
+  "zip": {
+    "path": "pending/b4437d88/Hueta.zip",
+    "sha": "8f96f4749ab51ce48d1347e5faa704af72c6de31",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b4437d88/Hueta.webp",
+    "sha": "e782036c388c4fc1283c44916320d4bfdffe0155",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "green",
+      "colors": [
+        "#11ff00"
+      ],
+      "zip": {
+        "path": "pending/b4437d88/Hueta.zip",
+        "sha": "8f96f4749ab51ce48d1347e5faa704af72c6de31",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/b4437d88/Hueta.webp",
+        "sha": "e782036c388c4fc1283c44916320d4bfdffe0155",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "blue",
+      "colors": [
+        "#fff700",
+        "#0091ff"
+      ],
+      "zip": {
+        "path": "pending/b4437d88/Hueta blue.zip",
+        "sha": "5fe2869ba9e0192c4b310db915a4a83ae3b63f05",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/b4437d88/Hueta blue.webp",
+        "sha": "e782036c388c4fc1283c44916320d4bfdffe0155",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1794636207015,
+  "ipFingerprint": "uxFLUKBdKyvTs4fTCOouu2uT"
+}
