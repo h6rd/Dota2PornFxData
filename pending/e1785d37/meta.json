@@ -10,10 +10,15 @@
   },
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "cvrsxd4425",
       "isNew": true,
       "newAuthorUrl": ""
+    },
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
     }
   ],
   "filenameBase": "Inbossik Invoker",
