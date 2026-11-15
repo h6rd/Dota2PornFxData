@@ -24,7 +24,7 @@ jobs:
           app-id: ${{ secrets.MAIN_REPO_APP_ID }}
           private-key: ${{ secrets.MAIN_REPO_APP_PRIVATE_KEY }}
           owner: ${{ secrets.MAIN_REPO_OWNER }}
-          repositories: ${{ secrets.MAIN_REPO_NAME }},${{ github.event.repository.name }}
+          repositories: ${{ vars.MODS_STORAGE == 'releases' && format('{0},{1},{2}', secrets.MAIN_REPO_NAME, vars.RELEASES_REPO_NAME || 'Dota2PornFx', github.event.repository.name) || format('{0},{1}', secrets.MAIN_REPO_NAME, github.event.repository.name) }}
 
       - name: Checkout DATA repo
         uses: actions/checkout@v6
@@ -57,6 +57,18 @@ jobs:
           filter: blob:none
           sparse-checkout: |
             assets/data
+            scripts
+
+      - name: Checkout releases repo (MODS_STORAGE=releases only; manifest.json is updated and pushed by the publish script)
+        if: steps.pending.outputs.has_pending == 'true' && vars.MODS_STORAGE == 'releases'
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ secrets.MAIN_REPO_OWNER }}/${{ vars.RELEASES_REPO_NAME || 'Dota2PornFx' }}
+          token: ${{ steps.app_token.outputs.token }}
+          path: releases-repo
+          fetch-depth: 1
+          sparse-checkout: manifest.json
+          sparse-checkout-cone-mode: false
 
       - name: Setup Node.js
         if: steps.pending.outputs.has_pending == 'true'
@@ -71,6 +83,11 @@ jobs:
         env:
           DATA_DIR: .
           MAIN_REPO_DIR: ../main-repo
+          MODS_STORAGE: ${{ vars.MODS_STORAGE || 'git' }}
+          RELEASES_DIR: ../releases-repo
+          RELEASES_REPO: ${{ secrets.MAIN_REPO_OWNER }}/${{ vars.RELEASES_REPO_NAME || 'Dota2PornFx' }}
+          RELEASE_STAGE_DIR: ${{ runner.temp }}/release-stage
+          GH_TOKEN: ${{ steps.app_token.outputs.token }}
           ALLOWED_CATEGORIES: ${{ vars.ALLOWED_CATEGORIES }}
           ALLOWED_HEROES: ${{ vars.ALLOWED_HEROES }}
         run: node scripts/publish.js

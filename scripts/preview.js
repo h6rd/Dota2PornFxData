@@ -10,6 +10,7 @@ const {
   readLedger,
   loadPendingMetas,
   publishOne,
+  clearStage,
 } = require("./publish");
 
 const REPORT_MARKER = "<!-- publish-preview-report -->";
@@ -98,6 +99,7 @@ function main() {
   const mods = JSON.parse(beforeModsRaw);
 
   const ledger = readLedger();
+  clearStage();
 
   const published = [];
   const alreadyPublished = [];

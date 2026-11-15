@@ -60,6 +60,17 @@ jobs:
             assets/data
           persist-credentials: false
 
+      - name: Checkout releases repo (MODS_STORAGE=releases only; public, read-only, manifest.json for name-collision checks)
+        if: vars.MODS_STORAGE == 'releases'
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ secrets.MAIN_REPO_OWNER }}/${{ vars.RELEASES_REPO_NAME || 'Dota2PornFx' }}
+          path: releases-repo
+          fetch-depth: 1
+          sparse-checkout: manifest.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
@@ -84,6 +95,9 @@ jobs:
           PR_IDS_FILE: ${{ runner.temp }}/pr-ids.txt
           DATA_DIR: ../pr-data
           MAIN_REPO_DIR: ../main-repo
+          MODS_STORAGE: ${{ vars.MODS_STORAGE || 'git' }}
+          RELEASES_DIR: ../releases-repo
+          RELEASE_STAGE_DIR: ${{ runner.temp }}/release-stage
           ALLOWED_CATEGORIES: ${{ vars.ALLOWED_CATEGORIES }}
           ALLOWED_HEROES: ${{ vars.ALLOWED_HEROES }}
         run: node scripts/preview.js

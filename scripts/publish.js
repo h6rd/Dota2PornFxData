@@ -1,11 +1,21 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const crypto = require("node:crypto");
+const os = require("node:os");
 const { spawnSync } = require("node:child_process");
 
 const DATA_DIR = process.env.DATA_DIR || ".";
 const MAIN_DIR = process.env.MAIN_REPO_DIR || "../main-repo";
 const PENDING_DIR = path.join(DATA_DIR, "pending");
+
+const MODS_STORAGE = (process.env.MODS_STORAGE || "git").trim().toLowerCase();
+if (MODS_STORAGE !== "git" && MODS_STORAGE !== "releases") {
+  throw new Error(`MODS_STORAGE must be "git" or "releases", got "${process.env.MODS_STORAGE}"`);
+}
+const RELEASES_DIR = process.env.RELEASES_DIR || "../releases-repo";
+const RELEASES_REPO = process.env.RELEASES_REPO || "h6rd/Dota2PornFx";
+const MIGRATE_SCRIPT = process.env.MIGRATE_SCRIPT || path.join(MAIN_DIR, "scripts/migrate_to_releases.py");
+const STAGE_DIR = process.env.RELEASE_STAGE_DIR || path.join(os.tmpdir(), "release-stage");
 
 const MAX_NAME_LEN = 80;
 const MAX_MOD_NAME_LEN = 30;
@@ -21,7 +31,7 @@ function getMaxModNameLen(heroName) {
 }
 const MAX_TEXT_FIELD_LEN = 150;
 
-const MOD_NAME_RE = /^[a-zA-Z0-9]+(?: [a-zA-Z0-9]+)*$/;
+const MOD_NAME_RE = /^[a-zA-Z0-9]+(?:(?: |-)[a-zA-Z0-9]+)*$/;
 const MISPLACED_HYPHEN_RE = /(^|[^a-zA-Z0-9])-|-([^a-zA-Z0-9]|$)/;
 const NICK_RE = /^[\p{L}\p{N} _.\-!,()\[\]#@+]+$/u;
 const SAFE_TEXT_RE = /^[^<>"`\\\u0000-\u001f\u007f]+$/;
@@ -122,8 +132,8 @@ function splitList(v) {
   return String(v || "").split(",").map((s) => s.trim()).filter(Boolean);
 }
 
-class ValidationError extends Error {}
-class AlreadyPublishedError extends Error {}
+class ValidationError extends Error { }
+class AlreadyPublishedError extends Error { }
 
 function assertField(condition, message) {
   if (!condition) throw new ValidationError(message);
@@ -259,9 +269,20 @@ function listTrackedPaths(mainDir, subpath) {
   return new Set(res.stdout.split("\n").filter(Boolean));
 }
 
-function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt, suffixes = [""]) {
+function resolveUniqueFilenameBaseGit(mainDir, category, baseFilename, previewExt, suffixes = [""], srcZips = [], mods = {}) {
   const MAX_ATTEMPTS = 25;
   const existingZips = listTrackedPaths(mainDir, `assets/files/${category}`);
+  // Safety net: if assets/files was removed but MODS_STORAGE is still "git", the check below would silently see
+  // "nothing is taken" and a new mod could overwrite an existing name. Fail loudly instead.
+  if (
+    existingZips.size === 0 &&
+    getCategoryModsArray(mods && mods.modsData && mods.modsData[category]).some((m) => m && typeof m.file === "string" && /^[^\\/]+\.zip$/i.test(m.file))
+  ) {
+    throw new Error(
+      `assets/files/${category} is empty in the main repo but mods.json lists mods for it. ` +
+      `If assets/files was removed, set the MODS_STORAGE repository variable to "releases".`
+    );
+  }
   const existingPreviews = previewExt ? listTrackedPaths(mainDir, `assets/previews/${category}`) : new Set();
 
   let candidate = baseFilename;
@@ -281,11 +302,173 @@ function resolveUniqueFilenameBase(mainDir, category, baseFilename, previewExt, 
   throw new ValidationError(`Could not find a free filename for "${baseFilename}" after ${MAX_ATTEMPTS} attempts`);
 }
 
+const lc = (v) => String(v).toLowerCase();
+
+function sha256File(p) {
+  return crypto.createHash("sha256").update(fs.readFileSync(p)).digest("hex");
+}
+
+function manifestFile() {
+  return path.join(RELEASES_DIR, "manifest.json");
+}
+
+// lower-case "category/name" -> manifest entry. Fails loudly instead of returning an empty index,
+// otherwise a missing checkout would silently disable the collision check.
+function readManifestIndex() {
+  const p = manifestFile();
+  if (!fs.existsSync(p)) {
+    throw new Error(`releases manifest not found at ${p} - the releases repo is not checked out (RELEASES_DIR)`);
+  }
+  const data = readJson(p);
+  if (!data || !Array.isArray(data.files) || data.files.length === 0) {
+    throw new Error(`releases manifest ${p} has no files - refusing to publish against an empty manifest`);
+  }
+  const idx = new Map();
+  for (const f of data.files) idx.set(lc(`${f.category}/${f.name}`), f);
+  return idx;
+}
+
+function modsJsonFileNames(mods, category) {
+  const names = new Set();
+  for (const m of getCategoryModsArray(mods && mods.modsData && mods.modsData[category])) {
+    if (!m) continue;
+    if (typeof m.file === "string") names.add(lc(m.file));
+    for (const st of Array.isArray(m.styles) ? m.styles : []) {
+      if (st && typeof st.file === "string") names.add(lc(st.file));
+    }
+  }
+  return names;
+}
+
+function resolveUniqueFilenameBaseReleases(mainDir, category, baseFilename, previewExt, suffixes = [""], srcZips = [], mods = {}) {
+  const MAX_ATTEMPTS = 25;
+  const manifest = readManifestIndex();
+  const modFiles = modsJsonFileNames(mods, category);
+  const existingPreviews = previewExt ? listTrackedPaths(mainDir, `assets/previews/${category}`) : new Set();
+
+  let candidate = baseFilename;
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+    const taken = suffixes.some((suffix, i) => {
+      const zipName = `${candidate}${suffix}.zip`;
+      let zipTaken = modFiles.has(lc(zipName));
+      if (!zipTaken) {
+        const m = manifest.get(lc(`${category}/${zipName}`));
+        if (m) {
+          // In the manifest but not in mods.json = leftover of an interrupted run. If the content is identical
+          // the name is reused, so a retry does not create "<name>-abc123" duplicates.
+          const src = srcZips[i];
+          zipTaken = !(src && m.sha256 && m.sha256 === sha256File(src));
+        }
+      }
+      const previewRel = previewExt ? `assets/previews/${category}/${candidate}${suffix}.${previewExt}` : null;
+      const previewTaken = previewRel
+        ? existingPreviews.has(previewRel) || fs.existsSync(path.join(mainDir, previewRel))
+        : false;
+      return zipTaken || previewTaken;
+    });
+    if (!taken) return candidate;
+    candidate = `${baseFilename}-${randomSuffix()}`;
+  }
+  throw new ValidationError(`Could not find a free filename for "${baseFilename}" after ${MAX_ATTEMPTS} attempts`);
+}
+
+function resolveUniqueFilenameBase(...args) {
+  return MODS_STORAGE === "releases"
+    ? resolveUniqueFilenameBaseReleases(...args)
+    : resolveUniqueFilenameBaseGit(...args);
+}
+
+// ---- where a zip goes -------------------------------------------------------------------------------------
+
+function clearStage() {
+  if (MODS_STORAGE !== "releases") return;
+  fs.rmSync(STAGE_DIR, { recursive: true, force: true });
+  fs.mkdirSync(STAGE_DIR, { recursive: true });
+}
+
+function placeZip(category, fileName, srcAbs) {
+  const dst = MODS_STORAGE === "releases"
+    ? path.join(STAGE_DIR, category, fileName)
+    : path.join(MAIN_DIR, `assets/files/${category}/${fileName}`);
+  fs.mkdirSync(path.dirname(dst), { recursive: true });
+  fs.copyFileSync(srcAbs, dst);
+}
+
+function listStaged() {
+  if (!fs.existsSync(STAGE_DIR)) return [];
+  const out = [];
+  for (const cat of fs.readdirSync(STAGE_DIR)) {
+    const dir = path.join(STAGE_DIR, cat);
+    if (!fs.statSync(dir).isDirectory()) continue;
+    for (const f of fs.readdirSync(dir)) out.push(`${cat}/${f}`);
+  }
+  return out.sort();
+}
+
+function runMigrate() {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "migrate-"));
+  try {
+    const args = [
+      "python3", MIGRATE_SCRIPT,
+      "--source", STAGE_DIR,
+      "--manifest", manifestFile(),
+      "--repo", RELEASES_REPO,
+      "--rehash", // detects an updated zip even when its size did not change
+      "--sleep", "0.5",
+      "--staging", path.join(tmp, "staging"),
+      "--rename-report", path.join(tmp, "rename-report.tsv"),
+    ];
+    if (process.env.RELEASES_MAX_PER_RELEASE) args.push("--max-per-release", process.env.RELEASES_MAX_PER_RELEASE);
+    run(args);
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+}
+
+function manifestWithoutTimestamp() {
+  const d = readJson(manifestFile());
+  delete d.generated;
+  return JSON.stringify(d);
+}
+
+// releases mode only. Upload staged zips to the releases repo, then commit + push the updated manifest.json.
+// Must succeed BEFORE mods.json is pushed to the website repo, otherwise the site would link to files
+// that do not exist yet. Idempotent: files already in place are not re-uploaded.
+function syncReleases() {
+  const staged = listStaged();
+  if (staged.length === 0) return;
+  const branch = getCurrentBranch(RELEASES_DIR);
+
+  for (let attempt = 1; attempt <= MAX_PUBLISH_ATTEMPTS; attempt++) {
+    const before = manifestWithoutTimestamp();
+    runMigrate();
+    if (manifestWithoutTimestamp() === before) {
+      run(["git", "-C", RELEASES_DIR, "checkout", "--", "manifest.json"]); // only "generated" changed
+      return;
+    }
+    run(["git", "-C", RELEASES_DIR, "add", "manifest.json"]);
+    run([
+      "git", "-C", RELEASES_DIR,
+      "-c", "user.name=github-actions[bot]",
+      "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com",
+      "commit", "-m", `chore: add approved mods\n\n` + staged.map((k) => `- ${k}`).join("\n"),
+    ]);
+    if (tryPush(RELEASES_DIR, branch)) return;
+    if (attempt === MAX_PUBLISH_ATTEMPTS) {
+      throw new Error(`Could not push manifest.json to the releases repo after ${MAX_PUBLISH_ATTEMPTS} attempts`);
+    }
+    const delay = PUSH_RETRY_BASE_DELAY_SECONDS * attempt;
+    console.warn(`Push to the releases repo was rejected - resetting to origin/${branch}, re-running the sync after ${delay}s.`);
+    fetchAndResetToRemote(RELEASES_DIR, branch);
+    sleepSeconds(delay);
+  }
+}
+
 function publishOne(id, meta, constants, mods, ledger = new Set()) {
   if (meta && meta.update) return publishUpdate(id, meta, constants, mods, ledger);
   assertField(
     typeof meta.name === "string" && MOD_NAME_RE.test(meta.name) && !MISPLACED_HYPHEN_RE.test(meta.name) &&
-      meta.name.length <= getMaxModNameLen(meta.heroName),
+    meta.name.length <= getMaxModNameLen(meta.heroName),
     "Invalid mod name"
   );
   assertField(typeof meta.category === "string" && /^[a-z0-9-]+$/.test(meta.category), "Invalid category");
@@ -353,11 +536,10 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
     meta.category,
     baseFilename,
     meta.preview ? meta.preview.ext : null,
-    styleSuffixes || [""]
+    styleSuffixes || [""],
+    styleDefs ? styleDefs.map((st) => path.join(DATA_DIR, st.zip.path)) : [srcZipAbs],
+    mods
   );
-
-  const finalZipRel = `assets/files/${meta.category}/${publishFilenameBase}.zip`;
-  const finalZipAbs = path.join(MAIN_DIR, finalZipRel);
 
   if (meta.preview) {
     previewFilename = `${publishFilenameBase}.${meta.preview.ext}`;
@@ -393,26 +575,26 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
 
   const styleFiles = styleDefs
     ? styleDefs.map((st, i) => {
-        const base = `${publishFilenameBase}${styleSuffixes[i]}`;
-        return { ...st, fileName: `${base}.zip`, previewName: `${base}.webp` };
-      })
+      const base = `${publishFilenameBase}${styleSuffixes[i]}`;
+      return { ...st, fileName: `${base}.zip`, previewName: `${base}.webp` };
+    })
     : null;
 
   const modEntry = {
     name: meta.name,
     ...(styleFiles
       ? {
-          styles: styleFiles.map((st) => ({
-            label: st.label,
-            color: colorsToCss(st.colors),
-            preview: st.previewName,
-            file: st.fileName
-          }))
-        }
+        styles: styleFiles.map((st) => ({
+          label: st.label,
+          color: colorsToCss(st.colors),
+          preview: st.previewName,
+          file: st.fileName
+        }))
+      }
       : {
-          ...(previewFilename ? { preview: previewFilename } : {}),
-          file: `${publishFilenameBase}.zip`
-        }),
+        ...(previewFilename ? { preview: previewFilename } : {}),
+        file: `${publishFilenameBase}.zip`
+      }),
     ...(Object.keys(metaTags).length ? { tags: metaTags } : {}),
     ...(finalLinks.length ? { links: finalLinks } : {}),
     meta: { date: Math.floor(Date.now() / 1000), "commit-sha": "" }
@@ -449,8 +631,7 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   if (!Array.isArray(mods.recentlyAddedMods)) mods.recentlyAddedMods = [];
   mods.recentlyAddedMods.unshift({ name: meta.name, category: meta.category });
 
-  fs.mkdirSync(path.dirname(finalZipAbs), { recursive: true });
-  fs.copyFileSync(srcZipAbs, finalZipAbs);
+  placeZip(meta.category, `${publishFilenameBase}.zip`, srcZipAbs);
   if (finalPreviewRel) {
     const finalPreviewAbs = path.join(MAIN_DIR, finalPreviewRel);
     fs.mkdirSync(path.dirname(finalPreviewAbs), { recursive: true });
@@ -458,11 +639,9 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   }
   if (styleFiles) {
     for (const st of styleFiles.slice(1)) {
-      const zipAbs = path.join(MAIN_DIR, `assets/files/${meta.category}/${st.fileName}`);
       const previewAbs = path.join(MAIN_DIR, `assets/previews/${meta.category}/${st.previewName}`);
-      fs.mkdirSync(path.dirname(zipAbs), { recursive: true });
       fs.mkdirSync(path.dirname(previewAbs), { recursive: true });
-      fs.copyFileSync(path.join(DATA_DIR, st.zip.path), zipAbs);
+      placeZip(meta.category, st.fileName, path.join(DATA_DIR, st.zip.path));
       fs.copyFileSync(path.join(DATA_DIR, st.preview.path), previewAbs);
     }
   }
@@ -568,11 +747,9 @@ function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
   };
   delete entry.meta["submission-id"];
 
-  const zipAbs = path.join(MAIN_DIR, `assets/files/${meta.category}/${entry.file}`);
   const previewAbs = path.join(MAIN_DIR, `assets/previews/${meta.category}/${newPreviewName}`);
-  fs.mkdirSync(path.dirname(zipAbs), { recursive: true });
   fs.mkdirSync(path.dirname(previewAbs), { recursive: true });
-  fs.copyFileSync(srcZipAbs, zipAbs);
+  placeZip(meta.category, entry.file, srcZipAbs);
   fs.copyFileSync(srcPreviewAbs, previewAbs);
   if (oldPreviewName && oldPreviewName !== newPreviewName && /^[^\\/]+$/.test(oldPreviewName) && !oldPreviewName.includes("..")) {
     fs.rmSync(path.join(MAIN_DIR, `assets/previews/${meta.category}/${oldPreviewName}`), { force: true });
@@ -613,6 +790,7 @@ function attemptPublishPass(metaById) {
   const publishedIds = [];
   const failedIds = [];
 
+  clearStage();
   for (const [id, meta] of metaById) {
     try {
       publishOne(id, meta, constants, mods, ledger);
@@ -631,10 +809,16 @@ function attemptPublishPass(metaById) {
   }
 
   if (publishedIds.length > 0) {
+    // releases mode: zips -> release assets + manifest.json FIRST (throws => the website repo is untouched, pending/ stays)
+    if (MODS_STORAGE === "releases") syncReleases();
     writeJson(modsPath, mods);
     writeJson(constantsPath, constants);
     if (ledger.size !== ledgerSizeBefore || !fs.existsSync(ledgerPath())) writeLedger(ledger);
-    run(["git", "-C", MAIN_DIR, "add", "--sparse", "assets/files", "assets/previews", "assets/data/mods.json", "assets/data/constants.json", LEDGER_REL]);
+    const addPaths = [
+      ...(MODS_STORAGE === "git" ? ["assets/files"] : []),
+      "assets/previews", "assets/data/mods.json", "assets/data/constants.json", LEDGER_REL,
+    ];
+    run(["git", "-C", MAIN_DIR, "add", "--sparse", ...addPaths]);
     if (gitHasStagedChanges(MAIN_DIR)) {
       const commitMsg = `chore: publish approved mod\n\n` +
         publishedIds.map((id) => `- ${id}`).join("\n");
@@ -773,4 +957,6 @@ module.exports = {
   loadPendingMetas,
   publishOne,
   publishUpdate,
+  clearStage,
+  MODS_STORAGE,
 };
