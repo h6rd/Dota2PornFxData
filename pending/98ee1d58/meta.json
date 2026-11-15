@@ -1,0 +1,35 @@
+{
+  "id": "98ee1d58",
+  "name": "Tsumugi Powershot",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "mrcorkie",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/id/mrcorkie/"
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/swlOLy8pR-o",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tsumugi Powershot",
+  "zip": {
+    "path": "pending/98ee1d58/Tsumugi Powershot.zip",
+    "sha": "afaf2a46413b5e91428eee44227b073c660b8fde",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/98ee1d58/Tsumugi Powershot.webp",
+    "sha": "9a9d84589cc4b61a27f790009f8ff5a1484f44d5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794753622601,
+  "ipFingerprint": "7rDZ2SOmf9R0LBuSS__OOLSU"
+}
