@@ -1,0 +1,35 @@
+{
+  "id": "cd9ab796",
+  "name": "Dur04Kaaaa Respawn",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "MooB1ches",
+      "isNew": true,
+      "newAuthorUrl": ""
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/Cd4ui9bnqyU",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Dur04Kaaaa Respawn",
+  "zip": {
+    "path": "pending/cd9ab796/Dur04Kaaaa Respawn.zip",
+    "sha": "cabbfb8da729828a28d7258400a07bfaf3b30fff",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/cd9ab796/Dur04Kaaaa Respawn.webp",
+    "sha": "84479b0dd1347212de189107db0eb4be5ee9cb04",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794743070863,
+  "ipFingerprint": "75B8IPVPLgV5XODCZvXwNz04"
+}
