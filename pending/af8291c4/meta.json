@@ -1,0 +1,32 @@
+{
+  "id": "af8291c4",
+  "name": "Jakiro Layn Dlya Krutix",
+  "category": "heroes",
+  "heroName": "Jakiro",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "qizlik",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Jakiro Layn Dlya Krutix",
+  "zip": {
+    "path": "pending/af8291c4/Jakiro Layn Dlya Krutix.zip",
+    "sha": "4835f49dd6e3e682917d3a588776ed4213dc66d7",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/af8291c4/Jakiro Layn Dlya Krutix.webp",
+    "sha": "b0e7a563400a6a318a0a21d63b2051fa5acae196",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794704831130,
+  "ipFingerprint": "eYHTYRz4tfi6cMllkjHc9KC2"
+}
