@@ -1,0 +1,30 @@
+{
+  "id": "9f1e926a",
+  "name": "Lifestealer Automaton Ai",
+  "category": "heroes",
+  "heroName": "Lifestealer",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "dupe busters community",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Lifestealer Automaton Ai",
+  "zip": {
+    "path": "pending/9f1e926a/Lifestealer Automaton Ai.zip",
+    "sha": "2102c2b7a785ba038df681b513cfc34cf2171075",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9f1e926a/Lifestealer Automaton Ai.webp",
+    "sha": "141a4c4d6aacfe2b4e0cca599912b5530cd620f6",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794755573086,
+  "ipFingerprint": "UTxrVVRb8fn8jOBvZyTnF8-9"
+}
