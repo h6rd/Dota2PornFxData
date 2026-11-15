@@ -10,10 +10,15 @@
   },
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "armair",
       "isNew": true,
       "newAuthorUrl": "https://steamcommunity.com/id/armair"
+    },
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
     }
   ],
   "filenameBase": "The Final Doom By Armair",
