@@ -1,0 +1,34 @@
+{
+  "id": "d0c824c9",
+  "name": "Largo Ult Kekht Arakh Sorrow",
+  "category": "hero-sounds",
+  "heroName": "Largo",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "драг",
+      "isNew": false
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/NfV-meORCHc",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Largo Ult Kekht Arakh Sorrow",
+  "zip": {
+    "path": "pending/d0c824c9/Largo Ult Kekht Arakh Sorrow.zip",
+    "sha": "1065877d0812efcfa69192f4d1968911518f5fd1",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d0c824c9/Largo Ult Kekht Arakh Sorrow.webp",
+    "sha": "cdaf35525833c52835fc91c8732b5100e9fd93d2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794720421783,
+  "ipFingerprint": "RAaLMB2Xu71b4NMvcbBETQxh"
+}
