@@ -1,0 +1,32 @@
+{
+  "id": "a534032b",
+  "name": "Phantom Lancer Arima",
+  "category": "heroes",
+  "heroName": "Phantom Lancer",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "qizlik",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Phantom Lancer Arima",
+  "zip": {
+    "path": "pending/a534032b/Phantom Lancer Arima.zip",
+    "sha": "223a653f763a8e5c6d78c927630b2671382f7f0e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a534032b/Phantom Lancer Arima.webp",
+    "sha": "fa591ade76aa70a122815e5fe44d37629c7c9970",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794645202569,
+  "ipFingerprint": "1dapmPaU1KZhe6QDjlYf6VOj"
+}
