@@ -1,8 +1,8 @@
 {
   "id": "98ee1d58",
   "name": "Tsumugi Powershot",
-  "category": "sounds",
-  "heroName": null,
+  "category": "hero-sounds",
+  "heroName": "windranger",
   "subcategory": null,
   "tags": {},
   "links": [
