@@ -132,8 +132,8 @@ function splitList(v) {
   return String(v || "").split(",").map((s) => s.trim()).filter(Boolean);
 }
 
-class ValidationError extends Error { }
-class AlreadyPublishedError extends Error { }
+class ValidationError extends Error {}
+class AlreadyPublishedError extends Error {}
 
 function assertField(condition, message) {
   if (!condition) throw new ValidationError(message);
@@ -468,7 +468,7 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   if (meta && meta.update) return publishUpdate(id, meta, constants, mods, ledger);
   assertField(
     typeof meta.name === "string" && MOD_NAME_RE.test(meta.name) && !MISPLACED_HYPHEN_RE.test(meta.name) &&
-    meta.name.length <= getMaxModNameLen(meta.heroName),
+      meta.name.length <= getMaxModNameLen(meta.heroName),
     "Invalid mod name"
   );
   assertField(typeof meta.category === "string" && /^[a-z0-9-]+$/.test(meta.category), "Invalid category");
@@ -575,26 +575,26 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
 
   const styleFiles = styleDefs
     ? styleDefs.map((st, i) => {
-      const base = `${publishFilenameBase}${styleSuffixes[i]}`;
-      return { ...st, fileName: `${base}.zip`, previewName: `${base}.webp` };
-    })
+        const base = `${publishFilenameBase}${styleSuffixes[i]}`;
+        return { ...st, fileName: `${base}.zip`, previewName: `${base}.webp` };
+      })
     : null;
 
   const modEntry = {
     name: meta.name,
     ...(styleFiles
       ? {
-        styles: styleFiles.map((st) => ({
-          label: st.label,
-          color: colorsToCss(st.colors),
-          preview: st.previewName,
-          file: st.fileName
-        }))
-      }
+          styles: styleFiles.map((st) => ({
+            label: st.label,
+            color: colorsToCss(st.colors),
+            preview: st.previewName,
+            file: st.fileName
+          }))
+        }
       : {
-        ...(previewFilename ? { preview: previewFilename } : {}),
-        file: `${publishFilenameBase}.zip`
-      }),
+          ...(previewFilename ? { preview: previewFilename } : {}),
+          file: `${publishFilenameBase}.zip`
+        }),
     ...(Object.keys(metaTags).length ? { tags: metaTags } : {}),
     ...(finalLinks.length ? { links: finalLinks } : {}),
     meta: { date: Math.floor(Date.now() / 1000), "commit-sha": "" }

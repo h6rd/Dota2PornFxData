@@ -24,7 +24,7 @@ jobs:
           app-id: ${{ secrets.MAIN_REPO_APP_ID }}
           private-key: ${{ secrets.MAIN_REPO_APP_PRIVATE_KEY }}
           owner: ${{ secrets.MAIN_REPO_OWNER }}
-          repositories: ${{ vars.MODS_STORAGE == 'releases' && format('{0},{1},{2}', secrets.MAIN_REPO_NAME, vars.RELEASES_REPO_NAME || 'Dota2PornFx', github.event.repository.name) || format('{0},{1}', secrets.MAIN_REPO_NAME, github.event.repository.name) }}
+          repositories: ${{ vars.MODS_STORAGE == 'releases' && secrets.RELEASES_PAT == '' && format('{0},{1},{2}', secrets.MAIN_REPO_NAME, vars.RELEASES_REPO_NAME || 'Dota2PornFx', github.event.repository.name) || format('{0},{1}', secrets.MAIN_REPO_NAME, github.event.repository.name) }}
 
       - name: Checkout DATA repo
         uses: actions/checkout@v6
@@ -64,7 +64,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: ${{ secrets.MAIN_REPO_OWNER }}/${{ vars.RELEASES_REPO_NAME || 'Dota2PornFx' }}
-          token: ${{ steps.app_token.outputs.token }}
+          token: ${{ secrets.RELEASES_PAT || steps.app_token.outputs.token }}
           path: releases-repo
           fetch-depth: 1
           sparse-checkout: manifest.json
@@ -87,7 +87,7 @@ jobs:
           RELEASES_DIR: ../releases-repo
           RELEASES_REPO: ${{ secrets.MAIN_REPO_OWNER }}/${{ vars.RELEASES_REPO_NAME || 'Dota2PornFx' }}
           RELEASE_STAGE_DIR: ${{ runner.temp }}/release-stage
-          GH_TOKEN: ${{ steps.app_token.outputs.token }}
+          GH_TOKEN: ${{ secrets.RELEASES_PAT || steps.app_token.outputs.token }}
           ALLOWED_CATEGORIES: ${{ vars.ALLOWED_CATEGORIES }}
           ALLOWED_HEROES: ${{ vars.ALLOWED_HEROES }}
         run: node scripts/publish.js
