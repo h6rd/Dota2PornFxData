@@ -1,0 +1,30 @@
+{
+  "id": "00e5c63e",
+  "name": "Tinker Invalid By Kaccel",
+  "category": "heroes",
+  "heroName": "Tinker",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Kaccel",
+      "isNew": true,
+      "newAuthorUrl": "https://boosty.to/kaccel/posts/77e4a9ec-86a9-4371-8bd5-affc2559c90c?ysclid=mwjtgi8tnt738399708"
+    }
+  ],
+  "filenameBase": "Tinker Invalid By Kaccel",
+  "zip": {
+    "path": "pending/00e5c63e/Tinker Invalid By Kaccel.zip",
+    "sha": "26f8b9dd2fc160a2a7691f9f9e38b253b94de334",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/00e5c63e/Tinker Invalid By Kaccel.webp",
+    "sha": "384bc5d17a607ec6e55ec9f82b9b4d509e8c0032",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794869125791,
+  "ipFingerprint": "3jEW1o50QNPXV1blPPyJn6pD"
+}
