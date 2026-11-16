@@ -1,0 +1,37 @@
+{
+  "id": "9e20a584",
+  "name": "The Final Mars",
+  "category": "heroes",
+  "heroName": "Mars",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "modded",
+      "url": "armair",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "The Final Mars",
+  "zip": {
+    "path": "pending/9e20a584/The Final Mars.zip",
+    "sha": "64749e7773e9ac58b84f635647fa3b2939a4cf0d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9e20a584/The Final Mars.webp",
+    "sha": "6ad6d07f2c1bfd1b14a1044c5bd81402812779a8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794841180719,
+  "ipFingerprint": "qPHEq0WGbtrwyD0_78JOnpxV"
+}
