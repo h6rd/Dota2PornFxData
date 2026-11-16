@@ -1,0 +1,37 @@
+{
+  "id": "6a087c03",
+  "name": "Prime Lycan",
+  "category": "heroes",
+  "heroName": "Lycan",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "modded",
+      "url": "armair",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Prime Lycan",
+  "zip": {
+    "path": "pending/6a087c03/Prime Lycan.zip",
+    "sha": "1015611f50b436c82d62c3103db16d788097406c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/6a087c03/Prime Lycan.webp",
+    "sha": "88eca2034f3aebe145dfc155f183942953fa73b3",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794855262839,
+  "ipFingerprint": "qPHEq0WGbtrwyD0_78JOnpxV"
+}
