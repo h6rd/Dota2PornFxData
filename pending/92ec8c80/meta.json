@@ -1,0 +1,32 @@
+{
+  "id": "92ec8c80",
+  "name": "The True Sand King",
+  "category": "heroes",
+  "heroName": "Sand King",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "armair",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "The True Sand King",
+  "zip": {
+    "path": "pending/92ec8c80/The True Sand King.zip",
+    "sha": "af0ebe98734fec9c728f42327f5f320c2f18c4b1",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/92ec8c80/The True Sand King.webp",
+    "sha": "f71eb8f24badf8b23cf6e8d155bf414f6590dd9a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794856253796,
+  "ipFingerprint": "qPHEq0WGbtrwyD0_78JOnpxV"
+}
