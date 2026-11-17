@@ -1,0 +1,29 @@
+{
+  "id": "26b9e431",
+  "name": "White Clicks",
+  "category": "other",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "White Clicks",
+  "zip": {
+    "path": "pending/26b9e431/White Clicks.zip",
+    "sha": "f58a70cd8b218d17f0ab80dbe0ec5c46f1662b2e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/26b9e431/White Clicks.webp",
+    "sha": "dd990719e09ac82c90af71daa1ab688ac32eb357",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794897191667,
+  "ipFingerprint": "JOhdTJZLohWVuidFea75tR_o"
+}
