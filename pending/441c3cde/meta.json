@@ -1,0 +1,31 @@
+{
+  "id": "441c3cde",
+  "name": "Bloody Dragon Knight",
+  "category": "heroes",
+  "heroName": "Dragon Knight",
+  "subcategory": null,
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "armair",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Bloody Dragon Knight",
+  "zip": {
+    "path": "pending/441c3cde/Bloody Dragon Knight.zip",
+    "sha": "4b78045ba2f035133df5f27837711c65be53a475",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/441c3cde/Bloody Dragon Knight.webp",
+    "sha": "db7ab3c80cb1784c320929ccc873ea79a2a1ff71",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794937819486,
+  "ipFingerprint": "qPHEq0WGbtrwyD0_78JOnpxV"
+}
