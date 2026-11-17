@@ -9,8 +9,13 @@
   },
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "armair",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "Harlord",
       "isNew": false
     }
   ],
