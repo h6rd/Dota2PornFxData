@@ -1,0 +1,30 @@
+{
+  "id": "4eed16d5",
+  "name": "Ambient Mega Kill",
+  "category": "mega-kill",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "hahatun",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/hahtundota"
+    }
+  ],
+  "filenameBase": "Ambient Mega Kill",
+  "zip": {
+    "path": "pending/4eed16d5/Ambient Mega Kill.zip",
+    "sha": "8c12445634285a91be74f57160cccfaee9793c75",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4eed16d5/Ambient Mega Kill.webp",
+    "sha": "de3331439ea6570984d120cc405c8cfbbb0d9673",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794994165068,
+  "ipFingerprint": "tTFSR_ShaX3RH2rJ_M3fkCvn"
+}
