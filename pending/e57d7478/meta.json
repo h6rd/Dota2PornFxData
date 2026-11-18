@@ -1,16 +1,21 @@
 {
   "id": "e57d7478",
-  "name": "gray trees",
+  "name": "Gray Trees",
   "category": "trees",
   "heroName": null,
   "subcategory": null,
   "tags": {},
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "Dezy",
       "isNew": true,
       "newAuthorUrl": ""
+    },
+    {
+      "type": "author",
+      "url": "Robbyz",
+      "isNew": false
     }
   ],
   "filenameBase": "gray trees",
