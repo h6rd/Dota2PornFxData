@@ -1,0 +1,29 @@
+{
+  "id": "d0630c66",
+  "name": "Warcraft 3 Voices Korean",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Fr0dech",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Warcraft 3 Voices Korean",
+  "zip": {
+    "path": "pending/d0630c66/Warcraft 3 Voices Korean.zip",
+    "sha": "837296ec84f9598b6f4e64580449064ed0768559",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d0630c66/Warcraft 3 Voices Korean.webp",
+    "sha": "05b641a247da0c2cbd2b9c8ed47600a0ce6e6968",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1794986909514,
+  "ipFingerprint": "udq1mWsljh6uiEOhNQ4SAUjP"
+}
