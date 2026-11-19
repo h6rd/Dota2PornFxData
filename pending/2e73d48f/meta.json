@@ -1,0 +1,31 @@
+{
+  "id": "2e73d48f",
+  "name": "Arc Wardenv2 Dota 2",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "image": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Arc Wardenv2 Dota 2",
+  "zip": {
+    "path": "pending/2e73d48f/Arc Wardenv2 Dota 2.zip",
+    "sha": "40a1df96bf6ce778d560284ddb3ef430366aca0e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2e73d48f/Arc Wardenv2 Dota 2.webp",
+    "sha": "9e648c3364bf19fe446ed718b6e36575639306d7",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795122602453,
+  "ipFingerprint": "37U18R7TACylKKHTAmknyxT3"
+}
