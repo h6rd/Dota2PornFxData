@@ -1,0 +1,35 @@
+{
+  "id": "d26df444",
+  "name": "Grey Minimap",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Grey Minimap",
+  "zip": {
+    "path": "pending/d26df444/Grey Minimap.zip",
+    "sha": "a06b5e1e358da95e9197cf606e81f59600e3bf60",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d26df444/Grey Minimap.webp",
+    "sha": "8d57661a896568b14173097c6db768268321f64c",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Grey Minimap",
+    "file": "Grey Minimap.zip",
+    "preview": "Grey Minimap.webp"
+  },
+  "status": "pending",
+  "createdAt": 1795083436644,
+  "ipFingerprint": "FUhmGmTVPFvldWGkhIoPZeeF"
+}
