@@ -1,0 +1,35 @@
+{
+  "id": "59e568ff",
+  "name": "Purple Minimap",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "YZT",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Purple Minimap",
+  "zip": {
+    "path": "pending/59e568ff/Purple Minimap.zip",
+    "sha": "74888a6bb02a735b4889ba8290ecbd28c8de9736",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/59e568ff/Purple Minimap.webp",
+    "sha": "d5a5cea8f9ccd795f4ed1541669ced739f396077",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Purple Minimap",
+    "file": "Purple Minimap.zip",
+    "preview": "Purple Minimap.webp"
+  },
+  "status": "pending",
+  "createdAt": 1795095614693,
+  "ipFingerprint": "FUhmGmTVPFvldWGkhIoPZeeF"
+}
