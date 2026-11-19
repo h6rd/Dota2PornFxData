@@ -1,0 +1,32 @@
+{
+  "id": "feff100e",
+  "name": "Wintervibe Autoacceptmatch",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "SteelSy",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/steelsyzxc"
+    }
+  ],
+  "filenameBase": "Wintervibe Autoacceptmatch",
+  "zip": {
+    "path": "pending/feff100e/Wintervibe Autoacceptmatch.zip",
+    "sha": "a91a1ba00f9166b6907fe92048650ef2db6d560a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/feff100e/Wintervibe Autoacceptmatch.webp",
+    "sha": "80729349724f6a7cdc3216272cd79bdaffd7f8c1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795047166627,
+  "ipFingerprint": "WbnRZOZ26fTfLAvx2UuwjVch"
+}
