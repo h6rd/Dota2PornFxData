@@ -1,0 +1,31 @@
+{
+  "id": "fa20ecfa",
+  "name": "Dark Willow Dota 2",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "XIIIpsiblade",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Dark Willow Dota 2",
+  "zip": {
+    "path": "pending/fa20ecfa/Dark Willow Dota 2.zip",
+    "sha": "4a526c15698ac5d11dda6742dc50a18566746023",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/fa20ecfa/Dark Willow Dota 2.webp",
+    "sha": "4537d5f6513b121beeea76fd4744bb69113d135a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795122360209,
+  "ipFingerprint": "37U18R7TACylKKHTAmknyxT3"
+}
