@@ -1,0 +1,30 @@
+{
+  "id": "a993daa3",
+  "name": "Armlet Fix",
+  "category": "item-icons",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "c0nf1",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/id/c0nf1/"
+    }
+  ],
+  "filenameBase": "Armlet Fix",
+  "zip": {
+    "path": "pending/a993daa3/Armlet Fix.zip",
+    "sha": "3fe1d29aa601b915bff025eafa8e5cee4093239a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a993daa3/Armlet Fix.webp",
+    "sha": "d85f69f6bf3618a71be3b8b258c081536009922c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795068277826,
+  "ipFingerprint": "80xLn40mXAhx9wAkS3E4Ca9u"
+}
