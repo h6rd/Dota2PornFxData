@@ -1,0 +1,30 @@
+{
+  "id": "b0eccb4b",
+  "name": "Earthshaker Ukrainian Voice",
+  "category": "hero-sounds",
+  "heroName": "Earthshaker",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "owly007",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Earthshaker Ukrainian Voice",
+  "zip": {
+    "path": "pending/b0eccb4b/Earthshaker Ukrainian Voice.zip",
+    "sha": "8f8c1b5337321ab377d180e0c7ec983202a892bd",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/b0eccb4b/Earthshaker Ukrainian Voice.webp",
+    "sha": "89dd2f15d41f7164e97002eb9649bd7e791dcd9a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795089569029,
+  "ipFingerprint": "AaNYGFeF7TKKIKp3pkBeeOx3"
+}
