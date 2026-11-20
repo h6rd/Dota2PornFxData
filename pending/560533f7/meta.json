@@ -1,0 +1,29 @@
+{
+  "id": "560533f7",
+  "name": "Source 1 Huge Damage Display",
+  "category": "other",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Fr0dech",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Source 1 Huge Damage Display",
+  "zip": {
+    "path": "pending/560533f7/Source 1 Huge Damage Display.zip",
+    "sha": "98bacb98bc5a3f505ffc208d5e5df0a26619eba5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/560533f7/Source 1 Huge Damage Display.webp",
+    "sha": "b3cd845b4b3c6cd30a0a32f4e0c0644586fd36c0",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795162153185,
+  "ipFingerprint": "WuoJKnf6b9dGucDd2klZz9IA"
+}
