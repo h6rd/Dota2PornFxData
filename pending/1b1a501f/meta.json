@@ -1,0 +1,30 @@
+{
+  "id": "1b1a501f",
+  "name": "Ahegao",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Anonymous",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Ahegao",
+  "zip": {
+    "path": "pending/1b1a501f/Ahegao.zip",
+    "sha": "07ce351ee77579f8ba78fc1edcd75e742b0b2441",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1b1a501f/Ahegao.webp",
+    "sha": "7b1fb5a7406ae1ba444f04fe5664085d572d4b7a",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795121099986,
+  "ipFingerprint": "9s5AICInbVXOJZTqZfOsQNk9"
+}
