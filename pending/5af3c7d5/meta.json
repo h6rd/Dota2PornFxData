@@ -1,0 +1,30 @@
+{
+  "id": "5af3c7d5",
+  "name": "Onda Andar",
+  "category": "mega-kill",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Hirikavaa",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Onda Andar",
+  "zip": {
+    "path": "pending/5af3c7d5/Onda Andar.zip",
+    "sha": "2df6cb7d15ccc44de15728f4c88e6cf0e0659acb",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5af3c7d5/Onda Andar.webp",
+    "sha": "c974154b0bf1718c6ef86e190b8037dd48ed7041",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795133651142,
+  "ipFingerprint": "24RsjUj_iUDLMCn1EdgSUrZs"
+}
