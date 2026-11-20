@@ -1,0 +1,29 @@
+{
+  "id": "d34f4d2e",
+  "name": "Armlet Boots Fix",
+  "category": "item-icons",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "c0nf1",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Armlet Boots Fix",
+  "zip": {
+    "path": "pending/d34f4d2e/Armlet Boots Fix.zip",
+    "sha": "39f1b7a34d71475329c881a79e88da7b6acb8bae",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d34f4d2e/Armlet Boots Fix.webp",
+    "sha": "ddf08480001f3b8fbcac97af8af62f8dc8e4dabe",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795198760416,
+  "ipFingerprint": "80xLn40mXAhx9wAkS3E4Ca9u"
+}
