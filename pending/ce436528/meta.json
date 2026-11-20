@@ -1,0 +1,29 @@
+{
+  "id": "ce436528",
+  "name": "Warcraft 3 Lone Druid",
+  "category": "heroes",
+  "heroName": "Lone Druid",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Fr0dech",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Warcraft 3 Lone Druid",
+  "zip": {
+    "path": "pending/ce436528/Warcraft 3 Lone Druid.zip",
+    "sha": "bbe14ac40d6a1cbad253c7e2576a6a115f8fa57e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ce436528/Warcraft 3 Lone Druid.webp",
+    "sha": "fcfb2a60bc3e19ca07cc369f968ca16f8e89720f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795163388405,
+  "ipFingerprint": "0aV3SE79A7SbEZVd-_vao-dR"
+}
