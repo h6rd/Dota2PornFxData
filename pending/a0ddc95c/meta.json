@@ -1,0 +1,31 @@
+{
+  "id": "a0ddc95c",
+  "name": "Dota Plus Networth Indicator",
+  "category": "parts",
+  "heroName": null,
+  "subcategory": "kda",
+  "tags": {
+    "css": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Swin-РукаBlood",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Dota Plus Networth Indicator",
+  "zip": {
+    "path": "pending/a0ddc95c/Dota Plus Networth Indicator.zip",
+    "sha": "3b2fedd1187fcaa493893a19fd23c7235500df16",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a0ddc95c/Dota Plus Networth Indicator.webp",
+    "sha": "9a820e79c5162443cd540dab1938ca358ea208a1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795292469282,
+  "ipFingerprint": "zu74pGXDeZw6nknKDpeOxljn"
+}
