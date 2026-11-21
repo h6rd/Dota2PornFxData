@@ -1,0 +1,32 @@
+{
+  "id": "dced8456",
+  "name": "Sven Berserk",
+  "category": "heroes",
+  "heroName": "Sven",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "laskotdota",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Sven Berserk",
+  "zip": {
+    "path": "pending/dced8456/Sven Berserk.zip",
+    "sha": "01f4e3be953696dd63ada4bf2eff567b9aa23f5f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/dced8456/Sven Berserk.webp",
+    "sha": "59300a4e611eb0a89e36d3e192e10edae6f60e0c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795198975565,
+  "ipFingerprint": "1TpkTWuHxnsy2r5Ka43eLoxd"
+}
