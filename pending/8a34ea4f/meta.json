@@ -1,6 +1,6 @@
 {
   "id": "8a34ea4f",
-  "name": "All Heroe",
+  "name": "Pudge Hook",
   "category": "hero-sounds",
   "heroName": "pudge",
   "subcategory": null,
@@ -13,14 +13,14 @@
       "newAuthorUrl": ""
     }
   ],
-  "filenameBase": "All Heroe",
+  "filenameBase": "Pudge Hook",
   "zip": {
-    "path": "pending/8a34ea4f/All Heroe.zip",
+    "path": "pending/8a34ea4f/Pudge Hook.zip",
     "sha": "fc87c747b4532b75da80559290589f52d0c3fa1e",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/8a34ea4f/All Heroe.webp",
+    "path": "pending/8a34ea4f/Pudge Hook.webp",
     "sha": "cc7760e0c7f512d357f4a8a98d70450301cb03f0",
     "ext": "webp"
   },
