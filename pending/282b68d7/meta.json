@@ -1,6 +1,6 @@
 {
   "id": "282b68d7",
-  "name": "Nyash Items Revivedd",
+  "name": "Nyash Items Revived",
   "category": "item-icons",
   "heroName": null,
   "subcategory": null,
@@ -12,14 +12,14 @@
       "isNew": false
     }
   ],
-  "filenameBase": "Nyash Items Revivedd",
+  "filenameBase": "Nyash Items Revived",
   "zip": {
-    "path": "pending/282b68d7/Nyash Items Revivedd.zip",
+    "path": "pending/282b68d7/Nyash Items Revived.zip",
     "sha": "37742c3087f4f4755a6e0d3dc01b65bb7667f196",
     "ext": "zip"
   },
   "preview": {
-    "path": "pending/282b68d7/Nyash Items Revivedd.webp",
+    "path": "pending/282b68d7/Nyash Items Revived.webp",
     "sha": "04f2691477242acc419a245c68dabf1c04769f12",
     "ext": "webp"
   },
