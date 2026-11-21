@@ -1,0 +1,35 @@
+{
+  "id": "08217d41",
+  "name": "Axe Call H",
+  "category": "hero-sounds",
+  "heroName": "Axe",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "XDremonioXD",
+      "isNew": true,
+      "newAuthorUrl": ""
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/uwPEWsF1PiA",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Axe Call H",
+  "zip": {
+    "path": "pending/08217d41/Axe Call H.zip",
+    "sha": "063858ddcf2290859892bf14f650c277438525b5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/08217d41/Axe Call H.webp",
+    "sha": "4141e4f111fe854c75f9caee9616e82196063294",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795260027041,
+  "ipFingerprint": "IskPCSJNJGKsWJxAIJfMjJKq"
+}
