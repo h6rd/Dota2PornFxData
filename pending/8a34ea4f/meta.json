@@ -1,8 +1,8 @@
 {
   "id": "8a34ea4f",
   "name": "All Heroe",
-  "category": "sounds",
-  "heroName": null,
+  "category": "hero-sounds",
+  "heroName": "pudge",
   "subcategory": null,
   "tags": {},
   "links": [
