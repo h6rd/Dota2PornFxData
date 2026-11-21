@@ -1,0 +1,35 @@
+{
+  "id": "963d9fb3",
+  "name": "Arc Warden Ultimatetaunt 2016",
+  "category": "hero-sounds",
+  "heroName": "Arc Warden",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "зеркальная броня",
+      "isNew": true,
+      "newAuthorUrl": "https://www.youtube.com/@yoshikawwa163/featured"
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/8zj3HMggFGs",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Arc Warden Ultimatetaunt 2016",
+  "zip": {
+    "path": "pending/963d9fb3/Arc Warden Ultimatetaunt 2016.zip",
+    "sha": "8a83e1a6cdd06b1bceab43fb85dc62cd8a61f74e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/963d9fb3/Arc Warden Ultimatetaunt 2016.webp",
+    "sha": "1d8a64a06d29d8eda431c0648e2e1efd9c0ebf6f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795272393202,
+  "ipFingerprint": "To8l-CTntnSDhUpX7YZzE2bI"
+}
