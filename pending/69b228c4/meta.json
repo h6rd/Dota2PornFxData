@@ -1,0 +1,30 @@
+{
+  "id": "69b228c4",
+  "name": "arc warden taunt 2016",
+  "category": "hero-sounds",
+  "heroName": "arc warden",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "зеркальная броня",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "arc warden taunt 2016",
+  "zip": {
+    "path": "pending/69b228c4/arc warden taunt 2016.zip",
+    "sha": "2e364bf3fcaef9c20315ac478f0eead0d12e9e9b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/69b228c4/arc warden taunt 2016.webp",
+    "sha": "1d8a64a06d29d8eda431c0648e2e1efd9c0ebf6f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795270584947,
+  "ipFingerprint": "To8l-CTntnSDhUpX7YZzE2bI"
+}
