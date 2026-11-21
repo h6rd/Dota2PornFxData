@@ -1,0 +1,38 @@
+{
+  "id": "1021eec6",
+  "name": "Kez Bersexer",
+  "category": "heroes",
+  "heroName": "Kez",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "NahuiToSay",
+      "isNew": false,
+      "locked": true
+    }
+  ],
+  "filenameBase": "Kez Bersexer",
+  "zip": {
+    "path": "pending/1021eec6/Kez Bersexer.zip",
+    "sha": "0cbc369a3bc9684fe7a2a2190e59c1c1af6762ce",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/1021eec6/Kez Bersexer.webp",
+    "sha": "4914ebb74f0a8864f91a8dd7d80cf2d71777dcc2",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Kez Bersexer",
+    "file": "Kez Bersexer.zip",
+    "preview": "Kez Bersexer.webp"
+  },
+  "status": "pending",
+  "createdAt": 1795246654602,
+  "ipFingerprint": "3EyVUK1uQnMdTupRDNRDhmYY"
+}
