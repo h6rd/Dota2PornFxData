@@ -1,0 +1,73 @@
+{
+  "id": "0e9b5fb1",
+  "name": "Necrophos Scream",
+  "category": "heroes",
+  "heroName": "Necrophos",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Миша Талант",
+      "isNew": false
+    },
+    {
+      "type": "author",
+      "url": "inher1ted",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Necrophos Scream",
+  "zip": {
+    "path": "pending/0e9b5fb1/Necrophos Scream.zip",
+    "sha": "c596428eae908027812aaf503f38d893cba64b06",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0e9b5fb1/Necrophos Scream.webp",
+    "sha": "16e2bb00a1427f78d7c558e21a13e543a8633948",
+    "ext": "webp"
+  },
+  "styles": [
+    {
+      "label": "Original voice",
+      "colors": [
+        "#f2f2f2"
+      ],
+      "zip": {
+        "path": "pending/0e9b5fb1/Necrophos Scream.zip",
+        "sha": "c596428eae908027812aaf503f38d893cba64b06",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/0e9b5fb1/Necrophos Scream.webp",
+        "sha": "16e2bb00a1427f78d7c558e21a13e543a8633948",
+        "ext": "webp"
+      }
+    },
+    {
+      "label": "Russian voice",
+      "colors": [
+        "#f2f2f2",
+        "#b3121b"
+      ],
+      "zip": {
+        "path": "pending/0e9b5fb1/Necrophos Scream Russian voice.zip",
+        "sha": "b3f5fb4c7e0f86d749ed739f3ef7a2aad2bdcf4c",
+        "ext": "zip"
+      },
+      "preview": {
+        "path": "pending/0e9b5fb1/Necrophos Scream Russian voice.webp",
+        "sha": "16e2bb00a1427f78d7c558e21a13e543a8633948",
+        "ext": "webp"
+      }
+    }
+  ],
+  "status": "pending",
+  "createdAt": 1795291559817,
+  "ipFingerprint": "mc4mgYw7mt-uStg5Y8RaL4nh"
+}
