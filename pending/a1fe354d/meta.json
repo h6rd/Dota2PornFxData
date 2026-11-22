@@ -1,0 +1,32 @@
+{
+  "id": "a1fe354d",
+  "name": "Grustni Arbuz",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "image": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "nekit322",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Grustni Arbuz",
+  "zip": {
+    "path": "pending/a1fe354d/Grustni Arbuz.zip",
+    "sha": "ecc8147bf6139ee37955cde023fe64f574b8e772",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a1fe354d/Grustni Arbuz.webp",
+    "sha": "3ac770a66e84a7c848f1b49b260dec3e72906e19",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795345379022,
+  "ipFingerprint": "fthnzl8GgAIkNfx6647EWMH3"
+}
