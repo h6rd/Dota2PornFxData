@@ -1,0 +1,30 @@
+{
+  "id": "13a152eb",
+  "name": "Pink Hud",
+  "category": "huds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "красивое уебище",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Pink Hud",
+  "zip": {
+    "path": "pending/13a152eb/Pink Hud.zip",
+    "sha": "360859a721cde6fb33c4a3061ee2e2a46e9e5837",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/13a152eb/Pink Hud.webp",
+    "sha": "2a00c65eabff8d25df35ad5f89b68353f9125ac8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795325617547,
+  "ipFingerprint": "8ySu8u6M_Wn14nWx_ORt9DVL"
+}
