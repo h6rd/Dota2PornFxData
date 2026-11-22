@@ -1,0 +1,29 @@
+{
+  "id": "14a31f89",
+  "name": "Earthshaker Ukrainian V02",
+  "category": "hero-sounds",
+  "heroName": "Earthshaker",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "owly007",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Earthshaker Ukrainian V02",
+  "zip": {
+    "path": "pending/14a31f89/Earthshaker Ukrainian V02.zip",
+    "sha": "4407045f23786d8334bcf45c1fb6671e13a78a45",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/14a31f89/Earthshaker Ukrainian V02.webp",
+    "sha": "2a2a2f947e3e525d88b98b69574e8bff8bd2ce72",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795377821592,
+  "ipFingerprint": "21b9seT0KBtGd7RlxxLAl4ae"
+}
