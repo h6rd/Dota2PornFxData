@@ -1,0 +1,30 @@
+{
+  "id": "c5ec6b95",
+  "name": "Lastseenmap-V2-100",
+  "category": "huds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "𝕤𝕦𝕟_𝕜𝕚𝕝𝕝",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/profiles/76561199826986117/"
+    }
+  ],
+  "filenameBase": "Lastseenmap-V2-100",
+  "zip": {
+    "path": "pending/c5ec6b95/Lastseenmap-V2-100.zip",
+    "sha": "947199e3f36f5515d36c1cbe46e873843916bf04",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/c5ec6b95/Lastseenmap-V2-100.webp",
+    "sha": "378dc3e7ae8abe4ad82ef9c03761d1f7fff5fba5",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795368820747,
+  "ipFingerprint": "i6tgst22iFfTfNAvsT3vsD6f"
+}
