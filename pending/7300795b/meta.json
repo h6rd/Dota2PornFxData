@@ -1,0 +1,30 @@
+{
+  "id": "7300795b",
+  "name": "tinker white laser immortal",
+  "category": "herofx",
+  "heroName": "Tinker",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "мастер червивый туз",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "tinker white laser immortal",
+  "zip": {
+    "path": "pending/7300795b/tinker white laser immortal.zip",
+    "sha": "d3b04a5ade5747a8cc56fea66f8c66658cc3b752",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7300795b/tinker white laser immortal.webp",
+    "sha": "3a2b96578a741ddcd67a81ece67ee91e8169b8e1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795464669196,
+  "ipFingerprint": "34j2_p-wzsI6yuBIiouV8QNZ"
+}
