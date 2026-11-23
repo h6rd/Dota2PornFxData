@@ -1,0 +1,30 @@
+{
+  "id": "0def6b4c",
+  "name": "Anti Mage Wei",
+  "category": "heroes",
+  "heroName": "Anti-Mage",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "lmbaftd",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Anti Mage Wei",
+  "zip": {
+    "path": "pending/0def6b4c/Anti Mage Wei.zip",
+    "sha": "5c3d0a74a4f86495505eb5a1161d1ac159a6300f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0def6b4c/Anti Mage Wei.webp",
+    "sha": "0798dc429a66915ba69d74370ecdb5ada4046fb8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795444168577,
+  "ipFingerprint": "jWjtxgBp4Kg39bFTth-7gi1h"
+}
