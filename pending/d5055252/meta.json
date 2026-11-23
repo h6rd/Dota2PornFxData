@@ -1,0 +1,30 @@
+{
+  "id": "d5055252",
+  "name": "Shadow Fiend Neiroslop",
+  "category": "heroes",
+  "heroName": "Shadow Fiend",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "ifrully",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Shadow Fiend Neiroslop",
+  "zip": {
+    "path": "pending/d5055252/Shadow Fiend Neiroslop.zip",
+    "sha": "84cea0cf6940c28b68c6a2e5972aa542562c3f6c",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d5055252/Shadow Fiend Neiroslop.webp",
+    "sha": "426355cb80391f5f2e4f78c8ea315c53b1b7cd75",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795439808520,
+  "ipFingerprint": "27e30zDL3M9o_AKuiu4Q_W-p"
+}
