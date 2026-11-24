@@ -123,6 +123,21 @@ function hasOwn(obj, key) {
   return !!obj && Object.prototype.hasOwnProperty.call(obj, key);
 }
 
+function buildSourceLink(link, constants) {
+  if (link.direct) {
+    assertField(isSafeHttpsUrl(link.url), "Source link must be a valid https:// link");
+    return { type: "source", url: link.url };
+  }
+  if (link.isNew) {
+    assertField(typeof link.newAuthorUrl === "string" && isSafeHttpsUrl(link.newAuthorUrl), "Source link must be a valid https:// link");
+    return { type: "source", url: link.newAuthorUrl };
+  }
+  assertField(SAFE_TEXT_RE.test(link.url) && hasOwn(constants.MOD_SOURCES, link.url), "Unknown source: pick one from the list or add a link");
+  const resolved = constants.MOD_SOURCES[link.url];
+  assertField(typeof resolved === "string" && isSafeHttpsUrl(resolved), `Source "${link.url}" has no valid link in the catalog`);
+  return { type: "source", url: resolved };
+}
+
 const LEDGER_REL = "assets/data/published-submissions.json";
 
 const MAX_PUBLISH_ATTEMPTS = 5;
@@ -549,11 +564,15 @@ function publishOne(id, meta, constants, mods, ledger = new Set()) {
   const finalLinks = [];
   for (const link of meta.links || []) {
     assertField(link && ["author", "sender", "source", "modded", "preview"].includes(link.type), "Invalid link type");
-    assertField(typeof link.url === "string" && link.url.length <= MAX_TEXT_FIELD_LEN, "Invalid link");
+    assertField(typeof link.url === "string" && link.url.length <= (link.direct && link.type === "source" ? MAX_URL_LEN : MAX_TEXT_FIELD_LEN), "Invalid link");
     if (link.type === "preview") {
       assertField(PREVIEW_VIDEO_CATEGORIES.has(meta.category), "This category does not accept a preview video");
       assertField(isYouTubeUrl(link.url), "Preview video must be a youtube.com / youtu.be link");
       finalLinks.push({ type: link.type, url: link.url });
+      continue;
+    }
+    if (link.type === "source") {
+      finalLinks.push(buildSourceLink(link, constants));
       continue;
     }
     assertField(
@@ -702,11 +721,15 @@ function publishUpdate(id, meta, constants, mods, ledger = new Set()) {
   for (const link of meta.links || []) {
     if (link && link.locked) continue;
     assertField(link && UPDATE_EDITABLE_LINK_TYPES.has(link.type), "Invalid link type for an update");
-    assertField(typeof link.url === "string" && link.url.length > 0 && link.url.length <= MAX_TEXT_FIELD_LEN, "Invalid link");
+    assertField(typeof link.url === "string" && link.url.length > 0 && link.url.length <= (link.direct && link.type === "source" ? MAX_URL_LEN : MAX_TEXT_FIELD_LEN), "Invalid link");
     if (link.type === "preview") {
       assertField(PREVIEW_VIDEO_CATEGORIES.has(meta.category), "This category does not accept a preview video");
       assertField(isYouTubeUrl(link.url), "Preview video must be a youtube.com / youtu.be link");
       sentLinks.push({ type: link.type, url: link.url });
+      continue;
+    }
+    if (link.type === "source") {
+      sentLinks.push(buildSourceLink(link, constants));
       continue;
     }
     assertField(
