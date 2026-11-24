@@ -11,6 +11,12 @@
       "url": "красивое уебище",
       "isNew": true,
       "newAuthorUrl": ""
+    },
+    {
+      "type": "source",
+      "url": "HUD Studio",
+      "isNew": true,
+      "newAuthorUrl": "https://vpkgod.github.io/dota-hud-studio/"
     }
   ],
   "filenameBase": "Pink Hud",
