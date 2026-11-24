@@ -1,0 +1,35 @@
+{
+  "id": "aaa1eff3",
+  "name": "Origami Tobiichi Hud",
+  "category": "huds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "MAKCIKOVICH",
+      "isNew": false
+    },
+    {
+      "type": "source",
+      "url": "HUD Studio",
+      "isNew": true,
+      "newAuthorUrl": "https://vpkgod.github.io/dota-hud-studio/"
+    }
+  ],
+  "filenameBase": "Origami Tobiichi Hud",
+  "zip": {
+    "path": "pending/aaa1eff3/Origami Tobiichi Hud.zip",
+    "sha": "623a5368fe369d28d354106c0a2fe5be92ac3605",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/aaa1eff3/Origami Tobiichi Hud.webp",
+    "sha": "7ebcef090f3f9548c011d91050573af9f264f183",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795340146071,
+  "ipFingerprint": "oVaZrI7l7ysjtx0y7zUIt4lQ"
+}
