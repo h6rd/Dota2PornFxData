@@ -7,10 +7,15 @@
   "tags": {},
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "ifrully",
       "isNew": true,
       "newAuthorUrl": ""
+    },
+    {
+      "type": "author",
+      "url": "Amir4an",
+      "isNew": false
     }
   ],
   "filenameBase": "Shadow Fiend Neiroslop",
