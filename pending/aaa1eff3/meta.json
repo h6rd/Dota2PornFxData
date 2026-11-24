@@ -10,6 +10,12 @@
       "type": "author",
       "url": "MAKCIKOVICH",
       "isNew": false
+    },
+    {
+      "type": "source",
+      "url": "HUD Studio",
+      "isNew": true,
+      "newAuthorUrl": "https://vpkgod.github.io/dota-hud-studio/"
     }
   ],
   "filenameBase": "Origami Tobiichi Hud",
