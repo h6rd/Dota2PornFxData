@@ -1,0 +1,30 @@
+{
+  "id": "96350183",
+  "name": "Largo 7319",
+  "category": "hero-sounds",
+  "heroName": "Largo",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Липтон 7319",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Largo 7319",
+  "zip": {
+    "path": "pending/96350183/Largo 7319.zip",
+    "sha": "e2ce4c4f6a8db3d2f61a2b98160a4d9a622405d5",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/96350183/Largo 7319.webp",
+    "sha": "57cfc20faf04015a149c5fa721e754b6c8dd1d39",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795546155858,
+  "ipFingerprint": "l8dotA9o9ewZ4rAeCPj3hjoU"
+}
