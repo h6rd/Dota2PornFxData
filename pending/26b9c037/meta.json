@@ -1,0 +1,31 @@
+{
+  "id": "26b9c037",
+  "name": "Huskar Red-Yellow",
+  "category": "heroes",
+  "heroName": "Huskar",
+  "subcategory": null,
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "xvii",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Huskar Red-Yellow",
+  "zip": {
+    "path": "pending/26b9c037/Huskar Red-Yellow.zip",
+    "sha": "f3f81ef0b937a7442c15de963038fe9eeee0b7c4",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/26b9c037/Huskar Red-Yellow.webp",
+    "sha": "2931461bb02519812f3f554fa0c7bc1f9467b061",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795634129619,
+  "ipFingerprint": "B2f4dzJ4jHBGPsof-NA1HQgG"
+}
