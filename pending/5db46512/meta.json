@@ -1,0 +1,32 @@
+{
+  "id": "5db46512",
+  "name": "Magnus Plushy Shag",
+  "category": "heroes",
+  "heroName": "Magnus",
+  "subcategory": null,
+  "tags": {
+    "effects": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "argentee",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/profiles/76561199350091117/"
+    }
+  ],
+  "filenameBase": "Magnus Plushy Shag",
+  "zip": {
+    "path": "pending/5db46512/Magnus Plushy Shag.zip",
+    "sha": "1453e13115321c0ca6b189fb8e38630242958619",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5db46512/Magnus Plushy Shag.webp",
+    "sha": "21258831976bdc55c79aa033df302b141da18b40",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795618023248,
+  "ipFingerprint": "JUQ1sFAM6oeUYFGYiqwr2tbL"
+}
