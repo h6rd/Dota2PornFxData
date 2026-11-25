@@ -1,0 +1,29 @@
+{
+  "id": "3ee5a38b",
+  "name": "Pudge Midas Slapper",
+  "category": "heroes",
+  "heroName": "Pudge",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Fr0dech",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Pudge Midas Slapper",
+  "zip": {
+    "path": "pending/3ee5a38b/Pudge Midas Slapper.zip",
+    "sha": "7402d3d496818b91be58e6bc10222a781ed806b2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/3ee5a38b/Pudge Midas Slapper.webp",
+    "sha": "8ee88d43abe2484e5c5ee3e6e831536c4a06a12d",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795542677028,
+  "ipFingerprint": "oSJ611gEda5Ux45PSXyMAMGi"
+}
