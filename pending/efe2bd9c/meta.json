@@ -1,0 +1,30 @@
+{
+  "id": "efe2bd9c",
+  "name": "Ingame Hud Purple And Black",
+  "category": "huds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "франз",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Ingame Hud Purple And Black",
+  "zip": {
+    "path": "pending/efe2bd9c/Ingame Hud Purple And Black.zip",
+    "sha": "b2a454eab0b35cc16dcb76ae19f4c2c71932ea43",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/efe2bd9c/Ingame Hud Purple And Black.webp",
+    "sha": "6bf86556ef671dad866aead5a401dccf2254f3bd",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795552723371,
+  "ipFingerprint": "-V6WOWZ0UTqr1wV0n2L7oHoW"
+}
