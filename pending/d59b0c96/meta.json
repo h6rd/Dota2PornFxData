@@ -1,0 +1,29 @@
+{
+  "id": "d59b0c96",
+  "name": "Huskar Pizdec",
+  "category": "heroes",
+  "heroName": "Huskar",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "xvii",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Huskar Pizdec",
+  "zip": {
+    "path": "pending/d59b0c96/Huskar Pizdec.zip",
+    "sha": "f3f81ef0b937a7442c15de963038fe9eeee0b7c4",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d59b0c96/Huskar Pizdec.webp",
+    "sha": "2931461bb02519812f3f554fa0c7bc1f9467b061",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795634413017,
+  "ipFingerprint": "02mnNo9xL6G16bjvQQc_qTV_"
+}
