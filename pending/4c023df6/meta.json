@@ -1,0 +1,30 @@
+{
+  "id": "4c023df6",
+  "name": "Sora V2 Hud",
+  "category": "huds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "smirnoff",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/smirnovffy"
+    }
+  ],
+  "filenameBase": "Sora V2 Hud",
+  "zip": {
+    "path": "pending/4c023df6/Sora V2 Hud.zip",
+    "sha": "68d014ed8dee1dd1a11fc820c21513e788f85f11",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4c023df6/Sora V2 Hud.webp",
+    "sha": "67cca4791bf4b2bef682b1601bdcf84ff143feb4",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795705693877,
+  "ipFingerprint": "MZT_kcLnu9jN3cen2Mg1URBy"
+}
