@@ -1,0 +1,30 @@
+{
+  "id": "0dd280bb",
+  "name": "Pink Anime Hud",
+  "category": "huds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "yuccaga",
+      "isNew": true,
+      "newAuthorUrl": "https://t.me/yuccaga"
+    }
+  ],
+  "filenameBase": "Pink Anime Hud",
+  "zip": {
+    "path": "pending/0dd280bb/Pink Anime Hud.zip",
+    "sha": "952b959ca537abfd55cc460dc5ee0a41d513fe50",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/0dd280bb/Pink Anime Hud.webp",
+    "sha": "bac24f315d551d1ddaa140d6406130bb3040b127",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795652674444,
+  "ipFingerprint": "b-1QY6PExguAAnl1hCWxIqD1"
+}
