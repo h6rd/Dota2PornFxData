@@ -1,0 +1,30 @@
+{
+  "id": "a85cc98d",
+  "name": "Queen Of Pain Invalid Bastard",
+  "category": "heroes",
+  "heroName": "Queen of Pain",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "woldraks",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Queen Of Pain Invalid Bastard",
+  "zip": {
+    "path": "pending/a85cc98d/Queen Of Pain Invalid Bastard.zip",
+    "sha": "88e1717e6f320bf2cc62676163a2ab5799dce20f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/a85cc98d/Queen Of Pain Invalid Bastard.webp",
+    "sha": "02c5fadc8c9c82a53014c520c3012f611a486190",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795697339527,
+  "ipFingerprint": "WGyDl-0y_-vXg49ZOoIiYpgJ"
+}
