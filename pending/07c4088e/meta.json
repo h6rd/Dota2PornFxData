@@ -1,0 +1,30 @@
+{
+  "id": "07c4088e",
+  "name": "Invoker Perdynn",
+  "category": "heroes",
+  "heroName": "Invoker",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "PerDynn",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Invoker Perdynn",
+  "zip": {
+    "path": "pending/07c4088e/Invoker Perdynn.zip",
+    "sha": "0f8dc390de983426cdece626389d6d4e1c53377b",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/07c4088e/Invoker Perdynn.webp",
+    "sha": "e2b87a120ecce5f2160ad655b60b274b71c3eab7",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795717290000,
+  "ipFingerprint": "OVOusx6fOsvBShi8rYzl1gBb"
+}
