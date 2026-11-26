@@ -1,0 +1,32 @@
+{
+  "id": "374ac15f",
+  "name": "Tinker Og Icons",
+  "category": "heroes",
+  "heroName": "Tinker",
+  "subcategory": null,
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "кирпич фиолетовый",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Tinker Og Icons",
+  "zip": {
+    "path": "pending/374ac15f/Tinker Og Icons.zip",
+    "sha": "dabf6491095f6bd32598eb1da539b735772b438f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/374ac15f/Tinker Og Icons.webp",
+    "sha": "1616a6d1c2608fdae5a13885ab42c41ed7f802c1",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795707036296,
+  "ipFingerprint": "laWMymvTfp95Q-TLNsh2O64z"
+}
