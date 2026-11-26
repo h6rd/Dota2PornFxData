@@ -1,0 +1,30 @@
+{
+  "id": "54d33740",
+  "name": "Light-Grey Hud",
+  "category": "huds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "anyquu",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Light-Grey Hud",
+  "zip": {
+    "path": "pending/54d33740/Light-Grey Hud.zip",
+    "sha": "2044c82ab809cc863a90deea62ad12397cc5076d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/54d33740/Light-Grey Hud.webp",
+    "sha": "7263b6221f461fbe0a7fb92fa105caa9aed66165",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795729564016,
+  "ipFingerprint": "vqy38R_CTBCDlUp8uUG1IUWg"
+}
