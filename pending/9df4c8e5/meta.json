@@ -1,0 +1,40 @@
+{
+  "id": "9df4c8e5",
+  "name": "Tink Brood Kotl True Laugh",
+  "category": "sounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "samoredoto",
+      "isNew": false,
+      "locked": true
+    },
+    {
+      "type": "preview",
+      "url": "https://youtu.be/oZDvN2CX42c",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Tink Brood Kotl True Laugh",
+  "zip": {
+    "path": "pending/9df4c8e5/Tink Brood Kotl True Laugh.zip",
+    "sha": "a496797bcafdf89b704c45038aada1bd72b2c67a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/9df4c8e5/Tink Brood Kotl True Laugh.webp",
+    "sha": "0f6529e778073c01d5fd6b9904574f18523acf4c",
+    "ext": "webp"
+  },
+  "update": {
+    "name": "Tink Brood Kotl True Laugh",
+    "file": "Tink Brood Kotl True Laugh.zip",
+    "preview": "Tink Brood Kotl True Laugh.webp"
+  },
+  "status": "pending",
+  "createdAt": 1795766937831,
+  "ipFingerprint": "6xdp5Jq1zcadPcnb7wU_Oclt"
+}
