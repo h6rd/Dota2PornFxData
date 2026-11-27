@@ -1,0 +1,32 @@
+{
+  "id": "cd2808ea",
+  "name": "Tinker True Spellstechies",
+  "category": "hero-icons",
+  "heroName": "Tinker",
+  "subcategory": null,
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "кирпич фиолетовый",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Tinker True Spellstechies",
+  "zip": {
+    "path": "pending/cd2808ea/Tinker True Spellstechies.zip",
+    "sha": "df51fea453b5bde64c871f09b12132a769597c2a",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/cd2808ea/Tinker True Spellstechies.webp",
+    "sha": "bb81d9e390a8f651eb04c2cc5411b5b3c29403a2",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795810823973,
+  "ipFingerprint": "laWMymvTfp95Q-TLNsh2O64z"
+}
