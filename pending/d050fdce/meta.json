@@ -7,10 +7,15 @@
   "tags": {},
   "links": [
     {
-      "type": "author",
+      "type": "modded",
       "url": "PerDynn",
       "isNew": true,
       "newAuthorUrl": ""
+    },
+    {
+      "type": "author",
+      "url": "Harlord",
+      "isNew": false
     }
   ],
   "filenameBase": "Invoker Rehab",
