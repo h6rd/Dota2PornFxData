@@ -1,0 +1,32 @@
+{
+  "id": "7a463aab",
+  "name": "Kaneki X Touka",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "eternal",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Kaneki X Touka",
+  "zip": {
+    "path": "pending/7a463aab/Kaneki X Touka.zip",
+    "sha": "ff5b5d253322025251bdb7d8fbb6a6a5b1a1a5c0",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/7a463aab/Kaneki X Touka.webp",
+    "sha": "ef40e4358034841c9d8ca08137ad0d9944809eca",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795793290565,
+  "ipFingerprint": "QgqNO9tBrXm4SsdqZHWzye2P"
+}
