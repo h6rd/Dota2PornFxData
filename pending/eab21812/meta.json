@@ -1,0 +1,30 @@
+{
+  "id": "eab21812",
+  "name": "Queen Of Pain Marika",
+  "category": "heroes",
+  "heroName": "Queen of Pain",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "woldraks",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Queen Of Pain Marika",
+  "zip": {
+    "path": "pending/eab21812/Queen Of Pain Marika.zip",
+    "sha": "9e0469651be324e9596527de9c7f13110e104348",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/eab21812/Queen Of Pain Marika.webp",
+    "sha": "f57d527ab3e1f48d556141c01f0c8ce3bfc7893e",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795715440638,
+  "ipFingerprint": "9s5AICInbVXOJZTqZfOsQNk9"
+}
