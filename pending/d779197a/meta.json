@@ -1,0 +1,30 @@
+{
+  "id": "d779197a",
+  "name": "Chaos Knight Without Steps",
+  "category": "hero-sounds",
+  "heroName": "Chaos Knight",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Gr0m",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Chaos Knight Without Steps",
+  "zip": {
+    "path": "pending/d779197a/Chaos Knight Without Steps.zip",
+    "sha": "141db0564f996c33589c73fc908cad683443cdd9",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/d779197a/Chaos Knight Without Steps.webp",
+    "sha": "97319713c3eb1746aedcee27e801ae5a76016b9c",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795803242600,
+  "ipFingerprint": "SciOwFEXluThpJOfz_Y7OQYo"
+}
