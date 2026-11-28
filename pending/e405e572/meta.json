@@ -1,0 +1,30 @@
+{
+  "id": "e405e572",
+  "name": "Muzik Yuno Gasai",
+  "category": "music",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "otibrain66-glitch",
+      "isNew": true,
+      "newAuthorUrl": "https://github.com/otibrain66-glitch"
+    }
+  ],
+  "filenameBase": "Muzik Yuno Gasai",
+  "zip": {
+    "path": "pending/e405e572/Muzik Yuno Gasai.zip",
+    "sha": "e92d7fda426768083b10c822dc5dc290006cb40f",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/e405e572/Muzik Yuno Gasai.webp",
+    "sha": "3cc8a738d74d00fc8d98a45ff0953be3050934f8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795882715213,
+  "ipFingerprint": "RHPMBeua8VjLpE6Ke9ZYeMgx"
+}
