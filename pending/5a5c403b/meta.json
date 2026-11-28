@@ -1,0 +1,30 @@
+{
+  "id": "5a5c403b",
+  "name": "Muzika Yuno Gasai",
+  "category": "music",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "KaskaInDaHood",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Muzika Yuno Gasai",
+  "zip": {
+    "path": "pending/5a5c403b/Muzika Yuno Gasai.zip",
+    "sha": "086293f9684596ad3bbbac95227bed67e67c4500",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/5a5c403b/Muzika Yuno Gasai.webp",
+    "sha": "3cc8a738d74d00fc8d98a45ff0953be3050934f8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795882368291,
+  "ipFingerprint": "RHPMBeua8VjLpE6Ke9ZYeMgx"
+}
