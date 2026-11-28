@@ -1,0 +1,30 @@
+{
+  "id": "2ea0609a",
+  "name": "Axe Coch Bratan",
+  "category": "hero-sounds",
+  "heroName": "Axe",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "Anonymous",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Axe Coch Bratan",
+  "zip": {
+    "path": "pending/2ea0609a/Axe Coch Bratan.zip",
+    "sha": "5efde8c6a77ef36f4ce0274eb16aab673384f67d",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2ea0609a/Axe Coch Bratan.webp",
+    "sha": "09695dc5c70d68ddb9187722f98544d6ba1eb2ce",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795859801438,
+  "ipFingerprint": "hGhpMD_VmqeZy_xdvsHMj4oD"
+}
