@@ -1,0 +1,33 @@
+{
+  "id": "2e3330bb",
+  "name": "Batrider Night Terror Crow",
+  "category": "heroes",
+  "heroName": "Batrider",
+  "subcategory": null,
+  "tags": {
+    "effects": true,
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "andrej33",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Batrider Night Terror Crow",
+  "zip": {
+    "path": "pending/2e3330bb/Batrider Night Terror Crow.zip",
+    "sha": "f5937b834b740b14adc07435372e5a7f5f9ce3d8",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/2e3330bb/Batrider Night Terror Crow.webp",
+    "sha": "2741a61fa9c41e8db23fa416e4272453646fc6e8",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795835826319,
+  "ipFingerprint": "7K2GRwXK65e1ik13RbExirlN"
+}
