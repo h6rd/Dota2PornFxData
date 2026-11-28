@@ -1,0 +1,29 @@
+{
+  "id": "4163fa12",
+  "name": "Earth Spirit Zemlya Kakashke",
+  "category": "heroes",
+  "heroName": "Earth Spirit",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "PerDynn",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Earth Spirit Zemlya Kakashke",
+  "zip": {
+    "path": "pending/4163fa12/Earth Spirit Zemlya Kakashke.zip",
+    "sha": "ab455309dc6466764406fadf0dfcf667831e18c2",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/4163fa12/Earth Spirit Zemlya Kakashke.webp",
+    "sha": "4abac8d2b57562862c391598109324320aa1346f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795848617706,
+  "ipFingerprint": "OVOusx6fOsvBShi8rYzl1gBb"
+}
