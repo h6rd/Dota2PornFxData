@@ -1,0 +1,32 @@
+{
+  "id": "f642ff0e",
+  "name": "Frieren Background",
+  "category": "backgrounds",
+  "heroName": null,
+  "subcategory": null,
+  "tags": {
+    "video": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "Astolfo I Fate",
+      "isNew": true,
+      "newAuthorUrl": "https://steamcommunity.com/profiles/76561199550171231/"
+    }
+  ],
+  "filenameBase": "Frieren Background",
+  "zip": {
+    "path": "pending/f642ff0e/Frieren Background.zip",
+    "sha": "3f7a634cbdddf162159d5c68dd79dc50af5da1a3",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/f642ff0e/Frieren Background.webp",
+    "sha": "db195ace58ded972729394fcc0c5f033f31a7b37",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795832021513,
+  "ipFingerprint": "GaiAG5H1K4R9aDnMlABjJiLo"
+}
