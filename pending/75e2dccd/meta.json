@@ -1,0 +1,30 @@
+{
+  "id": "75e2dccd",
+  "name": "Bezdarniy143 Shadow Fiend Ult",
+  "category": "hero-sounds",
+  "heroName": "Shadow Fiend",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "я дискурсед вроде",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Bezdarniy143 Shadow Fiend Ult",
+  "zip": {
+    "path": "pending/75e2dccd/Bezdarniy143 Shadow Fiend Ult.zip",
+    "sha": "5f7c809640f525a593e816f3e750f232c5f22883",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/75e2dccd/Bezdarniy143 Shadow Fiend Ult.webp",
+    "sha": "164ad7d5841f8c1c438d3418a32a61be3f00b565",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795863295552,
+  "ipFingerprint": "xA3EeMNTAUmkvCpLUYHW9Qi2"
+}
