@@ -1,0 +1,32 @@
+{
+  "id": "30c3e363",
+  "name": "Techies Og Icons",
+  "category": "heroes",
+  "heroName": "Techies",
+  "subcategory": null,
+  "tags": {
+    "icons": true
+  },
+  "links": [
+    {
+      "type": "author",
+      "url": "кирпич фиолетовый",
+      "isNew": true,
+      "newAuthorUrl": ""
+    }
+  ],
+  "filenameBase": "Techies Og Icons",
+  "zip": {
+    "path": "pending/30c3e363/Techies Og Icons.zip",
+    "sha": "d87e7c65d0cb7ab6993d67b5b959f3a1ff98285e",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/30c3e363/Techies Og Icons.webp",
+    "sha": "d64b0a936616dc7218438857db5be8dc79f54973",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795705771890,
+  "ipFingerprint": "laWMymvTfp95Q-TLNsh2O64z"
+}
