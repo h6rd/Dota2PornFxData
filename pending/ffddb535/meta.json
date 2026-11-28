@@ -1,0 +1,29 @@
+{
+  "id": "ffddb535",
+  "name": "Earth Spirit Zemelya",
+  "category": "heroes",
+  "heroName": "Earth Spirit",
+  "subcategory": null,
+  "tags": {},
+  "links": [
+    {
+      "type": "author",
+      "url": "PerDynn",
+      "isNew": false
+    }
+  ],
+  "filenameBase": "Earth Spirit Zemelya",
+  "zip": {
+    "path": "pending/ffddb535/Earth Spirit Zemelya.zip",
+    "sha": "b995d31506b4f3bf726d15f02684ad255393b6de",
+    "ext": "zip"
+  },
+  "preview": {
+    "path": "pending/ffddb535/Earth Spirit Zemelya.webp",
+    "sha": "4abac8d2b57562862c391598109324320aa1346f",
+    "ext": "webp"
+  },
+  "status": "pending",
+  "createdAt": 1795847158682,
+  "ipFingerprint": "OVOusx6fOsvBShi8rYzl1gBb"
+}
